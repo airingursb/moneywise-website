@@ -94,5 +94,83 @@
     "links_header": "Links",
     "copyright": "© 2026 Airing. All rights reserved.",
     "contact": "Contact"
+  },
+  "featuresPage": {
+    "title": "Every feature, in plain English.",
+    "subhead": "MoneyWise covers everyday tracking and serious analysis. Here's what's inside.",
+    "modules": [
+      {
+        "id": "dashboard",
+        "title": "Dashboard",
+        "description": "The first thing you see every morning. Total net worth, daily spending, upcoming bills, and a mini trend for every account.",
+        "screenshot": "01-dashboard.png",
+        "bullets": [
+          "Net worth with month-over-month change",
+          "Calendar view of transactions",
+          "Upcoming bills with due dates",
+          "Per-account mini trend charts"
+        ]
+      },
+      {
+        "id": "records",
+        "title": "Records",
+        "description": "Fast entry for expenses, income, and transfers. Group by day, attach photos, set recurrence, and review pending items in one tap.",
+        "screenshot": "02-records.png",
+        "bullets": [
+          "Voice input with automatic category detection",
+          "Receipt photo attachments",
+          "Recurring transaction schedules",
+          "Pending review queue"
+        ]
+      },
+      {
+        "id": "budgets",
+        "title": "Budgets",
+        "description": "Set monthly budgets per category. Pacing tells you if you're spending too fast. Transfer between categories when life changes.",
+        "screenshot": "04-budget.png",
+        "bullets": [
+          "Monthly, weekly, or yearly periods",
+          "Pacing indicator vs. same period last month",
+          "Transfer between categories in-app",
+          "Per-category donut breakdown"
+        ]
+      },
+      {
+        "id": "investments",
+        "title": "Investments",
+        "description": "Live prices for stocks and crypto. Portfolio allocation donut, per-holding history, and AI insights on your positions.",
+        "screenshot": "05-investments.png",
+        "bullets": [
+          "Real-time quotes and day change",
+          "Portfolio allocation breakdown",
+          "Buy/sell transaction log per holding",
+          "Historical price charts"
+        ]
+      },
+      {
+        "id": "advisor",
+        "title": "AI Advisor",
+        "description": "Bring your own Anthropic or OpenAI key. The advisor reads your (local) data and answers questions — nothing leaves your device unless you ask.",
+        "screenshot": "07-advisor.png",
+        "bullets": [
+          "Works with Anthropic Claude or OpenAI",
+          "Keys stored in iOS keychain",
+          "Monthly spending analysis",
+          "Portfolio rebalancing suggestions"
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Security",
+        "description": "Face ID / Touch ID lock. All data encrypted at rest. Optional cloud sync uses end-to-end encrypted rows — we can't read them.",
+        "screenshot": "06-security.png",
+        "bullets": [
+          "Biometric app lock",
+          "Local SQLite encryption",
+          "End-to-end encrypted cloud sync",
+          "No third-party analytics or ads"
+        ]
+      }
+    ]
   }
 }

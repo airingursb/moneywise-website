@@ -73,6 +73,17 @@ const i18nSchema = z.object({
     copyright: z.string(),
     contact: z.string(),
   }),
+  featuresPage: z.object({
+    title: z.string(),
+    subhead: z.string(),
+    modules: z.array(z.object({
+      id: z.string(),
+      title: z.string(),
+      description: z.string(),
+      screenshot: z.string(),
+      bullets: z.array(z.string()),
+    })),
+  }),
 });
 
 const i18n = defineCollection({

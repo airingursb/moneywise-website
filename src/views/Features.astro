@@ -1,0 +1,56 @@
+---
+import type { Locale } from '../config/site';
+import { getI18n } from '../lib/i18n';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = await getI18n(locale);
+---
+
+<BaseLayout title={`${t.featuresPage.title} · MoneyWise`} description={t.featuresPage.subhead} locale={locale} slug="features">
+  <Nav locale={locale} slug="features" t={t} />
+  <main class="mx-auto max-w-6xl px-6 py-20 md:py-28">
+    <header class="max-w-2xl">
+      <h1 class="font-[family-name:var(--font-display)] font-bold text-[44px] md:text-[56px] leading-[1.05] tracking-[-0.03em] text-[var(--color-fg-primary)]">
+        {t.featuresPage.title}
+      </h1>
+      <p class="mt-5 text-[18px] leading-[1.6] text-[var(--color-fg-secondary)]">{t.featuresPage.subhead}</p>
+    </header>
+    <div class="mt-16 space-y-24">
+      {t.featuresPage.modules.map((m, i) => (
+        <section id={m.id} class="grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-10 md:gap-16 items-center">
+          <div class={`order-1 ${i % 2 === 1 ? 'md:order-2' : ''}`}>
+            <h2 class="font-[family-name:var(--font-display)] font-bold text-[32px] md:text-[40px] leading-[1.08] tracking-[-0.02em] text-[var(--color-fg-primary)]">
+              {m.title}
+            </h2>
+            <p class="mt-5 text-[16px] leading-[1.65] text-[var(--color-fg-secondary)]">{m.description}</p>
+            <ul class="mt-6 space-y-2 text-[14px] text-[var(--color-fg-primary)]">
+              {m.bullets.map((b) => (
+                <li class="flex gap-3"><span class="text-[var(--color-accent-primary)] font-bold">✓</span><span>{b}</span></li>
+              ))}
+            </ul>
+          </div>
+          <div class={`order-2 flex justify-center ${i % 2 === 1 ? 'md:order-1 md:justify-start' : 'md:justify-end'}`}>
+            <div class="rounded-[36px] bg-[#111] p-2 shadow-[0_24px_60px_rgba(30,51,34,0.18)] w-[260px]">
+              <img
+                src={`/screenshots/${locale}/${m.screenshot}`}
+                alt={m.title}
+                loading="lazy"
+                decoding="async"
+                width="390"
+                height="844"
+                class="block w-full h-auto rounded-[30px]"
+              />
+            </div>
+          </div>
+        </section>
+      ))}
+    </div>
+  </main>
+  <Footer locale={locale} slug="features" t={t} />
+</BaseLayout>
