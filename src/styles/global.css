@@ -1,1 +1,45 @@
 @import "tailwindcss";
+@import "./fonts.css";
+
+@theme {
+  /* Colors — extracted from lib/core/theme/app_colors.dart */
+  --color-accent-primary: #2D6B3F;
+  --color-accent-destructive: #C62828;
+
+  --color-fg-primary: #1E3322;
+  --color-fg-secondary: #6B7B6B;
+  --color-fg-muted: #808A80;
+  --color-fg-inverse: #FFFFFF;
+
+  --color-surface-primary: #FFFFFF;
+  --color-surface-secondary: #F4F5F5;
+  --color-surface-inverse: #1E3322;
+
+  --color-income-green: #4CAF50;
+  --color-trend-green: #6BCB77;
+  --color-expense-orange: #E65100;
+  --color-expense-red: #C62828;
+
+  --color-border: #D1D5D1;
+  --color-divider: #E5E7E5;
+
+  /* Radii */
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-full: 9999px;
+
+  /* Typography */
+  --font-sans: 'Geist', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Inter', 'Geist', system-ui, sans-serif;
+  --font-mono: 'IBMPlexMono', ui-monospace, 'SF Mono', monospace;
+  --font-serif-italic: 'Newsreader', Georgia, serif;
+}
+
+html, body {
+  background: var(--color-surface-primary);
+  color: var(--color-fg-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
