@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "title": "MoneyWise — Your money. Yours, offline.",
+    "description": "The personal finance app that keeps every record, budget, and insight on your device. Multi-currency. BYOK AI advisor. Optional encrypted sync."
+  },
+  "nav": {
+    "features": "Features",
+    "privacy": "Privacy",
+    "pricing": "Pricing",
+    "download": "Download"
+  },
+  "hero": {
+    "headline_part1": "Track every dollar.",
+    "headline_italic": "Offline, by default.",
+    "subhead": "Records, budgets, investments, and AI insights — all stored on your phone. Cloud sync is optional; privacy isn't.",
+    "cta_primary": "Download on the App Store",
+    "cta_secondary": "See how it works",
+    "stat_offline_label": "Offline-first",
+    "stat_ads_label": "Ads · Trackers",
+    "stat_byok_label": "AI keys on-device",
+    "coming_soon": "Coming soon to the App Store"
+  },
+  "features": {
+    "eyebrow": "Built for real life",
+    "title": "Everything about your money, in one app.",
+    "items": [
+      { "title": "Dashboard", "description": "Net worth, trends, and upcoming bills at a glance." },
+      { "title": "Records", "description": "Fast entry, voice input, receipt photos, calendar view." },
+      { "title": "Accounts", "description": "Checking, savings, cards, cash — in any currency." },
+      { "title": "Investments", "description": "Live quotes, portfolio allocation, per-holding history." },
+      { "title": "Budgets", "description": "Monthly budgets per category with pacing and transfers." },
+      { "title": "AI Advisor", "description": "Bring your own Anthropic or OpenAI key for on-device insights." }
+    ]
+  },
+  "screenshots": {
+    "eyebrow": "See it in action",
+    "title": "Designed to feel native on iPhone.",
+    "captions": [
+      "Dashboard — net worth and daily pulse",
+      "Records — fast entry, grouped by day",
+      "Daily Brief — one-line summary each morning",
+      "Budgets — pacing and category breakdown",
+      "Investments — portfolio and allocation",
+      "Security — biometric lock, local encryption",
+      "AI Advisor — BYOK insights",
+      "Family — shared workspaces for couples"
+    ]
+  },
+  "privacyFirst": {
+    "eyebrow": "Privacy, not a feature",
+    "title": "Your data stays on your phone.",
+    "subhead": "MoneyWise is built local-first. No ads, no trackers, no data sale — ever.",
+    "pillars": [
+      { "title": "Offline-first", "description": "Every record is stored locally in an encrypted SQLite database. Works with airplane mode on." },
+      { "title": "Optional cloud sync", "description": "Sync across your own devices when you turn it on. Rows are encrypted at rest; we can't read them." },
+      { "title": "BYOK AI", "description": "Bring your own Anthropic or OpenAI key. Keys live in the iOS keychain and never transit our servers." }
+    ],
+    "learn_more": "Read the privacy policy →"
+  },
+  "pricing": {
+    "eyebrow": "Pricing",
+    "title": "Free for everyday use. Pro when you need more.",
+    "subhead": "No trial games. No dark patterns. Cancel any time in the App Store.",
+    "free_name": "Free",
+    "free_tagline": "Everything you need on a single device.",
+    "free_features": [
+      "Unlimited records, accounts, and budgets",
+      "Investments and portfolio tracking",
+      "AI advisor (bring your own key)",
+      "Local encrypted storage"
+    ],
+    "pro_name": "Pro",
+    "pro_tagline": "Sync, backup, and more across every device.",
+    "pro_features": [
+      "Everything in Free",
+      "Multi-device encrypted cloud sync",
+      "Automatic cloud backup",
+      "Receipt and attachment photos",
+      "Pooled AI credits (no API key needed)"
+    ],
+    "per_month": "/mo",
+    "per_year": "/yr",
+    "cta_free": "Start free",
+    "cta_pro": "Get Pro"
+  },
+  "downloadCta": {
+    "title": "Take back control of your money.",
+    "subhead": "Free to download. Pro subscription optional.",
+    "cta": "Download on the App Store",
+    "small_print": "iPhone · iOS 16 or later"
+  },
+  "footer": {
+    "tagline": "Local-first personal finance, made in Singapore.",
+    "links_header": "Links",
+    "copyright": "© 2026 Airing. All rights reserved.",
+    "contact": "Contact"
+  }
+}
