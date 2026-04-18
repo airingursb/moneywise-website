@@ -1,174 +1,174 @@
 {
   "meta": {
-    "title": "MoneyWise — Your money. Yours, offline.",
-    "description": "The personal finance app that keeps every record, budget, and insight on your device. Multi-currency. BYOK AI advisor. Optional encrypted sync."
+    "title": "MoneyWise — お金は、あなたのもの。オフラインで。",
+    "description": "すべての記録・予算・インサイトをデバイス上に保存するパーソナルファイナンスアプリ。多通貨対応、BYOK（自前のAPIキー）AI アドバイザー搭載、暗号化クラウド同期はオプション。"
   },
   "nav": {
-    "features": "Features",
-    "privacy": "Privacy",
-    "pricing": "Pricing",
-    "download": "Download"
+    "features": "機能",
+    "privacy": "プライバシー",
+    "pricing": "料金",
+    "download": "ダウンロード"
   },
   "hero": {
-    "headline_part1": "Track every dollar.",
-    "headline_italic": "Offline, by default.",
-    "subhead": "Records, budgets, investments, and AI insights — all stored on your phone. Cloud sync is optional; privacy isn't.",
-    "cta_primary": "Download on the App Store",
-    "cta_secondary": "See how it works",
-    "stat_offline_label": "Offline-first",
-    "stat_ads_label": "Ads · Trackers",
-    "stat_byok_label": "AI keys on-device",
-    "coming_soon": "Coming soon to the App Store"
+    "headline_part1": "すべての支出を記録。",
+    "headline_italic": "オフラインで、標準で。",
+    "subhead": "記録・予算・投資・AI インサイト——すべてスマートフォン上に。クラウド同期はオプション。プライバシー保護は標準。",
+    "cta_primary": "App Store でダウンロード",
+    "cta_secondary": "詳しく見る",
+    "stat_offline_label": "オフラインファースト",
+    "stat_ads_label": "広告・トラッカー",
+    "stat_byok_label": "AI キーをデバイスに保存",
+    "coming_soon": "App Store で近日公開"
   },
   "features": {
-    "eyebrow": "Built for real life",
-    "title": "Everything about your money, in one app.",
+    "eyebrow": "日常のために設計",
+    "title": "お金のことは、このアプリひとつで。",
     "items": [
-      { "title": "Dashboard", "description": "Net worth, trends, and upcoming bills at a glance." },
-      { "title": "Records", "description": "Fast entry, voice input, receipt photos, calendar view." },
-      { "title": "Accounts", "description": "Checking, savings, cards, cash — in any currency." },
-      { "title": "Investments", "description": "Live quotes, portfolio allocation, per-holding history." },
-      { "title": "Budgets", "description": "Monthly budgets per category with pacing and transfers." },
-      { "title": "AI Advisor", "description": "Bring your own Anthropic or OpenAI key for on-device insights." }
+      { "title": "ダッシュボード", "description": "純資産・トレンド・支払予定をひと目で確認。" },
+      { "title": "記録", "description": "高速入力・音声入力・レシート撮影・カレンダー表示。" },
+      { "title": "口座", "description": "普通預金・カード・現金——あらゆる通貨に対応。" },
+      { "title": "投資", "description": "リアルタイム価格・ポートフォリオ配分・銘柄別履歴。" },
+      { "title": "予算", "description": "カテゴリー別の月次予算。進捗管理とカテゴリー間移動に対応。" },
+      { "title": "AI アドバイザー", "description": "Anthropic または OpenAI の自前キーでオンデバイスインサイトを取得（BYOK）。" }
     ]
   },
   "screenshots": {
-    "eyebrow": "See it in action",
-    "title": "Designed to feel native on iPhone.",
+    "eyebrow": "実際の画面を見る",
+    "title": "iPhone にネイティブな使い心地。",
     "captions": [
-      "Dashboard — net worth and daily pulse",
-      "Records — fast entry, grouped by day",
-      "Daily Brief — one-line summary each morning",
-      "Budgets — pacing and category breakdown",
-      "Investments — portfolio and allocation",
-      "Security — biometric lock, local encryption",
-      "AI Advisor — BYOK insights",
-      "Family — shared workspaces for couples"
+      "ダッシュボード——純資産と日々の動向",
+      "記録——高速入力、日別グループ表示",
+      "デイリーブリーフ——毎朝の一行サマリー",
+      "予算——進捗管理とカテゴリー内訳",
+      "投資——ポートフォリオと配分",
+      "セキュリティ——生体認証ロック、ローカル暗号化",
+      "AI アドバイザー——BYOK インサイト",
+      "ファミリー——カップル向け共有ワークスペース"
     ]
   },
   "privacyFirst": {
-    "eyebrow": "Privacy, not a feature",
-    "title": "Your data stays on your phone.",
-    "subhead": "MoneyWise is built local-first. No ads, no trackers, no data sale — ever.",
+    "eyebrow": "プライバシーは機能ではなく前提",
+    "title": "あなたのデータは、あなたのスマートフォンに。",
+    "subhead": "MoneyWise はローカルファーストで設計されています。広告なし、トラッカーなし、データ販売なし——永久に。",
     "pillars": [
-      { "title": "Offline-first", "description": "Every record is stored locally in an encrypted SQLite database. Works with airplane mode on." },
-      { "title": "Optional cloud sync", "description": "Sync across your own devices when you turn it on. Rows are encrypted at rest; we can't read them." },
-      { "title": "BYOK AI", "description": "Bring your own Anthropic or OpenAI key. Keys live in the iOS keychain and never transit our servers." }
+      { "title": "オフラインファースト", "description": "すべての記録は暗号化された SQLite データベースにローカル保存。機内モードでも問題なく使えます。" },
+      { "title": "オプションのクラウド同期", "description": "オンにすると自分のデバイス間で同期できます。行データは保存時に暗号化され、私たちには読めません。" },
+      { "title": "BYOK AI", "description": "Anthropic または OpenAI の自前キーを使用。キーは iOS キーチェーンに保存され、当社サーバーを経由しません。" }
     ],
-    "learn_more": "Read the privacy policy →"
+    "learn_more": "プライバシーポリシーを読む →"
   },
   "pricing": {
-    "eyebrow": "Pricing",
-    "title": "Free for everyday use. Pro when you need more.",
-    "subhead": "No trial games. No dark patterns. Cancel any time in the App Store.",
-    "free_name": "Free",
-    "free_tagline": "Everything you need on a single device.",
+    "eyebrow": "料金",
+    "title": "日常使いは無料。必要なときに Pro へ。",
+    "subhead": "トライアルの罠も、ダークパターンもありません。App Store からいつでもキャンセル可能。",
+    "free_name": "無料",
+    "free_tagline": "1 台のデバイスで必要なすべてが揃う。",
     "free_features": [
-      "Unlimited records, accounts, and budgets",
-      "Investments and portfolio tracking",
-      "AI advisor (bring your own key)",
-      "Local encrypted storage"
+      "記録・口座・予算は無制限",
+      "投資・ポートフォリオ管理",
+      "AI アドバイザー（自前キー使用）",
+      "ローカル暗号化ストレージ"
     ],
     "pro_name": "Pro",
-    "pro_tagline": "Sync, backup, and more across every device.",
+    "pro_tagline": "全デバイスで同期・バックアップ・さらに多くの機能。",
     "pro_features": [
-      "Everything in Free",
-      "Multi-device encrypted cloud sync",
-      "Automatic cloud backup",
-      "Receipt and attachment photos",
-      "Pooled AI credits (no API key needed)"
+      "無料版のすべての機能",
+      "マルチデバイス対応エンドツーエンド暗号化クラウド同期",
+      "自動クラウドバックアップ",
+      "レシートと添付写真",
+      "共有 AI クレジット（API キー不要）"
     ],
-    "per_month": "/mo",
-    "per_year": "/yr",
-    "cta_free": "Start free",
-    "cta_pro": "Get Pro"
+    "per_month": "/月",
+    "per_year": "/年",
+    "cta_free": "無料で始める",
+    "cta_pro": "Pro を入手"
   },
   "downloadCta": {
-    "title": "Take back control of your money.",
-    "subhead": "Free to download. Pro subscription optional.",
-    "cta": "Download on the App Store",
-    "small_print": "iPhone · iOS 16 or later"
+    "title": "お金の管理を取り戻しましょう。",
+    "subhead": "ダウンロード無料。Pro サブスクリプションはオプション。",
+    "cta": "App Store でダウンロード",
+    "small_print": "iPhone · iOS 16 以降"
   },
   "footer": {
-    "tagline": "Local-first personal finance, made in Singapore.",
-    "links_header": "Links",
+    "tagline": "ローカルファーストのパーソナルファイナンス。Singapore 発。",
+    "links_header": "リンク",
     "copyright": "© 2026 Airing. All rights reserved.",
-    "contact": "Contact"
+    "contact": "お問い合わせ"
   },
   "featuresPage": {
-    "title": "Every feature, in plain English.",
-    "subhead": "MoneyWise covers everyday tracking and serious analysis. Here's what's inside.",
+    "title": "全機能を、わかりやすく。",
+    "subhead": "MoneyWise は日常の記録から本格的な分析まで対応しています。すべての機能をご紹介します。",
     "modules": [
       {
         "id": "dashboard",
-        "title": "Dashboard",
-        "description": "The first thing you see every morning. Total net worth, daily spending, upcoming bills, and a mini trend for every account.",
+        "title": "ダッシュボード",
+        "description": "毎朝最初に目にする画面。純資産の合計・当日の支出・支払予定・各口座のミニトレンドチャートを一覧できます。",
         "screenshot": "01-dashboard.png",
         "bullets": [
-          "Net worth with month-over-month change",
-          "Calendar view of transactions",
-          "Upcoming bills with due dates",
-          "Per-account mini trend charts"
+          "前月比付きの純資産表示",
+          "取引のカレンダー表示",
+          "支払期日付きの予定一覧",
+          "口座別ミニトレンドチャート"
         ]
       },
       {
         "id": "records",
-        "title": "Records",
-        "description": "Fast entry for expenses, income, and transfers. Group by day, attach photos, set recurrence, and review pending items in one tap.",
+        "title": "記録",
+        "description": "支出・収入・振替を素早く入力。日別グループ表示、写真添付、繰り返し設定、保留中の確認もワンタップで。",
         "screenshot": "02-records.png",
         "bullets": [
-          "Voice input with automatic category detection",
-          "Receipt photo attachments",
-          "Recurring transaction schedules",
-          "Pending review queue"
+          "カテゴリー自動判定付き音声入力",
+          "レシート写真の添付",
+          "繰り返し取引のスケジュール設定",
+          "保留レビューキュー"
         ]
       },
       {
         "id": "budgets",
-        "title": "Budgets",
-        "description": "Set monthly budgets per category. Pacing tells you if you're spending too fast. Transfer between categories when life changes.",
+        "title": "予算",
+        "description": "カテゴリーごとに月次予算を設定。ペーシング機能で使いすぎを早期に検知。ライフステージの変化に合わせてカテゴリー間で移動も可能。",
         "screenshot": "04-budget.png",
         "bullets": [
-          "Monthly, weekly, or yearly periods",
-          "Pacing indicator vs. same period last month",
-          "Transfer between categories in-app",
-          "Per-category donut breakdown"
+          "月次・週次・年次の期間設定",
+          "先月同期間との進捗比較",
+          "アプリ内カテゴリー間予算移動",
+          "カテゴリー別ドーナツグラフ"
         ]
       },
       {
         "id": "investments",
-        "title": "Investments",
-        "description": "Live prices for stocks and crypto. Portfolio allocation donut, per-holding history, and AI insights on your positions.",
+        "title": "投資",
+        "description": "株式・暗号資産のリアルタイム価格。ポートフォリオ配分のドーナツグラフ、銘柄別の取引履歴、ポジションへの AI インサイト。",
         "screenshot": "05-investments.png",
         "bullets": [
-          "Real-time quotes and day change",
-          "Portfolio allocation breakdown",
-          "Buy/sell transaction log per holding",
-          "Historical price charts"
+          "リアルタイム価格と前日比",
+          "ポートフォリオ配分の内訳",
+          "銘柄別の買付・売却ログ",
+          "過去の価格チャート"
         ]
       },
       {
         "id": "advisor",
-        "title": "AI Advisor",
-        "description": "Bring your own Anthropic or OpenAI key. The advisor reads your (local) data and answers questions — nothing leaves your device unless you ask.",
+        "title": "AI アドバイザー",
+        "description": "Anthropic または OpenAI の自前キーを利用。アドバイザーはローカルデータを読んで質問に答えます——明示的に送信しない限り、データはデバイスの外に出ません。",
         "screenshot": "07-advisor.png",
         "bullets": [
-          "Works with Anthropic Claude or OpenAI",
-          "Keys stored in iOS keychain",
-          "Monthly spending analysis",
-          "Portfolio rebalancing suggestions"
+          "Anthropic Claude または OpenAI に対応",
+          "キーは iOS キーチェーンに保存",
+          "月次支出分析",
+          "ポートフォリオのリバランス提案"
         ]
       },
       {
         "id": "security",
-        "title": "Security",
-        "description": "Face ID / Touch ID lock. All data encrypted at rest. Optional cloud sync uses end-to-end encrypted rows — we can't read them.",
+        "title": "セキュリティ",
+        "description": "Face ID / Touch ID によるロック。すべてのデータは保存時に暗号化。オプションのクラウド同期はエンドツーエンド暗号化行を使用——私たちには読めません。",
         "screenshot": "06-security.png",
         "bullets": [
-          "Biometric app lock",
-          "Local SQLite encryption",
-          "End-to-end encrypted cloud sync",
-          "No third-party analytics or ads"
+          "生体認証によるアプリロック",
+          "ローカル SQLite 暗号化",
+          "エンドツーエンド暗号化クラウド同期",
+          "サードパーティの分析・広告なし"
         ]
       }
     ]

@@ -1,67 +1,67 @@
 ---
-title: Privacy Policy
+title: プライバシーポリシー
 effective: 2026-04-18
 ---
 
-# Privacy Policy
+# プライバシーポリシー
 
-**Effective date:** 2026-04-18
+**発効日：** 2026-04-18
 
-This policy explains what MoneyWise does with your data.
+このポリシーは、MoneyWise があなたのデータをどのように扱うかを説明します。
 
-## Summary (TL;DR)
+## 概要（要点のみ）
 
-- All your financial records are stored **on your device** in an encrypted local database.
-- We collect **no analytics about you personally** on the app itself — no crash reporters, no tracking SDKs.
-- If you turn on **cloud sync**, your data is encrypted before leaving your device. We store the encrypted rows on Supabase and cannot read them.
-- If you use the **AI advisor** with your own API key, requests go directly from your device to the AI provider. We do not route, log, or relay those requests.
-- On this website (`moneywise.airingdeng.com`), we use **Umami** for privacy-friendly, cookieless page view analytics. No IP addresses or identifiers are stored.
+- すべての財務記録は、暗号化されたローカルデータベースとして**あなたのデバイスに**保存されます。
+- アプリ内では、**個人を特定する分析データは一切収集しません**——クラッシュレポーターも、トラッキング SDK も使用していません。
+- **クラウド同期**を有効にした場合、データはデバイスを離れる前に暗号化されます。暗号化された行は Supabase に保存され、私たちは内容を読むことができません。
+- 自分の API キーで **AI アドバイザー**を使用する場合、リクエストはデバイスから AI プロバイダーに直接送信されます。私たちがそれらのリクエストを中継・記録・ルーティングすることはありません。
+- このウェブサイト（`moneywise.airingdeng.com`）では、プライバシーに配慮したクッキーなしのページビュー分析のために **Umami** を使用しています。IP アドレスや個人識別情報は保存されません。
 
-## What MoneyWise collects
+## MoneyWise が収集する情報
 
-**On your device** (never transmitted unless you enable sync):
-- Your accounts, balances, transactions, budgets, and investment holdings.
-- Receipt images you choose to attach.
-- Your AI provider API key (stored in the iOS keychain).
+**あなたのデバイス上**（同期を有効にしない限り送信されません）：
+- 口座・残高・取引記録・予算・投資保有銘柄。
+- 添付を選択したレシート画像。
+- AI プロバイダーの API キー（iOS キーチェーンに保存）。
 
-**When cloud sync is enabled** (Pro subscribers):
-- Encrypted rows of the above, stored on Supabase servers we operate. The encryption key stays on your device.
-- Your Supabase account email (used only for login).
-- Device identifiers needed to distinguish your phones from each other during sync.
+**クラウド同期が有効な場合**（Pro サブスクライバー）：
+- 上記の暗号化された行データ（当社が運営する Supabase サーバーに保存）。暗号化キーはデバイスに残ります。
+- Supabase アカウントのメールアドレス（ログインのみに使用）。
+- 同期中に異なるデバイスを識別するためのデバイス識別子。
 
-**When you use Pro's pooled AI credits** (future feature, not in v1):
-- Your prompts and the advisor's responses will be routed through our Supabase Edge Function. Logs are kept for 7 days for abuse prevention, then deleted.
+**Pro の共有 AI クレジットを使用する場合**（将来の機能、v1 には含まれません）：
+- あなたのプロンプトとアドバイザーの返答は、当社の Supabase Edge Function を経由してルーティングされます。ログは不正使用防止のために 7 日間保持され、その後削除されます。
 
-**On this website:**
-- Umami records: page viewed, referrer, country (coarse), browser / OS (coarse), screen size. Nothing that identifies you personally.
-- No cookies. No tracking pixels. No ad networks.
+**このウェブサイトでは：**
+- Umami が記録するもの：閲覧ページ・参照元・国（概略）・ブラウザ / OS（概略）・画面サイズ。個人を特定するものは含みません。
+- クッキーなし。トラッキングピクセルなし。広告ネットワークなし。
 
-## What MoneyWise does **not** collect
+## MoneyWise が収集**しない**情報
 
-- We do not collect your exact location.
-- We do not share, sell, or rent data to third parties.
-- We do not run advertising.
-- We do not read your financial records. With cloud sync, the data is encrypted; we see only opaque bytes.
+- 正確な位置情報は収集しません。
+- データを第三者と共有・販売・賃貸することはありません。
+- 広告を配信しません。
+- 財務記録を読みません。クラウド同期データは暗号化されており、私たちには不透明なバイト列しか見えません。
 
-## Your controls
+## あなたのコントロール
 
-- **Export**: In-app, you can export all records to CSV.
-- **Delete**: Uninstalling the app removes all local data. If you had cloud sync enabled, send us a deletion request at the contact below.
-- **Stop sync**: Disable cloud sync in Settings; we delete your encrypted rows from our servers within 30 days.
+- **エクスポート**：アプリ内ですべての記録を CSV にエクスポートできます。
+- **削除**：アプリをアンインストールするとすべてのローカルデータが削除されます。クラウド同期を有効にしていた場合は、以下の連絡先まで削除リクエストをお送りください。
+- **同期の停止**：設定でクラウド同期を無効にすると、30 日以内にサーバーから暗号化された行データを削除します。
 
-## Third parties
+## サードパーティサービス
 
-| Service | Purpose | Where |
+| サービス | 用途 | 所在地 |
 |---|---|---|
-| Supabase | Cloud sync backend, Auth | eu-west (Ireland) |
-| Apple | App Store, in-app purchase, iCloud Keychain | Apple |
-| Your chosen AI provider (Anthropic, OpenAI) | AI advisor requests routed directly from your device using your key | US |
-| Umami (self-hosted) | Anonymous website analytics | Our server |
+| Supabase | クラウド同期バックエンド、認証 | eu-west（アイルランド） |
+| Apple | App Store、アプリ内購入、iCloud キーチェーン | Apple |
+| 選択した AI プロバイダー（Anthropic、OpenAI） | AI アドバイザーのリクエストはあなたのキーを使ってデバイスから直接送信 | 米国 |
+| Umami（セルフホスト） | 匿名ウェブサイト分析 | 当社サーバー |
 
-## Contact
+## お問い合わせ
 
-For privacy requests or questions: **bellehou2026@gmail.com**
+プライバシーに関するリクエストやご質問は：**bellehou2026@gmail.com**
 
-## Changes
+## 変更について
 
-If we change this policy, we'll update the effective date above and, for material changes, show a notice in-app at next launch.
+このポリシーを変更する場合は、上記の発効日を更新します。重要な変更があった場合は、次回アプリ起動時にアプリ内通知でお知らせします。

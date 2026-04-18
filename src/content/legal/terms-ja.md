@@ -1,62 +1,62 @@
 ---
-title: Terms of Service
+title: 利用規約
 effective: 2026-04-18
 ---
 
-# Terms of Service
+# 利用規約
 
-**Effective date:** 2026-04-18
+**発効日：** 2026-04-18
 
-These terms govern your use of the MoneyWise iOS app and this website.
+本規約は、MoneyWise iOS アプリおよびこのウェブサイトのご利用に適用されます。
 
-## 1. Who we are
+## 1. 私たちについて
 
-MoneyWise is operated by an individual developer (referred to as "we" or "us" below). Contact: **bellehou2026@gmail.com**.
+MoneyWise は個人の開発者（以下「私たち」）が運営しています。連絡先：**bellehou2026@gmail.com**。
 
-## 2. What MoneyWise is
+## 2. MoneyWise とは
 
-MoneyWise is a personal finance tracker. It helps you record transactions, set budgets, and analyze your money. It is **not** a financial institution, broker, tax advisor, or investment advisor. Nothing in MoneyWise is financial advice. You are responsible for your own financial decisions.
+MoneyWise は個人向け家計管理ツールです。取引の記録・予算の設定・支出分析をサポートします。MoneyWise は金融機関・証券会社・税務顧問・投資顧問では**ありません**。MoneyWise 内のいかなる内容も、財務上のアドバイスを構成するものではありません。ご自身の財務上の意思決定にはご自身が責任を負います。
 
-## 3. Free and Pro tiers
+## 3. 無料版と Pro 版
 
-- Free: unlimited use on a single device, no account required.
-- Pro: monthly or annual auto-renewing subscription sold through the Apple App Store. Price shown at purchase time is authoritative. Cancellation is managed through your Apple ID subscriptions.
+- 無料版：1 台のデバイスで無制限に利用可能。アカウント登録不要。
+- Pro 版：Apple App Store を通じて提供される月次または年次の自動更新サブスクリプション。価格は購入時の表示が正となります。サブスクリプションの管理は Apple ID を通じて行われます。
 
-## 4. Your data
+## 4. あなたのデータ
 
-Your financial records belong to you. See the [Privacy Policy](/privacy/) for full details on storage and handling.
+財務記録はあなたのものです。保存と取り扱いの詳細については[プライバシーポリシー](/privacy/)をご参照ください。
 
-## 5. Acceptable use
+## 5. 禁止事項
 
-Don't use MoneyWise to:
-- violate any law;
-- reverse-engineer the app beyond what applicable law allows;
-- interfere with the cloud sync service's operation.
+MoneyWise を以下の目的に使用しないでください：
+- 法律に違反する行為；
+- 適用法が許容する範囲を超えたリバースエンジニアリング；
+- クラウド同期サービスの運用を妨害する行為。
 
-## 6. AI features
+## 6. AI 機能
 
-The AI advisor uses either your own API key (Free) or pooled credits (Pro). The advisor's output may be wrong, outdated, or misleading. Do not rely on it for tax filings, investment decisions, or legal conclusions.
+AI アドバイザーは、あなた自身の API キー（無料版）または共有クレジット（Pro 版）を使用します。アドバイザーの出力は誤りを含んだり、古い情報であったり、誤解を招く場合があります。税務申告・投資判断・法的結論のために使用しないでください。
 
-## 7. Third-party data
+## 7. サードパーティデータ
 
-Market quotes in the Investments module come from third-party providers. We don't guarantee their accuracy, timeliness, or completeness. For personal use only.
+投資機能内の市場価格は第三者のデータプロバイダーから提供されます。その正確性・適時性・完全性を保証するものではありません。個人利用のみを想定しています。
 
-## 8. No warranty
+## 8. 保証の免責
 
-MoneyWise is provided **as is**, without warranty of any kind. Use at your own risk. To the fullest extent permitted by law, we disclaim all warranties.
+MoneyWise は**現状のまま**提供され、いかなる種類の保証も付帯しません。使用はご自身の責任において行ってください。法律で許容される最大限の範囲において、すべての保証を否認します。
 
-## 9. Limitation of liability
+## 9. 責任の制限
 
-To the fullest extent permitted by law, our liability is limited to the amount you paid us in the last 12 months (which may be $0 if you use the Free tier).
+法律で許容される最大限の範囲において、当社の責任は過去 12 か月間にお支払いいただいた金額（無料版をご利用の場合は $0 である可能性があります）に限定されます。
 
-## 10. Changes
+## 10. 規約の変更
 
-We may update these terms. For material changes, we'll show a notice in-app at next launch. Continued use after an update means you accept the new terms.
+本規約を更新することがあります。重要な変更があった場合は、次回アプリ起動時にアプリ内通知でお知らせします。更新後に引き続きご利用いただくことで、新しい規約への同意とみなします。
 
-## 11. Governing law
+## 11. 準拠法
 
-These terms are governed by the laws of Singapore, without regard to conflict-of-laws rules.
+本規約は、法律の抵触規則を考慮せず、Singapore の法律に準拠します。
 
-## 12. Contact
+## 12. お問い合わせ
 
-Questions? Reach us at **bellehou2026@gmail.com**.
+ご質問は：**bellehou2026@gmail.com** までお問い合わせください。
