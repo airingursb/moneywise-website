@@ -1,43 +1,46 @@
-# Astro Starter Kit: Minimal
+# MoneyWise website
 
-```sh
-pnpm create astro@latest -- --template minimal
+Source for https://moneywise.airingdeng.com
+
+## Stack
+
+- **Framework:** Astro v6 static output
+- **Styling:** Tailwind v4 (via `@tailwindcss/vite`) with `@theme` tokens
+- **Type safety:** TypeScript strict
+- **Content:** i18n JSON via Astro content collections + Zod schema
+- **Analytics:** Umami (self-hosted at `analytics.ursb.me`)
+- **Hosting:** GitHub Pages via Actions (`.github/workflows/deploy.yml`)
+
+## Local development
+
+```bash
+pnpm install
+pnpm run dev          # http://localhost:4321
+pnpm run build        # static output to dist/
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Common edits
 
-## 🚀 Project Structure
+### Update after App Store approval
+Flip `appStoreAvailable: true` in `src/config/site.ts`. All CTA buttons will switch from "Coming soon" badges to live App Store links.
 
-Inside of your Astro project, you'll see the following folders and files:
+### Update Pro pricing
+Edit `PRICING.pro.priceMonthly` / `priceAnnual` in `src/config/site.ts`. The Pricing card auto-formats via `Intl.NumberFormat`.
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+### Add a new locale
+1. Add the code to `LOCALES` in `src/config/site.ts` and add a label to `LOCALE_LABELS`
+2. Add the code to `astro.config.mjs` under `i18n.locales`
+3. Drop a translated JSON into `src/content/i18n/<code>.json` (use `en.json` as the template)
+4. Translate `src/content/legal/privacy-<code>.md` and `terms-<code>.md`
+5. Create page wrappers under `src/pages/<code>/{index,features,privacy,terms}.astro`
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+### Update copy
+All user-facing strings live in `src/content/i18n/{en,zh,zh-Hant,ja}.json`. Zod schema at `src/content.config.ts` validates every locale at build time — a missing key fails the build.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Deploy
 
-Any static assets, like images, can be placed in the `public/` directory.
+Push to `main` → GitHub Actions builds and deploys (`.github/workflows/deploy.yml`).
 
-## 🧞 Commands
+## License
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Content © 2026 Airing. Code MIT.
