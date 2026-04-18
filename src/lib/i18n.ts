@@ -11,7 +11,8 @@ export function getLocaleFromUrl(url: URL): Locale {
 }
 
 export async function getI18n(locale: Locale) {
-  const entry = await getEntry('i18n', locale);
+  // Astro's glob loader normalizes entry IDs to lowercase
+  const entry = await getEntry('i18n', locale.toLowerCase());
   if (!entry) throw new Error(`i18n entry missing for locale: ${locale}`);
   return entry.data;
 }
