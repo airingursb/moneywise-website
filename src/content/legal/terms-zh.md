@@ -1,62 +1,62 @@
 ---
-title: Terms of Service
+title: 服务条款
 effective: 2026-04-18
 ---
 
-# Terms of Service
+# 服务条款
 
-**Effective date:** 2026-04-18
+**生效日期：** 2026-04-18
 
-These terms govern your use of the MoneyWise iOS app and this website.
+本条款适用于你对 MoneyWise iOS 应用及本网站的使用。
 
-## 1. Who we are
+## 1. 关于我们
 
-MoneyWise is operated by an individual developer (referred to as "we" or "us" below). Contact: **bellehou2026@gmail.com**.
+MoneyWise 由个人开发者运营（以下简称"我们"）。联系方式：**bellehou2026@gmail.com**。
 
-## 2. What MoneyWise is
+## 2. MoneyWise 是什么
 
-MoneyWise is a personal finance tracker. It helps you record transactions, set budgets, and analyze your money. It is **not** a financial institution, broker, tax advisor, or investment advisor. Nothing in MoneyWise is financial advice. You are responsible for your own financial decisions.
+MoneyWise 是一款个人财务记账工具，帮助你记录交易、设置预算并分析财务状况。它**不是**金融机构、经纪商、税务顾问或投资顾问。MoneyWise 中的任何内容均不构成财务建议。你对自己的财务决策负全责。
 
-## 3. Free and Pro tiers
+## 3. 免费版与 Pro 版
 
-- Free: unlimited use on a single device, no account required.
-- Pro: monthly or annual auto-renewing subscription sold through the Apple App Store. Price shown at purchase time is authoritative. Cancellation is managed through your Apple ID subscriptions.
+- 免费版：单设备无限使用，无需注册账户。
+- Pro 版：通过 Apple App Store 销售的月度或年度自动续费订阅。购买时显示的价格为准。订阅管理通过你的 Apple ID 进行。
 
-## 4. Your data
+## 4. 你的数据
 
-Your financial records belong to you. See the [Privacy Policy](/privacy/) for full details on storage and handling.
+你的财务记录属于你自己。有关存储和处理的完整说明，请参阅[隐私政策](/privacy/)。
 
-## 5. Acceptable use
+## 5. 合理使用
 
-Don't use MoneyWise to:
-- violate any law;
-- reverse-engineer the app beyond what applicable law allows;
-- interfere with the cloud sync service's operation.
+请勿将 MoneyWise 用于：
+- 违反任何法律的行为；
+- 超出适用法律允许范围的逆向工程；
+- 干扰云同步服务的正常运行。
 
-## 6. AI features
+## 6. AI 功能
 
-The AI advisor uses either your own API key (Free) or pooled credits (Pro). The advisor's output may be wrong, outdated, or misleading. Do not rely on it for tax filings, investment decisions, or legal conclusions.
+AI 顾问使用你自己的 API 密钥（免费版）或共享额度（Pro 版）。顾问的输出结果可能不准确、过时或具有误导性。请勿将其用于税务申报、投资决策或法律结论。
 
-## 7. Third-party data
+## 7. 第三方数据
 
-Market quotes in the Investments module come from third-party providers. We don't guarantee their accuracy, timeliness, or completeness. For personal use only.
+投资模块中的市场报价来自第三方数据提供商。我们不对其准确性、时效性或完整性作出保证，仅供个人参考使用。
 
-## 8. No warranty
+## 8. 免责声明
 
-MoneyWise is provided **as is**, without warranty of any kind. Use at your own risk. To the fullest extent permitted by law, we disclaim all warranties.
+MoneyWise 按**现状**提供，不附带任何形式的保证。使用风险由你自行承担。在法律允许的最大范围内，我们不承担任何明示或暗示的保证责任。
 
-## 9. Limitation of liability
+## 9. 责任限制
 
-To the fullest extent permitted by law, our liability is limited to the amount you paid us in the last 12 months (which may be $0 if you use the Free tier).
+在法律允许的最大范围内，我们的赔偿责任上限为你在过去 12 个月内向我们支付的金额（如果你使用免费版，则可能为 $0）。
 
-## 10. Changes
+## 10. 条款变更
 
-We may update these terms. For material changes, we'll show a notice in-app at next launch. Continued use after an update means you accept the new terms.
+我们可能会更新本条款。对于重大变更，我们将在下次启动应用时显示应用内通知。在更新后继续使用即表示你接受新条款。
 
-## 11. Governing law
+## 11. 适用法律
 
-These terms are governed by the laws of Singapore, without regard to conflict-of-laws rules.
+本条款受 Singapore 法律管辖，不考虑法律冲突规则。
 
-## 12. Contact
+## 12. 联系方式
 
-Questions? Reach us at **bellehou2026@gmail.com**.
+如有任何问题，请联系：**bellehou2026@gmail.com**。

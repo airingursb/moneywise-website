@@ -1,67 +1,67 @@
 ---
-title: Privacy Policy
+title: 隐私政策
 effective: 2026-04-18
 ---
 
-# Privacy Policy
+# 隐私政策
 
-**Effective date:** 2026-04-18
+**生效日期：** 2026-04-18
 
-This policy explains what MoneyWise does with your data.
+本政策说明 MoneyWise 如何处理你的数据。
 
-## Summary (TL;DR)
+## 摘要（简短版）
 
-- All your financial records are stored **on your device** in an encrypted local database.
-- We collect **no analytics about you personally** on the app itself — no crash reporters, no tracking SDKs.
-- If you turn on **cloud sync**, your data is encrypted before leaving your device. We store the encrypted rows on Supabase and cannot read them.
-- If you use the **AI advisor** with your own API key, requests go directly from your device to the AI provider. We do not route, log, or relay those requests.
-- On this website (`moneywise.airingdeng.com`), we use **Umami** for privacy-friendly, cookieless page view analytics. No IP addresses or identifiers are stored.
+- 你的所有财务记录均以加密方式**存储在你的设备上**的本地数据库中。
+- 我们**不收集任何关于你个人的分析数据**——应用内没有崩溃上报器，没有追踪 SDK。
+- 如果你开启了**云同步**，数据在离开你的设备前已经加密。我们将加密后的数据行存储在 Supabase 上，无法读取其内容。
+- 如果你使用自己的 API 密钥启用 **AI 顾问**，请求会直接从你的设备发送到 AI 服务商，我们不会路由、记录或中转这些请求。
+- 本网站（`moneywise.airingdeng.com`）使用 **Umami** 进行注重隐私的无 Cookie 页面访问统计，不存储 IP 地址或任何可识别信息。
 
-## What MoneyWise collects
+## MoneyWise 收集的信息
 
-**On your device** (never transmitted unless you enable sync):
-- Your accounts, balances, transactions, budgets, and investment holdings.
-- Receipt images you choose to attach.
-- Your AI provider API key (stored in the iOS keychain).
+**在你的设备上**（除非启用同步，否则不会传输）：
+- 你的账户、余额、交易记录、预算和投资持仓。
+- 你选择附加的收据图片。
+- 你的 AI 服务商 API 密钥（存储在 iOS 钥匙串中）。
 
-**When cloud sync is enabled** (Pro subscribers):
-- Encrypted rows of the above, stored on Supabase servers we operate. The encryption key stays on your device.
-- Your Supabase account email (used only for login).
-- Device identifiers needed to distinguish your phones from each other during sync.
+**开启云同步时**（Pro 订阅者）：
+- 以上数据的加密行，存储在我们运营的 Supabase 服务器上。加密密钥保留在你的设备上。
+- 你的 Supabase 账户邮箱（仅用于登录）。
+- 用于在同步过程中区分不同设备的设备标识符。
 
-**When you use Pro's pooled AI credits** (future feature, not in v1):
-- Your prompts and the advisor's responses will be routed through our Supabase Edge Function. Logs are kept for 7 days for abuse prevention, then deleted.
+**使用 Pro 共享 AI 额度时**（未来功能，v1 暂不包含）：
+- 你的提示词和顾问的回复将通过我们的 Supabase Edge Function 路由。日志保留 7 天用于防止滥用，之后自动删除。
 
-**On this website:**
-- Umami records: page viewed, referrer, country (coarse), browser / OS (coarse), screen size. Nothing that identifies you personally.
-- No cookies. No tracking pixels. No ad networks.
+**在本网站：**
+- Umami 记录：浏览页面、来源网址、国家（粗粒度）、浏览器 / 操作系统（粗粒度）、屏幕尺寸。不包含任何可识别个人身份的信息。
+- 无 Cookie，无追踪像素，无广告网络。
 
-## What MoneyWise does **not** collect
+## MoneyWise **不**收集的信息
 
-- We do not collect your exact location.
-- We do not share, sell, or rent data to third parties.
-- We do not run advertising.
-- We do not read your financial records. With cloud sync, the data is encrypted; we see only opaque bytes.
+- 我们不收集你的精确位置。
+- 我们不向第三方共享、出售或出租数据。
+- 我们不投放广告。
+- 我们不读取你的财务记录。云同步数据经过加密，我们看到的只是无法解读的加密字节。
 
-## Your controls
+## 你的控制权
 
-- **Export**: In-app, you can export all records to CSV.
-- **Delete**: Uninstalling the app removes all local data. If you had cloud sync enabled, send us a deletion request at the contact below.
-- **Stop sync**: Disable cloud sync in Settings; we delete your encrypted rows from our servers within 30 days.
+- **导出**：在应用内，你可以将所有记录导出为 CSV 文件。
+- **删除**：卸载应用将删除所有本地数据。如果你曾启用云同步，请通过下方联系方式发送删除请求。
+- **停止同步**：在设置中关闭云同步后，我们将在 30 天内从服务器删除你的加密数据行。
 
-## Third parties
+## 第三方服务
 
-| Service | Purpose | Where |
+| 服务 | 用途 | 所在地 |
 |---|---|---|
-| Supabase | Cloud sync backend, Auth | eu-west (Ireland) |
-| Apple | App Store, in-app purchase, iCloud Keychain | Apple |
-| Your chosen AI provider (Anthropic, OpenAI) | AI advisor requests routed directly from your device using your key | US |
-| Umami (self-hosted) | Anonymous website analytics | Our server |
+| Supabase | 云同步后端、身份验证 | eu-west（爱尔兰） |
+| Apple | App Store、应用内购买、iCloud 钥匙串 | Apple |
+| 你所选择的 AI 服务商（Anthropic、OpenAI） | AI 顾问请求直接从你的设备使用你的密钥发出 | 美国 |
+| Umami（自托管） | 匿名网站访问统计 | 我们的服务器 |
 
-## Contact
+## 联系方式
 
-For privacy requests or questions: **bellehou2026@gmail.com**
+如有隐私相关请求或疑问，请联系：**bellehou2026@gmail.com**
 
-## Changes
+## 政策变更
 
-If we change this policy, we'll update the effective date above and, for material changes, show a notice in-app at next launch.
+如果我们修改本政策，我们将更新上方的生效日期，并在重大变更时于下次启动应用时显示应用内通知。

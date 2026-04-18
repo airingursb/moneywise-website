@@ -1,174 +1,174 @@
 {
   "meta": {
-    "title": "MoneyWise — Your money. Yours, offline.",
-    "description": "The personal finance app that keeps every record, budget, and insight on your device. Multi-currency. BYOK AI advisor. Optional encrypted sync."
+    "title": "MoneyWise —— 你的钱，离线掌握",
+    "description": "MoneyWise 把你的每一笔账、预算和洞察都留在手机里。多币种支持，自带 AI 顾问，可选加密云同步。"
   },
   "nav": {
-    "features": "Features",
-    "privacy": "Privacy",
-    "pricing": "Pricing",
-    "download": "Download"
+    "features": "功能",
+    "privacy": "隐私",
+    "pricing": "定价",
+    "download": "下载"
   },
   "hero": {
-    "headline_part1": "Track every dollar.",
-    "headline_italic": "Offline, by default.",
-    "subhead": "Records, budgets, investments, and AI insights — all stored on your phone. Cloud sync is optional; privacy isn't.",
-    "cta_primary": "Download on the App Store",
-    "cta_secondary": "See how it works",
-    "stat_offline_label": "Offline-first",
-    "stat_ads_label": "Ads · Trackers",
-    "stat_byok_label": "AI keys on-device",
-    "coming_soon": "Coming soon to the App Store"
+    "headline_part1": "记下每一笔。",
+    "headline_italic": "离线，默认如此。",
+    "subhead": "账单、预算、投资和 AI 洞察——全部存在手机里。云同步是可选项，隐私保护不是。",
+    "cta_primary": "在 App Store 下载",
+    "cta_secondary": "了解工作原理",
+    "stat_offline_label": "离线优先",
+    "stat_ads_label": "广告 · 追踪器",
+    "stat_byok_label": "AI 密钥本地存储",
+    "coming_soon": "即将登陆 App Store"
   },
   "features": {
-    "eyebrow": "Built for real life",
-    "title": "Everything about your money, in one app.",
+    "eyebrow": "为真实生活而生",
+    "title": "关于你的钱，一个 App 搞定一切。",
     "items": [
-      { "title": "Dashboard", "description": "Net worth, trends, and upcoming bills at a glance." },
-      { "title": "Records", "description": "Fast entry, voice input, receipt photos, calendar view." },
-      { "title": "Accounts", "description": "Checking, savings, cards, cash — in any currency." },
-      { "title": "Investments", "description": "Live quotes, portfolio allocation, per-holding history." },
-      { "title": "Budgets", "description": "Monthly budgets per category with pacing and transfers." },
-      { "title": "AI Advisor", "description": "Bring your own Anthropic or OpenAI key for on-device insights." }
+      { "title": "仪表盘", "description": "一眼掌握净资产、趋势和即将到期的账单。" },
+      { "title": "记账", "description": "快速录入、语音输入、收据拍照、日历视图。" },
+      { "title": "账户", "description": "储蓄、信用卡、现金——支持任意货币。" },
+      { "title": "投资", "description": "实时报价、持仓分布、逐只持仓历史记录。" },
+      { "title": "预算", "description": "按类别设置月度预算，支持进度跟踪和类别划转。" },
+      { "title": "AI 顾问", "description": "接入自己的 Anthropic 或 OpenAI 密钥，获取本地 AI 洞察。" }
     ]
   },
   "screenshots": {
-    "eyebrow": "See it in action",
-    "title": "Designed to feel native on iPhone.",
+    "eyebrow": "看看实际效果",
+    "title": "专为 iPhone 打造的原生体验。",
     "captions": [
-      "Dashboard — net worth and daily pulse",
-      "Records — fast entry, grouped by day",
-      "Daily Brief — one-line summary each morning",
-      "Budgets — pacing and category breakdown",
-      "Investments — portfolio and allocation",
-      "Security — biometric lock, local encryption",
-      "AI Advisor — BYOK insights",
-      "Family — shared workspaces for couples"
+      "仪表盘——净资产与每日动态",
+      "记账——快速录入，按日分组",
+      "每日简报——每天早晨一行摘要",
+      "预算——进度跟踪与类别明细",
+      "投资——持仓概览与资产分布",
+      "安全——生物识别锁定，本地加密",
+      "AI 顾问——BYOK 洞察",
+      "家庭——伴侣共享工作空间"
     ]
   },
   "privacyFirst": {
-    "eyebrow": "Privacy, not a feature",
-    "title": "Your data stays on your phone.",
-    "subhead": "MoneyWise is built local-first. No ads, no trackers, no data sale — ever.",
+    "eyebrow": "隐私，不只是功能",
+    "title": "你的数据，留在手机里。",
+    "subhead": "MoneyWise 以本地优先理念构建。无广告、无追踪、永不出售数据。",
     "pillars": [
-      { "title": "Offline-first", "description": "Every record is stored locally in an encrypted SQLite database. Works with airplane mode on." },
-      { "title": "Optional cloud sync", "description": "Sync across your own devices when you turn it on. Rows are encrypted at rest; we can't read them." },
-      { "title": "BYOK AI", "description": "Bring your own Anthropic or OpenAI key. Keys live in the iOS keychain and never transit our servers." }
+      { "title": "离线优先", "description": "所有记录存储在本地加密的 SQLite 数据库中，飞行模式下照常使用。" },
+      { "title": "可选云同步", "description": "开启后可在你自己的设备间同步。数据行在静止时加密存储，我们无法读取。" },
+      { "title": "BYOK AI", "description": "接入自己的 Anthropic 或 OpenAI 密钥。密钥存储在 iOS 钥匙串中，绝不经过我们的服务器。" }
     ],
-    "learn_more": "Read the privacy policy →"
+    "learn_more": "阅读隐私政策 →"
   },
   "pricing": {
-    "eyebrow": "Pricing",
-    "title": "Free for everyday use. Pro when you need more.",
-    "subhead": "No trial games. No dark patterns. Cancel any time in the App Store.",
-    "free_name": "Free",
-    "free_tagline": "Everything you need on a single device.",
+    "eyebrow": "定价",
+    "title": "日常使用免费。需要更多时升级 Pro。",
+    "subhead": "没有试用套路，没有暗坑。随时可在 App Store 取消订阅。",
+    "free_name": "免费版",
+    "free_tagline": "单设备上你所需的一切。",
     "free_features": [
-      "Unlimited records, accounts, and budgets",
-      "Investments and portfolio tracking",
-      "AI advisor (bring your own key)",
-      "Local encrypted storage"
+      "无限记录、账户和预算",
+      "投资与持仓追踪",
+      "AI 顾问（自带密钥）",
+      "本地加密存储"
     ],
-    "pro_name": "Pro",
-    "pro_tagline": "Sync, backup, and more across every device.",
+    "pro_name": "Pro 版",
+    "pro_tagline": "多设备同步、备份及更多功能。",
     "pro_features": [
-      "Everything in Free",
-      "Multi-device encrypted cloud sync",
-      "Automatic cloud backup",
-      "Receipt and attachment photos",
-      "Pooled AI credits (no API key needed)"
+      "包含免费版全部功能",
+      "多设备端到端加密云同步",
+      "自动云备份",
+      "收据与附件照片",
+      "共享 AI 额度（无需 API 密钥）"
     ],
-    "per_month": "/mo",
-    "per_year": "/yr",
-    "cta_free": "Start free",
-    "cta_pro": "Get Pro"
+    "per_month": "/月",
+    "per_year": "/年",
+    "cta_free": "免费开始",
+    "cta_pro": "升级 Pro"
   },
   "downloadCta": {
-    "title": "Take back control of your money.",
-    "subhead": "Free to download. Pro subscription optional.",
-    "cta": "Download on the App Store",
-    "small_print": "iPhone · iOS 16 or later"
+    "title": "重新掌控你的财务。",
+    "subhead": "免费下载，Pro 订阅可选。",
+    "cta": "在 App Store 下载",
+    "small_print": "iPhone · iOS 16 或更高版本"
   },
   "footer": {
-    "tagline": "Local-first personal finance, made in Singapore.",
-    "links_header": "Links",
-    "copyright": "© 2026 Airing. All rights reserved.",
-    "contact": "Contact"
+    "tagline": "本地优先的个人财务应用，来自 Singapore。",
+    "links_header": "链接",
+    "copyright": "© 2026 Airing. 保留所有权利。",
+    "contact": "联系我们"
   },
   "featuresPage": {
-    "title": "Every feature, in plain English.",
-    "subhead": "MoneyWise covers everyday tracking and serious analysis. Here's what's inside.",
+    "title": "每一项功能，一目了然。",
+    "subhead": "MoneyWise 涵盖日常记账与深度分析。以下是它的全部内容。",
     "modules": [
       {
         "id": "dashboard",
-        "title": "Dashboard",
-        "description": "The first thing you see every morning. Total net worth, daily spending, upcoming bills, and a mini trend for every account.",
+        "title": "仪表盘",
+        "description": "每天早晨最先看到的界面。总净资产、当日支出、即将到期的账单，以及每个账户的迷你趋势图。",
         "screenshot": "01-dashboard.png",
         "bullets": [
-          "Net worth with month-over-month change",
-          "Calendar view of transactions",
-          "Upcoming bills with due dates",
-          "Per-account mini trend charts"
+          "净资产及环比变化",
+          "交易记录的日历视图",
+          "带到期日的即将账单",
+          "各账户迷你趋势图"
         ]
       },
       {
         "id": "records",
-        "title": "Records",
-        "description": "Fast entry for expenses, income, and transfers. Group by day, attach photos, set recurrence, and review pending items in one tap.",
+        "title": "记账",
+        "description": "快速录入支出、收入和转账。按日分组，可附图片、设置循环记录，一键查看待审项目。",
         "screenshot": "02-records.png",
         "bullets": [
-          "Voice input with automatic category detection",
-          "Receipt photo attachments",
-          "Recurring transaction schedules",
-          "Pending review queue"
+          "语音输入并自动识别类别",
+          "收据照片附件",
+          "定期交易计划",
+          "待审队列"
         ]
       },
       {
         "id": "budgets",
-        "title": "Budgets",
-        "description": "Set monthly budgets per category. Pacing tells you if you're spending too fast. Transfer between categories when life changes.",
+        "title": "预算",
+        "description": "按类别设置月度预算。进度指标告诉你是否花得太快。当生活有变，可在类别间划转额度。",
         "screenshot": "04-budget.png",
         "bullets": [
-          "Monthly, weekly, or yearly periods",
-          "Pacing indicator vs. same period last month",
-          "Transfer between categories in-app",
-          "Per-category donut breakdown"
+          "月度、周度或年度周期",
+          "与上月同期的进度对比",
+          "应用内类别间划转",
+          "各类别环形图明细"
         ]
       },
       {
         "id": "investments",
-        "title": "Investments",
-        "description": "Live prices for stocks and crypto. Portfolio allocation donut, per-holding history, and AI insights on your positions.",
+        "title": "投资",
+        "description": "股票和加密货币实时报价。持仓分布环形图、逐只持仓历史记录，以及 AI 对你持仓的洞察分析。",
         "screenshot": "05-investments.png",
         "bullets": [
-          "Real-time quotes and day change",
-          "Portfolio allocation breakdown",
-          "Buy/sell transaction log per holding",
-          "Historical price charts"
+          "实时报价与日内涨跌",
+          "持仓分布明细",
+          "每只持仓的买卖记录",
+          "历史价格走势图"
         ]
       },
       {
         "id": "advisor",
-        "title": "AI Advisor",
-        "description": "Bring your own Anthropic or OpenAI key. The advisor reads your (local) data and answers questions — nothing leaves your device unless you ask.",
+        "title": "AI 顾问",
+        "description": "接入自己的 Anthropic 或 OpenAI 密钥。顾问读取你的本地数据并回答问题——除非你主动询问，否则任何内容都不会离开设备。",
         "screenshot": "07-advisor.png",
         "bullets": [
-          "Works with Anthropic Claude or OpenAI",
-          "Keys stored in iOS keychain",
-          "Monthly spending analysis",
-          "Portfolio rebalancing suggestions"
+          "支持 Anthropic Claude 或 OpenAI",
+          "密钥存储在 iOS 钥匙串中",
+          "月度支出分析",
+          "投资组合再平衡建议"
         ]
       },
       {
         "id": "security",
-        "title": "Security",
-        "description": "Face ID / Touch ID lock. All data encrypted at rest. Optional cloud sync uses end-to-end encrypted rows — we can't read them.",
+        "title": "安全",
+        "description": "Face ID / Touch ID 锁定。所有数据静止加密。可选云同步采用端到端加密行存储——我们无法读取。",
         "screenshot": "06-security.png",
         "bullets": [
-          "Biometric app lock",
-          "Local SQLite encryption",
-          "End-to-end encrypted cloud sync",
-          "No third-party analytics or ads"
+          "生物识别应用锁",
+          "本地 SQLite 加密",
+          "端到端加密云同步",
+          "无第三方分析或广告"
         ]
       }
     ]
