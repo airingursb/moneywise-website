@@ -1,0 +1,56 @@
+---
+import type { Locale } from '../config/site';
+import type { I18nData } from '../content.config';
+
+interface Props {
+  locale: Locale;
+  t: I18nData;
+}
+const { locale, t } = Astro.props;
+
+const screenshotFiles = [
+  '01-dashboard.png',
+  '02-records.png',
+  '03-daily-brief.png',
+  '04-budget.png',
+  '05-investments.png',
+  '06-security.png',
+  '07-advisor.png',
+  '08-family.png',
+];
+---
+
+<section class="py-20 md:py-28">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="max-w-2xl">
+      <p class="text-[11px] uppercase tracking-[0.12em] text-[var(--color-accent-primary)] font-semibold">
+        {t.screenshots.eyebrow}
+      </p>
+      <h2 class="mt-3 font-[family-name:var(--font-display)] font-bold text-[36px] md:text-[44px] leading-[1.05] tracking-[-0.025em] text-[var(--color-fg-primary)]">
+        {t.screenshots.title}
+      </h2>
+    </div>
+  </div>
+  <div class="mt-12 overflow-x-auto pb-4 snap-x snap-mandatory">
+    <div class="flex gap-6 px-6 md:px-12">
+      {screenshotFiles.map((file, i) => (
+        <figure class="flex-none w-[240px] snap-center">
+          <div class="rounded-[36px] bg-[#111] p-2 shadow-[0_24px_60px_rgba(30,51,34,0.18)]">
+            <img
+              src={`/screenshots/${locale}/${file}`}
+              alt={t.screenshots.captions[i]}
+              loading="lazy"
+              decoding="async"
+              class="block w-full h-auto rounded-[30px]"
+              width="390"
+              height="844"
+            />
+          </div>
+          <figcaption class="mt-4 px-1 text-[13px] text-[var(--color-fg-secondary)]">
+            {t.screenshots.captions[i]}
+          </figcaption>
+        </figure>
+      ))}
+    </div>
+  </div>
+</section>
