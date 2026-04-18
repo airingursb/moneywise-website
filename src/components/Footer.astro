@@ -1,0 +1,45 @@
+---
+import type { Locale } from '../config/site';
+import type { I18nData } from '../content.config';
+import { SITE } from '../config/site';
+import { pathFor } from '../lib/i18n';
+import LocaleSwitcher from './LocaleSwitcher.astro';
+
+interface Props {
+  locale: Locale;
+  slug: string;
+  t: I18nData;
+}
+const { locale, slug, t } = Astro.props;
+---
+
+<footer class="border-t border-[var(--color-border)] py-12">
+  <div class="mx-auto max-w-6xl px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div>
+      <div class="flex items-center gap-2">
+        <img src="/app-icon.png" alt="" width="28" height="28" class="rounded-[7px]" />
+        <span class="text-[15px] font-bold">MoneyWise</span>
+      </div>
+      <p class="mt-3 text-[13px] text-[var(--color-fg-secondary)] max-w-[240px]">{t.footer.tagline}</p>
+    </div>
+    <div>
+      <p class="text-[11px] uppercase tracking-[0.12em] font-semibold text-[var(--color-fg-secondary)]">{t.footer.links_header}</p>
+      <ul class="mt-3 space-y-2 text-[14px]">
+        <li><a href={pathFor(locale, 'features')} class="hover:text-[var(--color-accent-primary)]">{t.nav.features}</a></li>
+        <li><a href={pathFor(locale, 'privacy')} class="hover:text-[var(--color-accent-primary)]">{t.nav.privacy}</a></li>
+        <li><a href={pathFor(locale, 'terms')} class="hover:text-[var(--color-accent-primary)]">Terms</a></li>
+        <li><a href={SITE.githubUrl} class="hover:text-[var(--color-accent-primary)]">GitHub</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="text-[11px] uppercase tracking-[0.12em] font-semibold text-[var(--color-fg-secondary)]">{t.footer.contact}</p>
+      <a href={`mailto:${SITE.contactEmail}`} class="mt-3 block text-[14px] hover:text-[var(--color-accent-primary)]">{SITE.contactEmail}</a>
+      <div class="mt-4">
+        <LocaleSwitcher current={locale} slug={slug} />
+      </div>
+    </div>
+  </div>
+  <div class="mt-10 mx-auto max-w-6xl px-6 text-[12px] text-[var(--color-fg-secondary)]">
+    {t.footer.copyright}
+  </div>
+</footer>

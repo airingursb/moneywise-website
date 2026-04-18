@@ -1,0 +1,22 @@
+---
+import type { I18nData } from '../content.config';
+import AppStoreBadge from './AppStoreBadge.astro';
+
+interface Props {
+  t: I18nData;
+}
+const { t } = Astro.props;
+---
+
+<section id="download" class="bg-[var(--color-accent-primary)] text-white py-20 md:py-24">
+  <div class="mx-auto max-w-3xl px-6 text-center">
+    <h2 class="font-[family-name:var(--font-display)] font-bold text-[32px] md:text-[44px] leading-[1.1] tracking-[-0.02em]">
+      {t.downloadCta.title}
+    </h2>
+    <p class="mt-4 text-[17px] text-white/85">{t.downloadCta.subhead}</p>
+    <div class="mt-8 flex justify-center">
+      <AppStoreBadge variant="light" label={t.downloadCta.cta} comingSoonLabel={t.hero.coming_soon} />
+    </div>
+    <p class="mt-6 text-[13px] text-white/65">{t.downloadCta.small_print}</p>
+  </div>
+</section>
