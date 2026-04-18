@@ -34,7 +34,7 @@ const i18nSchema = z.object({
   screenshots: z.object({
     eyebrow: z.string(),
     title: z.string(),
-    captions: z.array(z.string()).length(8),
+    captions: z.array(z.string()).length(9),
   }),
   privacyFirst: z.object({
     eyebrow: z.string(),
@@ -58,6 +58,8 @@ const i18nSchema = z.object({
     pro_features: z.array(z.string()),
     per_month: z.string(),
     per_year: z.string(),
+    free_trial: z.string(),
+    or_monthly_prefix: z.string(),
     cta_free: z.string(),
     cta_pro: z.string(),
   }),

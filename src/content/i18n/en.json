@@ -43,7 +43,8 @@
       "Investments — portfolio and allocation",
       "Security — biometric lock, local encryption",
       "AI Advisor — BYOK insights",
-      "Family — shared workspaces for couples"
+      "Family — shared workspaces for couples",
+      "Asset Report — annual summary across accounts"
     ]
   },
   "privacyFirst": {
@@ -80,8 +81,10 @@
     ],
     "per_month": "/mo",
     "per_year": "/yr",
+    "free_trial": "7-day free trial",
+    "or_monthly_prefix": "or ",
     "cta_free": "Start free",
-    "cta_pro": "Get Pro"
+    "cta_pro": "Start 7-day free trial"
   },
   "downloadCta": {
     "title": "Take back control of your money.",

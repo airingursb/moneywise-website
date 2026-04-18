@@ -29,8 +29,9 @@ export const PRICING = {
     priceAnnual: 0,
   },
   pro: {
-    priceMonthly: 4.99,   // TBD from Adapty, update when final
-    priceAnnual: 39.99,   // TBD
+    priceMonthly: 6.99,
+    priceAnnual: 49.99,
+    freeTrialDays: 7,
     currency: 'USD',
   },
 } as const;

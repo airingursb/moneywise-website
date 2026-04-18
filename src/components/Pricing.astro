@@ -41,12 +41,15 @@ const fmt = (n: number) => new Intl.NumberFormat('en-US', { style: 'currency', c
         <div class="absolute top-5 right-5 rounded-full bg-[var(--color-accent-primary)]/10 text-[var(--color-accent-primary)] text-[11px] font-semibold px-3 py-1 uppercase tracking-wider">Pro</div>
         <h3 class="text-[22px] font-bold text-[var(--color-fg-primary)]">{t.pricing.pro_name}</h3>
         <p class="mt-2 text-[14px] text-[var(--color-fg-secondary)]">{t.pricing.pro_tagline}</p>
-        <div class="mt-6 flex items-baseline gap-2">
-          <span class="font-[family-name:var(--font-mono)] text-[40px] font-bold text-[var(--color-fg-primary)]">{fmt(PRICING.pro.priceMonthly)}</span>
-          <span class="text-[14px] text-[var(--color-fg-secondary)]">{t.pricing.per_month}</span>
+        <div class="mt-6 inline-flex self-start items-center rounded-full bg-[var(--color-accent-primary)] text-white text-[11px] font-semibold px-3 py-1 uppercase tracking-wider">
+          {t.pricing.free_trial}
+        </div>
+        <div class="mt-4 flex items-baseline gap-2">
+          <span class="font-[family-name:var(--font-mono)] text-[40px] font-bold text-[var(--color-fg-primary)]">{fmt(PRICING.pro.priceAnnual)}</span>
+          <span class="text-[14px] text-[var(--color-fg-secondary)]">{t.pricing.per_year}</span>
         </div>
         <p class="mt-1 text-[12px] text-[var(--color-fg-secondary)]">
-          or {fmt(PRICING.pro.priceAnnual)}{t.pricing.per_year}
+          {t.pricing.or_monthly_prefix}{fmt(PRICING.pro.priceMonthly)}{t.pricing.per_month}
         </p>
         <ul class="mt-6 space-y-3 flex-1">
           {t.pricing.pro_features.map((f) => (
