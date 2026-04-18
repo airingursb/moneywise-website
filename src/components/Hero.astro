@@ -1,0 +1,64 @@
+---
+import type { Locale } from '../config/site';
+import type { I18nData } from '../content.config';
+import AppStoreBadge from './AppStoreBadge.astro';
+import PhoneMockup from './PhoneMockup.astro';
+
+interface Props {
+  locale: Locale;
+  t: I18nData;
+}
+const { locale, t } = Astro.props;
+const screenshot = `/screenshots/${locale}/01-dashboard.png`;
+---
+
+<section class="mx-auto max-w-6xl px-6 py-20 md:py-28">
+  <div class="grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-12 md:gap-16 items-center">
+    <div>
+      <h1
+        class="font-[family-name:var(--font-display)] font-bold text-[44px] md:text-[68px] leading-[0.98] tracking-[-0.04em] text-[var(--color-fg-primary)]"
+      >
+        {t.hero.headline_part1}{' '}
+        <em
+          class="font-[family-name:var(--font-serif-italic)] not-italic [font-style:italic] font-medium text-[var(--color-accent-primary)]"
+        >
+          {t.hero.headline_italic}
+        </em>
+      </h1>
+      <p class="mt-5 max-w-[460px] text-[17px] leading-[1.55] text-[var(--color-fg-secondary)]">
+        {t.hero.subhead}
+      </p>
+      <div class="mt-7 flex flex-wrap items-center gap-4">
+        <AppStoreBadge
+          variant="dark"
+          label={t.hero.cta_primary}
+          comingSoonLabel={t.hero.coming_soon}
+        />
+        <a
+          href="#features"
+          data-umami-event="hero_secondary_click"
+          class="text-sm font-medium text-[var(--color-fg-primary)] underline decoration-[var(--color-border)] underline-offset-4 hover:decoration-[var(--color-accent-primary)]"
+        >
+          {t.hero.cta_secondary}
+        </a>
+      </div>
+      <div class="mt-8 pt-5 border-t border-[var(--color-border)] flex flex-wrap gap-8">
+        <div>
+          <div class="font-[family-name:var(--font-mono)] text-[22px] font-bold text-[var(--color-fg-primary)]">100%</div>
+          <div class="mt-1 text-[11px] uppercase tracking-[0.1em] text-[var(--color-fg-secondary)]">{t.hero.stat_offline_label}</div>
+        </div>
+        <div>
+          <div class="font-[family-name:var(--font-mono)] text-[22px] font-bold text-[var(--color-fg-primary)]">0</div>
+          <div class="mt-1 text-[11px] uppercase tracking-[0.1em] text-[var(--color-fg-secondary)]">{t.hero.stat_ads_label}</div>
+        </div>
+        <div>
+          <div class="font-[family-name:var(--font-mono)] text-[22px] font-bold text-[var(--color-fg-primary)]">BYOK</div>
+          <div class="mt-1 text-[11px] uppercase tracking-[0.1em] text-[var(--color-fg-secondary)]">{t.hero.stat_byok_label}</div>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center md:justify-end">
+      <PhoneMockup src={screenshot} alt="MoneyWise Dashboard screenshot" class="w-[280px] md:w-[340px]" />
+    </div>
+  </div>
+</section>

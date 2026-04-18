@@ -1,0 +1,26 @@
+---
+interface Props {
+  src: string;
+  alt: string;
+  class?: string;
+}
+const { src, alt, class: className = '' } = Astro.props;
+---
+
+<div class={`relative ${className}`}>
+  <div
+    aria-hidden="true"
+    class="absolute -inset-6 rounded-[48px] bg-[radial-gradient(circle_at_center,_rgba(45,107,63,0.10),_transparent_70%)]"
+  ></div>
+  <div class="relative rounded-[44px] bg-[#111] p-2.5 shadow-[0_40px_80px_rgba(30,51,34,0.25)]">
+    <img
+      src={src}
+      alt={alt}
+      loading="eager"
+      decoding="async"
+      class="block w-full h-auto rounded-[36px]"
+      width="390"
+      height="844"
+    />
+  </div>
+</div>
