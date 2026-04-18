@@ -27,6 +27,23 @@ const { title, description, locale, slug = '' } = Astro.props;
       src={SITE.umamiScriptUrl}
       data-website-id={SITE.umamiWebsiteId}
     ></script>
+    <script is:inline>
+      (function() {
+        function identify() {
+          if (typeof umami === 'undefined' || typeof umami.identify !== 'function') return;
+          var lang = document.documentElement.lang || 'en';
+          var visited = localStorage.getItem('mw_visited');
+          var returning = visited ? 'yes' : 'no';
+          if (!visited) localStorage.setItem('mw_visited', '1');
+          umami.identify({ language: lang, returning: returning });
+        }
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', function () { setTimeout(identify, 500); });
+        } else {
+          setTimeout(identify, 500);
+        }
+      })();
+    </script>
   </head>
   <body class="bg-[var(--color-surface-primary)] text-[var(--color-fg-primary)]">
     <slot />
