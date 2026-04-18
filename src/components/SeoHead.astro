@@ -1,0 +1,45 @@
+---
+import type { Locale } from '../config/site';
+import { SITE } from '../config/site';
+import { alternateLinks } from '../lib/i18n';
+
+interface Props {
+  title: string;
+  description: string;
+  locale: Locale;
+  slug: string;              // '' for home, 'features', 'privacy', etc.
+  ogImage?: string;
+}
+
+const { title, description, locale, slug, ogImage = '/og-image.png' } = Astro.props;
+const canonical = new URL(Astro.url.pathname, SITE.url).href;
+const ogImageUrl = new URL(ogImage, SITE.url).href;
+const alts = alternateLinks(slug);
+---
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+
+{alts.map(({ locale: l, href }) => (
+  <link rel="alternate" hreflang={l} href={new URL(href, SITE.url).href} />
+))}
+<link rel="alternate" hreflang="x-default" href={new URL(alts.find((a) => a.locale === 'en')!.href, SITE.url).href} />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={ogImageUrl} />
+<meta property="og:locale" content={locale.replace('-', '_')} />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImageUrl} />
+
+<link rel="icon" type="image/png" href="/app-icon.png" />
+<link rel="apple-touch-icon" href="/app-icon.png" />
+
+<link rel="preload" href="/fonts/Geist-Regular.ttf" as="font" type="font/ttf" crossorigin />
+<link rel="preload" href="/fonts/Inter-Regular.ttf" as="font" type="font/ttf" crossorigin />
