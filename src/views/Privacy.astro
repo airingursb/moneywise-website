@@ -1,0 +1,42 @@
+---
+import type { Locale } from '../config/site';
+import { getI18n } from '../lib/i18n';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = await getI18n(locale);
+
+const policies = import.meta.glob('../content/legal/privacy-*.md');
+const key = `../content/legal/privacy-${locale}.md`;
+const loader = policies[key] ?? policies['../content/legal/privacy-en.md'];
+const { Content } = await (loader as () => Promise<any>)();
+---
+
+<BaseLayout title={`Privacy Policy · MoneyWise`} description="How MoneyWise handles your data." locale={locale} slug="privacy">
+  <Nav locale={locale} slug="privacy" t={t} />
+  <main class="mx-auto max-w-3xl px-6 py-20 md:py-24">
+    <article class="prose prose-lg max-w-none
+      prose-headings:font-[family-name:var(--font-display)]
+      prose-headings:tracking-[-0.02em]
+      prose-headings:text-[var(--color-fg-primary)]
+      prose-p:text-[var(--color-fg-primary)]
+      prose-p:leading-[1.7]
+      prose-a:text-[var(--color-accent-primary)]
+      prose-strong:text-[var(--color-fg-primary)]
+      prose-table:text-[14px]
+      prose-th:text-left
+      prose-th:border-b
+      prose-th:border-[var(--color-border)]
+      prose-td:border-b
+      prose-td:border-[var(--color-divider)]"
+    >
+      <Content />
+    </article>
+  </main>
+  <Footer locale={locale} slug="privacy" t={t} />
+</BaseLayout>
