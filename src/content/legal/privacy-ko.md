@@ -60,7 +60,7 @@ effective: 2026-04-18
 
 ## 문의
 
-개인정보 관련 요청이나 문의: **bellehou2026@gmail.com**
+개인정보 관련 요청이나 문의: **moflowapp@gmail.com**
 
 ## 변경 사항
 

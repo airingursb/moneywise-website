@@ -11,7 +11,7 @@ These terms govern your use of the MoneyWise iOS app and this website.
 
 ## 1. Who we are
 
-MoneyWise is operated by an individual developer (referred to as "we" or "us" below). Contact: **bellehou2026@gmail.com**.
+MoneyWise is operated by an individual developer (referred to as "we" or "us" below). Contact: **moflowapp@gmail.com**.
 
 ## 2. What MoneyWise is
 
@@ -59,4 +59,4 @@ These terms are governed by the laws of Singapore, without regard to conflict-of
 
 ## 12. Contact
 
-Questions? Reach us at **bellehou2026@gmail.com**.
+Questions? Reach us at **moflowapp@gmail.com**.

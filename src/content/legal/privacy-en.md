@@ -60,7 +60,7 @@ This policy explains what MoneyWise does with your data.
 
 ## Contact
 
-For privacy requests or questions: **bellehou2026@gmail.com**
+For privacy requests or questions: **moflowapp@gmail.com**
 
 ## Changes
 

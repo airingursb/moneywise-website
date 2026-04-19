@@ -11,7 +11,7 @@ effective: 2026-04-18
 
 ## 1. 운영자 정보
 
-MoneyWise는 개인 개발자(이하 "저희")가 운영합니다. 연락처: **bellehou2026@gmail.com**.
+MoneyWise는 개인 개발자(이하 "저희")가 운영합니다. 연락처: **moflowapp@gmail.com**.
 
 ## 2. MoneyWise란
 
@@ -59,4 +59,4 @@ MoneyWise는 어떠한 종류의 보증도 없이 **있는 그대로** 제공됩
 
 ## 12. 문의
 
-문의 사항: **bellehou2026@gmail.com**
+문의 사항: **moflowapp@gmail.com**

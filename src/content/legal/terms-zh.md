@@ -11,7 +11,7 @@ effective: 2026-04-18
 
 ## 1. 关于我们
 
-MoneyWise 由个人开发者运营（以下简称"我们"）。联系方式：**bellehou2026@gmail.com**。
+MoneyWise 由个人开发者运营（以下简称"我们"）。联系方式：**moflowapp@gmail.com**。
 
 ## 2. MoneyWise 是什么
 
@@ -59,4 +59,4 @@ MoneyWise 按**现状**提供，不附带任何形式的保证。使用风险由
 
 ## 12. 联系方式
 
-如有任何问题，请联系：**bellehou2026@gmail.com**。
+如有任何问题，请联系：**moflowapp@gmail.com**。

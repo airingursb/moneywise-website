@@ -60,7 +60,7 @@ effective: 2026-04-18
 
 ## 联系方式
 
-如有隐私相关请求或疑问，请联系：**bellehou2026@gmail.com**
+如有隐私相关请求或疑问，请联系：**moflowapp@gmail.com**
 
 ## 政策变更
 

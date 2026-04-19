@@ -11,7 +11,7 @@ effective: 2026-04-18
 
 ## 1. 私たちについて
 
-MoneyWise は個人の開発者（以下「私たち」）が運営しています。連絡先：**bellehou2026@gmail.com**。
+MoneyWise は個人の開発者（以下「私たち」）が運営しています。連絡先：**moflowapp@gmail.com**。
 
 ## 2. MoneyWise とは
 
@@ -59,4 +59,4 @@ MoneyWise は**現状のまま**提供され、いかなる種類の保証も付
 
 ## 12. お問い合わせ
 
-ご質問は：**bellehou2026@gmail.com** までお問い合わせください。
+ご質問は：**moflowapp@gmail.com** までお問い合わせください。

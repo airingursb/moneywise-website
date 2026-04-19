@@ -10,7 +10,7 @@ export const SITE = {
   appStoreAvailable: false, // flip to true after App Store approval
   umamiScriptUrl: 'https://analytics.ursb.me/script.js',
   umamiWebsiteId: 'fa8052bb-dd85-4287-9c63-da9b2f97fdef',
-  contactEmail: 'bellehou2026@gmail.com',
+  contactEmail: 'moflowapp@gmail.com',
   githubUrl: 'https://github.com/airingursb/moneywise',
   locales: LOCALES,
   defaultLocale: DEFAULT_LOCALE,
