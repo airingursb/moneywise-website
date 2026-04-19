@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "title": "MoneyWise — AI 다중 통화 가계부 앱",
+    "description": "모든 기록, 예산, 인사이트를 기기 안에서 보관하는 개인 가계부 앱. 다중 통화 지원. BYOK AI 어드바이저. 암호화 동기화는 선택 사항."
+  },
+  "nav": {
+    "features": "기능",
+    "privacy": "프라이버시",
+    "pricing": "요금제",
+    "download": "다운로드"
+  },
+  "hero": {
+    "headline_part1": "1원도 놓치지 않게.",
+    "headline_italic": "기본은 오프라인.",
+    "subhead": "기록·예산·투자·AI 인사이트가 모두 휴대폰에 저장됩니다. 클라우드 동기화는 선택, 프라이버시는 기본.",
+    "cta_primary": "App Store에서 다운로드",
+    "cta_secondary": "어떻게 작동하는지 보기",
+    "stat_offline_label": "오프라인 우선",
+    "stat_ads_label": "광고 · 트래커",
+    "stat_byok_label": "AI 키는 기기 내",
+    "coming_soon": "곧 App Store에 출시"
+  },
+  "features": {
+    "eyebrow": "실생활을 위해 만들었습니다",
+    "title": "돈에 관한 모든 것을 한 앱에서.",
+    "items": [
+      { "title": "대시보드", "description": "순자산·트렌드·예정된 청구서를 한눈에 확인." },
+      { "title": "기록", "description": "빠른 입력, 음성 입력, 영수증 사진, 캘린더 보기." },
+      { "title": "계정", "description": "예금·적금·카드·현금을 어떤 통화로든 관리." },
+      { "title": "투자", "description": "실시간 시세, 포트폴리오 배분, 종목별 이력." },
+      { "title": "예산", "description": "카테고리별 월 예산, 페이스 추적과 이체 지원." },
+      { "title": "AI 어드바이저", "description": "본인의 Anthropic 또는 OpenAI 키로 기기 내 인사이트." }
+    ]
+  },
+  "screenshots": {
+    "eyebrow": "실제 화면 보기",
+    "title": "iPhone에 자연스럽게 어울리도록 설계.",
+    "captions": [
+      "대시보드 — 순자산과 일일 동향",
+      "기록 — 빠른 입력, 일자별 그룹",
+      "데일리 브리프 — 매일 아침 한 줄 요약",
+      "예산 — 진행률과 카테고리 내역",
+      "투자 — 포트폴리오와 자산 배분",
+      "보안 — 생체 인증 잠금, 로컬 암호화",
+      "AI 어드바이저 — BYOK 인사이트",
+      "패밀리 — 부부를 위한 공유 워크스페이스",
+      "자산 리포트 — 계정 통합 연간 요약"
+    ]
+  },
+  "privacyFirst": {
+    "eyebrow": "프라이버시는 기능이 아닙니다",
+    "title": "데이터는 휴대폰 안에 머뭅니다.",
+    "subhead": "MoneyWise는 로컬 우선으로 설계되었습니다. 광고도, 트래커도, 데이터 판매도 — 절대 없습니다.",
+    "pillars": [
+      { "title": "오프라인 우선", "description": "모든 기록은 암호화된 로컬 SQLite에 저장됩니다. 비행기 모드에서도 작동합니다." },
+      { "title": "선택형 클라우드 동기화", "description": "켜는 순간만 본인 기기 사이에서 동기화됩니다. 서버에 저장되는 행은 암호화되어 저희도 읽을 수 없습니다." },
+      { "title": "BYOK AI", "description": "본인의 Anthropic 또는 OpenAI 키를 사용하세요. 키는 iOS 키체인에만 저장되며 저희 서버를 거치지 않습니다." }
+    ],
+    "learn_more": "프라이버시 정책 보기 →"
+  },
+  "pricing": {
+    "eyebrow": "요금제",
+    "title": "일상 사용은 무료. 더 필요할 때 Pro로.",
+    "subhead": "체험판 함정도, 다크 패턴도 없습니다. App Store에서 언제든 해지할 수 있습니다.",
+    "free_name": "무료",
+    "free_tagline": "단일 기기에서 필요한 모든 것.",
+    "free_features": [
+      "무제한 기록·계정·예산",
+      "투자 및 포트폴리오 추적",
+      "AI 어드바이저 (본인 키 사용)",
+      "로컬 암호화 저장"
+    ],
+    "pro_name": "Pro",
+    "pro_tagline": "모든 기기에서 동기화·백업·그 이상.",
+    "pro_features": [
+      "무료 버전의 모든 기능",
+      "다중 기기 종단 간 암호화 클라우드 동기화",
+      "자동 클라우드 백업",
+      "영수증과 첨부 사진",
+      "공용 AI 크레딧 (API 키 불필요)"
+    ],
+    "per_month": "/월",
+    "per_year": "/년",
+    "free_trial": "7일 무료 체험",
+    "or_monthly_prefix": "또는 ",
+    "cta_free": "무료로 시작",
+    "cta_pro": "7일 무료 체험 시작"
+  },
+  "downloadCta": {
+    "title": "당신의 돈, 다시 당신의 손에.",
+    "subhead": "다운로드는 무료. Pro 구독은 선택 사항.",
+    "cta": "App Store에서 다운로드",
+    "small_print": "iPhone · iOS 16 이상"
+  },
+  "footer": {
+    "tagline": "싱가포르에서 만든 로컬 우선 가계부.",
+    "links_header": "링크",
+    "copyright": "© 2026 Airing. All rights reserved.",
+    "contact": "문의"
+  },
+  "featuresPage": {
+    "title": "모든 기능을 알기 쉽게.",
+    "subhead": "MoneyWise는 일상 가계 관리부터 진지한 분석까지 모두 다룹니다. 안에 무엇이 들어 있는지 살펴보세요.",
+    "modules": [
+      {
+        "id": "dashboard",
+        "title": "대시보드",
+        "description": "매일 아침 가장 먼저 보게 되는 화면. 총 순자산, 오늘 지출, 예정된 청구서, 계정별 미니 트렌드를 한눈에.",
+        "screenshot": "01-dashboard.png",
+        "bullets": [
+          "전월 대비 변화가 표시되는 순자산",
+          "거래의 캘린더 보기",
+          "기한이 표시된 예정 청구서",
+          "계정별 미니 트렌드 차트"
+        ]
+      },
+      {
+        "id": "records",
+        "title": "기록",
+        "description": "지출·수입·이체를 빠르게 입력. 일자별 그룹화, 사진 첨부, 반복 일정, 보류 중인 항목을 한 번의 탭으로 검토.",
+        "screenshot": "02-records.png",
+        "bullets": [
+          "음성 입력 시 카테고리 자동 감지",
+          "영수증 사진 첨부",
+          "반복 거래 스케줄",
+          "검토 대기열"
+        ]
+      },
+      {
+        "id": "budgets",
+        "title": "예산",
+        "description": "카테고리별 월 예산을 설정. 페이스 인디케이터가 너무 빨리 쓰고 있는지 알려줍니다. 상황이 바뀌면 카테고리 간 이체.",
+        "screenshot": "04-budget.png",
+        "bullets": [
+          "월간·주간·연간 주기 지원",
+          "전월 동기 대비 페이스 표시",
+          "앱 내에서 카테고리 간 이체",
+          "카테고리별 도넛 차트"
+        ]
+      },
+      {
+        "id": "investments",
+        "title": "투자",
+        "description": "주식과 암호화폐의 실시간 가격. 포트폴리오 배분 도넛, 종목별 이력, 보유 자산에 대한 AI 인사이트.",
+        "screenshot": "05-investments.png",
+        "bullets": [
+          "실시간 시세와 일간 변동",
+          "포트폴리오 배분 분석",
+          "종목별 매수/매도 거래 로그",
+          "과거 가격 차트"
+        ]
+      },
+      {
+        "id": "advisor",
+        "title": "AI 어드바이저",
+        "description": "본인의 Anthropic 또는 OpenAI 키를 사용. 어드바이저는 (로컬) 데이터를 읽고 답변합니다 — 요청하지 않는 한 어떤 데이터도 기기를 떠나지 않습니다.",
+        "screenshot": "07-advisor.png",
+        "bullets": [
+          "Anthropic Claude 또는 OpenAI 지원",
+          "키는 iOS 키체인에 저장",
+          "월간 지출 분석",
+          "포트폴리오 리밸런싱 제안"
+        ]
+      },
+      {
+        "id": "security",
+        "title": "보안",
+        "description": "Face ID / Touch ID 잠금. 모든 데이터는 저장 시 암호화. 선택형 클라우드 동기화는 종단 간 암호화된 행을 사용해 — 저희도 읽을 수 없습니다.",
+        "screenshot": "06-security.png",
+        "bullets": [
+          "생체 인증 앱 잠금",
+          "로컬 SQLite 암호화",
+          "종단 간 암호화 클라우드 동기화",
+          "타사 분석·광고 없음"
+        ]
+      }
+    ]
+  }
+}

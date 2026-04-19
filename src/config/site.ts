@@ -1,4 +1,4 @@
-export const LOCALES = ['en', 'zh', 'zh-Hant', 'ja'] as const;
+export const LOCALES = ['en', 'zh', 'zh-Hant', 'ja', 'ko'] as const;
 export type Locale = typeof LOCALES[number];
 export const DEFAULT_LOCALE: Locale = 'en';
 
@@ -21,6 +21,7 @@ export const LOCALE_LABELS: Record<Locale, string> = {
   'zh': '简体中文',
   'zh-Hant': '繁體中文',
   'ja': '日本語',
+  'ko': '한국어',
 };
 
 export const PRICING = {
