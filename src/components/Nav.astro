@@ -16,17 +16,41 @@ const { locale, slug, t } = Astro.props;
 <header
   class="sticky top-0 z-40 backdrop-blur-md bg-white/85 border-b border-[var(--color-border)]"
 >
-  <nav class="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
+  <nav class="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between gap-4">
     <a href={pathFor(locale)} class="flex items-center gap-2">
       <img src="/app-icon.png" alt="" width="28" height="28" class="rounded-[7px]" />
       <span class="text-[17px] font-bold tracking-tight">MoneyWise</span>
     </a>
-    <div class="flex items-center gap-6 text-[13px]">
+
+    <div class="hidden md:flex items-center gap-6 text-[13px] whitespace-nowrap">
       <a href={pathFor(locale, 'features')} class="hover:text-[var(--color-accent-primary)] transition">{t.nav.features}</a>
       <a href={pathFor(locale, 'privacy')} class="hover:text-[var(--color-accent-primary)] transition">{t.nav.privacy}</a>
       <a href={`${pathFor(locale)}#pricing`} class="hover:text-[var(--color-accent-primary)] transition">{t.nav.pricing}</a>
       <a href={`${pathFor(locale)}#download`} class="text-[var(--color-accent-primary)] font-semibold hover:underline">{t.nav.download}</a>
       <LocaleSwitcher current={locale} slug={slug} />
     </div>
+
+    <details class="md:hidden relative">
+      <summary
+        class="list-none cursor-pointer -mr-2 p-2 inline-flex items-center justify-center text-[var(--color-fg-primary)] hover:text-[var(--color-accent-primary)] transition"
+        aria-label="Menu"
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <line x1="4" y1="7" x2="20" y2="7" />
+          <line x1="4" y1="12" x2="20" y2="12" />
+          <line x1="4" y1="17" x2="20" y2="17" />
+        </svg>
+      </summary>
+      <div class="absolute right-0 top-full mt-2 min-w-[220px] rounded-xl border border-[var(--color-border)] bg-white shadow-lg py-2 z-50 whitespace-nowrap">
+        <a href={pathFor(locale, 'features')} class="block px-4 py-2.5 text-sm text-[var(--color-fg-primary)] hover:bg-[var(--color-surface-secondary)] transition">{t.nav.features}</a>
+        <a href={pathFor(locale, 'privacy')} class="block px-4 py-2.5 text-sm text-[var(--color-fg-primary)] hover:bg-[var(--color-surface-secondary)] transition">{t.nav.privacy}</a>
+        <a href={`${pathFor(locale)}#pricing`} class="block px-4 py-2.5 text-sm text-[var(--color-fg-primary)] hover:bg-[var(--color-surface-secondary)] transition">{t.nav.pricing}</a>
+        <a href={`${pathFor(locale)}#download`} class="block px-4 py-2.5 text-sm text-[var(--color-accent-primary)] font-semibold hover:bg-[var(--color-surface-secondary)] transition">{t.nav.download}</a>
+        <div class="my-1 border-t border-[var(--color-divider)]"></div>
+        <div class="px-4 py-2">
+          <LocaleSwitcher current={locale} slug={slug} />
+        </div>
+      </div>
+    </details>
   </nav>
 </header>
