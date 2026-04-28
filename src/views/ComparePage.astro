@@ -1,0 +1,52 @@
+---
+import type { Locale } from '../config/site';
+import { getI18n } from '../lib/i18n';
+import { getCompetitor, getSelf, getAllCompetitors, getCompareI18n, getCompetitorCopy, compareSlug, interpolate } from '../lib/compare';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import PrivacyFirst from '../components/PrivacyFirst.astro';
+import Pricing from '../components/Pricing.astro';
+import DownloadCta from '../components/DownloadCta.astro';
+import Footer from '../components/Footer.astro';
+import CompareHero from '../components/compare/CompareHero.astro';
+import CompareTable from '../components/compare/CompareTable.astro';
+import CompareAdvantages from '../components/compare/CompareAdvantages.astro';
+import CompareAiDeepDive from '../components/compare/CompareAiDeepDive.astro';
+import CompareWhenToChoose from '../components/compare/CompareWhenToChoose.astro';
+import CompareFaq from '../components/compare/CompareFaq.astro';
+import CompareSeeAlso from '../components/compare/CompareSeeAlso.astro';
+
+interface Props {
+  locale: Locale;
+  competitorSlug: string;
+}
+const { locale, competitorSlug } = Astro.props;
+
+const [t, c, self, competitor, all] = await Promise.all([
+  getI18n(locale),
+  getCompareI18n(locale),
+  getSelf(),
+  getCompetitor(competitorSlug),
+  getAllCompetitors(),
+]);
+const copy = getCompetitorCopy(c, competitorSlug);
+const slug = compareSlug(competitorSlug);
+const title = interpolate(c.common.meta.title_template, { competitor: competitor.displayName });
+const description = interpolate(c.common.meta.description_template, { competitor: competitor.displayName });
+---
+<BaseLayout title={title} description={description} locale={locale} slug={slug}>
+  <Nav locale={locale} slug={slug} t={t} />
+  <main>
+    <CompareHero self={self} competitor={competitor} c={c} copy={copy} />
+    <CompareTable self={self} competitor={competitor} c={c} />
+    <CompareAdvantages c={c} />
+    <CompareAiDeepDive c={c} />
+    <PrivacyFirst locale={locale} t={t} />
+    <CompareWhenToChoose self={self} competitor={competitor} c={c} copy={copy} />
+    <Pricing t={t} />
+    <DownloadCta t={t} />
+    <CompareFaq c={c} copy={copy} />
+    <CompareSeeAlso current={competitor} all={all} c={c} locale={locale} />
+  </main>
+  <Footer locale={locale} slug={slug} t={t} />
+</BaseLayout>
