@@ -737,6 +737,38 @@
           "a": "はい — 1MoneyはiOSとAndroid両方に対応しています。MoneyWiseは現在iOS専用で、Androidは将来のリリースで予定されています。"
         }
       ]
+    },
+    "moneycoach": {
+      "one_liner": "欧州銀行同期対応のAIコーチ搭載iOSバジェットアプリ",
+      "positioning": "MoneyCoachはギリシャの開発チームによる洗練されたiOSおよびmacOSバジェットアプリで、内蔵AIコーチ、2,800以上の欧州銀行との連携、投資追跡、Apple WatchやApple Vision Proを含む深いAppleエコシステム統合が特徴です。MoneyWiseとの主な違いはAIの実装方法です：MoneyCoachのAIはサーバーサイドの内蔵サービスであり、データがそのサーバーに送られます。一方MoneyWiseのBYOK AIはあなた自身のAnthropicまたはOpenAIキーを使用し、取引データがAI分析のために端末を離れることはありません。MoneyWiseはオフラインファーストのアーキテクチャを採用しており、MoneyCoachの銀行同期はクラウド接続が必要です。",
+      "when_choose_competitor": "欧州の銀行口座への自動同期が必要な方、今すぐネイティブmacOSアプリが使いたい方、またはAPIキーを設定せずにそのまま使える内蔵AIコーチを好む方にMoneyCoachはおすすめです。",
+      "when_choose_moneywise": "データをトラッカーなしでローカルに保存したい方、自分のAPIキーでAIを制御したい（BYOK）方、MoneyCoachの銀行同期が対応していない地域の銀行をお使いの方、または真のオフラインファースト動作が必要な方にはMoneyWiseが適しています。",
+      "faq": [
+        {
+          "q": "MoneyCoachのAIとMoneyWiseのAIはどう違いますか？",
+          "a": "MoneyCoachには内蔵AIコーチがあり、データをそのサーバーで処理します——便利ですが、取引データがサードパーティに送られます。MoneyWiseはBYOK AIを採用しており、自分のAnthropicまたはOpenAIキーを接続し、AIは共有したものだけを処理し、MoneyWiseのサーバーには何も保存されません。"
+        },
+        {
+          "q": "MoneyCoachとMoneyWiseの料金を比較するとどうですか？",
+          "a": "MoneyCoachのPremiumは$4.99/月または$39.99/年で、制限付きの無料プランもあります。MoneyWiseは1台無料、Proプランは$6.99/月または$49.99/年でマルチデバイス同期・バックアップ・BYOK AIが含まれます。"
+        },
+        {
+          "q": "MoneyCoachはmacOSに対応していますか？",
+          "a": "はい — MoneyCoachにはネイティブmacOSアプリ（macOS 14 Sonoma以降が必要）があり、Apple WatchとApple Vision Proもサポートしています。MoneyWiseは現在iOS専用で、macOS対応はロードマップに含まれています。"
+        },
+        {
+          "q": "MoneyCoachは自動銀行同期に対応していますか？",
+          "a": "はい — MoneyCoachは2,800以上の欧州の銀行口座に接続できます。MoneyWiseは現在手動入力で、銀行同期はロードマップに含まれています。自動化をあきらめる代わりに、より強力なプライバシー保護が得られ、サードパーティのデータブローカーがあなたの口座にアクセスすることがありません。"
+        },
+        {
+          "q": "MoneyCoachは多通貨に対応していますか？",
+          "a": "はい — MoneyCoachはリアルタイム換算に対応した多通貨サポートを提供しています。MoneyWiseも毎日更新の為替レートを含む多通貨サポートを提供しています。"
+        },
+        {
+          "q": "MoneyCoachのデータはどこに保存されますか？",
+          "a": "MoneyCoachはiCloud経由でデータを同期し、銀行連携とAI機能にはサードパーティのサービスを使用するため、一部のデータが外部サーバーを経由します。MoneyWiseはすべてのデータを端末上の暗号化データベースに保存し、クラウド同期はオプションでエンドツーエンド暗号化されています。"
+        }
+      ]
     }
   }
 }

@@ -737,6 +737,38 @@
           "a": "支援——1Money 同時提供 iOS 和 Android 版本。MoneyWise 目前僅支援 iOS，Android 版本在未來規劃中。"
         }
       ]
+    },
+    "moneycoach": {
+      "one_liner": "內建 AI 財務顧問的 iOS 預算應用程式，支援歐洲銀行同步",
+      "positioning": "MoneyCoach 是由希臘開發團隊打造的精緻 iOS 和 macOS 預算應用程式，擁有內建 AI Coach、歐洲銀行連接（超過 2800 家機構）、投資追蹤和深度 Apple 生態整合（包括 Apple Watch 和 Apple Vision Pro）。與 MoneyWise 的核心區別在於 AI 實作方式：MoneyCoach 的 AI 是內建服務，會將你的資料傳送到其伺服器；MoneyWise 的 BYOK AI 使用你自己的 Anthropic 或 OpenAI 金鑰，交易資料不會離開你的裝置用於 AI 分析。MoneyWise 同時採用本地優先架構，MoneyCoach 的銀行同步則依賴雲端連線。",
+      "when_choose_competitor": "如果你需要與歐洲銀行帳戶自動同步、現在就想要原生 macOS 應用程式，或偏好無需設定 API 金鑰即可使用的內建 AI Coach，MoneyCoach 是優秀的選擇。",
+      "when_choose_moneywise": "如果你希望資料本地儲存且無追蹤器、偏好用自己的 API 金鑰控制 AI（BYOK）、你的銀行在 MoneyCoach 的歐洲覆蓋範圍之外，或需要真正的本地優先離線操作，MoneyWise 更適合你。",
+      "faq": [
+        {
+          "q": "MoneyCoach 的 AI 和 MoneyWise 的 AI 有什麼不同？",
+          "a": "MoneyCoach 有內建的 AI Coach，資料在其伺服器上處理——使用方便，但你的交易資料會傳送給第三方。MoneyWise 採用 BYOK AI：接入自己的 Anthropic 或 OpenAI 金鑰，AI 只處理你主動分享的內容，資料不儲存在 MoneyWise 伺服器上。"
+        },
+        {
+          "q": "MoneyCoach 和 MoneyWise 的價格如何比較？",
+          "a": "MoneyCoach Premium 為 $4.99/月 或 $39.99/年，有限制性免費版。MoneyWise 單裝置免費，Pro 版為 $6.99/月 或 $49.99/年，包含多裝置同步、備份和 BYOK AI。"
+        },
+        {
+          "q": "MoneyCoach 支援 macOS 嗎？",
+          "a": "支援——MoneyCoach 有原生 macOS 應用程式（需要 macOS 14 Sonoma 或更高版本），同時支援 Apple Watch 和 Apple Vision Pro。MoneyWise 目前僅支援 iOS，macOS 版本在規劃中。"
+        },
+        {
+          "q": "MoneyCoach 支援自動銀行同步嗎？",
+          "a": "支援——MoneyCoach 可連接超過 2800 家歐洲銀行機構。MoneyWise 目前為手動記帳，銀行同步在路線圖中；這種取捨換來了更強的隱私保護，無需授權第三方資料仲介存取你的帳戶。"
+        },
+        {
+          "q": "MoneyCoach 支援多幣種嗎？",
+          "a": "支援——MoneyCoach 提供多幣種支援和即時匯率換算。MoneyWise 同樣支援多幣種和每日匯率。"
+        },
+        {
+          "q": "MoneyCoach 將資料儲存在哪裡？",
+          "a": "MoneyCoach 透過 iCloud 同步資料，並為銀行連接和 AI 功能使用第三方服務，部分資料會經過外部伺服器。MoneyWise 將所有資料儲存在裝置上的加密資料庫中，雲端同步是可選的且端對端加密。"
+        }
+      ]
     }
   }
 }

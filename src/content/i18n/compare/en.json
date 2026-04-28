@@ -737,6 +737,38 @@
           "a": "Yes — 1Money is available on both iOS and Android. MoneyWise is currently iOS-only, with Android support planned for a future release."
         }
       ]
+    },
+    "moneycoach": {
+      "one_liner": "an AI-powered iOS budgeting app with European bank sync",
+      "positioning": "MoneyCoach is a polished iOS and macOS budgeting app from a Greek developer team, with a built-in AI Coach, European bank connections (2,800+ institutions), investment tracking, and deep Apple ecosystem integration including Apple Watch and Apple Vision Pro. The key distinction from MoneyWise: MoneyCoach's AI is built-in and sends your data to their servers, while MoneyWise's BYOK AI uses your own Anthropic or OpenAI key — your transactions never leave your device for AI analysis. MoneyWise is also offline-first; MoneyCoach requires cloud connectivity for bank sync.",
+      "when_choose_competitor": "You want automatic bank sync with European bank accounts, you value a native macOS app today, or you prefer a built-in AI Coach that works without configuring your own API key.",
+      "when_choose_moneywise": "You want your data stored locally with no trackers, you prefer to control your AI with your own API key (BYOK), you are outside Europe where MoneyCoach's bank sync may not cover your banks, or you want true offline-first operation.",
+      "faq": [
+        {
+          "q": "How is MoneyCoach's AI different from MoneyWise's AI?",
+          "a": "MoneyCoach has a built-in AI Coach that processes your data on their servers — convenient, but your transactions are sent to a third-party. MoneyWise uses BYOK AI: you plug in your own Anthropic or OpenAI key, so the AI runs with only what you choose to share and nothing is stored on MoneyWise's servers."
+        },
+        {
+          "q": "How does MoneyCoach pricing compare to MoneyWise?",
+          "a": "MoneyCoach Premium is $4.99/mo or $39.99/yr with a limited free tier. MoneyWise is free on a single device; Pro is $6.99/mo or $49.99/yr with multi-device sync, backup, and BYOK AI."
+        },
+        {
+          "q": "Does MoneyCoach work on macOS?",
+          "a": "Yes — MoneyCoach has a native macOS app (macOS 14 Sonoma or later), as well as Apple Watch and Apple Vision Pro support. MoneyWise is currently iOS-only, with macOS support planned."
+        },
+        {
+          "q": "Does MoneyCoach support automatic bank sync?",
+          "a": "Yes — MoneyCoach connects to 2,800+ European bank accounts. MoneyWise is manual-entry today with bank sync on the roadmap, which trades automation for stronger privacy: no third-party data broker access."
+        },
+        {
+          "q": "Does MoneyCoach support multiple currencies?",
+          "a": "Yes — MoneyCoach offers multi-currency support with real-time conversion. MoneyWise also supports multiple currencies with daily exchange rates built in."
+        },
+        {
+          "q": "Where does MoneyCoach store my data?",
+          "a": "MoneyCoach syncs data to iCloud and uses third-party services for bank connections and AI features, meaning some data passes through external servers. MoneyWise stores everything in an encrypted database on your device; cloud sync is optional and end-to-end encrypted."
+        }
+      ]
     }
   }
 }

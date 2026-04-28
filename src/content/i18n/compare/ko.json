@@ -737,6 +737,38 @@
           "a": "네 — 1Money는 iOS와 Android 모두에서 사용할 수 있습니다. MoneyWise는 현재 iOS 전용이며 Android는 향후 릴리스에서 지원 예정입니다."
         }
       ]
+    },
+    "moneycoach": {
+      "one_liner": "유럽 은행 동기화를 지원하는 AI 코치 내장 iOS 예산 앱",
+      "positioning": "MoneyCoach는 그리스 개발팀이 만든 세련된 iOS 및 macOS 예산 앱으로, 내장 AI 코치, 2,800개 이상의 유럽 은행 연결, 투자 추적, Apple Watch와 Apple Vision Pro를 포함한 깊은 Apple 생태계 통합이 특징입니다. MoneyWise와의 핵심 차이점은 AI 구현 방식입니다: MoneyCoach의 AI는 서버 측 내장 서비스로 데이터가 그들의 서버로 전송되지만, MoneyWise의 BYOK AI는 귀하 자신의 Anthropic 또는 OpenAI 키를 사용하므로 거래 데이터가 AI 분석을 위해 기기를 떠나지 않습니다. MoneyWise는 오프라인 우선 아키텍처를 채택하고 있으며, MoneyCoach의 은행 동기화는 클라우드 연결이 필요합니다.",
+      "when_choose_competitor": "유럽 은행 계좌 자동 동기화가 필요하거나, 지금 당장 네이티브 macOS 앱이 필요하거나, API 키 설정 없이 바로 사용할 수 있는 내장 AI 코치를 선호한다면 MoneyCoach가 훌륭한 선택입니다.",
+      "when_choose_moneywise": "트래커 없이 로컬에 데이터를 저장하고 싶거나, 자신의 API 키로 AI를 제어하고 싶거나(BYOK), MoneyCoach의 유럽 은행 동기화 범위 밖에 있는 은행을 사용하거나, 진정한 오프라인 우선 작동이 필요하다면 MoneyWise가 더 적합합니다.",
+      "faq": [
+        {
+          "q": "MoneyCoach의 AI와 MoneyWise의 AI는 어떻게 다른가요?",
+          "a": "MoneyCoach에는 내장 AI 코치가 있어 데이터를 그들의 서버에서 처리합니다——편리하지만 거래 데이터가 서드파티로 전송됩니다. MoneyWise는 BYOK AI를 사용합니다: 자신의 Anthropic 또는 OpenAI 키를 연결하면 AI는 공유한 것만 처리하고 MoneyWise 서버에는 아무것도 저장되지 않습니다."
+        },
+        {
+          "q": "MoneyCoach와 MoneyWise의 가격을 비교하면 어떤가요?",
+          "a": "MoneyCoach Premium은 $4.99/월 또는 $39.99/년이며 제한적인 무료 플랜도 있습니다. MoneyWise는 단일 기기에서 무료이며 Pro 플랜은 $6.99/월 또는 $49.99/년으로 멀티 디바이스 동기화·백업·BYOK AI가 포함됩니다."
+        },
+        {
+          "q": "MoneyCoach는 macOS를 지원하나요?",
+          "a": "네 — MoneyCoach에는 네이티브 macOS 앱(macOS 14 Sonoma 이상 필요)이 있으며 Apple Watch와 Apple Vision Pro도 지원합니다. MoneyWise는 현재 iOS 전용이며 macOS 지원은 계획 중입니다."
+        },
+        {
+          "q": "MoneyCoach는 자동 은행 동기화를 지원하나요?",
+          "a": "네 — MoneyCoach는 2,800개 이상의 유럽 은행 계좌에 연결할 수 있습니다. MoneyWise는 현재 수동 입력이며 은행 동기화는 로드맵에 있습니다. 자동화를 포기하는 대신 더 강력한 개인정보 보호를 얻을 수 있어 서드파티 데이터 브로커가 귀하의 계좌에 접근하지 않습니다."
+        },
+        {
+          "q": "MoneyCoach는 다중 통화를 지원하나요?",
+          "a": "네 — MoneyCoach는 실시간 변환이 포함된 다중 통화 지원을 제공합니다. MoneyWise도 일별 환율이 내장된 다중 통화 지원을 제공합니다."
+        },
+        {
+          "q": "MoneyCoach는 데이터를 어디에 저장하나요?",
+          "a": "MoneyCoach는 iCloud를 통해 데이터를 동기화하고 은행 연결 및 AI 기능에 서드파티 서비스를 사용하므로 일부 데이터가 외부 서버를 거칩니다. MoneyWise는 모든 데이터를 기기의 암호화된 데이터베이스에 저장하고, 클라우드 동기화는 선택 사항으로 종단간 암호화됩니다."
+        }
+      ]
     }
   }
 }
