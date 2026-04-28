@@ -1,0 +1,44 @@
+{
+  "slug": "yimu",
+  "displayName": "一木记账",
+  "fullName": "一木记账",
+  "websiteUrl": "https://apps.apple.com/cn/app/id1440311386",
+  "hideFromIndex": false,
+  "region": "chinese",
+  "pricing": {
+    "model": "freemium",
+    "monthly": 1.70,
+    "annual": 13.70,
+    "notes": "VIP 约 ¥12/月 或 ¥98/年"
+  },
+  "platforms": {
+    "ios": true,
+    "android": true,
+    "web": false,
+    "macos": false,
+    "windows": false,
+    "linux": false
+  },
+  "features": {
+    "multiCurrency": false,
+    "offlineFirst": false,
+    "localEncryption": false,
+    "optionalCloudSync": true,
+    "byokAi": false,
+    "builtinAi": false,
+    "investments": false,
+    "budgets": true,
+    "receiptPhotos": true,
+    "voiceInput": false,
+    "bankSync": false,
+    "familySharing": false,
+    "noAds": false,
+    "noTrackers": false,
+    "openSource": false
+  },
+  "sources": [
+    { "label": "App Store listing", "url": "https://apps.apple.com/cn/app/id1440311386" }
+  ],
+  "lastVerified": "2026-04-27",
+  "verificationConfidence": "medium"
+}

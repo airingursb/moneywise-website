@@ -481,6 +481,38 @@
           "a": "MoneyKeeper has limited public documentation. The data shown here is based on App Store listings and is marked low confidence. If you find inaccuracies, please let us know."
         }
       ]
+    },
+    "yimu": {
+      "one_liner": "a cute illustrated expense tracker popular with younger Chinese users",
+      "positioning": "一木记账 stands out for its sticker-style illustrations and friendly, approachable design — popular among younger Chinese users who want expense tracking to feel less like a chore. It offers budgets, receipt photos, and optional cloud sync. MoneyWise complements with local-first privacy, multi-currency support, and BYOK AI.",
+      "when_choose_competitor": "You want a visually charming, approachable expense tracker with a light-hearted aesthetic, mainly use CNY, and prefer an affordable VIP subscription at around ¥12/month or ¥98/year.",
+      "when_choose_moneywise": "You need multi-currency accounts, want your data stored privately on-device in an encrypted database, want an AI advisor powered by your own API key, or need a web interface alongside your mobile app.",
+      "faq": [
+        {
+          "q": "What makes 一木记账 different from other Chinese expense trackers?",
+          "a": "一木记账 is known for its illustrated sticker style and approachable design, which appeals to younger users who find traditional finance apps intimidating. MoneyWise offers a clean, professional interface focused on privacy and multi-currency tracking."
+        },
+        {
+          "q": "How does 一木记账 pricing compare to MoneyWise?",
+          "a": "一木记账 VIP is approximately ¥12/month or ¥98/year (about $1.70/mo or $13.70/yr). MoneyWise is free on a single device; Pro is $6.99/mo or $49.99/yr with multi-device sync, backup, and BYOK AI."
+        },
+        {
+          "q": "Does 一木记账 support multiple currencies?",
+          "a": "No — 一木记账 is designed for CNY and does not offer multi-currency account tracking. MoneyWise supports accounts in any currency with daily exchange rates built in."
+        },
+        {
+          "q": "Does 一木记账 store data locally or in the cloud?",
+          "a": "一木记账 offers optional cloud sync. MoneyWise stores all data in an encrypted database on your device; cloud sync is optional and end-to-end encrypted in Pro."
+        },
+        {
+          "q": "Does 一木记账 have AI features?",
+          "a": "一木记账 does not offer an AI advisor. MoneyWise Pro includes a BYOK AI advisor — you connect your own Anthropic or OpenAI key for private financial insights."
+        },
+        {
+          "q": "Is 一木记账 available outside China?",
+          "a": "一木记账 can be downloaded internationally on iOS and Android, but is designed for the Chinese market and CNY. MoneyWise is designed for a global audience with full multi-currency support."
+        }
+      ]
     }
   }
 }
