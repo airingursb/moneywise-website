@@ -1,0 +1,45 @@
+{
+  "slug": "shayu",
+  "displayName": "鲨鱼记账",
+  "fullName": "鲨鱼记账",
+  "websiteUrl": "https://www.shayuapp.com",
+  "hideFromIndex": false,
+  "region": "chinese",
+  "pricing": {
+    "model": "freemium",
+    "monthly": null,
+    "annual": 3.50,
+    "notes": "VIP 约 ¥25/年（≈ $3.50/yr）"
+  },
+  "platforms": {
+    "ios": true,
+    "android": true,
+    "web": false,
+    "macos": false,
+    "windows": false,
+    "linux": false
+  },
+  "features": {
+    "multiCurrency": false,
+    "offlineFirst": false,
+    "localEncryption": false,
+    "optionalCloudSync": false,
+    "byokAi": false,
+    "builtinAi": false,
+    "investments": false,
+    "budgets": true,
+    "receiptPhotos": true,
+    "voiceInput": false,
+    "bankSync": false,
+    "familySharing": false,
+    "noAds": false,
+    "noTrackers": false,
+    "openSource": false
+  },
+  "sources": [
+    { "label": "鲨鱼记账官网", "url": "https://www.shayuapp.com" },
+    { "label": "App Store listing", "url": "https://apps.apple.com/cn/app/id1437704254" }
+  ],
+  "lastVerified": "2026-04-27",
+  "verificationConfidence": "medium"
+}

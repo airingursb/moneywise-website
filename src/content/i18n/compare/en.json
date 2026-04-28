@@ -385,6 +385,38 @@
           "a": "Yes — 随手记 supports voice input for quick expense logging. MoneyWise focuses on receipt-photo capture and manual entry for a privacy-first workflow."
         }
       ]
+    },
+    "shayu": {
+      "one_liner": "a lightweight, design-forward expense tracker for the Chinese market",
+      "positioning": "鲨鱼记账 is a clean, minimalist expense tracker popular in China for its attractive design and simple user experience. It focuses on daily expense logging with budgets and receipt photos. MoneyWise offers broader platform reach, multi-currency support, local-first privacy, and BYOK AI.",
+      "when_choose_competitor": "You want an extremely simple, visually clean expense tracker for everyday CNY spending, and you prefer a very low-cost annual VIP option (about ¥25/yr) on iOS or Android.",
+      "when_choose_moneywise": "You handle multiple currencies, want your financial data stored locally in an encrypted database, need more than basic budgeting and receipt capture, or want an AI advisor powered by your own API key.",
+      "faq": [
+        {
+          "q": "Is 鲨鱼记账 available outside China?",
+          "a": "鲨鱼记账 can be downloaded internationally on iOS and Android, but the app is designed for the Chinese market and CNY. MoneyWise is designed for a global audience with full multi-currency support."
+        },
+        {
+          "q": "How does 鲨鱼记账 pricing compare to MoneyWise?",
+          "a": "鲨鱼记账 VIP is approximately ¥25/year (about $3.50/yr) — one of the cheapest upgrade options available. MoneyWise is free on a single device; Pro is $6.99/mo or $49.99/yr and includes sync, backup, and AI."
+        },
+        {
+          "q": "Does 鲨鱼记账 have bank sync?",
+          "a": "No — 鲨鱼记账 is a manual-entry app. MoneyWise is also manual-entry focused, which keeps both apps private by default, though MoneyWise adds local encrypted storage."
+        },
+        {
+          "q": "Does 鲨鱼记账 support multiple currencies?",
+          "a": "鲨鱼记账 is designed for CNY and does not support multi-currency account tracking. MoneyWise supports accounts in any currency with daily exchange rates."
+        },
+        {
+          "q": "Does 鲨鱼记账 have AI features?",
+          "a": "No AI advisor is available in 鲨鱼记账. MoneyWise Pro includes a BYOK AI advisor using your own Anthropic or OpenAI key for private financial insights."
+        },
+        {
+          "q": "Is there a web version of 鲨鱼记账?",
+          "a": "鲨鱼记账 is mobile-only (iOS and Android). MoneyWise additionally offers a web interface alongside its mobile apps."
+        }
+      ]
     }
   }
 }
