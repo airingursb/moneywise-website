@@ -27,6 +27,13 @@ const { title, description, locale, slug = '' } = Astro.props;
       src={SITE.umamiScriptUrl}
       data-website-id={SITE.umamiWebsiteId}
     ></script>
+    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${SITE.gaMeasurementId}`}></script>
+    <script is:inline define:vars={{ gaId: SITE.gaMeasurementId }}>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', gaId);
+    </script>
     <script is:inline>
       (function() {
         function identify() {
