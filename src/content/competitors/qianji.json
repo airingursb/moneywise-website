@@ -1,0 +1,45 @@
+{
+  "slug": "qianji",
+  "displayName": "钱迹",
+  "fullName": "钱迹 (Qianji)",
+  "websiteUrl": "https://www.qianjiapp.com",
+  "hideFromIndex": false,
+  "region": "chinese",
+  "pricing": {
+    "model": "freemium",
+    "monthly": null,
+    "annual": null,
+    "notes": "免费 + 一次性内购解锁专业版"
+  },
+  "platforms": {
+    "ios": true,
+    "android": true,
+    "web": false,
+    "macos": false,
+    "windows": false,
+    "linux": false
+  },
+  "features": {
+    "multiCurrency": false,
+    "offlineFirst": true,
+    "localEncryption": false,
+    "optionalCloudSync": true,
+    "byokAi": false,
+    "builtinAi": false,
+    "investments": false,
+    "budgets": true,
+    "receiptPhotos": true,
+    "voiceInput": false,
+    "bankSync": false,
+    "familySharing": false,
+    "noAds": true,
+    "noTrackers": true,
+    "openSource": false
+  },
+  "sources": [
+    { "label": "钱迹官网", "url": "https://www.qianjiapp.com" },
+    { "label": "App Store listing", "url": "https://apps.apple.com/cn/app/id1465713008" }
+  ],
+  "lastVerified": "2026-04-27",
+  "verificationConfidence": "medium"
+}

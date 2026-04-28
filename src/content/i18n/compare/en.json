@@ -417,6 +417,38 @@
           "a": "鲨鱼记账 is mobile-only (iOS and Android). MoneyWise additionally offers a web interface alongside its mobile apps."
         }
       ]
+    },
+    "qianji": {
+      "one_liner": "a privacy-conscious, offline-first Chinese expense tracker",
+      "positioning": "钱迹 (Qianji) is a privacy-focused Chinese expense tracker that explicitly markets 'won't upload your data' (不会上传你的数据). It stores records locally by default, supports WebDAV for optional self-hosted sync, and has no ads or trackers — values it shares with MoneyWise. Where MoneyWise goes further: BYOK AI, multi-currency, and cross-platform reach beyond iOS/Android.",
+      "when_choose_competitor": "If you want a fully offline, local-storage-focused Chinese expense tracker with a one-time purchase model and no subscription, 钱迹 is an excellent choice. 如果你想要一个完全离线、专注于本地存储的中文记账工具，钱迹是非常好的选择。",
+      "when_choose_moneywise": "You need multi-currency support for international accounts, want an AI advisor powered by your own API key, need a web interface beyond mobile, or you are outside China and want an app designed for a global audience.",
+      "faq": [
+        {
+          "q": "Do 钱迹 and MoneyWise share the same privacy philosophy?",
+          "a": "Yes — both apps are built on the principle that your financial data should stay on your device. 钱迹 explicitly says it won't upload your data. MoneyWise stores everything in an encrypted SQLite database on-device; cloud sync is optional and end-to-end encrypted. This makes 钱迹 MoneyWise's closest sibling in the Chinese-app space."
+        },
+        {
+          "q": "How does 钱迹's cloud sync work compared to MoneyWise?",
+          "a": "钱迹 supports WebDAV-based sync — you can use your own cloud storage (e.g., Nextcloud) to sync data. MoneyWise Pro uses end-to-end encrypted cloud sync managed by MoneyWise, without requiring you to set up your own server."
+        },
+        {
+          "q": "Does 钱迹 support multiple currencies?",
+          "a": "No — 钱迹 is designed for CNY and does not support multi-currency account tracking. MoneyWise supports accounts in any currency with daily exchange rates, making it better suited for international users or frequent travelers."
+        },
+        {
+          "q": "Does 钱迹 have AI features?",
+          "a": "钱迹 does not offer an AI advisor. MoneyWise Pro includes BYOK AI — you plug in your own Anthropic or OpenAI key, so your transactions are analyzed privately without being sent to a third-party AI vendor."
+        },
+        {
+          "q": "How does 钱迹 pricing compare to MoneyWise?",
+          "a": "钱迹 uses a one-time in-app purchase to unlock the Pro version — no recurring subscription. MoneyWise is free on a single device; Pro is $6.99/mo or $49.99/yr with sync, backup, and AI. If you prefer to avoid subscriptions entirely, 钱迹's one-time model is appealing."
+        },
+        {
+          "q": "Is 钱迹 available on web or desktop?",
+          "a": "钱迹 is mobile-only (iOS and Android). MoneyWise also supports a web interface, which is useful when you are at a computer and want to review your finances."
+        }
+      ]
     }
   }
 }
