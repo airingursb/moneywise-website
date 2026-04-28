@@ -1,0 +1,29 @@
+---
+import type { CompareI18nData } from '../../content.config';
+
+interface Props {
+  c: CompareI18nData;
+}
+const { c } = Astro.props;
+---
+<section class="py-20 md:py-24">
+  <div class="mx-auto max-w-4xl px-6">
+    <p class="text-[11px] uppercase tracking-[0.12em] text-[var(--color-accent-primary)] font-semibold">
+      {c.common.ai_deep_dive.eyebrow}
+    </p>
+    <h2 class="mt-3 font-[family-name:var(--font-display)] font-bold text-[32px] md:text-[40px] leading-[1.05] tracking-[-0.025em] text-[var(--color-fg-primary)]">
+      {c.common.ai_deep_dive.title}
+    </h2>
+    <p class="mt-5 text-[17px] leading-[1.65] text-[var(--color-fg-secondary)]">
+      {c.common.ai_deep_dive.description}
+    </p>
+    <ul class="mt-8 space-y-3">
+      {c.common.ai_deep_dive.bullets.map((b: string) => (
+        <li class="flex gap-3 text-[15px] text-[var(--color-fg-primary)]">
+          <span class="text-[var(--color-accent-primary)] font-bold">→</span>
+          <span>{b}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
