@@ -149,5 +149,114 @@ const competitors = defineCollection({
 
 export type CompetitorData = z.infer<typeof competitorSchema>;
 
-export const collections = { i18n, competitors };
+const compareCommonSchema = z.object({
+  meta: z.object({
+    title_template: z.string(),         // "MoneyWise vs {competitor} — ..."
+    description_template: z.string(),
+  }),
+  hero: z.object({
+    subtitle_template: z.string(),      // "...{competitor_one_liner}..."
+    cta_primary: z.string(),
+    cta_secondary: z.string(),
+    versus_label: z.string(),           // "vs"
+  }),
+  section_titles: z.object({
+    comparison_table: z.string(),
+    moneywise_advantages: z.string(),
+    ai_deep_dive: z.string(),
+    privacy: z.string(),
+    when_to_choose: z.string(),
+    pricing: z.string(),
+    faq: z.string(),
+    see_also: z.string(),
+  }),
+  table: z.object({
+    pricing_label: z.string(),
+    platforms_label: z.string(),
+    features_label: z.string(),
+    yes: z.string(),
+    no: z.string(),
+    free_label: z.string(),
+    pricing_per_month: z.string(),
+    pricing_per_year: z.string(),
+  }),
+  feature_labels: z.object({
+    multiCurrency: z.string(),
+    offlineFirst: z.string(),
+    localEncryption: z.string(),
+    optionalCloudSync: z.string(),
+    byokAi: z.string(),
+    builtinAi: z.string(),
+    investments: z.string(),
+    budgets: z.string(),
+    receiptPhotos: z.string(),
+    voiceInput: z.string(),
+    bankSync: z.string(),
+    familySharing: z.string(),
+    noAds: z.string(),
+    noTrackers: z.string(),
+    openSource: z.string(),
+  }),
+  platform_labels: z.object({
+    ios: z.string(),
+    android: z.string(),
+    web: z.string(),
+    macos: z.string(),
+    windows: z.string(),
+    linux: z.string(),
+  }),
+  advantages: z.array(z.object({
+    title: z.string(),
+    description: z.string(),
+  })).length(4),
+  ai_deep_dive: z.object({
+    eyebrow: z.string(),
+    title: z.string(),
+    description: z.string(),
+    bullets: z.array(z.string()).length(3),
+  }),
+  when_to_choose: z.object({
+    moneywise_heading: z.string(),         // "Choose MoneyWise if"
+    competitor_heading_template: z.string(), // "Choose {competitor} if"
+  }),
+  back_to_index: z.string(),
+  index: z.object({
+    title: z.string(),
+    subtitle: z.string(),
+    region_labels: z.object({
+      western: z.string(),
+      chinese: z.string(),
+      japanese: z.string(),
+      korean: z.string(),
+      ios_focused: z.string(),
+    }),
+    card_cta: z.string(),
+  }),
+});
+
+const competitorCopySchema = z.object({
+  one_liner: z.string(),                       // used in hero subtitle interpolation
+  positioning: z.string(),                     // 1-2 sentence headline blurb under H1
+  when_choose_competitor: z.string(),
+  when_choose_moneywise: z.string(),
+  faq: z.array(z.object({
+    q: z.string(),
+    a: z.string(),
+  })).min(3).max(8),
+});
+
+const compareI18nSchema = z.object({
+  common: compareCommonSchema,
+  competitors: z.record(z.string(), competitorCopySchema),
+});
+
+const compareI18n = defineCollection({
+  loader: glob({ pattern: '*.json', base: './src/content/i18n/compare' }),
+  schema: compareI18nSchema,
+});
+
+export type CompareI18nData = z.infer<typeof compareI18nSchema>;
+export type CompetitorCopy = z.infer<typeof competitorCopySchema>;
+
+export const collections = { i18n, competitors, 'compare-i18n': compareI18n };
 export type I18nData = z.infer<typeof i18nSchema>;
