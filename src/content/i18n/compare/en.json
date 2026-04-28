@@ -705,6 +705,38 @@
           "a": "Money Pro removed investment tracking in recent versions and focuses on budgeting and expense management. MoneyWise includes an investments tab for tracking your portfolio alongside day-to-day spending."
         }
       ]
+    },
+    "1money": {
+      "one_liner": "an offline-first expense tracker focused on simplicity",
+      "positioning": "1Money is a Ukraine-developed expense tracker that shares MoneyWise's offline-first philosophy — your data lives on your device, not a vendor's server. It is clean, fast, and genuinely simple. Where MoneyWise goes further: BYOK AI advisor, investment tracking, family sharing, and receipt photos. If you want a no-frills tracker with solid multi-currency support and true offline storage, 1Money is a well-built option.",
+      "when_choose_competitor": "You want the simplest possible expense tracker that works offline, has no bank sync dependency, and is available on both iOS and Android without any subscription required for basic use.",
+      "when_choose_moneywise": "You want an AI advisor (BYOK), investment tracking, receipt photo capture, family sharing across devices, or a richer feature set while keeping your data offline-first and private.",
+      "faq": [
+        {
+          "q": "Is 1Money truly offline-first?",
+          "a": "Yes — 1Money stores data locally on your device by default, with optional iCloud sync. MoneyWise is also offline-first with an encrypted SQLite database on-device and optional end-to-end encrypted sync in Pro."
+        },
+        {
+          "q": "How does 1Money's pricing compare to MoneyWise?",
+          "a": "1Money has a free tier and a Premium plan at $4.99/mo with a lifetime purchase option. MoneyWise is free on a single device; Pro is $6.99/mo or $49.99/yr and adds multi-device sync, backup, and BYOK AI."
+        },
+        {
+          "q": "Does 1Money support multiple currencies?",
+          "a": "Yes — 1Money offers multi-currency account tracking, which is one of its stronger features. MoneyWise also supports multiple currencies with daily exchange rates built in."
+        },
+        {
+          "q": "Does 1Money have AI features?",
+          "a": "1Money does not offer an AI advisor. MoneyWise Pro includes a BYOK AI advisor — connect your own Anthropic or OpenAI key to get private financial insights without a separate AI subscription."
+        },
+        {
+          "q": "Does 1Money support bank sync?",
+          "a": "No — 1Money is a manual-entry tracker without automatic bank sync. MoneyWise is also manual-entry today; bank sync is on the roadmap. Both apps are good choices if you prefer manual control over automatic bank connections."
+        },
+        {
+          "q": "Does 1Money work on Android?",
+          "a": "Yes — 1Money is available on both iOS and Android. MoneyWise is currently iOS-only, with Android support planned for a future release."
+        }
+      ]
     }
   }
 }

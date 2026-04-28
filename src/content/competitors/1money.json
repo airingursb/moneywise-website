@@ -1,0 +1,44 @@
+{
+  "slug": "1money",
+  "displayName": "1Money",
+  "fullName": "1Money — Expense Tracker",
+  "websiteUrl": "https://1moneyapp.com",
+  "hideFromIndex": false,
+  "region": "ios_focused",
+  "pricing": {
+    "model": "freemium",
+    "monthly": 4.99,
+    "annual": 19.99,
+    "notes": "Premium subscription $4.99/mo. Lifetime purchase available."
+  },
+  "platforms": {
+    "ios": true,
+    "android": true,
+    "web": false,
+    "macos": false,
+    "windows": false,
+    "linux": false
+  },
+  "features": {
+    "multiCurrency": true,
+    "offlineFirst": true,
+    "localEncryption": false,
+    "optionalCloudSync": true,
+    "byokAi": false,
+    "builtinAi": false,
+    "investments": false,
+    "budgets": true,
+    "receiptPhotos": false,
+    "voiceInput": false,
+    "bankSync": false,
+    "familySharing": false,
+    "noAds": true,
+    "noTrackers": true,
+    "openSource": false
+  },
+  "sources": [
+    { "label": "1Money official site", "url": "https://1moneyapp.com" }
+  ],
+  "lastVerified": "2026-04-27",
+  "verificationConfidence": "medium"
+}
