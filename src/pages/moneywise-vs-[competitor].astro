@@ -1,0 +1,14 @@
+---
+import { getCollection } from 'astro:content';
+import ComparePage from '../views/ComparePage.astro';
+
+export async function getStaticPaths() {
+  const all = await getCollection('competitors');
+  return all
+    .filter((e) => !e.data.hideFromIndex)
+    .map((e) => ({ params: { competitor: e.data.slug } }));
+}
+
+const { competitor } = Astro.params;
+---
+<ComparePage locale="en" competitorSlug={competitor!} />
