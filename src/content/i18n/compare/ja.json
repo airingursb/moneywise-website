@@ -56,10 +56,22 @@
       "linux": "Linux"
     },
     "advantages": [
-      { "title": "Offline-first by design", "description": "Every record is in an encrypted SQLite database on your phone. Works in airplane mode." },
-      { "title": "Bring your own AI key", "description": "Plug in your Anthropic or OpenAI key. Insights run with no extra subscription. Or use pooled credits in Pro." },
-      { "title": "Multi-currency from day one", "description": "Hold accounts in any currency. Convert with daily rates. No 'home currency only' lock-in." },
-      { "title": "No ads, no trackers", "description": "Nothing leaves your device unless you turn on optional encrypted sync. We literally cannot read your data." }
+      {
+        "title": "Offline-first by design",
+        "description": "Every record is in an encrypted SQLite database on your phone. Works in airplane mode."
+      },
+      {
+        "title": "Bring your own AI key",
+        "description": "Plug in your Anthropic or OpenAI key. Insights run with no extra subscription. Or use pooled credits in Pro."
+      },
+      {
+        "title": "Multi-currency from day one",
+        "description": "Hold accounts in any currency. Convert with daily rates. No 'home currency only' lock-in."
+      },
+      {
+        "title": "No ads, no trackers",
+        "description": "Nothing leaves your device unless you turn on optional encrypted sync. We literally cannot read your data."
+      }
     ],
     "ai_deep_dive": {
       "eyebrow": "AI you control",
@@ -96,12 +108,30 @@
       "when_choose_competitor": "Mint は新規登録ができなくなっています。Mint の元ユーザーは、公式移行先の Credit Karma か、他のモダンな家計簿アプリへの乗り換えを検討してください。",
       "when_choose_moneywise": "プライバシー保護・広告なし・オフライン対応・多通貨対応の家計簿アプリを求めており、自分の財務データを売られたくない方に MoneyWise は最適です。",
       "faq": [
-        { "q": "Mint は 2024 年も使えますか？", "a": "いいえ。Intuit は 2024 年初頭に Mint を終了し、ユーザーを Credit Karma へリダイレクトしました。元の Mint アプリとウェブサイトは新規登録を受け付けていません。" },
-        { "q": "Mint 終了後、ユーザーはどこへ移行しましたか？", "a": "Intuit は公式に Mint ユーザーを Credit Karma へ移行させ、取引追跡や純資産機能を追加しました。多くのユーザーは YNAB、Monarch Money、Copilot、または MoneyWise に乗り換えました。" },
-        { "q": "Mint のデータを MoneyWise にインポートできますか？", "a": "MoneyWise にはまだ Mint CSV の一括インポート機能はありません。Credit Karma から取引履歴を CSV でエクスポートし、重要な口座を手動で追加して新たにスタートできます。" },
-        { "q": "MoneyWise と Mint の違いは何ですか？", "a": "Mint は無料でしたが広告付きで、すべてのデータを Intuit のサーバーに保存していました。MoneyWise はローカルファースト設計で、データはデバイス上の暗号化データベースに保存され、広告もトラッカーもありません。" },
-        { "q": "MoneyWise は Mint のように銀行口座の自動同期ができますか？", "a": "MoneyWise はプライバシー保護のため、手動入力とレシート撮影によるエントリに注力しています。自動銀行同期はロードマップに含まれています。現在は銀行から CSV をエクスポートしてインポートできます。" },
-        { "q": "MoneyWise も Mint のように無料ですか？", "a": "MoneyWise は 1 台のデバイスで無制限に無料で使えます。Pro プラン（$6.99/月 または $49.99/年）では、複数デバイス同期・バックアップ・AI 機能が利用できます。Mint の無料モデルとは異なり、広告もデータ販売もありません。" }
+        {
+          "q": "Mint は 2024 年も使えますか？",
+          "a": "いいえ。Intuit は 2024 年初頭に Mint を終了し、ユーザーを Credit Karma へリダイレクトしました。元の Mint アプリとウェブサイトは新規登録を受け付けていません。"
+        },
+        {
+          "q": "Mint 終了後、ユーザーはどこへ移行しましたか？",
+          "a": "Intuit は公式に Mint ユーザーを Credit Karma へ移行させ、取引追跡や純資産機能を追加しました。多くのユーザーは YNAB、Monarch Money、Copilot、または MoneyWise に乗り換えました。"
+        },
+        {
+          "q": "Mint のデータを MoneyWise にインポートできますか？",
+          "a": "MoneyWise にはまだ Mint CSV の一括インポート機能はありません。Credit Karma から取引履歴を CSV でエクスポートし、重要な口座を手動で追加して新たにスタートできます。"
+        },
+        {
+          "q": "MoneyWise と Mint の違いは何ですか？",
+          "a": "Mint は無料でしたが広告付きで、すべてのデータを Intuit のサーバーに保存していました。MoneyWise はローカルファースト設計で、データはデバイス上の暗号化データベースに保存され、広告もトラッカーもありません。"
+        },
+        {
+          "q": "MoneyWise は Mint のように銀行口座の自動同期ができますか？",
+          "a": "MoneyWise はプライバシー保護のため、手動入力とレシート撮影によるエントリに注力しています。自動銀行同期はロードマップに含まれています。現在は銀行から CSV をエクスポートしてインポートできます。"
+        },
+        {
+          "q": "MoneyWise も Mint のように無料ですか？",
+          "a": "MoneyWise は 1 台のデバイスで無制限に無料で使えます。Pro プラン（$6.99/月 または $49.99/年）では、複数デバイス同期・バックアップ・AI 機能が利用できます。Mint の無料モデルとは異なり、広告もデータ販売もありません。"
+        }
       ]
     },
     "rocket-money": {
@@ -110,12 +140,30 @@
       "when_choose_competitor": "解約したいサブスクが多い、銀行自動同期付きの無料家計簿アプリが欲しい、Rocket Companies の広告モデルを許容できるという方に Rocket Money は向いています。",
       "when_choose_moneywise": "財務データをトラッカーなしでローカルに保管したい、国際的な多通貨対応が必要、または組み込みの AI ではなく自分のキーを使った AI アドバイザーを使いたい方には MoneyWise が適しています。",
       "faq": [
-        { "q": "Rocket Money は本当に無料ですか？", "a": "Rocket Money には基本的な予算管理と支出追跡ができる無料プランがあります。サブスクリプション解約・信用モニタリング・自動貯蓄などのプレミアム機能は有料プラン（月 $4〜$12、金額はユーザーが選択）が必要です。" },
-        { "q": "Rocket Money の AI は何に使われますか？", "a": "Rocket Money の AI は主に定期課金のサブスクリプションを特定し、節約・解約の機会を提案します。MoneyWise の AI アドバイザーは自分の Anthropic または OpenAI キーを使い、より幅広い財務の質問に答えられます。" },
-        { "q": "Rocket Money は複数通貨に対応していますか？", "a": "対応していません。Rocket Money は米国の銀行口座と米ドルのみを対象に設計されています。MoneyWise は任意の通貨の口座を管理でき、リアルタイムの為替レートを内蔵しています。" },
-        { "q": "プライバシーの面で Rocket Money と MoneyWise はどう違いますか？", "a": "Rocket Money は Rocket Companies の傘下にあり、広告・追加販売・データ連携で収益を得ています。MoneyWise はデータをローカルに保存し、広告もトラッカーもありません。暗号化クラウド同期を有効にしない限り、データはデバイスの外に出ません。" },
-        { "q": "Rocket Money は家族やカップルでの共有に対応していますか？", "a": "Rocket Money には公式のファミリーシェアリングプランはありません。MoneyWise Pro はマルチデバイス同期でパートナーと同じ口座を共有できます。" },
-        { "q": "Rocket Money のデータを MoneyWise にエクスポートできますか？", "a": "Rocket Money から取引履歴を CSV でエクスポートし、MoneyWise に主要口座を手動で追加してスタートできます。現時点では自動インポート機能はありません。" }
+        {
+          "q": "Rocket Money は本当に無料ですか？",
+          "a": "Rocket Money には基本的な予算管理と支出追跡ができる無料プランがあります。サブスクリプション解約・信用モニタリング・自動貯蓄などのプレミアム機能は有料プラン（月 $4〜$12、金額はユーザーが選択）が必要です。"
+        },
+        {
+          "q": "Rocket Money の AI は何に使われますか？",
+          "a": "Rocket Money の AI は主に定期課金のサブスクリプションを特定し、節約・解約の機会を提案します。MoneyWise の AI アドバイザーは自分の Anthropic または OpenAI キーを使い、より幅広い財務の質問に答えられます。"
+        },
+        {
+          "q": "Rocket Money は複数通貨に対応していますか？",
+          "a": "対応していません。Rocket Money は米国の銀行口座と米ドルのみを対象に設計されています。MoneyWise は任意の通貨の口座を管理でき、リアルタイムの為替レートを内蔵しています。"
+        },
+        {
+          "q": "プライバシーの面で Rocket Money と MoneyWise はどう違いますか？",
+          "a": "Rocket Money は Rocket Companies の傘下にあり、広告・追加販売・データ連携で収益を得ています。MoneyWise はデータをローカルに保存し、広告もトラッカーもありません。暗号化クラウド同期を有効にしない限り、データはデバイスの外に出ません。"
+        },
+        {
+          "q": "Rocket Money は家族やカップルでの共有に対応していますか？",
+          "a": "Rocket Money には公式のファミリーシェアリングプランはありません。MoneyWise Pro はマルチデバイス同期でパートナーと同じ口座を共有できます。"
+        },
+        {
+          "q": "Rocket Money のデータを MoneyWise にエクスポートできますか？",
+          "a": "Rocket Money から取引履歴を CSV でエクスポートし、MoneyWise に主要口座を手動で追加してスタートできます。現時点では自動インポート機能はありません。"
+        }
       ]
     },
     "monarch-money": {
@@ -124,12 +172,30 @@
       "when_choose_competitor": "パートナーと一緒に予算管理したい、しっかりした投資追跡が必要、完全クラウドベースのサービスに高めの月額を支払っても良いという方に Monarch Money は向いています。",
       "when_choose_moneywise": "データをデバイスに保管したい、複数通貨を扱う、頻繁に旅行する、またはサービス側のサーバーで取引履歴を処理させるより自分の AI キーを使いたい方には MoneyWise が適しています。",
       "faq": [
-        { "q": "Monarch Money と MoneyWise の料金はどう違いますか？", "a": "Monarch は月 $14.99 または年 $99.99 で 7 日間の無料トライアルがあります。MoneyWise は 1 台のデバイスで無料。Pro プランは月 $6.99 または年 $49.99 で、年額は Monarch のほぼ半額です。" },
-        { "q": "Monarch Money は複数通貨に対応していますか？", "a": "Monarch Money は主に米国ユーザー向けで、多通貨口座の追跡はできません。MoneyWise は任意の通貨の口座を管理でき、毎日の為替レートを内蔵しています。" },
-        { "q": "Monarch Money はデータをどこに保存しますか？", "a": "Monarch は Plaid と Finicity 経由で連携銀行データをサーバーに保存します。MoneyWise はすべてのデータをデバイス上の暗号化データベースに保存し、クラウド同期はオプションでエンドツーエンド暗号化されています。" },
-        { "q": "Monarch Money に AI 機能はありますか？", "a": "Monarch Money には AI による分類やレポート機能があります。MoneyWise の AI アドバイザーは自分の Anthropic または OpenAI キーを使用するため、取引履歴がサードパーティに処理されません。" },
-        { "q": "Monarch Money はカップルでの利用に向いていますか？", "a": "はい — Monarch の共有予算ビューは特に強力な機能です。MoneyWise Pro もマルチデバイス同期でパートナーと共有できますが、協働ビューは Monarch よりシンプルです。" },
-        { "q": "Monarch Money のデータを MoneyWise にインポートできますか？", "a": "MoneyWise には直接の Monarch インポート機能はありません。Monarch から CSV で取引を書き出し、MoneyWise で主要口座を再登録してスタートできます。" }
+        {
+          "q": "Monarch Money と MoneyWise の料金はどう違いますか？",
+          "a": "Monarch は月 $14.99 または年 $99.99 で 7 日間の無料トライアルがあります。MoneyWise は 1 台のデバイスで無料。Pro プランは月 $6.99 または年 $49.99 で、年額は Monarch のほぼ半額です。"
+        },
+        {
+          "q": "Monarch Money は複数通貨に対応していますか？",
+          "a": "Monarch Money は主に米国ユーザー向けで、多通貨口座の追跡はできません。MoneyWise は任意の通貨の口座を管理でき、毎日の為替レートを内蔵しています。"
+        },
+        {
+          "q": "Monarch Money はデータをどこに保存しますか？",
+          "a": "Monarch は Plaid と Finicity 経由で連携銀行データをサーバーに保存します。MoneyWise はすべてのデータをデバイス上の暗号化データベースに保存し、クラウド同期はオプションでエンドツーエンド暗号化されています。"
+        },
+        {
+          "q": "Monarch Money に AI 機能はありますか？",
+          "a": "Monarch Money には AI による分類やレポート機能があります。MoneyWise の AI アドバイザーは自分の Anthropic または OpenAI キーを使用するため、取引履歴がサードパーティに処理されません。"
+        },
+        {
+          "q": "Monarch Money はカップルでの利用に向いていますか？",
+          "a": "はい — Monarch の共有予算ビューは特に強力な機能です。MoneyWise Pro もマルチデバイス同期でパートナーと共有できますが、協働ビューは Monarch よりシンプルです。"
+        },
+        {
+          "q": "Monarch Money のデータを MoneyWise にインポートできますか？",
+          "a": "MoneyWise には直接の Monarch インポート機能はありません。Monarch から CSV で取引を書き出し、MoneyWise で主要口座を再登録してスタートできます。"
+        }
       ]
     },
     "copilot-money": {
@@ -138,12 +204,30 @@
       "when_choose_competitor": "iPhone と Mac を中心に使っており、洗練された自動化体験を好み、クラウドにデータを保存するサブスクリプション型を受け入れられる方に Copilot は向いています。",
       "when_choose_moneywise": "Android を使っている、複数通貨を扱う、データをデバイス上にローカル保存したい、または組み込み AI ではなく自分の AI キーを使いたい方には MoneyWise が適しています。",
       "faq": [
-        { "q": "Copilot は Android に対応していますか？", "a": "いいえ。2026 年時点では Copilot は iOS と macOS のみ対応しています。Android が必要な場合は、MoneyWise・YNAB・Monarch Money がクロスプラットフォームの代替候補です。" },
-        { "q": "Copilot と MoneyWise の料金はどう違いますか？", "a": "Copilot は月 $7.92 または年 $95 のサブスクリプションのみで、無料プランはありません。MoneyWise は 1 台のデバイスで無制限に無料使用でき、Pro プランは月 $6.99 または年 $49.99 です。" },
-        { "q": "Copilot に AI 機能はありますか？", "a": "はい。Copilot には取引を分析する組み込み AI があります。MoneyWise も AI アドバイザーを搭載していますが、自分の Anthropic または OpenAI キーを使用するため、財務データがサードパーティの AI パイプラインに流れません。" },
-        { "q": "Copilot は複数通貨に対応していますか？", "a": "Copilot は主に米国ユーザー向けで、多通貨の本格対応はありません。MoneyWise は任意の通貨の口座を管理でき、毎日の為替レートで換算できます。" },
-        { "q": "Copilot は財務データをどこに保存しますか？", "a": "Copilot は Plaid 経由で銀行データを同期し、Copilot のサーバーに保存します。MoneyWise はすべてのデータをデバイス上の暗号化データベースに保存し、クラウド同期はオプションでエンドツーエンド暗号化されています。" },
-        { "q": "Copilot と MoneyWise を併用できますか？", "a": "できます。米国の銀行口座の自動同期に Copilot を使い、外貨口座の管理やオフライン・プライバシー保護のために MoneyWise を使うユーザーもいます。技術的な競合はありません。" }
+        {
+          "q": "Copilot は Android に対応していますか？",
+          "a": "いいえ。2026 年時点では Copilot は iOS と macOS のみ対応しています。Android が必要な場合は、MoneyWise・YNAB・Monarch Money がクロスプラットフォームの代替候補です。"
+        },
+        {
+          "q": "Copilot と MoneyWise の料金はどう違いますか？",
+          "a": "Copilot は月 $7.92 または年 $95 のサブスクリプションのみで、無料プランはありません。MoneyWise は 1 台のデバイスで無制限に無料使用でき、Pro プランは月 $6.99 または年 $49.99 です。"
+        },
+        {
+          "q": "Copilot に AI 機能はありますか？",
+          "a": "はい。Copilot には取引を分析する組み込み AI があります。MoneyWise も AI アドバイザーを搭載していますが、自分の Anthropic または OpenAI キーを使用するため、財務データがサードパーティの AI パイプラインに流れません。"
+        },
+        {
+          "q": "Copilot は複数通貨に対応していますか？",
+          "a": "Copilot は主に米国ユーザー向けで、多通貨の本格対応はありません。MoneyWise は任意の通貨の口座を管理でき、毎日の為替レートで換算できます。"
+        },
+        {
+          "q": "Copilot は財務データをどこに保存しますか？",
+          "a": "Copilot は Plaid 経由で銀行データを同期し、Copilot のサーバーに保存します。MoneyWise はすべてのデータをデバイス上の暗号化データベースに保存し、クラウド同期はオプションでエンドツーエンド暗号化されています。"
+        },
+        {
+          "q": "Copilot と MoneyWise を併用できますか？",
+          "a": "できます。米国の銀行口座の自動同期に Copilot を使い、外貨口座の管理やオフライン・プライバシー保護のために MoneyWise を使うユーザーもいます。技術的な競合はありません。"
+        }
       ]
     },
     "ynab": {
@@ -152,12 +236,122 @@
       "when_choose_competitor": "You've already adopted zero-based budgeting and want every dollar assigned a job. Your finances are mostly in one currency, and you're happy paying for a strong methodology coach.",
       "when_choose_moneywise": "You handle multiple currencies, you want your data on your device (not in a vendor's cloud), or you want AI insights without paying for yet another subscription.",
       "faq": [
-        { "q": "Can I import my YNAB data into MoneyWise?", "a": "Today, no automatic importer. You can re-create accounts and start fresh. YNAB users tend to onboard quickly because they already think in categories." },
-        { "q": "Does MoneyWise do zero-based budgeting?", "a": "MoneyWise has monthly category budgets with pacing, but not the strict YNAB rule-set. If the rule-set is what you love about YNAB, stay with YNAB." },
-        { "q": "Will MoneyWise work without internet?", "a": "Yes. Every record is on your phone in an encrypted database. The app is fully usable in airplane mode." },
-        { "q": "How is MoneyWise's pricing different from YNAB's?", "a": "MoneyWise is free for unlimited records on one device. Pro adds multi-device sync, backup, and pooled AI for $6.99/mo or $49.99/yr. YNAB is subscription-only at $14.99/mo or $109/yr." },
-        { "q": "Does MoneyWise have AI like the new YNAB features?", "a": "Yes — MoneyWise has an AI advisor. The difference: you can plug in your own Anthropic or OpenAI key, so your data isn't sent to a vendor's pipeline." },
-        { "q": "Can I use MoneyWise alongside YNAB?", "a": "Yes — many people start with MoneyWise for quick mobile entry and keep YNAB for the budget method. There's no lock-in either way." }
+        {
+          "q": "Can I import my YNAB data into MoneyWise?",
+          "a": "Today, no automatic importer. You can re-create accounts and start fresh. YNAB users tend to onboard quickly because they already think in categories."
+        },
+        {
+          "q": "Does MoneyWise do zero-based budgeting?",
+          "a": "MoneyWise has monthly category budgets with pacing, but not the strict YNAB rule-set. If the rule-set is what you love about YNAB, stay with YNAB."
+        },
+        {
+          "q": "Will MoneyWise work without internet?",
+          "a": "Yes. Every record is on your phone in an encrypted database. The app is fully usable in airplane mode."
+        },
+        {
+          "q": "How is MoneyWise's pricing different from YNAB's?",
+          "a": "MoneyWise is free for unlimited records on one device. Pro adds multi-device sync, backup, and pooled AI for $6.99/mo or $49.99/yr. YNAB is subscription-only at $14.99/mo or $109/yr."
+        },
+        {
+          "q": "Does MoneyWise have AI like the new YNAB features?",
+          "a": "Yes — MoneyWise has an AI advisor. The difference: you can plug in your own Anthropic or OpenAI key, so your data isn't sent to a vendor's pipeline."
+        },
+        {
+          "q": "Can I use MoneyWise alongside YNAB?",
+          "a": "Yes — many people start with MoneyWise for quick mobile entry and keep YNAB for the budget method. There's no lock-in either way."
+        }
+      ]
+    },
+    "empower": {
+      "one_liner": "無料の投資ダッシュボードと資産追跡ツール",
+      "positioning": "Empower（旧 Personal Capital）は、投資ダッシュボード、純資産の追跡、退職プランニングを中心とした無料の財務管理プラットフォームです。MoneyWise はプライバシー優先のローカルファースト家計管理、多通貨対応、BYOK AI を提供し、Empower の投資ツールを補完します。",
+      "when_choose_competitor": "投資ポートフォリオの成長や退職準備、複数口座にまたがる純資産の追跡を主な目的とし、無料のクラウドダッシュボードで全体像を把握したい方に Empower は適しています。",
+      "when_choose_moneywise": "日々の支出管理を徹底したい、取引データのプライバシーを守りたい、複数通貨を使う、またはサードパーティのサーバーでデータを処理させずに自分の API キーで AI 財務アドバイザーを使いたい方には MoneyWise が適しています。",
+      "faq": [
+        {
+          "q": "Empower は本当に無料ですか？",
+          "a": "はい。Empower の財務計画ツール（純資産追跡、ポートフォリオ分析、退職プランナー、予算管理）は完全無料です。有料のウェルスマネジメント諮問サービスは 100,000 ドル以上の資産を持つ方向けのオプションです。"
+        },
+        {
+          "q": "Empower と MoneyWise の違いは何ですか？",
+          "a": "Empower は投資ポートフォリオと退職計画に特化した資産追跡ツールです。MoneyWise は日々の家計管理、プライバシー保護、多通貨口座、ローカル暗号化データベースに注力しており、異なる主要ニーズを持つユーザー向けです。"
+        },
+        {
+          "q": "Empower は私の財務データをサーバーに保存しますか？",
+          "a": "はい。Empower は連携した口座のデータをクラウドサーバーに同期します。MoneyWise はすべてのデータをデバイス上の暗号化データベースに保存し、クラウド同期はオプションでエンドツーエンド暗号化されています。"
+        },
+        {
+          "q": "Empower は複数通貨に対応していますか？",
+          "a": "Empower は米国の USD 口座向けに設計されており、多通貨には対応していません。MoneyWise はあらゆる通貨の口座を管理でき、毎日の為替レートが組み込まれています。"
+        },
+        {
+          "q": "Empower と MoneyWise を併用できますか？",
+          "a": "多くのユーザーが両方を活用しています。Empower で投資と退職計画の全体像を把握し、MoneyWise で日々の家計管理、プライバシー保護、多通貨追跡を行うスタイルが好評です。"
+        }
+      ]
+    },
+    "spendee": {
+      "one_liner": "欧州で人気の多通貨対応支出追跡アプリ",
+      "positioning": "Spendee は多通貨対応、ウォレット共有、銀行同期を特徴とする欧州で広く使われているフリーミアムの支出管理アプリです。Spendee と MoneyWise はどちらも多通貨口座に対応していますが、MoneyWise のローカルファースト暗号化ストレージと BYOK AI はプライバシーを重視するユーザーに独自の強みを提供します。",
+      "when_choose_competitor": "視覚的に洗練された支出追跡アプリで、グループやカップルでのウォレット共有や多通貨追跡を求め、銀行同期機能のために少額のサブスクリプションを払っても構わない方に Spendee は向いています。",
+      "when_choose_moneywise": "財務データをデバイス上の暗号化データベースに保存したい、複数通貨で旅行が多く本格的な追跡が必要、またはデータをデバイス外に出さずに自分の AI キーで財務インサイトを得たい方には MoneyWise が適しています。",
+      "faq": [
+        {
+          "q": "Spendee と MoneyWise の料金はどう違いますか？",
+          "a": "Spendee Premium は月 $5.99 または年 $35.99（Plus は月 $1.99 または年 $14.99）です。MoneyWise は 1 台で無料、Pro プランは月 $6.99 または年 $49.99 で、同等の価格帯でより多くのプライバシー機能を提供します。"
+        },
+        {
+          "q": "Spendee はデータをローカルに保存しますか？",
+          "a": "Spendee はデータをクラウドに同期します。MoneyWise はデバイス上の暗号化データベースにデータを保存し、Pro プランではオプションのエンドツーエンド暗号化クラウド同期を利用できます。"
+        },
+        {
+          "q": "どちらも多通貨対応ですが、何が違いますか？",
+          "a": "Spendee の多通貨対応はグループウォレットや旅行での利用で定評があります。MoneyWise はさらにローカルファースト暗号化でデータをデバイス上に保ち、BYOK AI で任意の通貨の支出分析を行えます。"
+        },
+        {
+          "q": "Spendee には AI 機能はありますか？",
+          "a": "Spendee は自動カテゴリ分類を提供しますが、AI アドバイザーはありません。MoneyWise Pro には自分の Anthropic または OpenAI キーを使う BYOK AI アドバイザーが含まれており、プライバシーを守りながらインサイトを得られます。"
+        },
+        {
+          "q": "Spendee は銀行口座と同期できますか？",
+          "a": "はい。Spendee の Basic（制限あり）、Plus、Premium で銀行同期が利用できます。MoneyWise はプライバシーを最優先に手動入力とレシート撮影を中心としており、銀行同期はロードマップに含まれています。"
+        },
+        {
+          "q": "Spendee はデスクトップで使えますか？",
+          "a": "Spendee には Web インターフェースがあり、主な体験は iOS と Android です。MoneyWise も iOS、Android、Web に対応しています。"
+        }
+      ]
+    },
+    "pocketguard": {
+      "one_liner": "今日いくら安全に使えるかを教えてくれる支出管理アプリ",
+      "positioning": "PocketGuard は「In My Pocket（今使えるお金）」という強力なコンセプトを中心に構築されています —— 請求書、貯蓄、目標を差し引いた後に安全に使える金額を表示します。MoneyWise も同様の支出ガイダンスを提供しながら、手動管理、多通貨対応、ローカルファーストのプライバシー保護、BYOK AI による深い財務対話を加えています。",
+      "when_choose_competitor": "毎日安全に使える金額を自動で教えてくれるシンプルな家計管理を求め、過剰支出の防止に特化した米国向けアプリで十分な方に PocketGuard は向いています。",
+      "when_choose_moneywise": "財務をより細かく管理したい、複数通貨を使う、データをデバイス上にプライベートに保管したい、または外部サーバーで取引を処理させずに自分の API キーで AI 財務アドバイザーを使いたい方には MoneyWise が適しています。",
+      "faq": [
+        {
+          "q": "PocketGuard と MoneyWise の料金はどう違いますか？",
+          "a": "PocketGuard Plus は月 $12.99 または年 $74.99 です。MoneyWise は 1 台で無料、Pro プランは月 $6.99 または年 $49.99 で、年間費用が大幅に安くより多くのプライバシー機能を提供します。"
+        },
+        {
+          "q": "PocketGuard の「In My Pocket」機能とは何ですか？",
+          "a": "PocketGuard は口座残高から請求書、定期支出、貯蓄目標を差し引いて、今日安全に使える金額を計算します。MoneyWise は予算エンベロープと AI 分析で同様の目標を達成します。"
+        },
+        {
+          "q": "PocketGuard は複数通貨に対応していますか？",
+          "a": "PocketGuard は米国ユーザー向けで、多通貨には対応していません。MoneyWise は任意の通貨の口座を管理でき、毎日の為替レートが組み込まれています。"
+        },
+        {
+          "q": "PocketGuard はデータをどこに保存しますか？",
+          "a": "PocketGuard は連携口座をクラウドサーバーに同期します。MoneyWise はすべてのデータをデバイス上の暗号化データベースに保存し、Pro プランでオプションのエンドツーエンド暗号化クラウド同期を利用できます。"
+        },
+        {
+          "q": "PocketGuard には AI 機能はありますか？",
+          "a": "PocketGuard Plus には支出ガイダンス用の AI チャットアシスタントが含まれています。MoneyWise Pro は自分の Anthropic または OpenAI キーを使う BYOK AI アドバイザーを提供し、取引履歴が第三者に送信されません。"
+        },
+        {
+          "q": "PocketGuard の Web 版はありますか？",
+          "a": "PocketGuard は主に iOS と Android のモバイルアプリで、完全な Web 版はありません。MoneyWise は iOS、Android、Web に対応しています。"
+        }
       ]
     }
   }

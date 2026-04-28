@@ -1,0 +1,45 @@
+{
+  "slug": "empower",
+  "displayName": "Empower",
+  "fullName": "Empower Personal Wealth",
+  "websiteUrl": "https://www.empower.com",
+  "hideFromIndex": false,
+  "region": "western",
+  "pricing": {
+    "model": "free",
+    "monthly": null,
+    "annual": null,
+    "notes": "Free planning tools. Optional paid advisory service for accounts > $100k."
+  },
+  "platforms": {
+    "ios": true,
+    "android": true,
+    "web": true,
+    "macos": false,
+    "windows": false,
+    "linux": false
+  },
+  "features": {
+    "multiCurrency": false,
+    "offlineFirst": false,
+    "localEncryption": false,
+    "optionalCloudSync": false,
+    "byokAi": false,
+    "builtinAi": false,
+    "investments": true,
+    "budgets": true,
+    "receiptPhotos": false,
+    "voiceInput": false,
+    "bankSync": true,
+    "familySharing": false,
+    "noAds": true,
+    "noTrackers": false,
+    "openSource": false
+  },
+  "sources": [
+    { "label": "Empower personal investors", "url": "https://www.empower.com/personal-investors" },
+    { "label": "Empower financial tools", "url": "https://www.empower.com/personal-investors/financial-tools" }
+  ],
+  "lastVerified": "2026-04-27",
+  "verificationConfidence": "high"
+}

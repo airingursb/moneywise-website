@@ -56,10 +56,22 @@
       "linux": "Linux"
     },
     "advantages": [
-      { "title": "Offline-first by design", "description": "Every record is in an encrypted SQLite database on your phone. Works in airplane mode." },
-      { "title": "Bring your own AI key", "description": "Plug in your Anthropic or OpenAI key. Insights run with no extra subscription. Or use pooled credits in Pro." },
-      { "title": "Multi-currency from day one", "description": "Hold accounts in any currency. Convert with daily rates. No 'home currency only' lock-in." },
-      { "title": "No ads, no trackers", "description": "Nothing leaves your device unless you turn on optional encrypted sync. We literally cannot read your data." }
+      {
+        "title": "Offline-first by design",
+        "description": "Every record is in an encrypted SQLite database on your phone. Works in airplane mode."
+      },
+      {
+        "title": "Bring your own AI key",
+        "description": "Plug in your Anthropic or OpenAI key. Insights run with no extra subscription. Or use pooled credits in Pro."
+      },
+      {
+        "title": "Multi-currency from day one",
+        "description": "Hold accounts in any currency. Convert with daily rates. No 'home currency only' lock-in."
+      },
+      {
+        "title": "No ads, no trackers",
+        "description": "Nothing leaves your device unless you turn on optional encrypted sync. We literally cannot read your data."
+      }
     ],
     "ai_deep_dive": {
       "eyebrow": "AI you control",
@@ -96,12 +108,30 @@
       "when_choose_competitor": "Mint is no longer available for new sign-ups. If you were a Mint user, your best path is to explore Credit Karma (the official migration) or a modern alternative.",
       "when_choose_moneywise": "You want a private, ad-free budgeting app that works offline, supports multiple currencies, and never sells your data. MoneyWise is the clean break that Mint never was.",
       "faq": [
-        { "q": "Is Mint still available in 2024?", "a": "No. Intuit shut down Mint in early 2024 and redirected users to Credit Karma. The original Mint app and website no longer accept new sign-ups or active accounts." },
-        { "q": "Where did Mint users go after the shutdown?", "a": "Intuit officially migrated Mint users to Credit Karma, where transaction tracking and net worth features were added. Many users also switched to YNAB, Monarch Money, Copilot, or MoneyWise." },
-        { "q": "Can I import my old Mint data into MoneyWise?", "a": "MoneyWise doesn't have a one-click Mint CSV importer yet. You can export your Mint transactions as CSV from Credit Karma and manually import the most important accounts to start fresh." },
-        { "q": "How is MoneyWise different from what Mint offered?", "a": "Mint was free but ad-supported and stored all your data on Intuit's servers. MoneyWise is local-first — your data stays on your device in an encrypted database, with no ads and no trackers." },
-        { "q": "Does MoneyWise have bank sync like Mint did?", "a": "MoneyWise focuses on manual and receipt-based entry for maximum privacy. Automatic bank sync is on the roadmap. In the meantime, you can connect accounts via CSV export from your bank." },
-        { "q": "Is MoneyWise free like Mint was?", "a": "MoneyWise is free for unlimited records on a single device. Pro ($6.99/mo or $49.99/yr) adds multi-device sync, backup, and AI. Unlike Mint's free model, there are no ads or data brokering." }
+        {
+          "q": "Is Mint still available in 2024?",
+          "a": "No. Intuit shut down Mint in early 2024 and redirected users to Credit Karma. The original Mint app and website no longer accept new sign-ups or active accounts."
+        },
+        {
+          "q": "Where did Mint users go after the shutdown?",
+          "a": "Intuit officially migrated Mint users to Credit Karma, where transaction tracking and net worth features were added. Many users also switched to YNAB, Monarch Money, Copilot, or MoneyWise."
+        },
+        {
+          "q": "Can I import my old Mint data into MoneyWise?",
+          "a": "MoneyWise doesn't have a one-click Mint CSV importer yet. You can export your Mint transactions as CSV from Credit Karma and manually import the most important accounts to start fresh."
+        },
+        {
+          "q": "How is MoneyWise different from what Mint offered?",
+          "a": "Mint was free but ad-supported and stored all your data on Intuit's servers. MoneyWise is local-first — your data stays on your device in an encrypted database, with no ads and no trackers."
+        },
+        {
+          "q": "Does MoneyWise have bank sync like Mint did?",
+          "a": "MoneyWise focuses on manual and receipt-based entry for maximum privacy. Automatic bank sync is on the roadmap. In the meantime, you can connect accounts via CSV export from your bank."
+        },
+        {
+          "q": "Is MoneyWise free like Mint was?",
+          "a": "MoneyWise is free for unlimited records on a single device. Pro ($6.99/mo or $49.99/yr) adds multi-device sync, backup, and AI. Unlike Mint's free model, there are no ads or data brokering."
+        }
       ]
     },
     "rocket-money": {
@@ -110,12 +140,30 @@
       "when_choose_competitor": "You have lots of unwanted subscriptions to cancel, you want a free budgeting app with automatic bank sync, and you're comfortable with an ad-supported model backed by Rocket Companies.",
       "when_choose_moneywise": "You want your financial data stored locally with no trackers, you travel internationally and need multi-currency support, or you want a clean AI advisor using your own key rather than a built-in black box.",
       "faq": [
-        { "q": "Is Rocket Money actually free?", "a": "Rocket Money has a free tier with basic budgeting and spending tracking. Premium features — including subscription cancellation, credit monitoring, and savings automation — require the paid plan ($4–$12/mo, user-chosen)." },
-        { "q": "What is Rocket Money's AI used for?", "a": "Rocket Money's AI primarily identifies recurring subscriptions and flags opportunities to save or cancel services. MoneyWise's AI advisor answers broader financial questions using your own Anthropic or OpenAI key." },
-        { "q": "Does Rocket Money support multiple currencies?", "a": "No — Rocket Money is built for US bank accounts and US dollars only. MoneyWise supports accounts in any currency with real-time exchange rates." },
-        { "q": "How does Rocket Money compare to MoneyWise on privacy?", "a": "Rocket Money is owned by Rocket Companies and earns revenue through ads, upsells, and data partnerships. MoneyWise stores your data locally with no ads and no trackers — nothing leaves your device unless you opt into encrypted cloud sync." },
-        { "q": "Does Rocket Money have family or couple sharing?", "a": "Rocket Money does not offer a formal family sharing plan. MoneyWise Pro supports multi-device sync, letting partners access the same accounts." },
-        { "q": "Can I export my Rocket Money data to MoneyWise?", "a": "You can export your transaction history as CSV from Rocket Money and import key accounts manually into MoneyWise. There is no direct automated import yet." }
+        {
+          "q": "Is Rocket Money actually free?",
+          "a": "Rocket Money has a free tier with basic budgeting and spending tracking. Premium features — including subscription cancellation, credit monitoring, and savings automation — require the paid plan ($4–$12/mo, user-chosen)."
+        },
+        {
+          "q": "What is Rocket Money's AI used for?",
+          "a": "Rocket Money's AI primarily identifies recurring subscriptions and flags opportunities to save or cancel services. MoneyWise's AI advisor answers broader financial questions using your own Anthropic or OpenAI key."
+        },
+        {
+          "q": "Does Rocket Money support multiple currencies?",
+          "a": "No — Rocket Money is built for US bank accounts and US dollars only. MoneyWise supports accounts in any currency with real-time exchange rates."
+        },
+        {
+          "q": "How does Rocket Money compare to MoneyWise on privacy?",
+          "a": "Rocket Money is owned by Rocket Companies and earns revenue through ads, upsells, and data partnerships. MoneyWise stores your data locally with no ads and no trackers — nothing leaves your device unless you opt into encrypted cloud sync."
+        },
+        {
+          "q": "Does Rocket Money have family or couple sharing?",
+          "a": "Rocket Money does not offer a formal family sharing plan. MoneyWise Pro supports multi-device sync, letting partners access the same accounts."
+        },
+        {
+          "q": "Can I export my Rocket Money data to MoneyWise?",
+          "a": "You can export your transaction history as CSV from Rocket Money and import key accounts manually into MoneyWise. There is no direct automated import yet."
+        }
       ]
     },
     "monarch-money": {
@@ -124,12 +172,30 @@
       "when_choose_competitor": "You want a polished joint budgeting experience with a partner, robust investment tracking, and don't mind paying a higher subscription for a fully cloud-based service.",
       "when_choose_moneywise": "You want your data on your device, you handle multiple currencies, you travel frequently, or you'd rather bring your own AI key than pay for a service that reads your transactions on their servers.",
       "faq": [
-        { "q": "How does Monarch Money's pricing compare to MoneyWise?", "a": "Monarch is $14.99/mo or $99.99/yr with a 7-day free trial. MoneyWise is free on a single device; Pro is $6.99/mo or $49.99/yr. MoneyWise Pro costs roughly half as much annually." },
-        { "q": "Does Monarch Money support multiple currencies?", "a": "Monarch Money is primarily designed for US users and does not offer multi-currency account tracking. MoneyWise supports accounts in any currency with daily exchange rates built in." },
-        { "q": "Where does Monarch Money store my data?", "a": "Monarch stores your linked bank data on their servers via Plaid and Finicity. MoneyWise keeps everything in an encrypted database on your device; cloud sync is optional and end-to-end encrypted." },
-        { "q": "Does Monarch Money have AI features?", "a": "Monarch Money has some AI-powered categorization and reporting. MoneyWise has an AI advisor using your own Anthropic or OpenAI key — giving you AI insights without your full transaction history being processed by a third party." },
-        { "q": "Is Monarch Money good for couples?", "a": "Yes — Monarch's shared budget view is one of its strongest features. MoneyWise Pro also supports multi-device sync so partners can share access, though the collaborative view is simpler than Monarch's." },
-        { "q": "Can I import my Monarch Money data into MoneyWise?", "a": "MoneyWise doesn't yet have a direct Monarch importer. You can export transactions as CSV from Monarch and re-enter key accounts in MoneyWise to get started." }
+        {
+          "q": "How does Monarch Money's pricing compare to MoneyWise?",
+          "a": "Monarch is $14.99/mo or $99.99/yr with a 7-day free trial. MoneyWise is free on a single device; Pro is $6.99/mo or $49.99/yr. MoneyWise Pro costs roughly half as much annually."
+        },
+        {
+          "q": "Does Monarch Money support multiple currencies?",
+          "a": "Monarch Money is primarily designed for US users and does not offer multi-currency account tracking. MoneyWise supports accounts in any currency with daily exchange rates built in."
+        },
+        {
+          "q": "Where does Monarch Money store my data?",
+          "a": "Monarch stores your linked bank data on their servers via Plaid and Finicity. MoneyWise keeps everything in an encrypted database on your device; cloud sync is optional and end-to-end encrypted."
+        },
+        {
+          "q": "Does Monarch Money have AI features?",
+          "a": "Monarch Money has some AI-powered categorization and reporting. MoneyWise has an AI advisor using your own Anthropic or OpenAI key — giving you AI insights without your full transaction history being processed by a third party."
+        },
+        {
+          "q": "Is Monarch Money good for couples?",
+          "a": "Yes — Monarch's shared budget view is one of its strongest features. MoneyWise Pro also supports multi-device sync so partners can share access, though the collaborative view is simpler than Monarch's."
+        },
+        {
+          "q": "Can I import my Monarch Money data into MoneyWise?",
+          "a": "MoneyWise doesn't yet have a direct Monarch importer. You can export transactions as CSV from Monarch and re-enter key accounts in MoneyWise to get started."
+        }
       ]
     },
     "copilot-money": {
@@ -138,12 +204,30 @@
       "when_choose_competitor": "You live in the Apple ecosystem (iPhone + Mac), you prefer an elegant automated experience, and you're comfortable with a subscription that stores your data in the cloud.",
       "when_choose_moneywise": "You use Android, you travel internationally with multiple currencies, you want your data stored locally on your device, or you prefer to bring your own AI key rather than using a vendor's built-in model.",
       "faq": [
-        { "q": "Is Copilot available on Android?", "a": "No — as of 2026, Copilot is iOS and macOS only. If you need Android support, MoneyWise, YNAB, and Monarch Money are cross-platform alternatives." },
-        { "q": "How does Copilot's pricing compare to MoneyWise?", "a": "Copilot is $7.92/mo or $95/yr, subscription-only with no free tier. MoneyWise is free for a single device with unlimited records; Pro is $6.99/mo or $49.99/yr." },
-        { "q": "Does Copilot have AI features?", "a": "Yes, Copilot has built-in AI that analyzes your transactions. MoneyWise also has an AI advisor, but it uses your own Anthropic or OpenAI key — so your financial data never flows through a third-party AI pipeline." },
-        { "q": "Does Copilot support multiple currencies?", "a": "Copilot is designed primarily for US users with US bank accounts. It does not have robust multi-currency support. MoneyWise tracks accounts in any currency with daily exchange rates." },
-        { "q": "Where does Copilot store my financial data?", "a": "Copilot syncs your bank data through Plaid and stores it on Copilot's servers. MoneyWise stores everything on your device in an encrypted database; cloud sync is optional and encrypted end-to-end." },
-        { "q": "Can I use both Copilot and MoneyWise?", "a": "Yes — some users keep Copilot for its automated US bank sync and use MoneyWise for foreign currency accounts or for the offline/privacy guarantees. There's no technical conflict." }
+        {
+          "q": "Is Copilot available on Android?",
+          "a": "No — as of 2026, Copilot is iOS and macOS only. If you need Android support, MoneyWise, YNAB, and Monarch Money are cross-platform alternatives."
+        },
+        {
+          "q": "How does Copilot's pricing compare to MoneyWise?",
+          "a": "Copilot is $7.92/mo or $95/yr, subscription-only with no free tier. MoneyWise is free for a single device with unlimited records; Pro is $6.99/mo or $49.99/yr."
+        },
+        {
+          "q": "Does Copilot have AI features?",
+          "a": "Yes, Copilot has built-in AI that analyzes your transactions. MoneyWise also has an AI advisor, but it uses your own Anthropic or OpenAI key — so your financial data never flows through a third-party AI pipeline."
+        },
+        {
+          "q": "Does Copilot support multiple currencies?",
+          "a": "Copilot is designed primarily for US users with US bank accounts. It does not have robust multi-currency support. MoneyWise tracks accounts in any currency with daily exchange rates."
+        },
+        {
+          "q": "Where does Copilot store my financial data?",
+          "a": "Copilot syncs your bank data through Plaid and stores it on Copilot's servers. MoneyWise stores everything on your device in an encrypted database; cloud sync is optional and encrypted end-to-end."
+        },
+        {
+          "q": "Can I use both Copilot and MoneyWise?",
+          "a": "Yes — some users keep Copilot for its automated US bank sync and use MoneyWise for foreign currency accounts or for the offline/privacy guarantees. There's no technical conflict."
+        }
       ]
     },
     "ynab": {
@@ -152,12 +236,122 @@
       "when_choose_competitor": "You've already adopted zero-based budgeting and want every dollar assigned a job. Your finances are mostly in one currency, and you're happy paying for a strong methodology coach.",
       "when_choose_moneywise": "You handle multiple currencies, you want your data on your device (not in a vendor's cloud), or you want AI insights without paying for yet another subscription.",
       "faq": [
-        { "q": "Can I import my YNAB data into MoneyWise?", "a": "Today, no automatic importer. You can re-create accounts and start fresh. YNAB users tend to onboard quickly because they already think in categories." },
-        { "q": "Does MoneyWise do zero-based budgeting?", "a": "MoneyWise has monthly category budgets with pacing, but not the strict YNAB rule-set. If the rule-set is what you love about YNAB, stay with YNAB." },
-        { "q": "Will MoneyWise work without internet?", "a": "Yes. Every record is on your phone in an encrypted database. The app is fully usable in airplane mode." },
-        { "q": "How is MoneyWise's pricing different from YNAB's?", "a": "MoneyWise is free for unlimited records on one device. Pro adds multi-device sync, backup, and pooled AI for $6.99/mo or $49.99/yr. YNAB is subscription-only at $14.99/mo or $109/yr." },
-        { "q": "Does MoneyWise have AI like the new YNAB features?", "a": "Yes — MoneyWise has an AI advisor. The difference: you can plug in your own Anthropic or OpenAI key, so your data isn't sent to a vendor's pipeline." },
-        { "q": "Can I use MoneyWise alongside YNAB?", "a": "Yes — many people start with MoneyWise for quick mobile entry and keep YNAB for the budget method. There's no lock-in either way." }
+        {
+          "q": "Can I import my YNAB data into MoneyWise?",
+          "a": "Today, no automatic importer. You can re-create accounts and start fresh. YNAB users tend to onboard quickly because they already think in categories."
+        },
+        {
+          "q": "Does MoneyWise do zero-based budgeting?",
+          "a": "MoneyWise has monthly category budgets with pacing, but not the strict YNAB rule-set. If the rule-set is what you love about YNAB, stay with YNAB."
+        },
+        {
+          "q": "Will MoneyWise work without internet?",
+          "a": "Yes. Every record is on your phone in an encrypted database. The app is fully usable in airplane mode."
+        },
+        {
+          "q": "How is MoneyWise's pricing different from YNAB's?",
+          "a": "MoneyWise is free for unlimited records on one device. Pro adds multi-device sync, backup, and pooled AI for $6.99/mo or $49.99/yr. YNAB is subscription-only at $14.99/mo or $109/yr."
+        },
+        {
+          "q": "Does MoneyWise have AI like the new YNAB features?",
+          "a": "Yes — MoneyWise has an AI advisor. The difference: you can plug in your own Anthropic or OpenAI key, so your data isn't sent to a vendor's pipeline."
+        },
+        {
+          "q": "Can I use MoneyWise alongside YNAB?",
+          "a": "Yes — many people start with MoneyWise for quick mobile entry and keep YNAB for the budget method. There's no lock-in either way."
+        }
+      ]
+    },
+    "empower": {
+      "one_liner": "a free investment dashboard and net worth tracker",
+      "positioning": "Empower (formerly Personal Capital) is a free financial planning platform built around investment dashboards, net worth tracking, and retirement planning. MoneyWise focuses on privacy-first, local-first budgeting with multi-currency support and BYOK AI — complementing rather than competing with Empower's investment tools.",
+      "when_choose_competitor": "You are primarily focused on growing and monitoring investments, retirement readiness, and net worth across brokerage and retirement accounts, and you want a free cloud-based dashboard to see it all in one place.",
+      "when_choose_moneywise": "You want day-to-day spending control, privacy for your transaction data, support for multiple currencies, or an AI financial advisor that uses your own API key rather than processing your data on a third-party server.",
+      "faq": [
+        {
+          "q": "Is Empower really free?",
+          "a": "Yes — Empower's financial planning tools (net worth, portfolio analysis, retirement planner, budgeting) are completely free to use. The optional Wealth Management advisory service is a paid offering starting at accounts of $100k+."
+        },
+        {
+          "q": "How does Empower differ from MoneyWise?",
+          "a": "Empower is built around investment portfolios and retirement planning — it shines for wealth tracking. MoneyWise is built around everyday budgeting, manual entry for privacy, multi-currency accounts, and a local-first encrypted database. They serve different primary needs."
+        },
+        {
+          "q": "Does Empower store my financial data on their servers?",
+          "a": "Yes. Empower syncs all linked accounts to their cloud servers to power its dashboards. MoneyWise stores your data locally on your device in an encrypted database, with optional end-to-end encrypted cloud sync."
+        },
+        {
+          "q": "Does Empower support multiple currencies?",
+          "a": "Empower is designed for US-based accounts in USD. Multi-currency support is not offered. MoneyWise supports accounts in any currency with daily exchange rates built in."
+        },
+        {
+          "q": "Can I use both Empower and MoneyWise together?",
+          "a": "Many users find they complement each other: Empower for the investment and retirement big picture, MoneyWise for day-to-day budgeting with privacy and multi-currency tracking."
+        }
+      ]
+    },
+    "spendee": {
+      "one_liner": "a multi-currency expense tracker popular in Europe",
+      "positioning": "Spendee is a freemium expense tracker with strong multi-currency support, wallet sharing, and bank sync — widely used in Europe. Both Spendee and MoneyWise support multi-currency accounts, but MoneyWise's local-first encrypted storage and BYOK AI give privacy-conscious users a unique edge.",
+      "when_choose_competitor": "You want a polished visual expense tracker with wallet sharing for groups or couples, multi-currency support, and don't mind a modest monthly subscription for bank sync features.",
+      "when_choose_moneywise": "You want your financial data stored locally in an encrypted database, you travel with multiple currencies and need robust tracking, or you want to use your own AI key for financial insights without your data leaving your device.",
+      "faq": [
+        {
+          "q": "How does Spendee pricing compare to MoneyWise?",
+          "a": "Spendee Premium is $5.99/mo or $35.99/yr (Plus is $1.99/mo or $14.99/yr). MoneyWise is free for a single device; Pro is $6.99/mo or $49.99/yr. MoneyWise Pro includes more privacy features at a comparable price."
+        },
+        {
+          "q": "Does Spendee store data locally or in the cloud?",
+          "a": "Spendee syncs your data to the cloud. MoneyWise stores your data locally in an encrypted database on your device, with optional end-to-end encrypted cloud sync available in the Pro plan."
+        },
+        {
+          "q": "Both apps support multi-currency — what's different?",
+          "a": "Spendee's multi-currency support is well-regarded for group wallets and travel. MoneyWise adds local-first encryption so your multi-currency data stays private on device, plus BYOK AI for analyzing spending in any currency."
+        },
+        {
+          "q": "Does Spendee have AI features?",
+          "a": "Spendee offers automatic categorization but no AI advisor. MoneyWise Pro includes a BYOK AI advisor using your own Anthropic or OpenAI key, keeping your data private while providing intelligent insights."
+        },
+        {
+          "q": "Can Spendee sync to my bank accounts?",
+          "a": "Yes — bank sync is available on Spendee's Basic (limited), Plus, and Premium tiers. MoneyWise focuses on manual entry and receipt capture for maximum privacy, with bank sync on the roadmap."
+        },
+        {
+          "q": "Is Spendee available on desktop?",
+          "a": "Spendee has a web interface; its primary experience is on iOS and Android. MoneyWise also has iOS, Android, and web support."
+        }
+      ]
+    },
+    "pocketguard": {
+      "one_liner": "a spending-focused budgeting app that shows how much you can safely spend",
+      "positioning": "PocketGuard centers on one powerful idea: 'In My Pocket' — showing you exactly how much is safe to spend after bills, savings, and goals. MoneyWise offers similar spending guidance but pairs it with manual control, multi-currency support, local-first privacy, and BYOK AI for deeper financial conversations.",
+      "when_choose_competitor": "You want a simplified, automated budgeting experience that tells you your safe-to-spend amount each day, and you're happy with a US-centric app focused purely on overspending prevention.",
+      "when_choose_moneywise": "You want more granular control over your finances, use multiple currencies, need your data stored privately on-device, or want an AI financial advisor that uses your own API key and doesn't process your transactions on external servers.",
+      "faq": [
+        {
+          "q": "How does PocketGuard pricing compare to MoneyWise?",
+          "a": "PocketGuard Plus is $12.99/mo or $74.99/yr. MoneyWise is free for a single device; Pro is $6.99/mo or $49.99/yr. MoneyWise Pro costs significantly less annually while offering more privacy features."
+        },
+        {
+          "q": "What is PocketGuard's 'In My Pocket' feature?",
+          "a": "PocketGuard calculates your safe-to-spend amount by subtracting bills, recurring expenses, and savings goals from your account balances. It gives you a single number to guide daily spending. MoneyWise achieves similar goals through budget envelopes and AI-powered spending analysis."
+        },
+        {
+          "q": "Does PocketGuard support multiple currencies?",
+          "a": "PocketGuard is designed for US users and does not support multiple currencies. MoneyWise supports accounts in any currency with daily exchange rates built in."
+        },
+        {
+          "q": "Where does PocketGuard store my financial data?",
+          "a": "PocketGuard syncs linked accounts to their cloud servers. MoneyWise stores all data in an encrypted database on your device, with optional end-to-end encrypted cloud sync in the Pro plan."
+        },
+        {
+          "q": "Does PocketGuard have AI features?",
+          "a": "PocketGuard Plus includes an AI chat assistant for spending guidance. MoneyWise Pro offers a BYOK AI advisor using your own Anthropic or OpenAI key, so your full transaction history is never sent to a third party."
+        },
+        {
+          "q": "Is there a web version of PocketGuard?",
+          "a": "PocketGuard is primarily a mobile app for iOS and Android; a full web version is not available. MoneyWise supports iOS, Android, and web."
+        }
       ]
     }
   }

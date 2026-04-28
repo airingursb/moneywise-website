@@ -56,10 +56,22 @@
       "linux": "Linux"
     },
     "advantages": [
-      { "title": "Offline-first by design", "description": "Every record is in an encrypted SQLite database on your phone. Works in airplane mode." },
-      { "title": "Bring your own AI key", "description": "Plug in your Anthropic or OpenAI key. Insights run with no extra subscription. Or use pooled credits in Pro." },
-      { "title": "Multi-currency from day one", "description": "Hold accounts in any currency. Convert with daily rates. No 'home currency only' lock-in." },
-      { "title": "No ads, no trackers", "description": "Nothing leaves your device unless you turn on optional encrypted sync. We literally cannot read your data." }
+      {
+        "title": "Offline-first by design",
+        "description": "Every record is in an encrypted SQLite database on your phone. Works in airplane mode."
+      },
+      {
+        "title": "Bring your own AI key",
+        "description": "Plug in your Anthropic or OpenAI key. Insights run with no extra subscription. Or use pooled credits in Pro."
+      },
+      {
+        "title": "Multi-currency from day one",
+        "description": "Hold accounts in any currency. Convert with daily rates. No 'home currency only' lock-in."
+      },
+      {
+        "title": "No ads, no trackers",
+        "description": "Nothing leaves your device unless you turn on optional encrypted sync. We literally cannot read your data."
+      }
     ],
     "ai_deep_dive": {
       "eyebrow": "AI you control",
@@ -96,12 +108,30 @@
       "when_choose_competitor": "Mint 已無法註冊新帳戶。如果你是 Mint 的舊用戶，可以考慮官方推薦的 Credit Karma 遷移路徑，或選擇其他現代記帳應用程式。",
       "when_choose_moneywise": "你希望擁有一款隱私保護、無廣告、可離線使用、支援多幣種的記帳應用程式，且不希望自己的財務資料遭到出售。MoneyWise 正是 Mint 從未做到的那種純粹體驗。",
       "faq": [
-        { "q": "Mint 在 2024 年還能使用嗎？", "a": "不行。Intuit 於 2024 年初關閉了 Mint，並將用戶重新導向至 Credit Karma。原 Mint 應用程式和網站已不再接受新註冊或活躍帳戶。" },
-        { "q": "Mint 關閉後，用戶去了哪裡？", "a": "Intuit 官方將 Mint 用戶遷移至 Credit Karma，並在其中加入了交易追蹤和淨資產功能。許多用戶也轉向了 YNAB、Monarch Money、Copilot 或 MoneyWise。" },
-        { "q": "我能將 Mint 的歷史資料匯入 MoneyWise 嗎？", "a": "MoneyWise 目前尚未支援一鍵匯入 Mint CSV 檔案。你可以從 Credit Karma 匯出交易記錄，再手動新增最重要的帳戶重新開始。" },
-        { "q": "MoneyWise 和 Mint 有什麼不同？", "a": "Mint 是免費但含廣告的，且將所有資料儲存在 Intuit 的伺服器上。MoneyWise 採用本地優先架構——你的資料保存在裝置的加密資料庫中，沒有廣告，也沒有追蹤器。" },
-        { "q": "MoneyWise 像 Mint 一樣支援自動同步銀行帳戶嗎？", "a": "MoneyWise 目前專注於手動記帳和拍照記帳以保護隱私，自動銀行同步功能正在規劃中。暫時可透過從銀行匯出 CSV 檔案來匯入帳單。" },
-        { "q": "MoneyWise 像 Mint 一樣是免費的嗎？", "a": "MoneyWise 在單一裝置上可無限免費記帳。Pro 版（$6.99/月 或 $49.99/年）增加了多裝置同步、備份和 AI 功能。與 Mint 的免費模式不同，MoneyWise 沒有廣告也不出售用戶資料。" }
+        {
+          "q": "Mint 在 2024 年還能使用嗎？",
+          "a": "不行。Intuit 於 2024 年初關閉了 Mint，並將用戶重新導向至 Credit Karma。原 Mint 應用程式和網站已不再接受新註冊或活躍帳戶。"
+        },
+        {
+          "q": "Mint 關閉後，用戶去了哪裡？",
+          "a": "Intuit 官方將 Mint 用戶遷移至 Credit Karma，並在其中加入了交易追蹤和淨資產功能。許多用戶也轉向了 YNAB、Monarch Money、Copilot 或 MoneyWise。"
+        },
+        {
+          "q": "我能將 Mint 的歷史資料匯入 MoneyWise 嗎？",
+          "a": "MoneyWise 目前尚未支援一鍵匯入 Mint CSV 檔案。你可以從 Credit Karma 匯出交易記錄，再手動新增最重要的帳戶重新開始。"
+        },
+        {
+          "q": "MoneyWise 和 Mint 有什麼不同？",
+          "a": "Mint 是免費但含廣告的，且將所有資料儲存在 Intuit 的伺服器上。MoneyWise 採用本地優先架構——你的資料保存在裝置的加密資料庫中，沒有廣告，也沒有追蹤器。"
+        },
+        {
+          "q": "MoneyWise 像 Mint 一樣支援自動同步銀行帳戶嗎？",
+          "a": "MoneyWise 目前專注於手動記帳和拍照記帳以保護隱私，自動銀行同步功能正在規劃中。暫時可透過從銀行匯出 CSV 檔案來匯入帳單。"
+        },
+        {
+          "q": "MoneyWise 像 Mint 一樣是免費的嗎？",
+          "a": "MoneyWise 在單一裝置上可無限免費記帳。Pro 版（$6.99/月 或 $49.99/年）增加了多裝置同步、備份和 AI 功能。與 Mint 的免費模式不同，MoneyWise 沒有廣告也不出售用戶資料。"
+        }
       ]
     },
     "rocket-money": {
@@ -110,12 +140,30 @@
       "when_choose_competitor": "若你有許多不需要的訂閱需要取消、想要帶有自動銀行同步的免費記帳應用程式，且接受由 Rocket Companies 支持的廣告模式，Rocket Money 是不錯的選擇。",
       "when_choose_moneywise": "若你希望財務資料本地儲存、無追蹤器，有多幣種需求或經常出行，或傾向於使用自己金鑰的 AI 顧問而非內建黑盒，MoneyWise 更適合你。",
       "faq": [
-        { "q": "Rocket Money 真的免費嗎？", "a": "Rocket Money 提供包含基礎預算和消費追蹤的免費版本。進階功能——包括訂閱取消、信用監控和自動儲蓄——需要付費方案（$4–$12/月，用戶自選）。" },
-        { "q": "Rocket Money 的 AI 功能是做什麼的？", "a": "Rocket Money 的 AI 主要用於識別定期訂閱並標記可節省或取消的服務機會。MoneyWise 的 AI 顧問使用你自己的 Anthropic 或 OpenAI 金鑰，可回答更廣泛的財務問題。" },
-        { "q": "Rocket Money 支援多幣種嗎？", "a": "不支援——Rocket Money 僅為美國銀行帳戶和美元設計。MoneyWise 支援任意幣種的帳戶，並提供即時匯率。" },
-        { "q": "Rocket Money 和 MoneyWise 在隱私方面如何比較？", "a": "Rocket Money 隸屬於 Rocket Companies，透過廣告、追加銷售和資料合作獲利。MoneyWise 將資料本地儲存，無廣告無追蹤器——除非你選擇加密雲端同步，否則資料不會離開裝置。" },
-        { "q": "Rocket Money 支援家庭或伴侶共享嗎？", "a": "Rocket Money 沒有正式的家庭共享方案。MoneyWise Pro 支援多裝置同步，伴侶可以存取相同帳戶。" },
-        { "q": "我可以將 Rocket Money 的資料匯出到 MoneyWise 嗎？", "a": "你可以從 Rocket Money 將交易歷史匯出為 CSV，再手動將主要帳戶新增到 MoneyWise 中。目前尚無自動匯入功能。" }
+        {
+          "q": "Rocket Money 真的免費嗎？",
+          "a": "Rocket Money 提供包含基礎預算和消費追蹤的免費版本。進階功能——包括訂閱取消、信用監控和自動儲蓄——需要付費方案（$4–$12/月，用戶自選）。"
+        },
+        {
+          "q": "Rocket Money 的 AI 功能是做什麼的？",
+          "a": "Rocket Money 的 AI 主要用於識別定期訂閱並標記可節省或取消的服務機會。MoneyWise 的 AI 顧問使用你自己的 Anthropic 或 OpenAI 金鑰，可回答更廣泛的財務問題。"
+        },
+        {
+          "q": "Rocket Money 支援多幣種嗎？",
+          "a": "不支援——Rocket Money 僅為美國銀行帳戶和美元設計。MoneyWise 支援任意幣種的帳戶，並提供即時匯率。"
+        },
+        {
+          "q": "Rocket Money 和 MoneyWise 在隱私方面如何比較？",
+          "a": "Rocket Money 隸屬於 Rocket Companies，透過廣告、追加銷售和資料合作獲利。MoneyWise 將資料本地儲存，無廣告無追蹤器——除非你選擇加密雲端同步，否則資料不會離開裝置。"
+        },
+        {
+          "q": "Rocket Money 支援家庭或伴侶共享嗎？",
+          "a": "Rocket Money 沒有正式的家庭共享方案。MoneyWise Pro 支援多裝置同步，伴侶可以存取相同帳戶。"
+        },
+        {
+          "q": "我可以將 Rocket Money 的資料匯出到 MoneyWise 嗎？",
+          "a": "你可以從 Rocket Money 將交易歷史匯出為 CSV，再手動將主要帳戶新增到 MoneyWise 中。目前尚無自動匯入功能。"
+        }
       ]
     },
     "monarch-money": {
@@ -124,12 +172,30 @@
       "when_choose_competitor": "若你想與伴侶共同管理預算、需要完善的投資追蹤，且不介意為全雲端服務支付較高的訂閱費，Monarch Money 是理想選擇。",
       "when_choose_moneywise": "若你希望資料保存在本地裝置、有多幣種需求、經常出行，或傾向自帶 AI 金鑰而非讓對方伺服器讀取你的交易記錄，MoneyWise 更適合你。",
       "faq": [
-        { "q": "Monarch Money 和 MoneyWise 的定價如何比較？", "a": "Monarch 訂閱費為 $14.99/月 或 $99.99/年，附 7 天免費試用。MoneyWise 在單一裝置上免費；Pro 版為 $6.99/月 或 $49.99/年，年費約為 Monarch 的一半。" },
-        { "q": "Monarch Money 支援多幣種嗎？", "a": "Monarch Money 主要面向美國用戶，不提供多幣種帳戶追蹤。MoneyWise 支援任意幣種的帳戶，並內建每日匯率換算。" },
-        { "q": "Monarch Money 將我的資料儲存在哪裡？", "a": "Monarch 透過 Plaid 和 Finicity 將你關聯的銀行資料儲存在其伺服器上。MoneyWise 將所有內容保存在裝置的加密資料庫中，雲端同步為可選項，且經過端對端加密。" },
-        { "q": "Monarch Money 有 AI 功能嗎？", "a": "Monarch Money 具備一定的 AI 驅動分類和報告功能。MoneyWise 的 AI 顧問使用你自己的 Anthropic 或 OpenAI 金鑰，讓你獲得 AI 洞察的同時，不將完整交易記錄交由第三方處理。" },
-        { "q": "Monarch Money 適合夫妻／伴侶使用嗎？", "a": "非常適合——Monarch 的共享預算檢視是其最強功能之一。MoneyWise Pro 也支援多裝置同步，伴侶可共同存取，但協作檢視相對 Monarch 更簡潔。" },
-        { "q": "我可以將 Monarch Money 的資料匯入 MoneyWise 嗎？", "a": "MoneyWise 暫時沒有直接的 Monarch 匯入功能。你可以從 Monarch 匯出 CSV 格式的交易記錄，再在 MoneyWise 中重新建立主要帳戶。" }
+        {
+          "q": "Monarch Money 和 MoneyWise 的定價如何比較？",
+          "a": "Monarch 訂閱費為 $14.99/月 或 $99.99/年，附 7 天免費試用。MoneyWise 在單一裝置上免費；Pro 版為 $6.99/月 或 $49.99/年，年費約為 Monarch 的一半。"
+        },
+        {
+          "q": "Monarch Money 支援多幣種嗎？",
+          "a": "Monarch Money 主要面向美國用戶，不提供多幣種帳戶追蹤。MoneyWise 支援任意幣種的帳戶，並內建每日匯率換算。"
+        },
+        {
+          "q": "Monarch Money 將我的資料儲存在哪裡？",
+          "a": "Monarch 透過 Plaid 和 Finicity 將你關聯的銀行資料儲存在其伺服器上。MoneyWise 將所有內容保存在裝置的加密資料庫中，雲端同步為可選項，且經過端對端加密。"
+        },
+        {
+          "q": "Monarch Money 有 AI 功能嗎？",
+          "a": "Monarch Money 具備一定的 AI 驅動分類和報告功能。MoneyWise 的 AI 顧問使用你自己的 Anthropic 或 OpenAI 金鑰，讓你獲得 AI 洞察的同時，不將完整交易記錄交由第三方處理。"
+        },
+        {
+          "q": "Monarch Money 適合夫妻／伴侶使用嗎？",
+          "a": "非常適合——Monarch 的共享預算檢視是其最強功能之一。MoneyWise Pro 也支援多裝置同步，伴侶可共同存取，但協作檢視相對 Monarch 更簡潔。"
+        },
+        {
+          "q": "我可以將 Monarch Money 的資料匯入 MoneyWise 嗎？",
+          "a": "MoneyWise 暫時沒有直接的 Monarch 匯入功能。你可以從 Monarch 匯出 CSV 格式的交易記錄，再在 MoneyWise 中重新建立主要帳戶。"
+        }
       ]
     },
     "copilot-money": {
@@ -138,12 +204,30 @@
       "when_choose_competitor": "若你深度使用蘋果生態（iPhone + Mac），偏好優雅的自動化體驗，且願意接受資料儲存於雲端的訂閱模式，Copilot 是很好的選擇。",
       "when_choose_moneywise": "若你使用 Android、有多幣種需求、希望資料本地儲存，或更傾向自帶 AI 金鑰而非依賴內建模型，MoneyWise 更適合你。",
       "faq": [
-        { "q": "Copilot 支援 Android 嗎？", "a": "不支援——截至 2026 年，Copilot 僅支援 iOS 和 macOS。若需要 Android 支援，MoneyWise、YNAB 和 Monarch Money 都是跨平台的替代選擇。" },
-        { "q": "Copilot 和 MoneyWise 的定價如何比較？", "a": "Copilot 訂閱費為 $7.92/月 或 $95/年，沒有免費版。MoneyWise 在單一裝置上可以免費無限使用；Pro 版為 $6.99/月 或 $49.99/年。" },
-        { "q": "Copilot 有 AI 功能嗎？", "a": "有，Copilot 內建 AI 分析你的交易記錄。MoneyWise 也有 AI 顧問，但使用的是你自己的 Anthropic 或 OpenAI 金鑰——你的財務資料不會流經第三方 AI 管道。" },
-        { "q": "Copilot 支援多幣種嗎？", "a": "Copilot 主要面向美國用戶，不具備完善的多幣種支援。MoneyWise 支援任意幣種的帳戶並提供每日匯率換算。" },
-        { "q": "Copilot 將我的財務資料儲存在哪裡？", "a": "Copilot 透過 Plaid 同步銀行資料並儲存在 Copilot 伺服器上。MoneyWise 將所有資料儲存在裝置的加密資料庫中；雲端同步為可選項，且端對端加密。" },
-        { "q": "我可以同時使用 Copilot 和 MoneyWise 嗎？", "a": "可以——部分用戶用 Copilot 自動同步美國銀行帳戶，用 MoneyWise 管理外幣帳戶或享受離線／隱私保障。兩者不存在技術衝突。" }
+        {
+          "q": "Copilot 支援 Android 嗎？",
+          "a": "不支援——截至 2026 年，Copilot 僅支援 iOS 和 macOS。若需要 Android 支援，MoneyWise、YNAB 和 Monarch Money 都是跨平台的替代選擇。"
+        },
+        {
+          "q": "Copilot 和 MoneyWise 的定價如何比較？",
+          "a": "Copilot 訂閱費為 $7.92/月 或 $95/年，沒有免費版。MoneyWise 在單一裝置上可以免費無限使用；Pro 版為 $6.99/月 或 $49.99/年。"
+        },
+        {
+          "q": "Copilot 有 AI 功能嗎？",
+          "a": "有，Copilot 內建 AI 分析你的交易記錄。MoneyWise 也有 AI 顧問，但使用的是你自己的 Anthropic 或 OpenAI 金鑰——你的財務資料不會流經第三方 AI 管道。"
+        },
+        {
+          "q": "Copilot 支援多幣種嗎？",
+          "a": "Copilot 主要面向美國用戶，不具備完善的多幣種支援。MoneyWise 支援任意幣種的帳戶並提供每日匯率換算。"
+        },
+        {
+          "q": "Copilot 將我的財務資料儲存在哪裡？",
+          "a": "Copilot 透過 Plaid 同步銀行資料並儲存在 Copilot 伺服器上。MoneyWise 將所有資料儲存在裝置的加密資料庫中；雲端同步為可選項，且端對端加密。"
+        },
+        {
+          "q": "我可以同時使用 Copilot 和 MoneyWise 嗎？",
+          "a": "可以——部分用戶用 Copilot 自動同步美國銀行帳戶，用 MoneyWise 管理外幣帳戶或享受離線／隱私保障。兩者不存在技術衝突。"
+        }
       ]
     },
     "ynab": {
@@ -152,12 +236,122 @@
       "when_choose_competitor": "You've already adopted zero-based budgeting and want every dollar assigned a job. Your finances are mostly in one currency, and you're happy paying for a strong methodology coach.",
       "when_choose_moneywise": "You handle multiple currencies, you want your data on your device (not in a vendor's cloud), or you want AI insights without paying for yet another subscription.",
       "faq": [
-        { "q": "Can I import my YNAB data into MoneyWise?", "a": "Today, no automatic importer. You can re-create accounts and start fresh. YNAB users tend to onboard quickly because they already think in categories." },
-        { "q": "Does MoneyWise do zero-based budgeting?", "a": "MoneyWise has monthly category budgets with pacing, but not the strict YNAB rule-set. If the rule-set is what you love about YNAB, stay with YNAB." },
-        { "q": "Will MoneyWise work without internet?", "a": "Yes. Every record is on your phone in an encrypted database. The app is fully usable in airplane mode." },
-        { "q": "How is MoneyWise's pricing different from YNAB's?", "a": "MoneyWise is free for unlimited records on one device. Pro adds multi-device sync, backup, and pooled AI for $6.99/mo or $49.99/yr. YNAB is subscription-only at $14.99/mo or $109/yr." },
-        { "q": "Does MoneyWise have AI like the new YNAB features?", "a": "Yes — MoneyWise has an AI advisor. The difference: you can plug in your own Anthropic or OpenAI key, so your data isn't sent to a vendor's pipeline." },
-        { "q": "Can I use MoneyWise alongside YNAB?", "a": "Yes — many people start with MoneyWise for quick mobile entry and keep YNAB for the budget method. There's no lock-in either way." }
+        {
+          "q": "Can I import my YNAB data into MoneyWise?",
+          "a": "Today, no automatic importer. You can re-create accounts and start fresh. YNAB users tend to onboard quickly because they already think in categories."
+        },
+        {
+          "q": "Does MoneyWise do zero-based budgeting?",
+          "a": "MoneyWise has monthly category budgets with pacing, but not the strict YNAB rule-set. If the rule-set is what you love about YNAB, stay with YNAB."
+        },
+        {
+          "q": "Will MoneyWise work without internet?",
+          "a": "Yes. Every record is on your phone in an encrypted database. The app is fully usable in airplane mode."
+        },
+        {
+          "q": "How is MoneyWise's pricing different from YNAB's?",
+          "a": "MoneyWise is free for unlimited records on one device. Pro adds multi-device sync, backup, and pooled AI for $6.99/mo or $49.99/yr. YNAB is subscription-only at $14.99/mo or $109/yr."
+        },
+        {
+          "q": "Does MoneyWise have AI like the new YNAB features?",
+          "a": "Yes — MoneyWise has an AI advisor. The difference: you can plug in your own Anthropic or OpenAI key, so your data isn't sent to a vendor's pipeline."
+        },
+        {
+          "q": "Can I use MoneyWise alongside YNAB?",
+          "a": "Yes — many people start with MoneyWise for quick mobile entry and keep YNAB for the budget method. There's no lock-in either way."
+        }
+      ]
+    },
+    "empower": {
+      "one_liner": "免費的投資儀表板與淨值追蹤工具",
+      "positioning": "Empower（前稱 Personal Capital）是以投資儀表板、淨資產追蹤和退休規劃為核心的免費理財平台。MoneyWise 則專注於隱私優先的本地記帳、多幣種支援和自帶 AI 金鑰功能，與 Empower 的投資工具形成互補而非競爭。",
+      "when_choose_competitor": "若你主要關注投資組合成長、退休準備以及跨帳戶淨值追蹤，並希望透過免費的雲端儀表板一覽全局，Empower 是理想選擇。",
+      "when_choose_moneywise": "若你需要精細的日常消費管理、對交易資料有隱私要求、使用多種貨幣，或希望用自己的 API 金鑰驅動 AI 財務顧問而非將資料交給第三方伺服器處理，MoneyWise 更適合你。",
+      "faq": [
+        {
+          "q": "Empower 真的免費嗎？",
+          "a": "是的 —— Empower 的理財規劃工具（淨值追蹤、投資組合分析、退休規劃、預算管理）完全免費。可選的財富管理諮詢服務是針對 $10 萬以上資產的付費服務。"
+        },
+        {
+          "q": "Empower 和 MoneyWise 有何不同？",
+          "a": "Empower 專注於投資組合和退休規劃，是財富追蹤的利器。MoneyWise 則聚焦於日常記帳、隱私保護、多幣種帳戶和本地加密資料庫，兩者服務於不同的核心需求。"
+        },
+        {
+          "q": "Empower 會將我的財務資料儲存在其伺服器上嗎？",
+          "a": "是的，Empower 會將所有關聯帳戶同步到其雲端伺服器。MoneyWise 則將資料儲存在裝置本地的加密資料庫中，雲端同步是選項且經過端對端加密。"
+        },
+        {
+          "q": "Empower 支援多幣種嗎？",
+          "a": "Empower 主要面向美國用戶，帳戶以美元計價，不支援多幣種。MoneyWise 支援任意幣種的帳戶，內建每日匯率換算。"
+        },
+        {
+          "q": "我可以同時使用 Empower 和 MoneyWise 嗎？",
+          "a": "許多用戶將兩者結合使用：以 Empower 總覽投資和退休規劃，以 MoneyWise 處理日常記帳、保護隱私並管理多幣種帳戶。"
+        }
+      ]
+    },
+    "spendee": {
+      "one_liner": "在歐洲廣受歡迎的多幣種支出追蹤應用",
+      "positioning": "Spendee 是一款以多幣種支援、錢包共享和銀行同步為特色的免費增值支出追蹤應用，在歐洲尤為流行。Spendee 和 MoneyWise 均支援多幣種帳戶，但 MoneyWise 的本地加密儲存和自帶 AI 金鑰功能為注重隱私的用戶提供了獨特優勢。",
+      "when_choose_competitor": "若你想要一款介面精美、支援多人或伴侶共享錢包、多幣種追蹤的支出應用，且願意為銀行同步功能支付小額訂閱費，Spendee 是不錯的選擇。",
+      "when_choose_moneywise": "若你希望財務資料儲存在裝置本地的加密資料庫中、需要強大的多幣種旅行追蹤，或想用自己的 AI 金鑰獲取財務洞察而無需將資料上傳至伺服器，MoneyWise 更適合你。",
+      "faq": [
+        {
+          "q": "Spendee 和 MoneyWise 的定價如何比較？",
+          "a": "Spendee Premium 為 $5.99/月 或 $35.99/年（Plus 為 $1.99/月 或 $14.99/年）。MoneyWise 在單一裝置上免費，Pro 版為 $6.99/月 或 $49.99/年，在同等價位下提供更多隱私功能。"
+        },
+        {
+          "q": "Spendee 將資料儲存在本地還是雲端？",
+          "a": "Spendee 將資料同步至雲端。MoneyWise 則將資料儲存在裝置本地的加密資料庫中，Pro 版提供可選的端對端加密雲端同步。"
+        },
+        {
+          "q": "兩款應用都支援多幣種，有何不同？",
+          "a": "Spendee 的多幣種支援以群組錢包和旅行場景見長。MoneyWise 額外提供本地優先的加密儲存，讓多幣種資料留在裝置上，並配備 BYOK AI 以分析任意幣種的消費情況。"
+        },
+        {
+          "q": "Spendee 有 AI 功能嗎？",
+          "a": "Spendee 提供自動分類功能，但沒有 AI 顧問。MoneyWise Pro 包含 BYOK AI 顧問，使用你自己的 Anthropic 或 OpenAI 金鑰，在保護隱私的同時提供智能財務洞察。"
+        },
+        {
+          "q": "Spendee 可以同步銀行帳戶嗎？",
+          "a": "可以 —— Spendee Basic（有限制）、Plus 和 Premium 均支援銀行同步。MoneyWise 專注於手動輸入和收據拍照以最大化隱私保護，銀行同步功能已在規劃中。"
+        },
+        {
+          "q": "Spendee 有桌面端嗎？",
+          "a": "Spendee 有網頁介面，主要體驗在 iOS 和 Android 上。MoneyWise 同樣支援 iOS、Android 和網頁端。"
+        }
+      ]
+    },
+    "pocketguard": {
+      "one_liner": "聚焦消費控制、告訴你今天能花多少錢的記帳應用",
+      "positioning": "PocketGuard 圍繞一個核心理念「我的口袋」構建 —— 在扣除帳單、儲蓄和目標後，直接告訴你今天可以安全花多少錢。MoneyWise 提供類似的消費指導，同時結合手動控制、多幣種支援、本地優先隱私保護和 BYOK AI，帶來更深度的財務對話體驗。",
+      "when_choose_competitor": "若你想要一款簡化的自動記帳體驗，每天告訴你安全可花金額，且滿足於專注防止超支的美國市場應用，PocketGuard 很適合你。",
+      "when_choose_moneywise": "若你需要對財務有更精細的掌控、使用多種貨幣、希望資料私密地儲存在本地，或想用自己的 API 金鑰驅動 AI 財務顧問而非將交易資料傳送至外部伺服器，MoneyWise 更適合你。",
+      "faq": [
+        {
+          "q": "PocketGuard 和 MoneyWise 的定價如何比較？",
+          "a": "PocketGuard Plus 為 $12.99/月 或 $74.99/年。MoneyWise 在單一裝置上免費，Pro 版為 $6.99/月 或 $49.99/年。MoneyWise Pro 年費顯著更低，同時提供更多隱私功能。"
+        },
+        {
+          "q": "PocketGuard 的「我的口袋」功能是什麼？",
+          "a": "PocketGuard 從帳戶餘額中扣除帳單、週期性支出和儲蓄目標，計算出你今天可以安全花多少錢。MoneyWise 透過預算信封和 AI 驅動的消費分析實現類似目標。"
+        },
+        {
+          "q": "PocketGuard 支援多幣種嗎？",
+          "a": "PocketGuard 面向美國用戶，不支援多幣種。MoneyWise 支援任意幣種的帳戶，內建每日匯率換算。"
+        },
+        {
+          "q": "PocketGuard 將財務資料儲存在哪裡？",
+          "a": "PocketGuard 將關聯帳戶同步到其雲端伺服器。MoneyWise 將所有資料儲存在裝置本地的加密資料庫中，Pro 版提供可選的端對端加密雲端同步。"
+        },
+        {
+          "q": "PocketGuard 有 AI 功能嗎？",
+          "a": "PocketGuard Plus 包含 AI 聊天助手，提供消費指導。MoneyWise Pro 提供 BYOK AI 顧問，使用你自己的 Anthropic 或 OpenAI 金鑰，完整交易記錄不會被傳送至第三方。"
+        },
+        {
+          "q": "PocketGuard 有網頁版嗎？",
+          "a": "PocketGuard 主要是 iOS 和 Android 行動應用，沒有完整的網頁版。MoneyWise 支援 iOS、Android 和網頁端。"
+        }
       ]
     }
   }
