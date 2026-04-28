@@ -20,6 +20,9 @@ const { title, description, locale, slug = '' } = Astro.props;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#2D6B3F" />
+    {SITE.searchConsoleVerification && (
+      <meta name="google-site-verification" content={SITE.searchConsoleVerification} />
+    )}
     <SeoHead title={title} description={description} locale={locale} slug={slug} />
     <script
       is:inline

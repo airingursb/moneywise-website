@@ -11,6 +11,7 @@ export const SITE = {
   umamiScriptUrl: 'https://analytics.ursb.me/script.js',
   umamiWebsiteId: 'fa8052bb-dd85-4287-9c63-da9b2f97fdef',
   gaMeasurementId: 'G-CZ727SS9LD',
+  searchConsoleVerification: '',
   contactEmail: 'moflowapp@gmail.com',
   githubUrl: 'https://github.com/airingursb/moneywise',
   locales: LOCALES,
