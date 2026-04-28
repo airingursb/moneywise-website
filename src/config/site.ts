@@ -7,7 +7,7 @@ export const SITE = {
   name: 'MoneyWise',
   appStoreId: '6762085775',
   appStoreUrl: 'https://apps.apple.com/app/id6762085775',
-  appStoreAvailable: false, // flip to true after App Store approval
+  appStoreAvailable: true,
   umamiScriptUrl: 'https://analytics.ursb.me/script.js',
   umamiWebsiteId: 'fa8052bb-dd85-4287-9c63-da9b2f97fdef',
   contactEmail: 'moflowapp@gmail.com',
