@@ -482,6 +482,38 @@
         }
       ]
     },
+    "money-forward-me": {
+      "one_liner": "Japan's largest personal-finance aggregator with 2,500+ institution connections",
+      "positioning": "Money Forward ME (マネーフォワード ME) is the dominant personal-finance aggregator in Japan, connecting to 2,500+ financial institutions — banks, credit cards, brokerage accounts, and more. MoneyWise brings local-first privacy, multi-currency tracking, and BYOK AI to users who need more than a Japan-centric cloud aggregation platform.",
+      "when_choose_competitor": "You are based in Japan, want automatic aggregation of all your Japanese bank accounts, credit cards, and investment portfolios in one place, and are comfortable with a cloud-based subscription service.",
+      "when_choose_moneywise": "You handle multiple currencies, want your financial data stored locally on your device with no ads or trackers, need an AI advisor you fully control with your own API key, or you are outside Japan where Money Forward ME's institution sync does not function.",
+      "faq": [
+        {
+          "q": "Is Money Forward ME available outside Japan?",
+          "a": "Money Forward ME can be downloaded internationally, but its core feature — connecting to 2,500+ Japanese financial institutions — only works within Japan. MoneyWise works globally and supports multi-currency accounts out of the box."
+        },
+        {
+          "q": "How does Money Forward ME pricing work?",
+          "a": "Money Forward ME has a free tier with limitations (e.g., limited account connections). Premium is ¥500/month via web or ¥720/month via App Store/Play (about $4.80/mo). An annual plan is also available. MoneyWise is free on a single device; Pro is $6.99/mo or $49.99/yr."
+        },
+        {
+          "q": "Does Money Forward ME store my data locally or in the cloud?",
+          "a": "Money Forward ME syncs all linked account data to its cloud servers. MoneyWise stores everything in an encrypted database on your device. Cloud sync in MoneyWise is optional and end-to-end encrypted."
+        },
+        {
+          "q": "Does Money Forward ME support multiple currencies?",
+          "a": "Money Forward ME is focused on the Japanese market and JPY. It does not offer multi-currency account tracking. MoneyWise supports accounts in any currency with daily exchange rates."
+        },
+        {
+          "q": "Does Money Forward ME have AI features?",
+          "a": "Money Forward ME does not currently offer an AI advisor. MoneyWise Pro includes a BYOK AI advisor — you plug in your own Anthropic or OpenAI key, so your transactions are never sent to a third-party AI vendor."
+        },
+        {
+          "q": "Does Money Forward ME support investment tracking?",
+          "a": "Yes — one of Money Forward ME's key strengths is aggregating brokerage and investment accounts alongside bank and card data. MoneyWise does not currently aggregate brokerage accounts, but provides strong expense and budget tracking."
+        }
+      ]
+    },
     "zaim": {
       "one_liner": "Japan's most popular household-finance app (家計簿)",
       "positioning": "Zaim is the leading 家計簿 (household finance) app in Japan, with Japanese bank sync, receipt scanning, and budgeting built for domestic users. MoneyWise brings local-first privacy, multi-currency tracking, and BYOK AI to users who need more than a Japan-centric cloud platform.",

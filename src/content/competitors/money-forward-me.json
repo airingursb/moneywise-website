@@ -1,0 +1,45 @@
+{
+  "slug": "money-forward-me",
+  "displayName": "Money Forward ME",
+  "fullName": "マネーフォワード ME",
+  "websiteUrl": "https://moneyforward.com",
+  "hideFromIndex": false,
+  "region": "japanese",
+  "pricing": {
+    "model": "freemium",
+    "monthly": 4.80,
+    "annual": 53.00,
+    "notes": "プレミアム ¥500-720/月（Web/App で異なる）"
+  },
+  "platforms": {
+    "ios": true,
+    "android": true,
+    "web": true,
+    "macos": false,
+    "windows": false,
+    "linux": false
+  },
+  "features": {
+    "multiCurrency": false,
+    "offlineFirst": false,
+    "localEncryption": false,
+    "optionalCloudSync": true,
+    "byokAi": false,
+    "builtinAi": false,
+    "investments": true,
+    "budgets": true,
+    "receiptPhotos": true,
+    "voiceInput": false,
+    "bankSync": true,
+    "familySharing": false,
+    "noAds": false,
+    "noTrackers": false,
+    "openSource": false
+  },
+  "sources": [
+    { "label": "マネーフォワード ME 公式サイト", "url": "https://moneyforward.com" },
+    { "label": "Money Forward ME App Store", "url": "https://apps.apple.com/jp/app/id589652358" }
+  ],
+  "lastVerified": "2026-04-27",
+  "verificationConfidence": "medium"
+}
