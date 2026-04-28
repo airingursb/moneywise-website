@@ -1,0 +1,44 @@
+{
+  "slug": "_self",
+  "displayName": "MoneyWise",
+  "fullName": "MoneyWise — Local-first finance",
+  "websiteUrl": "https://moneywise.airingdeng.com",
+  "hideFromIndex": true,
+  "region": "self",
+  "pricing": {
+    "model": "freemium",
+    "monthly": 6.99,
+    "annual": 49.99,
+    "notes": "Free for unlimited records on a single device. Pro adds sync, backup, pooled AI."
+  },
+  "platforms": {
+    "ios": true,
+    "android": false,
+    "web": false,
+    "macos": false,
+    "windows": false,
+    "linux": false
+  },
+  "features": {
+    "multiCurrency": true,
+    "offlineFirst": true,
+    "localEncryption": true,
+    "optionalCloudSync": true,
+    "byokAi": true,
+    "builtinAi": true,
+    "investments": true,
+    "budgets": true,
+    "receiptPhotos": true,
+    "voiceInput": true,
+    "bankSync": false,
+    "familySharing": true,
+    "noAds": true,
+    "noTrackers": true,
+    "openSource": false
+  },
+  "sources": [
+    { "label": "MoneyWise pricing", "url": "https://moneywise.airingdeng.com/#pricing" }
+  ],
+  "lastVerified": "2026-04-27",
+  "verificationConfidence": "high"
+}
