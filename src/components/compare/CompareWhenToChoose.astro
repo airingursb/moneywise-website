@@ -1,0 +1,34 @@
+---
+import type { CompetitorData, CompareI18nData, CompetitorCopy } from '../../content.config';
+import { interpolate } from '../../lib/compare';
+
+interface Props {
+  self: CompetitorData;
+  competitor: CompetitorData;
+  c: CompareI18nData;
+  copy: CompetitorCopy;
+}
+const { self, competitor, c, copy } = Astro.props;
+const competitorHeading = interpolate(c.common.when_to_choose.competitor_heading_template, {
+  competitor: competitor.displayName,
+});
+---
+<section class="py-20 md:py-24 bg-[var(--color-surface-secondary)]">
+  <div class="mx-auto max-w-5xl px-6">
+    <h2 class="font-[family-name:var(--font-display)] font-bold text-[32px] md:text-[40px] leading-[1.05] tracking-[-0.025em] text-[var(--color-fg-primary)]">
+      {c.common.section_titles.when_to_choose}
+    </h2>
+    <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <article class="rounded-2xl bg-white border-2 border-[var(--color-accent-primary)] p-7">
+        <h3 class="text-[20px] font-bold text-[var(--color-accent-primary)]">
+          {c.common.when_to_choose.moneywise_heading} {self.displayName}
+        </h3>
+        <p class="mt-4 text-[15px] leading-[1.65] text-[var(--color-fg-primary)]">{copy.when_choose_moneywise}</p>
+      </article>
+      <article class="rounded-2xl bg-white border border-[var(--color-border)] p-7">
+        <h3 class="text-[20px] font-bold text-[var(--color-fg-primary)]">{competitorHeading}</h3>
+        <p class="mt-4 text-[15px] leading-[1.65] text-[var(--color-fg-secondary)]">{copy.when_choose_competitor}</p>
+      </article>
+    </div>
+  </div>
+</section>
