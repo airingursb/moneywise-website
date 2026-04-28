@@ -1,0 +1,45 @@
+{
+  "slug": "pocketguard",
+  "displayName": "PocketGuard",
+  "fullName": "PocketGuard",
+  "websiteUrl": "https://pocketguard.com",
+  "hideFromIndex": false,
+  "region": "western",
+  "pricing": {
+    "model": "freemium",
+    "monthly": 12.99,
+    "annual": 74.99,
+    "notes": "Free tier available. Plus $12.99/mo or $74.99/yr ($6.25/mo billed annually). Lifetime plan available in-app."
+  },
+  "platforms": {
+    "ios": true,
+    "android": true,
+    "web": false,
+    "macos": false,
+    "windows": false,
+    "linux": false
+  },
+  "features": {
+    "multiCurrency": false,
+    "offlineFirst": false,
+    "localEncryption": false,
+    "optionalCloudSync": false,
+    "byokAi": false,
+    "builtinAi": true,
+    "investments": false,
+    "budgets": true,
+    "receiptPhotos": false,
+    "voiceInput": false,
+    "bankSync": true,
+    "familySharing": false,
+    "noAds": true,
+    "noTrackers": false,
+    "openSource": false
+  },
+  "sources": [
+    { "label": "PocketGuard pricing", "url": "https://pocketguard.com/pricing" },
+    { "label": "PocketGuard features", "url": "https://pocketguard.com" }
+  ],
+  "lastVerified": "2026-04-27",
+  "verificationConfidence": "high"
+}
