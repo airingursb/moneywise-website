@@ -1,0 +1,93 @@
+{
+  "common": {
+    "meta": {
+      "title_template": "MoneyWise vs {competitor} — Local-first finance compared to {competitor}",
+      "description_template": "Compare MoneyWise and {competitor}. Side-by-side pricing, platforms, AI, privacy, and which one fits your money."
+    },
+    "hero": {
+      "subtitle_template": "Two ways to track your money. {competitor} is {one_liner}. MoneyWise is local-first, multi-currency, and brings your own AI key.",
+      "cta_primary": "Try MoneyWise",
+      "cta_secondary": "See full features",
+      "versus_label": "vs"
+    },
+    "section_titles": {
+      "comparison_table": "At a glance",
+      "moneywise_advantages": "Where MoneyWise is different",
+      "ai_deep_dive": "AI without sending your data anywhere",
+      "privacy": "Your data stays on your phone",
+      "when_to_choose": "Which one is right for you?",
+      "pricing": "Pricing",
+      "faq": "Frequently asked questions",
+      "see_also": "See also"
+    },
+    "table": {
+      "pricing_label": "Pricing",
+      "platforms_label": "Platforms",
+      "features_label": "Features",
+      "yes": "✓",
+      "no": "—",
+      "free_label": "Free",
+      "pricing_per_month": "/mo",
+      "pricing_per_year": "/yr"
+    },
+    "feature_labels": {
+      "multiCurrency": "Multi-currency",
+      "offlineFirst": "Offline-first",
+      "localEncryption": "Local encryption",
+      "optionalCloudSync": "Optional cloud sync",
+      "byokAi": "BYOK AI (your key)",
+      "builtinAi": "Built-in AI (no key)",
+      "investments": "Investments",
+      "budgets": "Budgets",
+      "receiptPhotos": "Receipt photos",
+      "voiceInput": "Voice input",
+      "bankSync": "Automatic bank sync",
+      "familySharing": "Family sharing",
+      "noAds": "No ads",
+      "noTrackers": "No trackers",
+      "openSource": "Open source"
+    },
+    "platform_labels": {
+      "ios": "iOS",
+      "android": "Android",
+      "web": "Web",
+      "macos": "macOS",
+      "windows": "Windows",
+      "linux": "Linux"
+    },
+    "advantages": [
+      { "title": "Offline-first by design", "description": "Every record is in an encrypted SQLite database on your phone. Works in airplane mode." },
+      { "title": "Bring your own AI key", "description": "Plug in your Anthropic or OpenAI key. Insights run with no extra subscription. Or use pooled credits in Pro." },
+      { "title": "Multi-currency from day one", "description": "Hold accounts in any currency. Convert with daily rates. No 'home currency only' lock-in." },
+      { "title": "No ads, no trackers", "description": "Nothing leaves your device unless you turn on optional encrypted sync. We literally cannot read your data." }
+    ],
+    "ai_deep_dive": {
+      "eyebrow": "AI you control",
+      "title": "An advisor that runs on your terms",
+      "description": "Most finance apps either don't have AI, or send your transactions to a vendor's server. MoneyWise lets you choose: bring your own Anthropic or OpenAI key, or use Pro's pooled credits. Either way, the AI sees only what you ask it to see.",
+      "bullets": [
+        "Keys stored in iOS Keychain — never on our servers",
+        "Daily Brief, monthly summaries, and ad-hoc Q&A",
+        "Skip AI entirely — every other feature still works"
+      ]
+    },
+    "when_to_choose": {
+      "moneywise_heading": "Choose MoneyWise if",
+      "competitor_heading_template": "Choose {competitor} if"
+    },
+    "back_to_index": "All comparisons",
+    "index": {
+      "title": "MoneyWise alternatives, side-by-side",
+      "subtitle": "21 finance apps compared. Pick the one that fits your money.",
+      "region_labels": {
+        "western": "Global / English",
+        "chinese": "中文记账",
+        "japanese": "日本",
+        "korean": "한국",
+        "ios_focused": "iOS-focused"
+      },
+      "card_cta": "Compare →"
+    }
+  },
+  "competitors": {}
+}
