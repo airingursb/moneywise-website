@@ -9,7 +9,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "check:competitors": "node scripts/check-competitor-freshness.mjs"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.19",
