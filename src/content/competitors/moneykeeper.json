@@ -1,0 +1,44 @@
+{
+  "slug": "moneykeeper",
+  "displayName": "MoneyKeeper",
+  "fullName": "MoneyKeeper 记账本",
+  "websiteUrl": "https://apps.apple.com/cn/app/moneykeeper/id519416578",
+  "hideFromIndex": false,
+  "region": "chinese",
+  "pricing": {
+    "model": "free-with-ads",
+    "monthly": null,
+    "annual": null,
+    "notes": "免费 + 内购去广告（约 ¥18 一次性）"
+  },
+  "platforms": {
+    "ios": true,
+    "android": true,
+    "web": false,
+    "macos": false,
+    "windows": false,
+    "linux": false
+  },
+  "features": {
+    "multiCurrency": true,
+    "offlineFirst": false,
+    "localEncryption": false,
+    "optionalCloudSync": false,
+    "byokAi": false,
+    "builtinAi": false,
+    "investments": false,
+    "budgets": true,
+    "receiptPhotos": true,
+    "voiceInput": false,
+    "bankSync": false,
+    "familySharing": false,
+    "noAds": false,
+    "noTrackers": false,
+    "openSource": false
+  },
+  "sources": [
+    { "label": "App Store listing", "url": "https://apps.apple.com/cn/app/moneykeeper/id519416578" }
+  ],
+  "lastVerified": "2026-04-27",
+  "verificationConfidence": "low"
+}

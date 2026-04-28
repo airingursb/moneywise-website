@@ -449,6 +449,38 @@
           "a": "钱迹仅支持 iOS 和 Android 移动端。MoneyWise 还提供网页端支持，方便你在电脑上查看财务记录。"
         }
       ]
+    },
+    "moneykeeper": {
+      "one_liner": "支持多币种的中文记账应用，面向跨境用户",
+      "positioning": "MoneyKeeper（记账本）是由中国开发者制作的记账应用，支持多币种、预算管理和票据拍照，适合有跨境需求的用户。MoneyWise 在此基础上进一步提供本地加密存储、BYOK AI、可选的端对端加密云同步，且无广告。",
+      "when_choose_competitor": "如果你需要一款免费的多币种记账工具，能接受广告或愿意小额一次性付费去广告，MoneyKeeper 是简单可用的选择。",
+      "when_choose_moneywise": "如果你希望数据私密地存储在本地设备、需要 BYOK AI 财务洞察、不想看到任何广告或追踪器，或需要可选的端对端加密云同步，MoneyWise 更适合你。",
+      "faq": [
+        {
+          "q": "MoneyKeeper 是免费的吗？",
+          "a": "MoneyKeeper 免费但有广告，一次性内购（约 ¥18）可去除广告。MoneyWise 单设备完全免费且无广告，Pro 版为 $6.99/月 或 $49.99/年。"
+        },
+        {
+          "q": "MoneyKeeper 支持多币种吗？",
+          "a": "支持 —— MoneyKeeper 提供多币种功能，适合旅行用户。MoneyWise 同样支持任意货币账户并内置每日汇率换算，并配备 BYOK AI 进行多币种消费分析。"
+        },
+        {
+          "q": "MoneyKeeper 将数据存储在哪里？",
+          "a": "MoneyKeeper 将数据存储在本地，但不提供端对端加密的云备份。MoneyWise 将所有数据以加密形式存储在本地设备上，Pro 版提供可选的端对端加密云同步。"
+        },
+        {
+          "q": "MoneyKeeper 支持银行同步吗？",
+          "a": "不支持 —— MoneyKeeper 为手动录入应用。MoneyWise 同样以手动录入为主，银行同步功能已在规划中。"
+        },
+        {
+          "q": "MoneyKeeper 有 AI 功能吗？",
+          "a": "没有 AI 顾问功能。MoneyWise Pro 提供 BYOK AI 顾问，使用你自己的 Anthropic 或 OpenAI 密钥，提供私密的财务洞察。"
+        },
+        {
+          "q": "MoneyKeeper 的数据准确性如何？",
+          "a": "MoneyKeeper 的公开资料有限，本页数据基于 App Store 上架信息，可信度标记为较低。如发现不准确之处，欢迎告知我们。"
+        }
+      ]
     }
   }
 }

@@ -449,6 +449,38 @@
           "a": "钱迹 is mobile-only (iOS and Android). MoneyWise also supports a web interface, which is useful when you are at a computer and want to review your finances."
         }
       ]
+    },
+    "moneykeeper": {
+      "one_liner": "a Chinese-developed multi-currency expense tracker",
+      "positioning": "MoneyKeeper (记账本) is a Chinese-developed expense tracker with a cross-border audience. It supports multi-currency tracking, budgets, and receipt photos — features that make it useful for travelers. MoneyWise goes further with local-first encrypted storage, BYOK AI, optional cloud sync, and no ads.",
+      "when_choose_competitor": "You want a simple, free expense tracker with multi-currency support and are comfortable with an ad-supported model or a small one-time purchase to remove ads.",
+      "when_choose_moneywise": "You want your financial data stored privately on-device, need BYOK AI insights, prefer no ads or trackers from the start, or want optional end-to-end encrypted cloud sync.",
+      "faq": [
+        {
+          "q": "Is MoneyKeeper free?",
+          "a": "MoneyKeeper is free with ads. A one-time in-app purchase (approximately ¥18) removes ads. MoneyWise is free on a single device with no ads at all; Pro is $6.99/mo or $49.99/yr."
+        },
+        {
+          "q": "Does MoneyKeeper support multiple currencies?",
+          "a": "Yes — MoneyKeeper includes multi-currency support, which is useful for travelers. MoneyWise also supports accounts in any currency with daily exchange rates and BYOK AI for multi-currency spending analysis."
+        },
+        {
+          "q": "Where does MoneyKeeper store my data?",
+          "a": "MoneyKeeper stores data on-device but does not offer end-to-end encrypted cloud backup. MoneyWise stores everything in an encrypted database on your device; cloud sync is optional and end-to-end encrypted in Pro."
+        },
+        {
+          "q": "Does MoneyKeeper have bank sync?",
+          "a": "No — MoneyKeeper is a manual-entry app. MoneyWise is also manual-entry focused for privacy, with bank sync on the roadmap."
+        },
+        {
+          "q": "Does MoneyKeeper have AI features?",
+          "a": "MoneyKeeper does not offer an AI advisor. MoneyWise Pro includes a BYOK AI advisor using your own Anthropic or OpenAI key, providing private financial insights."
+        },
+        {
+          "q": "How accurate is the data for MoneyKeeper?",
+          "a": "MoneyKeeper has limited public documentation. The data shown here is based on App Store listings and is marked low confidence. If you find inaccuracies, please let us know."
+        }
+      ]
     }
   }
 }
