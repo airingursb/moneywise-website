@@ -1,0 +1,44 @@
+{
+  "slug": "money-pro",
+  "displayName": "Money Pro",
+  "fullName": "Money Pro",
+  "websiteUrl": "https://money.pro",
+  "hideFromIndex": false,
+  "region": "ios_focused",
+  "pricing": {
+    "model": "freemium",
+    "monthly": 4.99,
+    "annual": 14.99,
+    "notes": "Subscription $4.99/mo or $14.99/yr; lifetime purchase $59.99 one-time."
+  },
+  "platforms": {
+    "ios": true,
+    "android": false,
+    "web": false,
+    "macos": true,
+    "windows": false,
+    "linux": false
+  },
+  "features": {
+    "multiCurrency": true,
+    "offlineFirst": false,
+    "localEncryption": false,
+    "optionalCloudSync": true,
+    "byokAi": false,
+    "builtinAi": false,
+    "investments": false,
+    "budgets": true,
+    "receiptPhotos": true,
+    "voiceInput": true,
+    "bankSync": true,
+    "familySharing": true,
+    "noAds": true,
+    "noTrackers": true,
+    "openSource": false
+  },
+  "sources": [
+    { "label": "Money Pro official site", "url": "https://money.pro" }
+  ],
+  "lastVerified": "2026-04-27",
+  "verificationConfidence": "medium"
+}

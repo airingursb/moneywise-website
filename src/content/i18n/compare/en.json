@@ -673,6 +673,38 @@
           "a": "一木记账 can be downloaded internationally on iOS and Android, but is designed for the Chinese market and CNY. MoneyWise is designed for a global audience with full multi-currency support."
         }
       ]
+    },
+    "money-pro": {
+      "one_liner": "a full-featured iOS/macOS finance manager from iBear LLC",
+      "positioning": "Money Pro by iBear LLC is a well-established iOS and macOS personal finance app with strong multi-currency support, automatic bank sync, budgets, and Apple Watch integration. It is one of the closest feature peers to MoneyWise in the Apple ecosystem. The key difference: Money Pro syncs your bank accounts to the cloud, while MoneyWise is offline-first and stores everything encrypted on your device. MoneyWise also adds BYOK AI — bring your own Anthropic or OpenAI key for private financial advice without an extra subscription.",
+      "when_choose_competitor": "You want automatic bank sync deeply integrated with Apple's financial APIs, you use macOS as your primary platform and want a native Mac app today, or you prefer a one-time lifetime purchase ($59.99) to avoid recurring subscriptions.",
+      "when_choose_moneywise": "You want your data stored locally with no cloud dependency, you want an AI advisor powered by your own API key, or you need investment tracking alongside your budgets and multi-currency accounts.",
+      "faq": [
+        {
+          "q": "How does Money Pro's pricing compare to MoneyWise?",
+          "a": "Money Pro offers a subscription at $4.99/mo or $14.99/yr, or a one-time lifetime purchase for $59.99. MoneyWise is free on a single device; Pro is $6.99/mo or $49.99/yr with multi-device sync, backup, and BYOK AI."
+        },
+        {
+          "q": "Does Money Pro work on macOS?",
+          "a": "Yes — Money Pro has a native macOS app, which is a strong point for users who manage finances on a Mac. MoneyWise is currently iOS-only, with macOS support on the roadmap."
+        },
+        {
+          "q": "Does Money Pro support multiple currencies?",
+          "a": "Yes — multi-currency is one of Money Pro's selling points, supporting accounts in many currencies with exchange rate conversion. MoneyWise also offers full multi-currency support with daily rates."
+        },
+        {
+          "q": "Where does Money Pro store my data?",
+          "a": "Money Pro syncs via iCloud, meaning your data passes through Apple's servers. MoneyWise stores everything in an encrypted SQLite database on your device; cloud sync is optional and end-to-end encrypted."
+        },
+        {
+          "q": "Does Money Pro have AI features?",
+          "a": "Money Pro does not currently offer an AI advisor. MoneyWise Pro includes a BYOK AI advisor — plug in your own Anthropic or OpenAI key to get private financial insights without sending your data to a third-party AI vendor."
+        },
+        {
+          "q": "Does Money Pro support investment tracking?",
+          "a": "Money Pro removed investment tracking in recent versions and focuses on budgeting and expense management. MoneyWise includes an investments tab for tracking your portfolio alongside day-to-day spending."
+        }
+      ]
     }
   }
 }

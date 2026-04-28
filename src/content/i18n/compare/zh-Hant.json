@@ -673,6 +673,38 @@
           "a": "支援——Zaim 支援拍照收據快速記帳。MoneyWise 同樣支援收據照片，作為隱私優先的工作流程。"
         }
       ]
+    },
+    "money-pro": {
+      "one_liner": "iBear LLC 出品的全功能 iOS/macOS 財務管理應用程式",
+      "positioning": "Money Pro 是 iBear LLC 出品的成熟 iOS 和 macOS 個人財務應用程式，以強大的多幣種支援、自動銀行同步、預算管理和 Apple Watch 整合著稱。對於 Apple 生態使用者而言，它是功能最接近 MoneyWise 的同類應用之一。核心區別在於：Money Pro 將銀行帳戶資料同步至雲端，而 MoneyWise 採用本地優先策略，所有資料以加密方式儲存在你的裝置上。MoneyWise 還提供 BYOK AI——接入自己的 Anthropic 或 OpenAI 金鑰，獲取私密的 AI 財務建議。",
+      "when_choose_competitor": "如果你需要與 Apple 金融 API 深度整合的自動銀行同步，或希望現在就有原生 macOS 應用程式，或偏好一次性買斷（$59.99 終身授權）而非訂閱制，Money Pro 是不錯的選擇。",
+      "when_choose_moneywise": "如果你希望資料完全儲存在本地、不依賴雲端，需要 BYOK AI 顧問，或需要在預算和多幣種帳戶之外還能追蹤投資組合，MoneyWise 更適合你。",
+      "faq": [
+        {
+          "q": "Money Pro 和 MoneyWise 的價格如何比較？",
+          "a": "Money Pro 訂閱版 $4.99/月 或 $14.99/年，也提供 $59.99 一次性終身授權。MoneyWise 單裝置免費，Pro 版為 $6.99/月 或 $49.99/年，包含多裝置同步、備份和 BYOK AI。"
+        },
+        {
+          "q": "Money Pro 支援 macOS 嗎？",
+          "a": "支援——Money Pro 有原生 macOS 應用程式，對在 Mac 上管理財務的使用者是一大優勢。MoneyWise 目前僅支援 iOS，macOS 版本在路線圖中。"
+        },
+        {
+          "q": "Money Pro 支援多幣種嗎？",
+          "a": "支援——多幣種是 Money Pro 的核心賣點之一，支援多種幣種帳戶和匯率換算。MoneyWise 同樣提供完整的多幣種支援和每日匯率。"
+        },
+        {
+          "q": "Money Pro 將資料儲存在哪裡？",
+          "a": "Money Pro 透過 iCloud 同步資料，意味著資料會經過蘋果伺服器。MoneyWise 將所有內容儲存在裝置上的加密 SQLite 資料庫中，雲端同步是可選的且端對端加密。"
+        },
+        {
+          "q": "Money Pro 有 AI 功能嗎？",
+          "a": "Money Pro 目前沒有 AI 顧問功能。MoneyWise Pro 提供 BYOK AI 顧問——接入自己的 Anthropic 或 OpenAI 金鑰，獲取私密的財務洞察，無需向第三方 AI 服務商傳送資料。"
+        },
+        {
+          "q": "Money Pro 支援投資追蹤嗎？",
+          "a": "Money Pro 在近期版本中移除了投資追蹤功能，目前專注於預算和支出管理。MoneyWise 包含投資組合追蹤頁籤，可在日常支出管理之外一併管理投資帳戶。"
+        }
+      ]
     }
   }
 }
