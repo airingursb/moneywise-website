@@ -1,0 +1,45 @@
+{
+  "slug": "banksalad",
+  "displayName": "뱅크샐러드",
+  "fullName": "뱅크샐러드 (Banksalad)",
+  "websiteUrl": "https://www.banksalad.com",
+  "hideFromIndex": false,
+  "region": "korean",
+  "pricing": {
+    "model": "free",
+    "monthly": null,
+    "annual": null,
+    "notes": "기본적으로 무료. 금융 상품 추천을 통한 수익 모델."
+  },
+  "platforms": {
+    "ios": true,
+    "android": true,
+    "web": true,
+    "macos": false,
+    "windows": false,
+    "linux": false
+  },
+  "features": {
+    "multiCurrency": false,
+    "offlineFirst": false,
+    "localEncryption": false,
+    "optionalCloudSync": true,
+    "byokAi": false,
+    "builtinAi": true,
+    "investments": true,
+    "budgets": true,
+    "receiptPhotos": false,
+    "voiceInput": false,
+    "bankSync": true,
+    "familySharing": false,
+    "noAds": true,
+    "noTrackers": false,
+    "openSource": false
+  },
+  "sources": [
+    { "label": "뱅크샐러드 공식 사이트", "url": "https://www.banksalad.com" },
+    { "label": "뱅크샐러드 App Store", "url": "https://apps.apple.com/kr/app/id1195816419" }
+  ],
+  "lastVerified": "2026-04-27",
+  "verificationConfidence": "medium"
+}

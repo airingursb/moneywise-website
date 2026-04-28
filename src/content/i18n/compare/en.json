@@ -482,6 +482,38 @@
         }
       ]
     },
+    "banksalad": {
+      "one_liner": "South Korea's largest personal-finance aggregator with built-in AI",
+      "positioning": "뱅크샐러드 (Banksalad) is the dominant personal-finance app in South Korea, connecting to Korean banks, cards, and insurance accounts with a built-in AI financial assistant. It is free, monetized through financial product recommendations. MoneyWise offers local-first privacy, global multi-currency support, and BYOK AI — designed for users who need privacy and international flexibility beyond the Korean financial system.",
+      "when_choose_competitor": "You are based in South Korea, want free automatic aggregation of all your Korean bank accounts, credit cards, and insurance policies, and are comfortable with a recommendation-based monetization model.",
+      "when_choose_moneywise": "You handle multiple currencies, want your financial data stored locally on your device with no trackers, need a BYOK AI advisor that processes your data on your own terms, or you are outside South Korea where Banksalad's Korean financial system integration does not apply.",
+      "faq": [
+        {
+          "q": "Is Banksalad available outside South Korea?",
+          "a": "Banksalad's core feature is integrating with Korean banks, credit cards, and financial institutions. It is designed exclusively for the Korean financial system. MoneyWise works globally and supports multi-currency accounts out of the box."
+        },
+        {
+          "q": "Is Banksalad really free?",
+          "a": "Yes — Banksalad is free to use. The app earns revenue by recommending financial products (insurance, loans, cards) based on your financial data. MoneyWise is also free on a single device; Pro is $6.99/mo or $49.99/yr with no data-based product recommendations."
+        },
+        {
+          "q": "Does Banksalad have AI features?",
+          "a": "Yes — Banksalad has a built-in AI financial assistant (금융 비서) that analyzes your spending and suggests financial products. MoneyWise Pro offers BYOK AI: you plug in your own Anthropic or OpenAI key, so your financial data never flows through a third-party AI pipeline."
+        },
+        {
+          "q": "Does Banksalad support multiple currencies?",
+          "a": "Banksalad is designed for the Korean market and KRW. It does not support multi-currency account tracking. MoneyWise supports accounts in any currency with daily exchange rates."
+        },
+        {
+          "q": "Does Banksalad store my data locally or in the cloud?",
+          "a": "Banksalad syncs all linked account data to its cloud servers. MoneyWise stores everything in an encrypted database on your device. Cloud sync in MoneyWise is optional and end-to-end encrypted."
+        },
+        {
+          "q": "How does Banksalad's business model affect my privacy?",
+          "a": "Banksalad is free because it analyzes your financial profile to recommend products — your data informs its recommendation engine. MoneyWise has no trackers and earns revenue only through Pro subscriptions, so your data is never analyzed for product matching."
+        }
+      ]
+    },
     "moneytree": {
       "one_liner": "a privacy-focused Japanese financial data aggregator",
       "positioning": "Moneytree (マネーツリー) is a Japanese financial data aggregator with a strong privacy positioning — no ads, no data brokering, no trackers. Like MoneyWise, Moneytree values user data privacy. The key difference: Moneytree focuses on aggregation (bank sync + investments) without budgeting tools, and is Japan-only. MoneyWise goes further with local-first encrypted storage, multi-currency support, budgeting, and BYOK AI.",
