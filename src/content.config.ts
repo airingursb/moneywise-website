@@ -94,7 +94,7 @@ const i18n = defineCollection({
 });
 
 const competitorSchema = z.object({
-  slug: z.string().regex(/^[a-z0-9][a-z0-9-]*$/, 'lowercase-kebab-case only'),
+  slug: z.string().regex(/^(_self|[a-z0-9][a-z0-9-]*)$/, 'lowercase-kebab-case only'),
   displayName: z.string(),
   fullName: z.string().optional(),
   websiteUrl: z.string().url(),
