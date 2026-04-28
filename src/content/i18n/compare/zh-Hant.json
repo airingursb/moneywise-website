@@ -104,6 +104,20 @@
         { "q": "MoneyWise 像 Mint 一樣是免費的嗎？", "a": "MoneyWise 在單一裝置上可無限免費記帳。Pro 版（$6.99/月 或 $49.99/年）增加了多裝置同步、備份和 AI 功能。與 Mint 的免費模式不同，MoneyWise 沒有廣告也不出售用戶資料。" }
       ]
     },
+    "monarch-money": {
+      "one_liner": "注重協作的網頁端記帳平台",
+      "positioning": "Monarch Money 是功能齊全的記帳平台，提供強大的家庭／伴侶共享預算、內建投資追蹤，以及跨網頁、iOS、Android 的銀行同步。MoneyWise 則以本地優先的隱私保護、多幣種支援和自帶 AI 金鑰，為更重視掌控感的用戶提供服務。",
+      "when_choose_competitor": "若你想與伴侶共同管理預算、需要完善的投資追蹤，且不介意為全雲端服務支付較高的訂閱費，Monarch Money 是理想選擇。",
+      "when_choose_moneywise": "若你希望資料保存在本地裝置、有多幣種需求、經常出行，或傾向自帶 AI 金鑰而非讓對方伺服器讀取你的交易記錄，MoneyWise 更適合你。",
+      "faq": [
+        { "q": "Monarch Money 和 MoneyWise 的定價如何比較？", "a": "Monarch 訂閱費為 $14.99/月 或 $99.99/年，附 7 天免費試用。MoneyWise 在單一裝置上免費；Pro 版為 $6.99/月 或 $49.99/年，年費約為 Monarch 的一半。" },
+        { "q": "Monarch Money 支援多幣種嗎？", "a": "Monarch Money 主要面向美國用戶，不提供多幣種帳戶追蹤。MoneyWise 支援任意幣種的帳戶，並內建每日匯率換算。" },
+        { "q": "Monarch Money 將我的資料儲存在哪裡？", "a": "Monarch 透過 Plaid 和 Finicity 將你關聯的銀行資料儲存在其伺服器上。MoneyWise 將所有內容保存在裝置的加密資料庫中，雲端同步為可選項，且經過端對端加密。" },
+        { "q": "Monarch Money 有 AI 功能嗎？", "a": "Monarch Money 具備一定的 AI 驅動分類和報告功能。MoneyWise 的 AI 顧問使用你自己的 Anthropic 或 OpenAI 金鑰，讓你獲得 AI 洞察的同時，不將完整交易記錄交由第三方處理。" },
+        { "q": "Monarch Money 適合夫妻／伴侶使用嗎？", "a": "非常適合——Monarch 的共享預算檢視是其最強功能之一。MoneyWise Pro 也支援多裝置同步，伴侶可共同存取，但協作檢視相對 Monarch 更簡潔。" },
+        { "q": "我可以將 Monarch Money 的資料匯入 MoneyWise 嗎？", "a": "MoneyWise 暫時沒有直接的 Monarch 匯入功能。你可以從 Monarch 匯出 CSV 格式的交易記錄，再在 MoneyWise 中重新建立主要帳戶。" }
+      ]
+    },
     "copilot-money": {
       "one_liner": "精心設計的 iOS 和 Mac 記帳應用程式",
       "positioning": "Copilot 是一款專為蘋果生態系統打造的精美記帳應用程式，提供銀行同步、投資追蹤和內建 AI 功能。MoneyWise 則以本地優先的隱私保護、多幣種支援和自帶 AI 金鑰的方式，為更注重掌控感的用戶提供服務。",

@@ -1,0 +1,44 @@
+{
+  "slug": "monarch-money",
+  "displayName": "Monarch Money",
+  "fullName": "Monarch Money",
+  "websiteUrl": "https://www.monarchmoney.com",
+  "hideFromIndex": false,
+  "region": "western",
+  "pricing": {
+    "model": "subscription",
+    "monthly": 14.99,
+    "annual": 99.99,
+    "notes": "7-day free trial. No free tier. monarchmoney.com now redirects to monarch.com."
+  },
+  "platforms": {
+    "ios": true,
+    "android": true,
+    "web": true,
+    "macos": false,
+    "windows": false,
+    "linux": false
+  },
+  "features": {
+    "multiCurrency": false,
+    "offlineFirst": false,
+    "localEncryption": false,
+    "optionalCloudSync": false,
+    "byokAi": false,
+    "builtinAi": false,
+    "investments": true,
+    "budgets": true,
+    "receiptPhotos": false,
+    "voiceInput": false,
+    "bankSync": true,
+    "familySharing": true,
+    "noAds": true,
+    "noTrackers": false,
+    "openSource": false
+  },
+  "sources": [
+    { "label": "Monarch Money pricing", "url": "https://www.monarch.com/pricing" }
+  ],
+  "lastVerified": "2026-04-27",
+  "verificationConfidence": "medium"
+}

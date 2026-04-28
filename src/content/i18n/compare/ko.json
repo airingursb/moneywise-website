@@ -104,6 +104,20 @@
         { "q": "MoneyWise도 Mint처럼 무료인가요?", "a": "MoneyWise는 단일 기기에서 무제한 무료로 사용할 수 있습니다. Pro 플랜($6.99/월 또는 $49.99/년)은 멀티 기기 동기화, 백업, AI 기능을 추가합니다. Mint의 무료 모델과 달리 광고도, 데이터 판매도 없습니다." }
       ]
     },
+    "monarch-money": {
+      "one_liner": "협업 중심의 웹 기반 가계부 플랫폼",
+      "positioning": "Monarch Money는 강력한 가족/커플 공유 예산, 내장 투자 추적, 웹·iOS·Android 은행 동기화를 갖춘 풀 기능 가계부 플랫폼입니다. MoneyWise는 클라우드 편의성 대신 로컬 우선 프라이버시, 다중 통화, BYOK AI를 선택한 사용자에게 맞습니다.",
+      "when_choose_competitor": "파트너와 함께 예산을 관리하고, 충실한 투자 추적이 필요하며, 완전 클라우드 서비스에 높은 구독료를 지불해도 괜찮다면 Monarch Money가 적합합니다.",
+      "when_choose_moneywise": "데이터를 기기에 로컬 저장하고 싶거나, 다중 통화가 필요하거나, 자주 여행하거나, 서버에서 거래 내역을 처리하는 것보다 자신의 AI 키를 사용하고 싶다면 MoneyWise가 더 적합합니다.",
+      "faq": [
+        { "q": "Monarch Money와 MoneyWise의 가격은 어떻게 비교되나요?", "a": "Monarch는 월 $14.99 또는 연 $99.99이며 7일 무료 체험이 있습니다. MoneyWise는 단일 기기에서 무료이고 Pro 플랜은 월 $6.99 또는 연 $49.99로 Monarch 연간 요금의 약 절반입니다." },
+        { "q": "Monarch Money는 다중 통화를 지원하나요?", "a": "Monarch Money는 주로 미국 사용자를 위해 설계되어 다중 통화 계좌 추적을 지원하지 않습니다. MoneyWise는 모든 통화의 계좌를 관리하고 매일 환율을 내장하고 있습니다." },
+        { "q": "Monarch Money는 내 데이터를 어디에 저장하나요?", "a": "Monarch는 Plaid와 Finicity를 통해 연결된 은행 데이터를 서버에 저장합니다. MoneyWise는 모든 내용을 기기의 암호화된 데이터베이스에 저장하며 클라우드 동기화는 선택 사항으로 종단 간 암호화됩니다." },
+        { "q": "Monarch Money에는 AI 기능이 있나요?", "a": "Monarch Money에는 AI 기반 분류 및 리포트 기능이 있습니다. MoneyWise의 AI 어드바이저는 자신의 Anthropic 또는 OpenAI 키를 사용하므로 거래 내역이 서드파티에서 처리되지 않습니다." },
+        { "q": "Monarch Money는 커플 사용에 적합한가요?", "a": "네 — Monarch의 공유 예산 뷰는 특히 강력한 기능입니다. MoneyWise Pro도 멀티 기기 동기화로 파트너와 공유할 수 있지만 협업 뷰는 Monarch보다 간단합니다." },
+        { "q": "Monarch Money 데이터를 MoneyWise로 가져올 수 있나요?", "a": "MoneyWise에는 아직 직접적인 Monarch 가져오기 기능이 없습니다. Monarch에서 CSV로 거래를 내보낸 후 MoneyWise에서 주요 계좌를 다시 등록해 시작할 수 있습니다." }
+      ]
+    },
     "copilot-money": {
       "one_liner": "세련된 iOS·Mac 전용 가계부 앱",
       "positioning": "Copilot은 Apple 생태계를 위해 설계된 아름다운 가계부 앱으로, 은행 동기화·투자 추적·내장 AI를 제공합니다. MoneyWise는 로컬 우선 프라이버시 보호, 다중 통화 지원, BYOK AI로 더 높은 통제력을 원하는 사용자에게 적합합니다.",

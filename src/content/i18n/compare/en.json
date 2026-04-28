@@ -104,6 +104,20 @@
         { "q": "Is MoneyWise free like Mint was?", "a": "MoneyWise is free for unlimited records on a single device. Pro ($6.99/mo or $49.99/yr) adds multi-device sync, backup, and AI. Unlike Mint's free model, there are no ads or data brokering." }
       ]
     },
+    "monarch-money": {
+      "one_liner": "a collaborative web-first budgeting app",
+      "positioning": "Monarch Money is a full-featured budgeting platform with strong family/couple sharing, built-in investments, and bank sync across web, iOS, and Android. MoneyWise trades cloud convenience for local-first privacy, multi-currency, and BYOK AI.",
+      "when_choose_competitor": "You want a polished joint budgeting experience with a partner, robust investment tracking, and don't mind paying a higher subscription for a fully cloud-based service.",
+      "when_choose_moneywise": "You want your data on your device, you handle multiple currencies, you travel frequently, or you'd rather bring your own AI key than pay for a service that reads your transactions on their servers.",
+      "faq": [
+        { "q": "How does Monarch Money's pricing compare to MoneyWise?", "a": "Monarch is $14.99/mo or $99.99/yr with a 7-day free trial. MoneyWise is free on a single device; Pro is $6.99/mo or $49.99/yr. MoneyWise Pro costs roughly half as much annually." },
+        { "q": "Does Monarch Money support multiple currencies?", "a": "Monarch Money is primarily designed for US users and does not offer multi-currency account tracking. MoneyWise supports accounts in any currency with daily exchange rates built in." },
+        { "q": "Where does Monarch Money store my data?", "a": "Monarch stores your linked bank data on their servers via Plaid and Finicity. MoneyWise keeps everything in an encrypted database on your device; cloud sync is optional and end-to-end encrypted." },
+        { "q": "Does Monarch Money have AI features?", "a": "Monarch Money has some AI-powered categorization and reporting. MoneyWise has an AI advisor using your own Anthropic or OpenAI key — giving you AI insights without your full transaction history being processed by a third party." },
+        { "q": "Is Monarch Money good for couples?", "a": "Yes — Monarch's shared budget view is one of its strongest features. MoneyWise Pro also supports multi-device sync so partners can share access, though the collaborative view is simpler than Monarch's." },
+        { "q": "Can I import my Monarch Money data into MoneyWise?", "a": "MoneyWise doesn't yet have a direct Monarch importer. You can export transactions as CSV from Monarch and re-enter key accounts in MoneyWise to get started." }
+      ]
+    },
     "copilot-money": {
       "one_liner": "a polished iOS and Mac budgeting app",
       "positioning": "Copilot is a beautifully designed budgeting app built for the Apple ecosystem — bank sync, investments, and built-in AI. MoneyWise brings local-first privacy, multi-currency support, and BYOK AI to users who want more control.",

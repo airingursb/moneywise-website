@@ -104,6 +104,20 @@
         { "q": "MoneyWise も Mint のように無料ですか？", "a": "MoneyWise は 1 台のデバイスで無制限に無料で使えます。Pro プラン（$6.99/月 または $49.99/年）では、複数デバイス同期・バックアップ・AI 機能が利用できます。Mint の無料モデルとは異なり、広告もデータ販売もありません。" }
       ]
     },
+    "monarch-money": {
+      "one_liner": "協働重視のウェブ中心の家計簿アプリ",
+      "positioning": "Monarch Money は、カップルや家族での共有予算、投資追跡、銀行同期をウェブ・iOS・Android で提供する多機能家計簿プラットフォームです。MoneyWise はクラウドの利便性よりもローカルファーストのプライバシー、多通貨対応、BYOK AI を優先します。",
+      "when_choose_competitor": "パートナーと一緒に予算管理したい、しっかりした投資追跡が必要、完全クラウドベースのサービスに高めの月額を支払っても良いという方に Monarch Money は向いています。",
+      "when_choose_moneywise": "データをデバイスに保管したい、複数通貨を扱う、頻繁に旅行する、またはサービス側のサーバーで取引履歴を処理させるより自分の AI キーを使いたい方には MoneyWise が適しています。",
+      "faq": [
+        { "q": "Monarch Money と MoneyWise の料金はどう違いますか？", "a": "Monarch は月 $14.99 または年 $99.99 で 7 日間の無料トライアルがあります。MoneyWise は 1 台のデバイスで無料。Pro プランは月 $6.99 または年 $49.99 で、年額は Monarch のほぼ半額です。" },
+        { "q": "Monarch Money は複数通貨に対応していますか？", "a": "Monarch Money は主に米国ユーザー向けで、多通貨口座の追跡はできません。MoneyWise は任意の通貨の口座を管理でき、毎日の為替レートを内蔵しています。" },
+        { "q": "Monarch Money はデータをどこに保存しますか？", "a": "Monarch は Plaid と Finicity 経由で連携銀行データをサーバーに保存します。MoneyWise はすべてのデータをデバイス上の暗号化データベースに保存し、クラウド同期はオプションでエンドツーエンド暗号化されています。" },
+        { "q": "Monarch Money に AI 機能はありますか？", "a": "Monarch Money には AI による分類やレポート機能があります。MoneyWise の AI アドバイザーは自分の Anthropic または OpenAI キーを使用するため、取引履歴がサードパーティに処理されません。" },
+        { "q": "Monarch Money はカップルでの利用に向いていますか？", "a": "はい — Monarch の共有予算ビューは特に強力な機能です。MoneyWise Pro もマルチデバイス同期でパートナーと共有できますが、協働ビューは Monarch よりシンプルです。" },
+        { "q": "Monarch Money のデータを MoneyWise にインポートできますか？", "a": "MoneyWise には直接の Monarch インポート機能はありません。Monarch から CSV で取引を書き出し、MoneyWise で主要口座を再登録してスタートできます。" }
+      ]
+    },
     "copilot-money": {
       "one_liner": "Apple 向けの洗練された家計簿アプリ",
       "positioning": "Copilot は Apple エコシステム向けに設計された美しい家計簿アプリで、銀行同期・投資追跡・組み込み AI を備えています。MoneyWise はローカルファーストのプライバシー保護、多通貨対応、BYOK AI によって、より高い制御性を求めるユーザーに応えます。",
