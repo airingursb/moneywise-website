@@ -104,6 +104,20 @@
         { "q": "MoneyWise も Mint のように無料ですか？", "a": "MoneyWise は 1 台のデバイスで無制限に無料で使えます。Pro プラン（$6.99/月 または $49.99/年）では、複数デバイス同期・バックアップ・AI 機能が利用できます。Mint の無料モデルとは異なり、広告もデータ販売もありません。" }
       ]
     },
+    "copilot-money": {
+      "one_liner": "Apple 向けの洗練された家計簿アプリ",
+      "positioning": "Copilot は Apple エコシステム向けに設計された美しい家計簿アプリで、銀行同期・投資追跡・組み込み AI を備えています。MoneyWise はローカルファーストのプライバシー保護、多通貨対応、BYOK AI によって、より高い制御性を求めるユーザーに応えます。",
+      "when_choose_competitor": "iPhone と Mac を中心に使っており、洗練された自動化体験を好み、クラウドにデータを保存するサブスクリプション型を受け入れられる方に Copilot は向いています。",
+      "when_choose_moneywise": "Android を使っている、複数通貨を扱う、データをデバイス上にローカル保存したい、または組み込み AI ではなく自分の AI キーを使いたい方には MoneyWise が適しています。",
+      "faq": [
+        { "q": "Copilot は Android に対応していますか？", "a": "いいえ。2026 年時点では Copilot は iOS と macOS のみ対応しています。Android が必要な場合は、MoneyWise・YNAB・Monarch Money がクロスプラットフォームの代替候補です。" },
+        { "q": "Copilot と MoneyWise の料金はどう違いますか？", "a": "Copilot は月 $7.92 または年 $95 のサブスクリプションのみで、無料プランはありません。MoneyWise は 1 台のデバイスで無制限に無料使用でき、Pro プランは月 $6.99 または年 $49.99 です。" },
+        { "q": "Copilot に AI 機能はありますか？", "a": "はい。Copilot には取引を分析する組み込み AI があります。MoneyWise も AI アドバイザーを搭載していますが、自分の Anthropic または OpenAI キーを使用するため、財務データがサードパーティの AI パイプラインに流れません。" },
+        { "q": "Copilot は複数通貨に対応していますか？", "a": "Copilot は主に米国ユーザー向けで、多通貨の本格対応はありません。MoneyWise は任意の通貨の口座を管理でき、毎日の為替レートで換算できます。" },
+        { "q": "Copilot は財務データをどこに保存しますか？", "a": "Copilot は Plaid 経由で銀行データを同期し、Copilot のサーバーに保存します。MoneyWise はすべてのデータをデバイス上の暗号化データベースに保存し、クラウド同期はオプションでエンドツーエンド暗号化されています。" },
+        { "q": "Copilot と MoneyWise を併用できますか？", "a": "できます。米国の銀行口座の自動同期に Copilot を使い、外貨口座の管理やオフライン・プライバシー保護のために MoneyWise を使うユーザーもいます。技術的な競合はありません。" }
+      ]
+    },
     "ynab": {
       "one_liner": "a strict zero-based-budgeting system",
       "positioning": "YNAB and MoneyWise both help you understand where your money goes — but they're built for different people. YNAB enforces a budget method. MoneyWise tracks your real life.",

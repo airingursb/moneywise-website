@@ -104,6 +104,20 @@
         { "q": "MoneyWise도 Mint처럼 무료인가요?", "a": "MoneyWise는 단일 기기에서 무제한 무료로 사용할 수 있습니다. Pro 플랜($6.99/월 또는 $49.99/년)은 멀티 기기 동기화, 백업, AI 기능을 추가합니다. Mint의 무료 모델과 달리 광고도, 데이터 판매도 없습니다." }
       ]
     },
+    "copilot-money": {
+      "one_liner": "세련된 iOS·Mac 전용 가계부 앱",
+      "positioning": "Copilot은 Apple 생태계를 위해 설계된 아름다운 가계부 앱으로, 은행 동기화·투자 추적·내장 AI를 제공합니다. MoneyWise는 로컬 우선 프라이버시 보호, 다중 통화 지원, BYOK AI로 더 높은 통제력을 원하는 사용자에게 적합합니다.",
+      "when_choose_competitor": "iPhone과 Mac을 중심으로 사용하고, 세련된 자동화 경험을 선호하며, 데이터를 클라우드에 저장하는 구독 방식을 수용할 수 있다면 Copilot이 좋은 선택입니다.",
+      "when_choose_moneywise": "Android를 사용하거나, 다중 통화가 필요하거나, 데이터를 기기에 로컬 저장하고 싶거나, 내장 AI 대신 자신의 AI 키를 사용하고 싶다면 MoneyWise가 더 적합합니다.",
+      "faq": [
+        { "q": "Copilot은 Android를 지원하나요?", "a": "아니요 — 2026년 기준으로 Copilot은 iOS와 macOS만 지원합니다. Android가 필요하다면 MoneyWise, YNAB, Monarch Money가 크로스플랫폼 대안입니다." },
+        { "q": "Copilot과 MoneyWise의 가격은 어떻게 비교되나요?", "a": "Copilot은 월 $7.92 또는 연 $95의 구독제만 제공하며 무료 플랜은 없습니다. MoneyWise는 단일 기기에서 무제한 무료 사용이 가능하고, Pro 플랜은 월 $6.99 또는 연 $49.99입니다." },
+        { "q": "Copilot에는 AI 기능이 있나요?", "a": "네, Copilot에는 거래를 분석하는 내장 AI가 있습니다. MoneyWise도 AI 어드바이저가 있지만 자신의 Anthropic 또는 OpenAI 키를 사용하므로 재무 데이터가 서드파티 AI 파이프라인으로 흘러가지 않습니다." },
+        { "q": "Copilot은 다중 통화를 지원하나요?", "a": "Copilot은 주로 미국 사용자를 대상으로 설계되어 다중 통화 지원이 충분하지 않습니다. MoneyWise는 모든 통화의 계좌를 관리하고 매일 환율로 환산할 수 있습니다." },
+        { "q": "Copilot은 내 재무 데이터를 어디에 저장하나요?", "a": "Copilot은 Plaid를 통해 은행 데이터를 동기화하고 Copilot 서버에 저장합니다. MoneyWise는 모든 데이터를 기기의 암호화된 데이터베이스에 저장하며, 클라우드 동기화는 선택 사항으로 종단 간 암호화됩니다." },
+        { "q": "Copilot과 MoneyWise를 함께 사용할 수 있나요?", "a": "네 — 미국 은행 계좌 자동 동기화에는 Copilot을, 외화 계좌 관리나 오프라인·프라이버시 보호에는 MoneyWise를 사용하는 사용자도 있습니다. 기술적 충돌은 없습니다." }
+      ]
+    },
     "ynab": {
       "one_liner": "a strict zero-based-budgeting system",
       "positioning": "YNAB and MoneyWise both help you understand where your money goes — but they're built for different people. YNAB enforces a budget method. MoneyWise tracks your real life.",

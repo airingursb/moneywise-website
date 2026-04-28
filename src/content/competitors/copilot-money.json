@@ -1,0 +1,44 @@
+{
+  "slug": "copilot-money",
+  "displayName": "Copilot",
+  "fullName": "Copilot Money",
+  "websiteUrl": "https://copilot.money",
+  "hideFromIndex": false,
+  "region": "western",
+  "pricing": {
+    "model": "subscription",
+    "monthly": 7.92,
+    "annual": 95.0,
+    "notes": "Free trial available before connecting accounts. No free tier."
+  },
+  "platforms": {
+    "ios": true,
+    "android": false,
+    "web": true,
+    "macos": true,
+    "windows": false,
+    "linux": false
+  },
+  "features": {
+    "multiCurrency": false,
+    "offlineFirst": false,
+    "localEncryption": false,
+    "optionalCloudSync": false,
+    "byokAi": false,
+    "builtinAi": true,
+    "investments": true,
+    "budgets": true,
+    "receiptPhotos": false,
+    "voiceInput": false,
+    "bankSync": true,
+    "familySharing": true,
+    "noAds": true,
+    "noTrackers": false,
+    "openSource": false
+  },
+  "sources": [
+    { "label": "Copilot Money pricing", "url": "https://copilot.money" }
+  ],
+  "lastVerified": "2026-04-27",
+  "verificationConfidence": "high"
+}

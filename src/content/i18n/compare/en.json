@@ -104,6 +104,20 @@
         { "q": "Is MoneyWise free like Mint was?", "a": "MoneyWise is free for unlimited records on a single device. Pro ($6.99/mo or $49.99/yr) adds multi-device sync, backup, and AI. Unlike Mint's free model, there are no ads or data brokering." }
       ]
     },
+    "copilot-money": {
+      "one_liner": "a polished iOS and Mac budgeting app",
+      "positioning": "Copilot is a beautifully designed budgeting app built for the Apple ecosystem — bank sync, investments, and built-in AI. MoneyWise brings local-first privacy, multi-currency support, and BYOK AI to users who want more control.",
+      "when_choose_competitor": "You live in the Apple ecosystem (iPhone + Mac), you prefer an elegant automated experience, and you're comfortable with a subscription that stores your data in the cloud.",
+      "when_choose_moneywise": "You use Android, you travel internationally with multiple currencies, you want your data stored locally on your device, or you prefer to bring your own AI key rather than using a vendor's built-in model.",
+      "faq": [
+        { "q": "Is Copilot available on Android?", "a": "No — as of 2026, Copilot is iOS and macOS only. If you need Android support, MoneyWise, YNAB, and Monarch Money are cross-platform alternatives." },
+        { "q": "How does Copilot's pricing compare to MoneyWise?", "a": "Copilot is $7.92/mo or $95/yr, subscription-only with no free tier. MoneyWise is free for a single device with unlimited records; Pro is $6.99/mo or $49.99/yr." },
+        { "q": "Does Copilot have AI features?", "a": "Yes, Copilot has built-in AI that analyzes your transactions. MoneyWise also has an AI advisor, but it uses your own Anthropic or OpenAI key — so your financial data never flows through a third-party AI pipeline." },
+        { "q": "Does Copilot support multiple currencies?", "a": "Copilot is designed primarily for US users with US bank accounts. It does not have robust multi-currency support. MoneyWise tracks accounts in any currency with daily exchange rates." },
+        { "q": "Where does Copilot store my financial data?", "a": "Copilot syncs your bank data through Plaid and stores it on Copilot's servers. MoneyWise stores everything on your device in an encrypted database; cloud sync is optional and encrypted end-to-end." },
+        { "q": "Can I use both Copilot and MoneyWise?", "a": "Yes — some users keep Copilot for its automated US bank sync and use MoneyWise for foreign currency accounts or for the offline/privacy guarantees. There's no technical conflict." }
+      ]
+    },
     "ynab": {
       "one_liner": "a strict zero-based-budgeting system",
       "positioning": "YNAB and MoneyWise both help you understand where your money goes — but they're built for different people. YNAB enforces a budget method. MoneyWise tracks your real life.",

@@ -104,6 +104,20 @@
         { "q": "MoneyWise 像 Mint 一样是免费的吗？", "a": "MoneyWise 在单设备上可无限免费记账。Pro 版（$6.99/月 或 $49.99/年）增加了多设备同步、备份和 AI 功能。与 Mint 的免费模式不同，MoneyWise 没有广告也不出售用户数据。" }
       ]
     },
+    "copilot-money": {
+      "one_liner": "精心设计的 iOS 和 Mac 记账应用",
+      "positioning": "Copilot 是一款专为苹果生态系统打造的精美记账应用，提供银行同步、投资追踪和内置 AI 功能。MoneyWise 则以本地优先的隐私保护、多币种支持和自带 AI 密钥的方式，为更注重掌控感的用户提供服务。",
+      "when_choose_competitor": "如果你深度使用苹果生态（iPhone + Mac），偏好优雅的自动化体验，并且愿意接受数据存储在云端的订阅模式，Copilot 是不错的选择。",
+      "when_choose_moneywise": "如果你使用 Android、有多币种需求、希望数据本地存储，或更倾向于自带 AI 密钥而非依赖内置模型，MoneyWise 更适合你。",
+      "faq": [
+        { "q": "Copilot 支持 Android 吗？", "a": "不支持——截至 2026 年，Copilot 仅支持 iOS 和 macOS。如果需要 Android 支持，MoneyWise、YNAB 和 Monarch Money 都是跨平台的替代选择。" },
+        { "q": "Copilot 和 MoneyWise 的价格相比如何？", "a": "Copilot 订阅费为 $7.92/月 或 $95/年，没有免费版。MoneyWise 在单设备上可以免费无限使用；Pro 版为 $6.99/月 或 $49.99/年。" },
+        { "q": "Copilot 有 AI 功能吗？", "a": "有，Copilot 内置 AI 分析你的交易记录。MoneyWise 也有 AI 顾问，但使用的是你自己的 Anthropic 或 OpenAI 密钥——你的财务数据不会流经第三方 AI 管道。" },
+        { "q": "Copilot 支持多币种吗？", "a": "Copilot 主要面向美国用户，不具备完善的多币种支持。MoneyWise 支持任意币种的账户并提供每日汇率换算。" },
+        { "q": "Copilot 将我的财务数据存储在哪里？", "a": "Copilot 通过 Plaid 同步银行数据并存储在 Copilot 服务器上。MoneyWise 将所有数据存储在设备的加密数据库中；云同步是可选项，且端对端加密。" },
+        { "q": "我可以同时使用 Copilot 和 MoneyWise 吗？", "a": "可以——部分用户用 Copilot 自动同步美国银行账户，用 MoneyWise 管理外币账户或享受离线/隐私保障。两者不存在技术冲突。" }
+      ]
+    },
     "ynab": {
       "one_liner": "a strict zero-based-budgeting system",
       "positioning": "YNAB and MoneyWise both help you understand where your money goes — but they're built for different people. YNAB enforces a budget method. MoneyWise tracks your real life.",
