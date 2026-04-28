@@ -74,6 +74,7 @@ const i18nSchema = z.object({
     links_header: z.string(),
     copyright: z.string(),
     contact: z.string(),
+    compare: z.string(),
   }),
   featuresPage: z.object({
     title: z.string(),
