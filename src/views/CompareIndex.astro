@@ -1,0 +1,55 @@
+---
+import type { Locale } from '../config/site';
+import type { CompetitorData } from '../content.config';
+import { getI18n } from '../lib/i18n';
+import { getAllCompetitors, getCompareI18n } from '../lib/compare';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import CompareIndexCard from '../components/compare/CompareIndexCard.astro';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+
+const [t, c, competitors] = await Promise.all([
+  getI18n(locale),
+  getCompareI18n(locale),
+  getAllCompetitors(),
+]);
+
+const regions = ['western', 'chinese', 'japanese', 'korean', 'ios_focused'] as const;
+const grouped = regions.map((r) => ({
+  region: r,
+  label: c.common.index.region_labels[r],
+  items: competitors.filter((x: CompetitorData) => x.region === r),
+}));
+---
+<BaseLayout title={c.common.index.title} description={c.common.index.subtitle} locale={locale} slug="compare">
+  <Nav locale={locale} slug="compare" t={t} />
+  <main class="mx-auto max-w-6xl px-6 py-20 md:py-24">
+    <h1 class="font-[family-name:var(--font-display)] font-bold text-[40px] md:text-[60px] leading-[1.02] tracking-[-0.035em] text-[var(--color-fg-primary)]">
+      {c.common.index.title}
+    </h1>
+    <p class="mt-5 max-w-2xl text-[17px] leading-[1.6] text-[var(--color-fg-secondary)]">
+      {c.common.index.subtitle}
+    </p>
+    {grouped.map((g) => g.items.length > 0 && (
+      <section class="mt-16">
+        <h2 class="text-[11px] uppercase tracking-[0.12em] text-[var(--color-accent-primary)] font-semibold">{g.label}</h2>
+        <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {g.items.map((competitor: CompetitorData) => (
+            <CompareIndexCard
+              competitor={competitor}
+              copy={c.competitors[competitor.slug]}
+              locale={locale}
+              cardCta={c.common.index.card_cta}
+            />
+          ))}
+        </div>
+      </section>
+    ))}
+  </main>
+  <Footer locale={locale} slug="compare" t={t} />
+</BaseLayout>
