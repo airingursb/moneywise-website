@@ -1,0 +1,23 @@
+---
+import type { CompetitorData, CompetitorCopy } from '../../content.config';
+import type { Locale } from '../../config/site';
+import { pathFor } from '../../lib/i18n';
+import { compareSlug } from '../../lib/compare';
+import CompetitorBadge from './CompetitorBadge.astro';
+
+interface Props {
+  competitor: CompetitorData;
+  copy: CompetitorCopy | undefined;
+  locale: Locale;
+  cardCta: string;
+}
+const { competitor, copy, locale, cardCta } = Astro.props;
+const href = pathFor(locale, compareSlug(competitor.slug));
+---
+<a href={href} class="block rounded-2xl border border-[var(--color-border)] bg-white p-6 transition hover:shadow-[0_8px_24px_rgba(30,51,34,0.06)] hover:border-[var(--color-accent-primary)]">
+  <CompetitorBadge name={competitor.displayName} size="sm" />
+  {copy?.one_liner && (
+    <p class="mt-4 text-[14px] leading-[1.55] text-[var(--color-fg-secondary)]">{copy.one_liner}</p>
+  )}
+  <p class="mt-4 text-[13px] font-semibold text-[var(--color-accent-primary)]">{cardCta}</p>
+</a>
