@@ -1,0 +1,45 @@
+{
+  "slug": "moneytree",
+  "displayName": "Moneytree",
+  "fullName": "Moneytree（マネーツリー）",
+  "websiteUrl": "https://moneytree.jp",
+  "hideFromIndex": false,
+  "region": "japanese",
+  "pricing": {
+    "model": "freemium",
+    "monthly": 3.30,
+    "annual": null,
+    "notes": "Plus ¥500/月"
+  },
+  "platforms": {
+    "ios": true,
+    "android": true,
+    "web": true,
+    "macos": false,
+    "windows": false,
+    "linux": false
+  },
+  "features": {
+    "multiCurrency": false,
+    "offlineFirst": false,
+    "localEncryption": false,
+    "optionalCloudSync": true,
+    "byokAi": false,
+    "builtinAi": false,
+    "investments": true,
+    "budgets": false,
+    "receiptPhotos": false,
+    "voiceInput": false,
+    "bankSync": true,
+    "familySharing": false,
+    "noAds": true,
+    "noTrackers": true,
+    "openSource": false
+  },
+  "sources": [
+    { "label": "Moneytree 公式サイト", "url": "https://moneytree.jp" },
+    { "label": "Moneytree App Store", "url": "https://apps.apple.com/jp/app/moneytree/id586497870" }
+  ],
+  "lastVerified": "2026-04-27",
+  "verificationConfidence": "medium"
+}

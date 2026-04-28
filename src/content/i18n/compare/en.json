@@ -482,6 +482,38 @@
         }
       ]
     },
+    "moneytree": {
+      "one_liner": "a privacy-focused Japanese financial data aggregator",
+      "positioning": "Moneytree (マネーツリー) is a Japanese financial data aggregator with a strong privacy positioning — no ads, no data brokering, no trackers. Like MoneyWise, Moneytree values user data privacy. The key difference: Moneytree focuses on aggregation (bank sync + investments) without budgeting tools, and is Japan-only. MoneyWise goes further with local-first encrypted storage, multi-currency support, budgeting, and BYOK AI.",
+      "when_choose_competitor": "You are based in Japan, want a no-ads, privacy-respecting aggregator for Japanese bank and investment accounts, and don't need detailed budgeting features.",
+      "when_choose_moneywise": "You want active budgeting tools alongside account aggregation, handle multiple currencies, need your data stored locally in an encrypted database, or want a BYOK AI advisor that processes your data privately on your own terms.",
+      "faq": [
+        {
+          "q": "Do Moneytree and MoneyWise share the same privacy philosophy?",
+          "a": "Both apps take privacy seriously — Moneytree explicitly avoids ads and data brokering, and MoneyWise stores all data locally in an encrypted database. The key difference: Moneytree is a cloud aggregator (your data lives on their servers), while MoneyWise keeps everything on-device unless you opt into encrypted sync."
+        },
+        {
+          "q": "Does Moneytree support budgeting?",
+          "a": "Moneytree focuses on financial data aggregation rather than active budgeting. MoneyWise has monthly category budgets with spending pace tracking."
+        },
+        {
+          "q": "Does Moneytree support multiple currencies?",
+          "a": "Moneytree is designed for the Japanese market and JPY. Multi-currency support is not offered. MoneyWise supports accounts in any currency with daily exchange rates."
+        },
+        {
+          "q": "Is Moneytree available outside Japan?",
+          "a": "Moneytree's bank sync relies on Japanese financial institution partnerships and works best within Japan. MoneyWise works globally and supports multi-currency accounts out of the box."
+        },
+        {
+          "q": "Does Moneytree have AI features?",
+          "a": "Moneytree does not currently offer an AI advisor. MoneyWise Pro includes a BYOK AI advisor — you plug in your own Anthropic or OpenAI key, so your transactions are never sent to a third-party AI vendor."
+        },
+        {
+          "q": "How does Moneytree pricing compare to MoneyWise?",
+          "a": "Moneytree has a free tier; Moneytree Plus is approximately ¥500/month (about $3.30/mo). MoneyWise is free on a single device; Pro is $6.99/mo or $49.99/yr with multi-device sync, backup, budgeting, and BYOK AI."
+        }
+      ]
+    },
     "money-forward-me": {
       "one_liner": "Japan's largest personal-finance aggregator with 2,500+ institution connections",
       "positioning": "Money Forward ME (マネーフォワード ME) is the dominant personal-finance aggregator in Japan, connecting to 2,500+ financial institutions — banks, credit cards, brokerage accounts, and more. MoneyWise brings local-first privacy, multi-currency tracking, and BYOK AI to users who need more than a Japan-centric cloud aggregation platform.",

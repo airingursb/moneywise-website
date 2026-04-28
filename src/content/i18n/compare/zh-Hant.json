@@ -514,6 +514,38 @@
         }
       ]
     },
+    "moneytree": {
+      "one_liner": "注重隱私的日本金融資料聚合應用程式",
+      "positioning": "Moneytree（マネーツリー）是一款注重隱私的日本金融資料聚合服務，明確標榜無廣告、無資料仲介、無追蹤器。與 MoneyWise 類似，Moneytree 也重視使用者資料隱私。主要區別在於：Moneytree 專注於聚合（銀行同步＋投資），不提供預算管理功能，且僅面向日本市場。MoneyWise 更進一步，提供本地加密儲存、多幣種支援、預算管理和 BYOK AI。",
+      "when_choose_competitor": "如果你常駐日本，希望以無廣告、尊重隱私的方式聚合日本銀行和投資帳戶，且不需要詳細的預算管理功能，Moneytree 是不錯的選擇。",
+      "when_choose_moneywise": "如果你需要在帳戶聚合之外還有積極的預算管理工具、需要管理多幣種帳戶、希望資料本地加密儲存，或需要能夠按自己條件私密處理資料的 BYOK AI 顧問，MoneyWise 更適合你。",
+      "faq": [
+        {
+          "q": "Moneytree 和 MoneyWise 有相同的隱私理念嗎？",
+          "a": "兩款應用程式都認真對待隱私。Moneytree 明確避免廣告和資料仲介，MoneyWise 將所有資料儲存在本地加密資料庫中。主要區別在於：Moneytree 是雲端聚合服務（資料儲存在其伺服器上），而 MoneyWise 除非你選擇開啟加密同步，否則資料始終保留在裝置上。"
+        },
+        {
+          "q": "Moneytree 支援預算管理嗎？",
+          "a": "Moneytree 專注於金融資料聚合而非主動的預算管理。MoneyWise 提供帶支出節奏追蹤的月度分類預算管理功能。"
+        },
+        {
+          "q": "Moneytree 支援多幣種嗎？",
+          "a": "Moneytree 專為日本市場和日圓設計，不支援多幣種帳戶追蹤。MoneyWise 支援任意幣種的帳戶並內建每日匯率換算。"
+        },
+        {
+          "q": "Moneytree 可以在日本以外使用嗎？",
+          "a": "Moneytree 的銀行同步依賴日本金融機構的合作，在日本境內效果最佳。MoneyWise 面向全球，開箱即支援多幣種帳戶。"
+        },
+        {
+          "q": "Moneytree 有 AI 功能嗎？",
+          "a": "目前沒有 AI 顧問功能。MoneyWise Pro 提供 BYOK AI 顧問——接入自己的 Anthropic 或 OpenAI 金鑰，交易資料不會傳送給第三方 AI 服務商。"
+        },
+        {
+          "q": "Moneytree 和 MoneyWise 的價格如何比較？",
+          "a": "Moneytree 有免費版，Moneytree Plus 約 ¥500/月（約 $3.30/月）。MoneyWise 單裝置免費，Pro 版含多裝置同步、備份、預算管理和 BYOK AI，為 $6.99/月 或 $49.99/年。"
+        }
+      ]
+    },
     "money-forward-me": {
       "one_liner": "連結2,500家以上日本金融機構的日本最大個人財務聚合應用程式",
       "positioning": "マネーフォワード ME（Money Forward ME）是日本最大的個人財務聚合服務，可連結 2,500 家以上金融機構——包括銀行、信用卡、證券帳戶等。MoneyWise 提供本地優先的隱私保護、多幣種追蹤和 BYOK AI，適合需要超越日本中心雲端聚合平台的使用者。",
