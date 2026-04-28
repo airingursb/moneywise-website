@@ -1,0 +1,31 @@
+---
+import type { CompareI18nData } from '../../content.config';
+
+interface Props {
+  c: CompareI18nData;
+}
+const { c } = Astro.props;
+const icons = ['◆', '▲', '●', '★'];
+const bg = ['#E8F5E9', '#E3F2FD', '#FFF3E0', '#F3E5F5'];
+---
+<section class="bg-[var(--color-surface-secondary)] py-20 md:py-24">
+  <div class="mx-auto max-w-6xl px-6">
+    <h2 class="max-w-2xl font-[family-name:var(--font-display)] font-bold text-[32px] md:text-[40px] leading-[1.05] tracking-[-0.025em] text-[var(--color-fg-primary)]">
+      {c.common.section_titles.moneywise_advantages}
+    </h2>
+    <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-5">
+      {c.common.advantages.map((a: { title: string; description: string }, i: number) => (
+        <article class="rounded-2xl bg-white border border-[var(--color-border)] p-6">
+          <div
+            class="w-10 h-10 rounded-xl flex items-center justify-center text-[var(--color-accent-primary)] font-bold"
+            style={`background:${bg[i]}`}
+          >
+            {icons[i]}
+          </div>
+          <h3 class="mt-4 text-[18px] font-semibold text-[var(--color-fg-primary)]">{a.title}</h3>
+          <p class="mt-2 text-[14px] leading-[1.65] text-[var(--color-fg-secondary)]">{a.description}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
