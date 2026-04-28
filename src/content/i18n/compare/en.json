@@ -90,6 +90,20 @@
     }
   },
   "competitors": {
+    "mint": {
+      "one_liner": "a free budgeting app, now discontinued",
+      "positioning": "Mint was once America's most popular free budgeting app — but Intuit shut it down in 2024 and migrated users to Credit Karma. If you're looking for a Mint alternative, MoneyWise offers private, local-first tracking with no ads.",
+      "when_choose_competitor": "Mint is no longer available for new sign-ups. If you were a Mint user, your best path is to explore Credit Karma (the official migration) or a modern alternative.",
+      "when_choose_moneywise": "You want a private, ad-free budgeting app that works offline, supports multiple currencies, and never sells your data. MoneyWise is the clean break that Mint never was.",
+      "faq": [
+        { "q": "Is Mint still available in 2024?", "a": "No. Intuit shut down Mint in early 2024 and redirected users to Credit Karma. The original Mint app and website no longer accept new sign-ups or active accounts." },
+        { "q": "Where did Mint users go after the shutdown?", "a": "Intuit officially migrated Mint users to Credit Karma, where transaction tracking and net worth features were added. Many users also switched to YNAB, Monarch Money, Copilot, or MoneyWise." },
+        { "q": "Can I import my old Mint data into MoneyWise?", "a": "MoneyWise doesn't have a one-click Mint CSV importer yet. You can export your Mint transactions as CSV from Credit Karma and manually import the most important accounts to start fresh." },
+        { "q": "How is MoneyWise different from what Mint offered?", "a": "Mint was free but ad-supported and stored all your data on Intuit's servers. MoneyWise is local-first — your data stays on your device in an encrypted database, with no ads and no trackers." },
+        { "q": "Does MoneyWise have bank sync like Mint did?", "a": "MoneyWise focuses on manual and receipt-based entry for maximum privacy. Automatic bank sync is on the roadmap. In the meantime, you can connect accounts via CSV export from your bank." },
+        { "q": "Is MoneyWise free like Mint was?", "a": "MoneyWise is free for unlimited records on a single device. Pro ($6.99/mo or $49.99/yr) adds multi-device sync, backup, and AI. Unlike Mint's free model, there are no ads or data brokering." }
+      ]
+    },
     "ynab": {
       "one_liner": "a strict zero-based-budgeting system",
       "positioning": "YNAB and MoneyWise both help you understand where your money goes — but they're built for different people. YNAB enforces a budget method. MoneyWise tracks your real life.",

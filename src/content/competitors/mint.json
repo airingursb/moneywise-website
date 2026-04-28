@@ -1,0 +1,45 @@
+{
+  "slug": "mint",
+  "displayName": "Mint",
+  "fullName": "Mint by Intuit",
+  "websiteUrl": "https://mint.intuit.com",
+  "hideFromIndex": false,
+  "region": "western",
+  "pricing": {
+    "model": "free",
+    "monthly": null,
+    "annual": null,
+    "notes": "Discontinued in 2024 by Intuit. Users were migrated to Credit Karma."
+  },
+  "platforms": {
+    "ios": true,
+    "android": true,
+    "web": true,
+    "macos": false,
+    "windows": false,
+    "linux": false
+  },
+  "features": {
+    "multiCurrency": false,
+    "offlineFirst": false,
+    "localEncryption": false,
+    "optionalCloudSync": false,
+    "byokAi": false,
+    "builtinAi": false,
+    "investments": true,
+    "budgets": true,
+    "receiptPhotos": false,
+    "voiceInput": false,
+    "bankSync": true,
+    "familySharing": false,
+    "noAds": false,
+    "noTrackers": false,
+    "openSource": false
+  },
+  "sources": [
+    { "label": "Mint shutdown announcement", "url": "https://mint.intuit.com" },
+    { "label": "Credit Karma Mint migration", "url": "https://creditkarma.com/lp/mint-to-credit-karma-net-worth-signup" }
+  ],
+  "lastVerified": "2026-04-27",
+  "verificationConfidence": "medium"
+}

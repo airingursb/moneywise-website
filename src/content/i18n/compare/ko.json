@@ -90,6 +90,20 @@
     }
   },
   "competitors": {
+    "mint": {
+      "one_liner": "서비스 종료된 무료 가계부 앱",
+      "positioning": "Mint는 한때 미국에서 가장 인기 있는 무료 가계부 앱이었지만, Intuit이 2024년에 서비스를 종료하고 사용자들을 Credit Karma로 이전시켰습니다. Mint를 대체할 앱을 찾고 있다면, MoneyWise는 프라이버시 우선·로컬 저장·광고 없는 가계부 경험을 제공합니다.",
+      "when_choose_competitor": "Mint는 더 이상 신규 가입이 불가합니다. Mint를 사용하던 분이라면 공식 이전 경로인 Credit Karma나 다른 현대적인 가계부 앱으로의 전환을 고려해보세요.",
+      "when_choose_moneywise": "프라이버시 보호, 광고 없음, 오프라인 지원, 다중 통화를 갖춘 가계부 앱을 원하고 내 재무 데이터가 판매되는 것을 원하지 않는 분께 MoneyWise를 추천합니다.",
+      "faq": [
+        { "q": "Mint는 2024년에도 사용할 수 있나요?", "a": "아니요. Intuit은 2024년 초 Mint를 종료하고 사용자들을 Credit Karma로 리디렉션했습니다. 기존 Mint 앱과 웹사이트는 더 이상 신규 가입을 받지 않습니다." },
+        { "q": "Mint 종료 후 사용자들은 어디로 이동했나요?", "a": "Intuit은 공식적으로 Mint 사용자들을 Credit Karma로 이전하여 거래 추적 및 순자산 기능을 추가했습니다. 많은 사용자들이 YNAB, Monarch Money, Copilot 또는 MoneyWise로 전환했습니다." },
+        { "q": "Mint 데이터를 MoneyWise로 가져올 수 있나요?", "a": "MoneyWise에는 아직 Mint CSV 일괄 가져오기 기능이 없습니다. Credit Karma에서 거래 내역을 CSV로 내보낸 후, 중요한 계좌를 수동으로 추가해 새롭게 시작할 수 있습니다." },
+        { "q": "MoneyWise와 Mint는 어떻게 다른가요?", "a": "Mint는 무료였지만 광고가 포함되어 있었고 모든 데이터를 Intuit 서버에 저장했습니다. MoneyWise는 로컬 우선 방식으로 데이터가 기기의 암호화된 데이터베이스에 저장되며, 광고도 트래커도 없습니다." },
+        { "q": "MoneyWise도 Mint처럼 은행 자동 동기화를 지원하나요?", "a": "MoneyWise는 프라이버시 보호를 위해 수동 입력과 영수증 촬영 방식에 집중하고 있습니다. 자동 은행 동기화는 로드맵에 포함되어 있습니다. 현재는 은행에서 CSV를 내보내 가져오기할 수 있습니다." },
+        { "q": "MoneyWise도 Mint처럼 무료인가요?", "a": "MoneyWise는 단일 기기에서 무제한 무료로 사용할 수 있습니다. Pro 플랜($6.99/월 또는 $49.99/년)은 멀티 기기 동기화, 백업, AI 기능을 추가합니다. Mint의 무료 모델과 달리 광고도, 데이터 판매도 없습니다." }
+      ]
+    },
     "ynab": {
       "one_liner": "a strict zero-based-budgeting system",
       "positioning": "YNAB and MoneyWise both help you understand where your money goes — but they're built for different people. YNAB enforces a budget method. MoneyWise tracks your real life.",

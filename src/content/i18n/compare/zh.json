@@ -90,6 +90,20 @@
     }
   },
   "competitors": {
+    "mint": {
+      "one_liner": "已停止运营的免费记账应用",
+      "positioning": "Mint 曾是美国最受欢迎的免费记账应用，但 Intuit 于 2024 年将其关闭并将用户迁移至 Credit Karma。如果你在寻找 Mint 的替代品，MoneyWise 提供隐私优先、本地存储、无广告的记账体验。",
+      "when_choose_competitor": "Mint 已无法注册新账户。如果你是 Mint 的老用户，可以考虑官方推荐的 Credit Karma 迁移路径，或选择其他现代记账应用。",
+      "when_choose_moneywise": "你希望拥有一款隐私保护、无广告、可离线使用、支持多币种的记账应用，并且不希望自己的财务数据被出售。MoneyWise 正是 Mint 从未做到的那种干净体验。",
+      "faq": [
+        { "q": "Mint 在 2024 年还能用吗？", "a": "不能。Intuit 于 2024 年初关闭了 Mint，并将用户重定向至 Credit Karma。原 Mint 应用和网站已不再接受新注册或活跃账户。" },
+        { "q": "Mint 关闭后，用户去了哪里？", "a": "Intuit 官方将 Mint 用户迁移至 Credit Karma，并在其中添加了交易追踪和净资产功能。许多用户也转向了 YNAB、Monarch Money、Copilot 或 MoneyWise。" },
+        { "q": "我能将 Mint 的历史数据导入 MoneyWise 吗？", "a": "MoneyWise 目前尚未支持一键导入 Mint CSV 文件。你可以从 Credit Karma 导出交易记录，再手动添加最重要的账户重新开始。" },
+        { "q": "MoneyWise 和 Mint 有什么不同？", "a": "Mint 是免费但含广告的，并且将所有数据存储在 Intuit 的服务器上。MoneyWise 采用本地优先架构——你的数据保存在设备的加密数据库中，没有广告，也没有追踪器。" },
+        { "q": "MoneyWise 像 Mint 一样支持自动同步银行账户吗？", "a": "MoneyWise 目前专注于手动记账和拍照记账以保护隐私，自动银行同步功能正在规划中。暂时可通过从银行导出 CSV 文件来导入账单。" },
+        { "q": "MoneyWise 像 Mint 一样是免费的吗？", "a": "MoneyWise 在单设备上可无限免费记账。Pro 版（$6.99/月 或 $49.99/年）增加了多设备同步、备份和 AI 功能。与 Mint 的免费模式不同，MoneyWise 没有广告也不出售用户数据。" }
+      ]
+    },
     "ynab": {
       "one_liner": "a strict zero-based-budgeting system",
       "positioning": "YNAB and MoneyWise both help you understand where your money goes — but they're built for different people. YNAB enforces a budget method. MoneyWise tracks your real life.",
