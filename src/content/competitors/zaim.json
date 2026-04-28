@@ -1,0 +1,45 @@
+{
+  "slug": "zaim",
+  "displayName": "Zaim",
+  "fullName": "Zaim",
+  "websiteUrl": "https://zaim.net",
+  "hideFromIndex": false,
+  "region": "japanese",
+  "pricing": {
+    "model": "freemium",
+    "monthly": 3.30,
+    "annual": 32.00,
+    "notes": "プレミアム ¥480/月 または ¥4,800/年"
+  },
+  "platforms": {
+    "ios": true,
+    "android": true,
+    "web": true,
+    "macos": false,
+    "windows": false,
+    "linux": false
+  },
+  "features": {
+    "multiCurrency": false,
+    "offlineFirst": false,
+    "localEncryption": false,
+    "optionalCloudSync": true,
+    "byokAi": false,
+    "builtinAi": false,
+    "investments": false,
+    "budgets": true,
+    "receiptPhotos": true,
+    "voiceInput": false,
+    "bankSync": true,
+    "familySharing": false,
+    "noAds": false,
+    "noTrackers": false,
+    "openSource": false
+  },
+  "sources": [
+    { "label": "Zaim 公式サイト", "url": "https://zaim.net" },
+    { "label": "Zaim App Store", "url": "https://apps.apple.com/jp/app/zaim/id472918858" }
+  ],
+  "lastVerified": "2026-04-27",
+  "verificationConfidence": "medium"
+}

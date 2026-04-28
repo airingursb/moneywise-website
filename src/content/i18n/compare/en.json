@@ -482,6 +482,38 @@
         }
       ]
     },
+    "zaim": {
+      "one_liner": "Japan's most popular household-finance app (家計簿)",
+      "positioning": "Zaim is the leading 家計簿 (household finance) app in Japan, with Japanese bank sync, receipt scanning, and budgeting built for domestic users. MoneyWise brings local-first privacy, multi-currency tracking, and BYOK AI to users who need more than a Japan-centric cloud platform.",
+      "when_choose_competitor": "You are based in Japan, want seamless sync with Japanese bank accounts and credit cards, prefer a mature app with a large local community, and are comfortable with a cloud-based freemium model.",
+      "when_choose_moneywise": "You handle multiple currencies, want your financial data stored locally on your device with no ads or trackers, need an AI advisor you fully control with your own API key, or you are outside Japan where Zaim's bank sync does not function.",
+      "faq": [
+        {
+          "q": "Is Zaim available outside Japan?",
+          "a": "Zaim can be downloaded internationally, but its bank sync relies on Japanese financial institution partnerships and works best within Japan. MoneyWise works globally and supports multi-currency accounts out of the box."
+        },
+        {
+          "q": "Is Zaim free to use?",
+          "a": "Zaim has a free tier with ads. Premium removes ads and unlocks advanced features for approximately ¥480/month or ¥4,800/year (about $3.30/mo or $32/yr). MoneyWise is free on a single device with no ads; Pro is $6.99/mo or $49.99/yr."
+        },
+        {
+          "q": "Does Zaim store my data locally or in the cloud?",
+          "a": "Zaim syncs data to its cloud servers. MoneyWise stores everything in an encrypted database on your device. Cloud sync in MoneyWise is optional and end-to-end encrypted."
+        },
+        {
+          "q": "Does Zaim support multiple currencies?",
+          "a": "Zaim is focused on JPY and does not offer robust multi-currency account tracking. MoneyWise supports accounts in any currency with daily exchange rates."
+        },
+        {
+          "q": "Does Zaim have AI features?",
+          "a": "Zaim does not currently offer an AI advisor. MoneyWise Pro includes a BYOK AI advisor — you plug in your own Anthropic or OpenAI key, so your transactions are never sent to a third-party AI vendor."
+        },
+        {
+          "q": "Does Zaim have receipt scanning?",
+          "a": "Yes — Zaim supports receipt photo capture for quick expense logging. MoneyWise also supports receipt photos for a privacy-first workflow."
+        }
+      ]
+    },
     "yimu": {
       "one_liner": "a cute illustrated expense tracker popular with younger Chinese users",
       "positioning": "一木记账 stands out for its sticker-style illustrations and friendly, approachable design — popular among younger Chinese users who want expense tracking to feel less like a chore. It offers budgets, receipt photos, and optional cloud sync. MoneyWise complements with local-first privacy, multi-currency support, and BYOK AI.",
