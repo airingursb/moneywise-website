@@ -482,6 +482,38 @@
         }
       ]
     },
+    "pyeonhan": {
+      "one_liner": "a simple Korean manual expense tracker with ads",
+      "positioning": "편한가계부 is a popular Korean manual expense tracker — simple, lightweight, and free with ads (ad removal is a small one-time purchase). It covers daily spending and basic budgeting without bank sync or AI. MoneyWise offers local-first encrypted storage, multi-currency support, web access, and BYOK AI for users who want more depth and privacy.",
+      "when_choose_competitor": "You want the simplest possible expense-logging experience for KRW spending, you are comfortable with ads, and you don't need bank sync, web access, or AI features.",
+      "when_choose_moneywise": "You want your data stored locally in an encrypted database with no ads or trackers, need multi-currency support, want a web interface alongside mobile, or need an AI advisor that runs on your own API key.",
+      "faq": [
+        {
+          "q": "Is 편한가계부 free?",
+          "a": "편한가계부 is free with ads. A one-time in-app purchase of approximately ₩4,400 removes ads. MoneyWise is free with no ads at all on a single device; Pro is $6.99/mo or $49.99/yr."
+        },
+        {
+          "q": "Does 편한가계부 have bank sync?",
+          "a": "No — 편한가계부 is a manual entry app. MoneyWise is also manual-entry focused for privacy, with bank sync on the roadmap."
+        },
+        {
+          "q": "Does 편한가계부 support multiple currencies?",
+          "a": "편한가계부 is designed for the Korean market and KRW. MoneyWise supports accounts in any currency with daily exchange rates built in."
+        },
+        {
+          "q": "Does 편한가계부 have a web version?",
+          "a": "No — 편한가계부 is iOS and Android only. MoneyWise supports iOS, Android, and web."
+        },
+        {
+          "q": "Does 편한가계부 have AI features?",
+          "a": "No AI advisor is available. MoneyWise Pro includes a BYOK AI advisor using your own Anthropic or OpenAI key for private financial insights."
+        },
+        {
+          "q": "How accurate is the data shown for 편한가계부?",
+          "a": "편한가계부 has limited public documentation. The data shown here is based on app store listings and is marked low confidence. If you find inaccuracies, please let us know."
+        }
+      ]
+    },
     "banksalad": {
       "one_liner": "South Korea's largest personal-finance aggregator with built-in AI",
       "positioning": "뱅크샐러드 (Banksalad) is the dominant personal-finance app in South Korea, connecting to Korean banks, cards, and insurance accounts with a built-in AI financial assistant. It is free, monetized through financial product recommendations. MoneyWise offers local-first privacy, global multi-currency support, and BYOK AI — designed for users who need privacy and international flexibility beyond the Korean financial system.",

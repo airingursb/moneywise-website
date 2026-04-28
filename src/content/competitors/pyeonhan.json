@@ -1,0 +1,45 @@
+{
+  "slug": "pyeonhan",
+  "displayName": "편한가계부",
+  "fullName": "편한가계부",
+  "websiteUrl": "https://play.google.com/store/apps/details?id=com.realbyteapps.moneymanagerfree",
+  "hideFromIndex": false,
+  "region": "korean",
+  "pricing": {
+    "model": "free-with-ads",
+    "monthly": null,
+    "annual": null,
+    "notes": "광고 제거 일회성 구매 약 ₩4,400"
+  },
+  "platforms": {
+    "ios": true,
+    "android": true,
+    "web": false,
+    "macos": false,
+    "windows": false,
+    "linux": false
+  },
+  "features": {
+    "multiCurrency": false,
+    "offlineFirst": false,
+    "localEncryption": false,
+    "optionalCloudSync": true,
+    "byokAi": false,
+    "builtinAi": false,
+    "investments": false,
+    "budgets": true,
+    "receiptPhotos": true,
+    "voiceInput": false,
+    "bankSync": false,
+    "familySharing": false,
+    "noAds": false,
+    "noTrackers": false,
+    "openSource": false
+  },
+  "sources": [
+    { "label": "편한가계부 Google Play", "url": "https://play.google.com/store/apps/details?id=com.realbyteapps.moneymanagerfree" },
+    { "label": "편한가계부 App Store", "url": "https://apps.apple.com/kr/app/id397927731" }
+  ],
+  "lastVerified": "2026-04-27",
+  "verificationConfidence": "low"
+}
