@@ -1,0 +1,27 @@
+---
+import type { CompareI18nData, CompetitorCopy } from '../../content.config';
+
+interface Props {
+  c: CompareI18nData;
+  copy: CompetitorCopy;
+}
+const { c, copy } = Astro.props;
+---
+<section class="py-20 md:py-24">
+  <div class="mx-auto max-w-3xl px-6">
+    <h2 class="font-[family-name:var(--font-display)] font-bold text-[32px] md:text-[40px] leading-[1.05] tracking-[-0.025em] text-[var(--color-fg-primary)]">
+      {c.common.section_titles.faq}
+    </h2>
+    <div class="mt-10 divide-y divide-[var(--color-border)] border-y border-[var(--color-border)]">
+      {copy.faq.map((item: { q: string; a: string }) => (
+        <details class="group py-5">
+          <summary class="list-none cursor-pointer flex justify-between items-start gap-4">
+            <span class="text-[17px] font-semibold text-[var(--color-fg-primary)]">{item.q}</span>
+            <span class="text-[var(--color-fg-secondary)] transition group-open:rotate-45 text-[20px] leading-none">+</span>
+          </summary>
+          <p class="mt-4 text-[15px] leading-[1.7] text-[var(--color-fg-secondary)]">{item.a}</p>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
