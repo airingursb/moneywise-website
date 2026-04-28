@@ -1,104 +1,104 @@
 {
   "common": {
     "meta": {
-      "title_template": "MoneyWise vs {competitor} — Local-first finance compared to {competitor}",
-      "description_template": "Compare MoneyWise and {competitor}. Side-by-side pricing, platforms, AI, privacy, and which one fits your money."
+      "title_template": "MoneyWise vs {competitor} — 로컬 우선 가계부 앱과 {competitor} 비교",
+      "description_template": "MoneyWise와 {competitor}를 비교해보세요. 가격·플랫폼·AI·프라이버시 기능을 한눈에 확인하고 나에게 맞는 앱을 골라보세요."
     },
     "hero": {
-      "subtitle_template": "Two ways to track your money. {competitor} is {one_liner}. MoneyWise is local-first, multi-currency, and brings your own AI key.",
-      "cta_primary": "Try MoneyWise",
-      "cta_secondary": "See full features",
+      "subtitle_template": "가계부 앱, 두 가지 선택지. {competitor}는 {one_liner}입니다. MoneyWise는 로컬 우선, 다중 통화 지원, 내 키로 AI 사용이 가능합니다.",
+      "cta_primary": "MoneyWise 사용해보기",
+      "cta_secondary": "전체 기능 보기",
       "versus_label": "vs"
     },
     "section_titles": {
-      "comparison_table": "At a glance",
-      "moneywise_advantages": "Where MoneyWise is different",
-      "ai_deep_dive": "AI without sending your data anywhere",
-      "privacy": "Your data stays on your phone",
-      "when_to_choose": "Which one is right for you?",
-      "pricing": "Pricing",
-      "faq": "Frequently asked questions",
-      "see_also": "See also"
+      "comparison_table": "한눈에 비교",
+      "moneywise_advantages": "MoneyWise가 다른 이유",
+      "ai_deep_dive": "데이터를 전송하지 않는 AI 분석",
+      "privacy": "내 데이터는 내 폰 안에만",
+      "when_to_choose": "어떤 앱이 나에게 맞을까?",
+      "pricing": "가격",
+      "faq": "자주 묻는 질문",
+      "see_also": "다른 비교 보기"
     },
     "table": {
-      "pricing_label": "Pricing",
-      "platforms_label": "Platforms",
-      "features_label": "Features",
+      "pricing_label": "가격",
+      "platforms_label": "플랫폼",
+      "features_label": "기능",
       "yes": "✓",
       "no": "—",
-      "free_label": "Free",
-      "pricing_per_month": "/mo",
-      "pricing_per_year": "/yr"
+      "free_label": "무료",
+      "pricing_per_month": "/월",
+      "pricing_per_year": "/년"
     },
     "feature_labels": {
-      "multiCurrency": "Multi-currency",
-      "offlineFirst": "Offline-first",
-      "localEncryption": "Local encryption",
-      "optionalCloudSync": "Optional cloud sync",
-      "byokAi": "BYOK AI (your key)",
-      "builtinAi": "Built-in AI (no key)",
-      "investments": "Investments",
-      "budgets": "Budgets",
-      "receiptPhotos": "Receipt photos",
-      "voiceInput": "Voice input",
-      "bankSync": "Automatic bank sync",
-      "familySharing": "Family sharing",
-      "noAds": "No ads",
-      "noTrackers": "No trackers",
-      "openSource": "Open source"
+      "multiCurrency": "다중 통화",
+      "offlineFirst": "오프라인 우선",
+      "localEncryption": "로컬 암호화",
+      "optionalCloudSync": "선택적 클라우드 동기화",
+      "byokAi": "내 키로 AI 사용 (BYOK)",
+      "builtinAi": "내장 AI (키 불필요)",
+      "investments": "투자 관리",
+      "budgets": "예산 관리",
+      "receiptPhotos": "영수증 사진",
+      "voiceInput": "음성 입력",
+      "bankSync": "자동 계좌 동기화",
+      "familySharing": "가족 공유",
+      "noAds": "광고 없음",
+      "noTrackers": "트래커 없음",
+      "openSource": "오픈 소스"
     },
     "platform_labels": {
       "ios": "iOS",
       "android": "Android",
-      "web": "Web",
+      "web": "웹",
       "macos": "macOS",
       "windows": "Windows",
       "linux": "Linux"
     },
     "advantages": [
       {
-        "title": "Offline-first by design",
-        "description": "Every record is in an encrypted SQLite database on your phone. Works in airplane mode."
+        "title": "설계부터 오프라인 우선",
+        "description": "모든 기록은 스마트폰의 암호화된 SQLite 데이터베이스에 저장됩니다. 비행기 모드에서도 완벽하게 작동합니다."
       },
       {
-        "title": "Bring your own AI key",
-        "description": "Plug in your Anthropic or OpenAI key. Insights run with no extra subscription. Or use pooled credits in Pro."
+        "title": "내 AI 키 직접 연결",
+        "description": "Anthropic 또는 OpenAI 키를 연결하면 추가 구독 없이 AI 인사이트를 사용할 수 있습니다. Pro 플랜의 공유 크레딧도 이용 가능합니다."
       },
       {
-        "title": "Multi-currency from day one",
-        "description": "Hold accounts in any currency. Convert with daily rates. No 'home currency only' lock-in."
+        "title": "첫날부터 다중 통화 지원",
+        "description": "원하는 통화로 계좌를 관리하고 매일 환율로 환산하세요. '본국 통화만' 같은 제한은 없습니다."
       },
       {
-        "title": "No ads, no trackers",
-        "description": "Nothing leaves your device unless you turn on optional encrypted sync. We literally cannot read your data."
+        "title": "광고 없음, 트래커 없음",
+        "description": "선택적 암호화 동기화를 켜지 않는 한 어떤 데이터도 기기 밖으로 나가지 않습니다. 기술적으로 우리는 당신의 데이터를 읽을 수 없습니다."
       }
     ],
     "ai_deep_dive": {
-      "eyebrow": "AI you control",
-      "title": "An advisor that runs on your terms",
-      "description": "Most finance apps either don't have AI, or send your transactions to a vendor's server. MoneyWise lets you choose: bring your own Anthropic or OpenAI key, or use Pro's pooled credits. Either way, the AI sees only what you ask it to see.",
+      "eyebrow": "내가 제어하는 AI",
+      "title": "내 조건으로 작동하는 재무 어드바이저",
+      "description": "대부분의 가계부 앱은 AI가 없거나, 있더라도 거래 데이터를 벤더 서버로 전송합니다. MoneyWise는 선택권을 드립니다: Anthropic 또는 OpenAI의 내 키를 사용하거나, Pro의 공유 크레딧을 사용하거나. 어느 쪽이든 AI는 내가 보여주고 싶은 내용만 봅니다.",
       "bullets": [
-        "Keys stored in iOS Keychain — never on our servers",
-        "Daily Brief, monthly summaries, and ad-hoc Q&A",
-        "Skip AI entirely — every other feature still works"
+        "키는 iOS Keychain에 저장 — 당사 서버에는 절대 전송되지 않음",
+        "데일리 브리프, 월간 요약, 언제든 가능한 Q&A",
+        "AI를 전혀 안 써도 OK — 나머지 모든 기능은 그대로 작동"
       ]
     },
     "when_to_choose": {
-      "moneywise_heading": "Choose MoneyWise if",
-      "competitor_heading_template": "Choose {competitor} if"
+      "moneywise_heading": "MoneyWise를 선택하세요, 만약",
+      "competitor_heading_template": "{competitor}를 선택하세요, 만약"
     },
-    "back_to_index": "All comparisons",
+    "back_to_index": "전체 비교 목록",
     "index": {
-      "title": "MoneyWise alternatives, side-by-side",
-      "subtitle": "21 finance apps compared. Pick the one that fits your money.",
+      "title": "MoneyWise 대안 앱 한눈에 비교",
+      "subtitle": "21개 가계부 앱 비교 분석. 나에게 딱 맞는 앱을 찾아보세요.",
       "region_labels": {
-        "western": "Global / English",
-        "chinese": "中文记账",
-        "japanese": "日本",
+        "western": "글로벌 / 영문판",
+        "chinese": "중국어 가계부",
+        "japanese": "일본",
         "korean": "한국",
-        "ios_focused": "iOS-focused"
+        "ios_focused": "iOS 중심"
       },
-      "card_cta": "Compare →"
+      "card_cta": "비교하기 →"
     }
   },
   "competitors": {
