@@ -1,0 +1,45 @@
+{
+  "slug": "ynab",
+  "displayName": "YNAB",
+  "fullName": "You Need A Budget",
+  "websiteUrl": "https://www.ynab.com",
+  "hideFromIndex": false,
+  "region": "western",
+  "pricing": {
+    "model": "subscription",
+    "monthly": 14.99,
+    "annual": 109.0,
+    "notes": "34-day free trial. No free tier."
+  },
+  "platforms": {
+    "ios": true,
+    "android": true,
+    "web": true,
+    "macos": false,
+    "windows": false,
+    "linux": false
+  },
+  "features": {
+    "multiCurrency": false,
+    "offlineFirst": false,
+    "localEncryption": false,
+    "optionalCloudSync": true,
+    "byokAi": false,
+    "builtinAi": false,
+    "investments": false,
+    "budgets": true,
+    "receiptPhotos": false,
+    "voiceInput": false,
+    "bankSync": true,
+    "familySharing": true,
+    "noAds": true,
+    "noTrackers": false,
+    "openSource": false
+  },
+  "sources": [
+    { "label": "YNAB pricing", "url": "https://www.ynab.com/pricing" },
+    { "label": "YNAB features", "url": "https://www.ynab.com/features" }
+  ],
+  "lastVerified": "2026-04-27",
+  "verificationConfidence": "high"
+}
