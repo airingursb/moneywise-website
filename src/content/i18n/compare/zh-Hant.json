@@ -1,104 +1,104 @@
 {
   "common": {
     "meta": {
-      "title_template": "MoneyWise vs {competitor} — Local-first finance compared to {competitor}",
-      "description_template": "Compare MoneyWise and {competitor}. Side-by-side pricing, platforms, AI, privacy, and which one fits your money."
+      "title_template": "MoneyWise vs {competitor} — 本地優先的記帳應用程式對比 {competitor}",
+      "description_template": "對比 MoneyWise 與 {competitor}：價格、平台、AI、隱私功能一覽，找到最適合你的記帳方式。"
     },
     "hero": {
-      "subtitle_template": "Two ways to track your money. {competitor} is {one_liner}. MoneyWise is local-first, multi-currency, and brings your own AI key.",
-      "cta_primary": "Try MoneyWise",
-      "cta_secondary": "See full features",
+      "subtitle_template": "兩種記帳方式，你來選擇。{competitor} 是{one_liner}。MoneyWise 本地優先、多幣種支援，並可使用你自己的 AI 金鑰。",
+      "cta_primary": "試用 MoneyWise",
+      "cta_secondary": "查看完整功能",
       "versus_label": "vs"
     },
     "section_titles": {
-      "comparison_table": "At a glance",
-      "moneywise_advantages": "Where MoneyWise is different",
-      "ai_deep_dive": "AI without sending your data anywhere",
-      "privacy": "Your data stays on your phone",
-      "when_to_choose": "Which one is right for you?",
-      "pricing": "Pricing",
-      "faq": "Frequently asked questions",
-      "see_also": "See also"
+      "comparison_table": "功能對比一覽",
+      "moneywise_advantages": "MoneyWise 的獨特之處",
+      "ai_deep_dive": "AI 分析，資料不離開你的裝置",
+      "privacy": "你的資料只在你的手機裡",
+      "when_to_choose": "哪款更適合你？",
+      "pricing": "價格",
+      "faq": "常見問題",
+      "see_also": "相關對比"
     },
     "table": {
-      "pricing_label": "Pricing",
-      "platforms_label": "Platforms",
-      "features_label": "Features",
+      "pricing_label": "價格",
+      "platforms_label": "平台",
+      "features_label": "功能",
       "yes": "✓",
       "no": "—",
-      "free_label": "Free",
-      "pricing_per_month": "/mo",
-      "pricing_per_year": "/yr"
+      "free_label": "免費",
+      "pricing_per_month": "/月",
+      "pricing_per_year": "/年"
     },
     "feature_labels": {
-      "multiCurrency": "Multi-currency",
-      "offlineFirst": "Offline-first",
-      "localEncryption": "Local encryption",
-      "optionalCloudSync": "Optional cloud sync",
-      "byokAi": "BYOK AI (your key)",
-      "builtinAi": "Built-in AI (no key)",
-      "investments": "Investments",
-      "budgets": "Budgets",
-      "receiptPhotos": "Receipt photos",
-      "voiceInput": "Voice input",
-      "bankSync": "Automatic bank sync",
-      "familySharing": "Family sharing",
-      "noAds": "No ads",
-      "noTrackers": "No trackers",
-      "openSource": "Open source"
+      "multiCurrency": "多幣種",
+      "offlineFirst": "離線優先",
+      "localEncryption": "本地加密",
+      "optionalCloudSync": "可選雲端同步",
+      "byokAi": "BYOK AI（自帶金鑰）",
+      "builtinAi": "內建 AI（無需金鑰）",
+      "investments": "投資管理",
+      "budgets": "預算管理",
+      "receiptPhotos": "票據拍照",
+      "voiceInput": "語音輸入",
+      "bankSync": "自動銀行同步",
+      "familySharing": "家庭共享",
+      "noAds": "無廣告",
+      "noTrackers": "無追蹤器",
+      "openSource": "開放原始碼"
     },
     "platform_labels": {
       "ios": "iOS",
       "android": "Android",
-      "web": "Web",
+      "web": "網頁版",
       "macos": "macOS",
       "windows": "Windows",
       "linux": "Linux"
     },
     "advantages": [
       {
-        "title": "Offline-first by design",
-        "description": "Every record is in an encrypted SQLite database on your phone. Works in airplane mode."
+        "title": "離線優先，設計如此",
+        "description": "每一條記錄都儲存在手機上加密的 SQLite 資料庫中，飛行模式下照常使用。"
       },
       {
-        "title": "Bring your own AI key",
-        "description": "Plug in your Anthropic or OpenAI key. Insights run with no extra subscription. Or use pooled credits in Pro."
+        "title": "自帶 AI 金鑰",
+        "description": "接入你自己的 Anthropic 或 OpenAI 金鑰，無需額外訂閱即可獲得 AI 洞察。也可使用 Pro 方案的共享額度。"
       },
       {
-        "title": "Multi-currency from day one",
-        "description": "Hold accounts in any currency. Convert with daily rates. No 'home currency only' lock-in."
+        "title": "從第一天起支援多幣種",
+        "description": "帳戶可使用任意貨幣，按每日匯率換算，不被「僅支援本國貨幣」所限制。"
       },
       {
-        "title": "No ads, no trackers",
-        "description": "Nothing leaves your device unless you turn on optional encrypted sync. We literally cannot read your data."
+        "title": "零廣告，零追蹤",
+        "description": "除非你主動開啟加密同步，否則任何資料都不會離開你的裝置。我們從技術上無法讀取你的資料。"
       }
     ],
     "ai_deep_dive": {
-      "eyebrow": "AI you control",
-      "title": "An advisor that runs on your terms",
-      "description": "Most finance apps either don't have AI, or send your transactions to a vendor's server. MoneyWise lets you choose: bring your own Anthropic or OpenAI key, or use Pro's pooled credits. Either way, the AI sees only what you ask it to see.",
+      "eyebrow": "由你掌控的 AI",
+      "title": "按你的方式運行的財務顧問",
+      "description": "大多數記帳應用程式要麼沒有 AI，要麼把你的交易記錄傳送到服務商的伺服器。MoneyWise 讓你自己決定：帶上你的 Anthropic 或 OpenAI 金鑰，或使用 Pro 的共享額度。無論哪種方式，AI 只會看到你讓它看到的內容。",
       "bullets": [
-        "Keys stored in iOS Keychain — never on our servers",
-        "Daily Brief, monthly summaries, and ad-hoc Q&A",
-        "Skip AI entirely — every other feature still works"
+        "金鑰儲存在 iOS Keychain 中，從不上傳至我們的伺服器",
+        "每日簡報、月度總結，以及隨時可用的問答功能",
+        "完全不用 AI 也沒問題——其他所有功能照常運行"
       ]
     },
     "when_to_choose": {
-      "moneywise_heading": "Choose MoneyWise if",
-      "competitor_heading_template": "Choose {competitor} if"
+      "moneywise_heading": "選擇 MoneyWise，如果你",
+      "competitor_heading_template": "選擇 {competitor}，如果你"
     },
-    "back_to_index": "All comparisons",
+    "back_to_index": "查看所有對比",
     "index": {
-      "title": "MoneyWise alternatives, side-by-side",
-      "subtitle": "21 finance apps compared. Pick the one that fits your money.",
+      "title": "MoneyWise 替代應用程式橫向對比",
+      "subtitle": "21 款記帳應用程式同台比較，找到最適合你的那一款。",
       "region_labels": {
-        "western": "Global / English",
-        "chinese": "中文记账",
+        "western": "全球 / 英文版",
+        "chinese": "中文記帳",
         "japanese": "日本",
-        "korean": "한국",
-        "ios_focused": "iOS-focused"
+        "korean": "韓國",
+        "ios_focused": "iOS 優先"
       },
-      "card_cta": "Compare →"
+      "card_cta": "對比 →"
     }
   },
   "competitors": {
