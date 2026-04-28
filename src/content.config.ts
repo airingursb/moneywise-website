@@ -93,5 +93,61 @@ const i18n = defineCollection({
   schema: i18nSchema,
 });
 
-export const collections = { i18n };
+const competitorSchema = z.object({
+  slug: z.string().regex(/^[a-z0-9][a-z0-9-]*$/, 'lowercase-kebab-case only'),
+  displayName: z.string(),
+  fullName: z.string().optional(),
+  websiteUrl: z.string().url(),
+  hideFromIndex: z.boolean().default(false),
+  region: z.enum(['western', 'chinese', 'japanese', 'korean', 'ios_focused', 'self']),
+  pricing: z.object({
+    model: z.enum(['free', 'freemium', 'subscription', 'one-time', 'free-with-ads']),
+    monthly: z.number().nullable(),
+    annual: z.number().nullable(),
+    notes: z.string().optional(),
+  }).refine(
+    (p) => p.model !== 'free' || (p.monthly === null && p.annual === null),
+    { message: 'Free apps must have null monthly and annual prices' },
+  ),
+  platforms: z.object({
+    ios: z.boolean(),
+    android: z.boolean(),
+    web: z.boolean(),
+    macos: z.boolean(),
+    windows: z.boolean(),
+    linux: z.boolean(),
+  }),
+  features: z.object({
+    multiCurrency: z.boolean(),
+    offlineFirst: z.boolean(),
+    localEncryption: z.boolean(),
+    optionalCloudSync: z.boolean(),
+    byokAi: z.boolean(),
+    builtinAi: z.boolean(),
+    investments: z.boolean(),
+    budgets: z.boolean(),
+    receiptPhotos: z.boolean(),
+    voiceInput: z.boolean(),
+    bankSync: z.boolean(),
+    familySharing: z.boolean(),
+    noAds: z.boolean(),
+    noTrackers: z.boolean(),
+    openSource: z.boolean(),
+  }),
+  sources: z.array(z.object({
+    label: z.string(),
+    url: z.string().url(),
+  })),
+  lastVerified: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'YYYY-MM-DD'),
+  verificationConfidence: z.enum(['high', 'medium', 'low']),
+});
+
+const competitors = defineCollection({
+  loader: glob({ pattern: '*.json', base: './src/content/competitors' }),
+  schema: competitorSchema,
+});
+
+export type CompetitorData = z.infer<typeof competitorSchema>;
+
+export const collections = { i18n, competitors };
 export type I18nData = z.infer<typeof i18nSchema>;
