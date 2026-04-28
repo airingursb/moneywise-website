@@ -1,0 +1,45 @@
+{
+  "slug": "spendee",
+  "displayName": "Spendee",
+  "fullName": "Spendee",
+  "websiteUrl": "https://www.spendee.com",
+  "hideFromIndex": false,
+  "region": "western",
+  "pricing": {
+    "model": "freemium",
+    "monthly": 5.99,
+    "annual": 35.99,
+    "notes": "Free Basic tier (1 wallet, 1 budget). Plus $1.99/mo ($14.99/yr). Premium $5.99/mo ($35.99/yr). Prices may vary by country."
+  },
+  "platforms": {
+    "ios": true,
+    "android": true,
+    "web": true,
+    "macos": false,
+    "windows": false,
+    "linux": false
+  },
+  "features": {
+    "multiCurrency": true,
+    "offlineFirst": false,
+    "localEncryption": false,
+    "optionalCloudSync": false,
+    "byokAi": false,
+    "builtinAi": false,
+    "investments": false,
+    "budgets": true,
+    "receiptPhotos": true,
+    "voiceInput": false,
+    "bankSync": true,
+    "familySharing": false,
+    "noAds": true,
+    "noTrackers": false,
+    "openSource": false
+  },
+  "sources": [
+    { "label": "Spendee pricing", "url": "https://www.spendee.com/pricing" },
+    { "label": "Spendee features", "url": "https://www.spendee.com/features" }
+  ],
+  "lastVerified": "2026-04-27",
+  "verificationConfidence": "high"
+}
