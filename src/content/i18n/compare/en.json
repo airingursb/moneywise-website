@@ -104,6 +104,20 @@
         { "q": "Is MoneyWise free like Mint was?", "a": "MoneyWise is free for unlimited records on a single device. Pro ($6.99/mo or $49.99/yr) adds multi-device sync, backup, and AI. Unlike Mint's free model, there are no ads or data brokering." }
       ]
     },
+    "rocket-money": {
+      "one_liner": "a freemium subscription-tracker with AI",
+      "positioning": "Rocket Money (formerly Truebill) blends budgeting with an AI-powered subscription cancellation service, bank sync, and a generous free tier. MoneyWise trades cloud automation for local-first privacy, multi-currency tracking, and BYOK AI.",
+      "when_choose_competitor": "You have lots of unwanted subscriptions to cancel, you want a free budgeting app with automatic bank sync, and you're comfortable with an ad-supported model backed by Rocket Companies.",
+      "when_choose_moneywise": "You want your financial data stored locally with no trackers, you travel internationally and need multi-currency support, or you want a clean AI advisor using your own key rather than a built-in black box.",
+      "faq": [
+        { "q": "Is Rocket Money actually free?", "a": "Rocket Money has a free tier with basic budgeting and spending tracking. Premium features — including subscription cancellation, credit monitoring, and savings automation — require the paid plan ($4–$12/mo, user-chosen)." },
+        { "q": "What is Rocket Money's AI used for?", "a": "Rocket Money's AI primarily identifies recurring subscriptions and flags opportunities to save or cancel services. MoneyWise's AI advisor answers broader financial questions using your own Anthropic or OpenAI key." },
+        { "q": "Does Rocket Money support multiple currencies?", "a": "No — Rocket Money is built for US bank accounts and US dollars only. MoneyWise supports accounts in any currency with real-time exchange rates." },
+        { "q": "How does Rocket Money compare to MoneyWise on privacy?", "a": "Rocket Money is owned by Rocket Companies and earns revenue through ads, upsells, and data partnerships. MoneyWise stores your data locally with no ads and no trackers — nothing leaves your device unless you opt into encrypted cloud sync." },
+        { "q": "Does Rocket Money have family or couple sharing?", "a": "Rocket Money does not offer a formal family sharing plan. MoneyWise Pro supports multi-device sync, letting partners access the same accounts." },
+        { "q": "Can I export my Rocket Money data to MoneyWise?", "a": "You can export your transaction history as CSV from Rocket Money and import key accounts manually into MoneyWise. There is no direct automated import yet." }
+      ]
+    },
     "monarch-money": {
       "one_liner": "a collaborative web-first budgeting app",
       "positioning": "Monarch Money is a full-featured budgeting platform with strong family/couple sharing, built-in investments, and bank sync across web, iOS, and Android. MoneyWise trades cloud convenience for local-first privacy, multi-currency, and BYOK AI.",

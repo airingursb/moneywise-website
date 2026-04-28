@@ -104,6 +104,20 @@
         { "q": "MoneyWise 像 Mint 一樣是免費的嗎？", "a": "MoneyWise 在單一裝置上可無限免費記帳。Pro 版（$6.99/月 或 $49.99/年）增加了多裝置同步、備份和 AI 功能。與 Mint 的免費模式不同，MoneyWise 沒有廣告也不出售用戶資料。" }
       ]
     },
+    "rocket-money": {
+      "one_liner": "含 AI 的免費增值訂閱管理記帳應用程式",
+      "positioning": "Rocket Money（原 Truebill）將記帳與 AI 驅動的訂閱取消服務、銀行同步和慷慨的免費版本融為一體。MoneyWise 則以本地優先的隱私保護、多幣種追蹤和自帶 AI 金鑰來換取更高的掌控感。",
+      "when_choose_competitor": "若你有許多不需要的訂閱需要取消、想要帶有自動銀行同步的免費記帳應用程式，且接受由 Rocket Companies 支持的廣告模式，Rocket Money 是不錯的選擇。",
+      "when_choose_moneywise": "若你希望財務資料本地儲存、無追蹤器，有多幣種需求或經常出行，或傾向於使用自己金鑰的 AI 顧問而非內建黑盒，MoneyWise 更適合你。",
+      "faq": [
+        { "q": "Rocket Money 真的免費嗎？", "a": "Rocket Money 提供包含基礎預算和消費追蹤的免費版本。進階功能——包括訂閱取消、信用監控和自動儲蓄——需要付費方案（$4–$12/月，用戶自選）。" },
+        { "q": "Rocket Money 的 AI 功能是做什麼的？", "a": "Rocket Money 的 AI 主要用於識別定期訂閱並標記可節省或取消的服務機會。MoneyWise 的 AI 顧問使用你自己的 Anthropic 或 OpenAI 金鑰，可回答更廣泛的財務問題。" },
+        { "q": "Rocket Money 支援多幣種嗎？", "a": "不支援——Rocket Money 僅為美國銀行帳戶和美元設計。MoneyWise 支援任意幣種的帳戶，並提供即時匯率。" },
+        { "q": "Rocket Money 和 MoneyWise 在隱私方面如何比較？", "a": "Rocket Money 隸屬於 Rocket Companies，透過廣告、追加銷售和資料合作獲利。MoneyWise 將資料本地儲存，無廣告無追蹤器——除非你選擇加密雲端同步，否則資料不會離開裝置。" },
+        { "q": "Rocket Money 支援家庭或伴侶共享嗎？", "a": "Rocket Money 沒有正式的家庭共享方案。MoneyWise Pro 支援多裝置同步，伴侶可以存取相同帳戶。" },
+        { "q": "我可以將 Rocket Money 的資料匯出到 MoneyWise 嗎？", "a": "你可以從 Rocket Money 將交易歷史匯出為 CSV，再手動將主要帳戶新增到 MoneyWise 中。目前尚無自動匯入功能。" }
+      ]
+    },
     "monarch-money": {
       "one_liner": "注重協作的網頁端記帳平台",
       "positioning": "Monarch Money 是功能齊全的記帳平台，提供強大的家庭／伴侶共享預算、內建投資追蹤，以及跨網頁、iOS、Android 的銀行同步。MoneyWise 則以本地優先的隱私保護、多幣種支援和自帶 AI 金鑰，為更重視掌控感的用戶提供服務。",

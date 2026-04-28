@@ -1,0 +1,44 @@
+{
+  "slug": "rocket-money",
+  "displayName": "Rocket Money",
+  "fullName": "Rocket Money (formerly Truebill)",
+  "websiteUrl": "https://www.rocketmoney.com",
+  "hideFromIndex": false,
+  "region": "western",
+  "pricing": {
+    "model": "freemium",
+    "monthly": 12.0,
+    "annual": null,
+    "notes": "Free tier available. Premium is $4–$12/mo (user-chosen). Formerly known as Truebill."
+  },
+  "platforms": {
+    "ios": true,
+    "android": true,
+    "web": true,
+    "macos": false,
+    "windows": false,
+    "linux": false
+  },
+  "features": {
+    "multiCurrency": false,
+    "offlineFirst": false,
+    "localEncryption": false,
+    "optionalCloudSync": false,
+    "byokAi": false,
+    "builtinAi": true,
+    "investments": true,
+    "budgets": true,
+    "receiptPhotos": false,
+    "voiceInput": false,
+    "bankSync": true,
+    "familySharing": false,
+    "noAds": false,
+    "noTrackers": false,
+    "openSource": false
+  },
+  "sources": [
+    { "label": "Rocket Money website", "url": "https://www.rocketmoney.com" }
+  ],
+  "lastVerified": "2026-04-27",
+  "verificationConfidence": "medium"
+}

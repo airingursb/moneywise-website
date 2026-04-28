@@ -104,6 +104,20 @@
         { "q": "MoneyWise도 Mint처럼 무료인가요?", "a": "MoneyWise는 단일 기기에서 무제한 무료로 사용할 수 있습니다. Pro 플랜($6.99/월 또는 $49.99/년)은 멀티 기기 동기화, 백업, AI 기능을 추가합니다. Mint의 무료 모델과 달리 광고도, 데이터 판매도 없습니다." }
       ]
     },
+    "rocket-money": {
+      "one_liner": "AI 탑재 프리미엄 구독 관리 가계부 앱",
+      "positioning": "Rocket Money(구 Truebill)는 가계부 기능과 AI 기반 구독 해지 서비스, 은행 동기화, 넉넉한 무료 플랜을 하나로 통합한 앱입니다. MoneyWise는 클라우드 자동화 대신 로컬 우선 프라이버시, 다중 통화 추적, BYOK AI를 선택합니다.",
+      "when_choose_competitor": "해지하고 싶은 구독 서비스가 많거나, 자동 은행 동기화가 포함된 무료 가계부 앱을 원하고, Rocket Companies의 광고 모델을 수용할 수 있다면 Rocket Money가 적합합니다.",
+      "when_choose_moneywise": "재무 데이터를 트래커 없이 로컬에 저장하고 싶거나, 다중 통화가 필요하거나, 자주 해외 여행을 하거나, 내장 AI 대신 자신의 키를 사용하는 AI 어드바이저를 원한다면 MoneyWise가 더 적합합니다.",
+      "faq": [
+        { "q": "Rocket Money는 정말 무료인가요?", "a": "Rocket Money에는 기본 예산 관리와 지출 추적이 가능한 무료 플랜이 있습니다. 구독 해지·신용 모니터링·자동 저축 등의 프리미엄 기능은 유료 플랜(월 $4~$12, 금액은 사용자 선택)이 필요합니다." },
+        { "q": "Rocket Money의 AI는 무엇에 사용되나요?", "a": "Rocket Money의 AI는 주로 정기 구독을 식별하고 절약하거나 해지할 기회를 제안하는 데 사용됩니다. MoneyWise의 AI 어드바이저는 자신의 Anthropic 또는 OpenAI 키를 사용하여 더 광범위한 재무 질문에 답합니다." },
+        { "q": "Rocket Money는 다중 통화를 지원하나요?", "a": "아니요 — Rocket Money는 미국 은행 계좌와 미국 달러만을 위해 설계되었습니다. MoneyWise는 모든 통화의 계좌를 관리하고 실시간 환율을 내장하고 있습니다." },
+        { "q": "프라이버시 면에서 Rocket Money와 MoneyWise는 어떻게 다른가요?", "a": "Rocket Money는 Rocket Companies 산하로 광고, 추가 판매, 데이터 파트너십으로 수익을 창출합니다. MoneyWise는 데이터를 로컬에 저장하며 광고도 트래커도 없습니다. 암호화된 클라우드 동기화를 활성화하지 않는 한 데이터는 기기를 벗어나지 않습니다." },
+        { "q": "Rocket Money는 가족 또는 커플 공유를 지원하나요?", "a": "Rocket Money에는 공식 가족 공유 플랜이 없습니다. MoneyWise Pro는 멀티 기기 동기화로 파트너와 같은 계좌를 공유할 수 있습니다." },
+        { "q": "Rocket Money 데이터를 MoneyWise로 내보낼 수 있나요?", "a": "Rocket Money에서 거래 내역을 CSV로 내보낸 후 MoneyWise에 주요 계좌를 수동으로 추가해 시작할 수 있습니다. 현재 자동 가져오기 기능은 없습니다." }
+      ]
+    },
     "monarch-money": {
       "one_liner": "협업 중심의 웹 기반 가계부 플랫폼",
       "positioning": "Monarch Money는 강력한 가족/커플 공유 예산, 내장 투자 추적, 웹·iOS·Android 은행 동기화를 갖춘 풀 기능 가계부 플랫폼입니다. MoneyWise는 클라우드 편의성 대신 로컬 우선 프라이버시, 다중 통화, BYOK AI를 선택한 사용자에게 맞습니다.",
