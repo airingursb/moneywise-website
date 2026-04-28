@@ -1,0 +1,35 @@
+---
+import type { CompetitorData, CompareI18nData, CompetitorCopy } from '../../content.config';
+import CompetitorBadge from './CompetitorBadge.astro';
+import { interpolate } from '../../lib/compare';
+
+interface Props {
+  self: CompetitorData;
+  competitor: CompetitorData;
+  c: CompareI18nData;
+  copy: CompetitorCopy;
+}
+const { self, competitor, c, copy } = Astro.props;
+const subtitle = interpolate(c.common.hero.subtitle_template, {
+  competitor: competitor.displayName,
+  one_liner: copy.one_liner,
+});
+---
+<section class="mx-auto max-w-6xl px-6 pt-16 pb-12 md:pt-24 md:pb-16">
+  <div class="flex items-center justify-center gap-4 md:gap-6">
+    <CompetitorBadge name={self.displayName} size="lg" variant="self" />
+    <span class="text-[18px] md:text-[22px] font-semibold text-[var(--color-fg-secondary)]">
+      {c.common.hero.versus_label}
+    </span>
+    <CompetitorBadge name={competitor.displayName} size="lg" />
+  </div>
+  <h1 class="mt-10 max-w-3xl mx-auto text-center font-[family-name:var(--font-display)] font-bold text-[40px] md:text-[60px] leading-[1.02] tracking-[-0.035em] text-[var(--color-fg-primary)]">
+    {self.displayName} <em class="font-[family-name:var(--font-serif-italic)] not-italic [font-style:italic] font-medium text-[var(--color-accent-primary)]">{c.common.hero.versus_label}</em> {competitor.displayName}
+  </h1>
+  <p class="mt-6 max-w-2xl mx-auto text-center text-[17px] leading-[1.6] text-[var(--color-fg-secondary)]">
+    {copy.positioning}
+  </p>
+  <p class="mt-3 max-w-2xl mx-auto text-center text-[14px] leading-[1.55] text-[var(--color-fg-secondary)]/80">
+    {subtitle}
+  </p>
+</section>
