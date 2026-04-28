@@ -353,6 +353,38 @@
           "a": "PocketGuard is primarily a mobile app for iOS and Android; a full web version is not available. MoneyWise supports iOS, Android, and web."
         }
       ]
+    },
+    "suishouji": {
+      "one_liner": "China's largest personal-finance app with bank sync and voice input",
+      "positioning": "随手记 (Feidee Money Manager) is the most widely used personal-finance app in China, made by 随手科技 (Feidee). It offers bank sync via Chinese bank partnerships, investment tracking, receipt photos, and voice input. MoneyWise brings local-first privacy, multi-currency support, and BYOK AI to users who need more than a China-centric cloud platform.",
+      "when_choose_competitor": "You are based in mainland China, want seamless sync with Chinese bank accounts, prefer a feature-rich app with a large local community, and are comfortable with a cloud-based, ad-supported freemium model.",
+      "when_choose_moneywise": "You handle multiple currencies, want your financial data stored locally on your device with no ads or trackers, need an AI advisor you fully control with your own API key, or you are outside mainland China where 随手记's bank sync does not function.",
+      "faq": [
+        {
+          "q": "Is 随手记 available outside mainland China?",
+          "a": "随手记 can be downloaded internationally, but its bank sync feature relies on partnerships with Chinese banks and works best within mainland China. MoneyWise works globally and supports multi-currency accounts out of the box."
+        },
+        {
+          "q": "Is 随手记 free to use?",
+          "a": "随手记 has a free tier with ads. VIP removes ads and unlocks advanced features for approximately ¥30/month or ¥150/year (about $4.20/mo or $21/yr). MoneyWise is free on a single device with no ads; Pro is $6.99/mo or $49.99/yr."
+        },
+        {
+          "q": "Does 随手记 store my data locally or in the cloud?",
+          "a": "随手记 syncs data to Feidee's cloud servers. MoneyWise stores everything in an encrypted database on your device. Cloud sync in MoneyWise is optional and end-to-end encrypted."
+        },
+        {
+          "q": "Does 随手记 support multiple currencies?",
+          "a": "随手记 is focused on CNY and does not offer robust multi-currency account tracking. MoneyWise supports accounts in any currency with daily exchange rates."
+        },
+        {
+          "q": "How does 随手记's AI compare to MoneyWise's?",
+          "a": "随手记 does not currently offer an AI advisor. MoneyWise Pro includes a BYOK AI advisor — you plug in your own Anthropic or OpenAI key, so your transactions are never sent to a third-party AI vendor."
+        },
+        {
+          "q": "Does 随手记 have voice input?",
+          "a": "Yes — 随手记 supports voice input for quick expense logging. MoneyWise focuses on receipt-photo capture and manual entry for a privacy-first workflow."
+        }
+      ]
     }
   }
 }

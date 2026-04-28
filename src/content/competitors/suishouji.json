@@ -1,0 +1,45 @@
+{
+  "slug": "suishouji",
+  "displayName": "随手记",
+  "fullName": "随手记 (Feidee Money Manager)",
+  "websiteUrl": "https://www.feidee.com",
+  "hideFromIndex": false,
+  "region": "chinese",
+  "pricing": {
+    "model": "freemium",
+    "monthly": 4.20,
+    "annual": 21.00,
+    "notes": "VIP订阅约 ¥30/月 或 ¥150/年（≈ $4.20/mo · $21/yr）"
+  },
+  "platforms": {
+    "ios": true,
+    "android": true,
+    "web": true,
+    "macos": false,
+    "windows": false,
+    "linux": false
+  },
+  "features": {
+    "multiCurrency": false,
+    "offlineFirst": false,
+    "localEncryption": false,
+    "optionalCloudSync": true,
+    "byokAi": false,
+    "builtinAi": false,
+    "investments": true,
+    "budgets": true,
+    "receiptPhotos": true,
+    "voiceInput": true,
+    "bankSync": true,
+    "familySharing": false,
+    "noAds": false,
+    "noTrackers": false,
+    "openSource": false
+  },
+  "sources": [
+    { "label": "随手记官网", "url": "https://www.feidee.com" },
+    { "label": "随手记 App Store", "url": "https://apps.apple.com/cn/app/id364911524" }
+  ],
+  "lastVerified": "2026-04-27",
+  "verificationConfidence": "medium"
+}
