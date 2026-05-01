@@ -1,0 +1,38 @@
+---
+import type { Locale } from '../config/site';
+import { getI18n } from '../lib/i18n';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = await getI18n(locale);
+
+const docs = import.meta.glob('../content/legal/account-deletion-*.md');
+const key = `../content/legal/account-deletion-${locale}.md`;
+const loader = docs[key] ?? docs['../content/legal/account-deletion-en.md'];
+const { Content } = await (loader as () => Promise<any>)();
+---
+
+<BaseLayout title={`Delete Your Account · MoneyWise`} description="How to delete your MoneyWise account and what happens to your data." locale={locale} slug="account-deletion">
+  <Nav locale={locale} slug="account-deletion" t={t} />
+  <main class="mx-auto max-w-3xl px-6 py-20 md:py-24">
+    <article class="prose prose-lg max-w-none
+      prose-headings:font-[family-name:var(--font-display)]
+      prose-headings:tracking-[-0.02em]
+      prose-headings:text-[var(--color-fg-primary)]
+      prose-p:text-[var(--color-fg-primary)]
+      prose-p:leading-[1.7]
+      prose-a:text-[var(--color-accent-primary)]
+      prose-strong:text-[var(--color-fg-primary)]
+      prose-ol:text-[var(--color-fg-primary)]
+      prose-ul:text-[var(--color-fg-primary)]"
+    >
+      <Content />
+    </article>
+  </main>
+  <Footer locale={locale} slug="account-deletion" t={t} />
+</BaseLayout>

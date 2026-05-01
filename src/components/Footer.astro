@@ -29,6 +29,7 @@ const { locale, slug, t } = Astro.props;
         <li><a href={pathFor(locale, 'privacy')} class="hover:text-[var(--color-accent-primary)]">{t.nav.privacy}</a></li>
         <li><a href={pathFor(locale, 'terms')} class="hover:text-[var(--color-accent-primary)]">Terms</a></li>
         <li><a href={pathFor(locale, 'compare')} class="hover:text-[var(--color-accent-primary)]">{t.footer.compare}</a></li>
+        <li><a href={pathFor(locale, 'account-deletion')} class="hover:text-[var(--color-accent-primary)]">{t.footer.account_deletion}</a></li>
         <li><a href={SITE.githubUrl} class="hover:text-[var(--color-accent-primary)]">GitHub</a></li>
       </ul>
     </div>
