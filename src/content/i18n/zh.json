@@ -13,12 +13,21 @@
     "headline_part1": "记下每一笔。",
     "headline_italic": "离线，默认如此。",
     "subhead": "账单、预算、投资和 AI 洞察——全部存在手机里。云同步是可选项，隐私保护不是。",
-    "cta_primary": "在 App Store 下载",
     "cta_secondary": "了解工作原理",
     "stat_offline_label": "离线优先",
     "stat_ads_label": "广告 · 追踪器",
     "stat_byok_label": "AI 密钥本地存储",
     "coming_soon": "即将登陆 App Store"
+  },
+  "platforms": {
+    "app_store": "App Store",
+    "play_store": "Play Store",
+    "mac": "Mac",
+    "ipad": "iPad",
+    "apple_watch": "Apple Watch",
+    "status_available": "已上架 · iPhone, iOS 16+",
+    "status_beta": "内测中 · 仅限邀请",
+    "status_in_development": "开发中"
   },
   "features": {
     "eyebrow": "为真实生活而生",
@@ -88,12 +97,7 @@
   },
   "downloadCta": {
     "title": "重新掌控你的财务。",
-    "subhead": "免费下载，Pro 订阅可选。",
-    "cta": "在 App Store 下载",
-    "small_print": "iPhone · iOS 16 或更高版本"
-  },
-  "androidBeta": {
-    "cta": "加入 Android 内测"
+    "subhead": "免费下载，Pro 订阅可选。"
   },
   "footer": {
     "tagline": "本地优先的个人财务应用，来自 Singapore。",

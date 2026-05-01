@@ -13,12 +13,21 @@
     "headline_part1": "Track every dollar.",
     "headline_italic": "Offline, by default.",
     "subhead": "Records, budgets, investments, and AI insights — all stored on your phone. Cloud sync is optional; privacy isn't.",
-    "cta_primary": "Download on the App Store",
     "cta_secondary": "See how it works",
     "stat_offline_label": "Offline-first",
     "stat_ads_label": "Ads · Trackers",
     "stat_byok_label": "AI keys on-device",
     "coming_soon": "Coming soon to the App Store"
+  },
+  "platforms": {
+    "app_store": "App Store",
+    "play_store": "Play Store",
+    "mac": "Mac",
+    "ipad": "iPad",
+    "apple_watch": "Apple Watch",
+    "status_available": "Available · iPhone, iOS 16+",
+    "status_beta": "Beta · Invite only",
+    "status_in_development": "In development"
   },
   "features": {
     "eyebrow": "Built for real life",
@@ -88,12 +97,7 @@
   },
   "downloadCta": {
     "title": "Take back control of your money.",
-    "subhead": "Free to download. Pro subscription optional.",
-    "cta": "Download on the App Store",
-    "small_print": "iPhone · iOS 16 or later"
-  },
-  "androidBeta": {
-    "cta": "Join Android Beta"
+    "subhead": "Free to download. Pro subscription optional."
   },
   "footer": {
     "tagline": "Local-first personal finance, made in Singapore.",

@@ -16,12 +16,21 @@ const i18nSchema = z.object({
     headline_part1: z.string(),
     headline_italic: z.string(),
     subhead: z.string(),
-    cta_primary: z.string(),
     cta_secondary: z.string(),
     stat_offline_label: z.string(),
     stat_ads_label: z.string(),
     stat_byok_label: z.string(),
     coming_soon: z.string(),
+  }),
+  platforms: z.object({
+    app_store: z.string(),
+    play_store: z.string(),
+    mac: z.string(),
+    ipad: z.string(),
+    apple_watch: z.string(),
+    status_available: z.string(),
+    status_beta: z.string(),
+    status_in_development: z.string(),
   }),
   features: z.object({
     eyebrow: z.string(),
@@ -66,11 +75,6 @@ const i18nSchema = z.object({
   downloadCta: z.object({
     title: z.string(),
     subhead: z.string(),
-    cta: z.string(),
-    small_print: z.string(),
-  }),
-  androidBeta: z.object({
-    cta: z.string(),
   }),
   footer: z.object({
     tagline: z.string(),

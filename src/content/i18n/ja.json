@@ -13,12 +13,21 @@
     "headline_part1": "すべての支出を記録。",
     "headline_italic": "オフラインで、標準で。",
     "subhead": "記録・予算・投資・AI インサイト——すべてスマートフォン上に。クラウド同期はオプション。プライバシー保護は標準。",
-    "cta_primary": "App Store でダウンロード",
     "cta_secondary": "詳しく見る",
     "stat_offline_label": "オフラインファースト",
     "stat_ads_label": "広告・トラッカー",
     "stat_byok_label": "AI キーをデバイスに保存",
     "coming_soon": "App Store で近日公開"
+  },
+  "platforms": {
+    "app_store": "App Store",
+    "play_store": "Play Store",
+    "mac": "Mac",
+    "ipad": "iPad",
+    "apple_watch": "Apple Watch",
+    "status_available": "配信中 · iPhone, iOS 16+",
+    "status_beta": "ベータ版 · 招待制",
+    "status_in_development": "開発中"
   },
   "features": {
     "eyebrow": "日常のために設計",
@@ -88,12 +97,7 @@
   },
   "downloadCta": {
     "title": "お金の管理を取り戻しましょう。",
-    "subhead": "ダウンロード無料。Pro サブスクリプションはオプション。",
-    "cta": "App Store でダウンロード",
-    "small_print": "iPhone · iOS 16 以降"
-  },
-  "androidBeta": {
-    "cta": "Android ベータに参加"
+    "subhead": "ダウンロード無料。Pro サブスクリプションはオプション。"
   },
   "footer": {
     "tagline": "ローカルファーストのパーソナルファイナンス。Singapore 発。",

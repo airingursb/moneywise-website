@@ -13,12 +13,21 @@
     "headline_part1": "1원도 놓치지 않게.",
     "headline_italic": "기본은 오프라인.",
     "subhead": "기록·예산·투자·AI 인사이트가 모두 휴대폰에 저장됩니다. 클라우드 동기화는 선택, 프라이버시는 기본.",
-    "cta_primary": "App Store에서 다운로드",
     "cta_secondary": "어떻게 작동하는지 보기",
     "stat_offline_label": "오프라인 우선",
     "stat_ads_label": "광고 · 트래커",
     "stat_byok_label": "AI 키는 기기 내",
     "coming_soon": "곧 App Store에 출시"
+  },
+  "platforms": {
+    "app_store": "App Store",
+    "play_store": "Play Store",
+    "mac": "Mac",
+    "ipad": "iPad",
+    "apple_watch": "Apple Watch",
+    "status_available": "출시됨 · iPhone, iOS 16+",
+    "status_beta": "베타 · 초대 전용",
+    "status_in_development": "개발 중"
   },
   "features": {
     "eyebrow": "실생활을 위해 만들었습니다",
@@ -88,12 +97,7 @@
   },
   "downloadCta": {
     "title": "당신의 돈, 다시 당신의 손에.",
-    "subhead": "다운로드는 무료. Pro 구독은 선택 사항.",
-    "cta": "App Store에서 다운로드",
-    "small_print": "iPhone · iOS 16 이상"
-  },
-  "androidBeta": {
-    "cta": "Android 베타 참여"
+    "subhead": "다운로드는 무료. Pro 구독은 선택 사항."
   },
   "footer": {
     "tagline": "싱가포르에서 만든 로컬 우선 가계부.",

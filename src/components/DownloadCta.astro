@@ -1,7 +1,6 @@
 ---
 import type { I18nData } from '../content.config';
-import AppStoreBadge from './AppStoreBadge.astro';
-import PlayStoreBadge from './PlayStoreBadge.astro';
+import PlatformGrid from './PlatformGrid.astro';
 
 interface Props {
   t: I18nData;
@@ -15,10 +14,8 @@ const { t } = Astro.props;
       {t.downloadCta.title}
     </h2>
     <p class="mt-4 text-[17px] text-white/85">{t.downloadCta.subhead}</p>
-    <div class="mt-8 flex flex-wrap justify-center gap-4">
-      <AppStoreBadge variant="light" label={t.downloadCta.cta} comingSoonLabel={t.hero.coming_soon} />
-      <PlayStoreBadge variant="light" label={t.androidBeta.cta} />
+    <div class="mt-8 flex justify-center">
+      <PlatformGrid t={t} variant="light" />
     </div>
-    <p class="mt-6 text-[13px] text-white/65">{t.downloadCta.small_print}</p>
   </div>
 </section>

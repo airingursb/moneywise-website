@@ -1,8 +1,7 @@
 ---
 import type { Locale } from '../config/site';
 import type { I18nData } from '../content.config';
-import AppStoreBadge from './AppStoreBadge.astro';
-import PlayStoreBadge from './PlayStoreBadge.astro';
+import PlatformGrid from './PlatformGrid.astro';
 import PhoneMockup from './PhoneMockup.astro';
 
 interface Props {
@@ -29,17 +28,12 @@ const screenshot = `/screenshots/${locale}/01-dashboard.png`;
       <p class="mt-5 max-w-[460px] text-[17px] leading-[1.55] text-[var(--color-fg-secondary)]">
         {t.hero.subhead}
       </p>
-      <div class="mt-7 flex flex-wrap items-center gap-4">
-        <AppStoreBadge
-          variant="dark"
-          label={t.hero.cta_primary}
-          comingSoonLabel={t.hero.coming_soon}
-        />
-        <PlayStoreBadge variant="dark" label={t.androidBeta.cta} />
+      <div class="mt-7">
+        <PlatformGrid t={t} variant="dark" />
         <a
           href="#features"
           data-umami-event="hero_secondary_click"
-          class="text-sm font-medium text-[var(--color-fg-primary)] underline decoration-[var(--color-border)] underline-offset-4 hover:decoration-[var(--color-accent-primary)]"
+          class="mt-6 inline-block text-sm font-medium text-[var(--color-fg-primary)] underline decoration-[var(--color-border)] underline-offset-4 hover:decoration-[var(--color-accent-primary)]"
         >
           {t.hero.cta_secondary}
         </a>
