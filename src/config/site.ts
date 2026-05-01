@@ -8,6 +8,8 @@ export const SITE = {
   appStoreId: '6762085775',
   appStoreUrl: 'https://apps.apple.com/app/id6762085775',
   appStoreAvailable: true,
+  playStoreUrl: 'https://airing.notion.site/35362eaec2c880d19a88e09d0b6d1f7c',
+  playStoreAvailable: true,
   umamiScriptUrl: 'https://analytics.ursb.me/script.js',
   umamiWebsiteId: 'fa8052bb-dd85-4287-9c63-da9b2f97fdef',
   gaMeasurementId: 'G-CZ727SS9LD',

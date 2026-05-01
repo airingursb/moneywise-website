@@ -92,6 +92,9 @@
     "cta": "App Store에서 다운로드",
     "small_print": "iPhone · iOS 16 이상"
   },
+  "androidBeta": {
+    "cta": "Android 베타 참여"
+  },
   "footer": {
     "tagline": "싱가포르에서 만든 로컬 우선 가계부.",
     "links_header": "링크",

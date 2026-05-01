@@ -92,6 +92,9 @@
     "cta": "Download on the App Store",
     "small_print": "iPhone · iOS 16 or later"
   },
+  "androidBeta": {
+    "cta": "Join Android Beta"
+  },
   "footer": {
     "tagline": "Local-first personal finance, made in Singapore.",
     "links_header": "Links",

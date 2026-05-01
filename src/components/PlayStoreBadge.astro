@@ -1,0 +1,30 @@
+---
+import { SITE } from '../config/site';
+
+interface Props {
+  variant?: 'primary' | 'light' | 'dark';
+  label: string;
+  class?: string;
+}
+
+const { variant = 'primary', label, class: className = '' } = Astro.props;
+
+const styles = {
+  primary: 'border-[var(--color-surface-inverse)] text-[var(--color-surface-inverse)] hover:bg-[var(--color-surface-inverse)] hover:text-white',
+  light:   'border-white text-white hover:bg-white hover:text-[var(--color-surface-inverse)]',
+  dark:    'border-[var(--color-surface-inverse)] text-[var(--color-surface-inverse)] hover:bg-[var(--color-surface-inverse)] hover:text-white',
+}[variant];
+---
+
+{SITE.playStoreAvailable && (
+  <a
+    href={SITE.playStoreUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    data-umami-event="play_store_cta_click"
+    class={`inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-sm border-2 bg-transparent transition ${styles} ${className}`}
+  >
+    {label}
+    <span aria-hidden="true">→</span>
+  </a>
+)}

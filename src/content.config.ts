@@ -69,6 +69,9 @@ const i18nSchema = z.object({
     cta: z.string(),
     small_print: z.string(),
   }),
+  androidBeta: z.object({
+    cta: z.string(),
+  }),
   footer: z.object({
     tagline: z.string(),
     links_header: z.string(),

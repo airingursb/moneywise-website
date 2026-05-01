@@ -92,6 +92,9 @@
     "cta": "App Store でダウンロード",
     "small_print": "iPhone · iOS 16 以降"
   },
+  "androidBeta": {
+    "cta": "Android ベータに参加"
+  },
   "footer": {
     "tagline": "ローカルファーストのパーソナルファイナンス。Singapore 発。",
     "links_header": "リンク",

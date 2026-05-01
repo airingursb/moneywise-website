@@ -92,6 +92,9 @@
     "cta": "在 App Store 下載",
     "small_print": "iPhone · iOS 16 或更新版本"
   },
+  "androidBeta": {
+    "cta": "加入 Android 內測"
+  },
   "footer": {
     "tagline": "本機優先的個人財務應用程式，來自 Singapore。",
     "links_header": "連結",

@@ -2,6 +2,7 @@
 import type { Locale } from '../config/site';
 import type { I18nData } from '../content.config';
 import AppStoreBadge from './AppStoreBadge.astro';
+import PlayStoreBadge from './PlayStoreBadge.astro';
 import PhoneMockup from './PhoneMockup.astro';
 
 interface Props {
@@ -34,6 +35,7 @@ const screenshot = `/screenshots/${locale}/01-dashboard.png`;
           label={t.hero.cta_primary}
           comingSoonLabel={t.hero.coming_soon}
         />
+        <PlayStoreBadge variant="dark" label={t.androidBeta.cta} />
         <a
           href="#features"
           data-umami-event="hero_secondary_click"
