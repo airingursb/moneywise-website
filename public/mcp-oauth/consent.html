@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MoneyWise · Connect</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen flex items-start justify-center p-6">
+<div id="app" class="w-full max-w-md bg-white rounded-xl shadow p-6 space-y-4">
+  <div class="text-xs text-gray-400 uppercase tracking-wider">MoneyWise</div>
+  <div class="text-sm text-gray-500 py-12 text-center">Loading…</div>
+</div>
+
+<script>
+const API = "https://hsogymavkezhyesbkvnf.supabase.co/functions/v1/mcp-oauth";
+const SUPABASE = "https://hsogymavkezhyesbkvnf.supabase.co";
+const CONSENT = "https://moneywise.airingdeng.com/mcp-oauth/consent.html";
+
+(async () => {
+  const params = new URLSearchParams(window.location.search);
+  const continueState = params.get("continue_state") || "";
+  const errorMsg = params.get("error_msg");
+  const magicSent = params.get("magiclink_sent") === "1";
+  const magicEmail = params.get("magiclink_email") || "";
+
+  // Apple/Google OAuth providers redirect back with tokens in URL fragment.
+  // Convert to a server-side cookie via a POST, then re-render with a clean URL.
+  if (window.location.hash.includes("access_token=")) {
+    const frag = new URLSearchParams(window.location.hash.slice(1));
+    const at = frag.get("access_token");
+    const rt = frag.get("refresh_token") || "";
+    if (at) {
+      const fd = new FormData();
+      fd.set("intent", "signin_oauth_callback");
+      fd.set("access_token", at);
+      fd.set("refresh_token", rt);
+      fd.set("continue_state", continueState);
+      try {
+        await fetch(API + "/authorize", { method: "POST", body: fd, credentials: "include" });
+      } catch (_) { /* fall through */ }
+      window.location.replace(window.location.pathname + window.location.search);
+      return;
+    }
+  }
+
+  if (!continueState) return renderError("Missing continue_state. Restart from the connecting app.");
+
+  if (magicSent) return renderMagicLinkSent(magicEmail);
+
+  let data;
+  try {
+    const resp = await fetch(
+      API + "/authorize/data?continue_state=" + encodeURIComponent(continueState),
+      { credentials: "include" }
+    );
+    if (!resp.ok) {
+      const body = await resp.json().catch(() => ({}));
+      return renderError(body.error_description || body.error || ("HTTP " + resp.status));
+    }
+    data = await resp.json();
+  } catch (e) {
+    return renderError("Could not load consent data: " + (e && e.message ? e.message : e));
+  }
+
+  if (data.signed_in_as) {
+    renderConsent(data, continueState, errorMsg);
+  } else {
+    renderSignIn(data, continueState, errorMsg);
+  }
+})();
+
+function el(tag, attrs, children) {
+  const e = document.createElement(tag);
+  for (const k in (attrs || {})) {
+    if (k === "class") e.className = attrs[k];
+    else if (k === "html") e.innerHTML = attrs[k];
+    else if (k.startsWith("on")) e.addEventListener(k.slice(2), attrs[k]);
+    else e.setAttribute(k, attrs[k]);
+  }
+  for (const c of (children || [])) {
+    if (c == null) continue;
+    e.appendChild(typeof c === "string" ? document.createTextNode(c) : c);
+  }
+  return e;
+}
+
+function renderHeader(data) {
+  return el("div", null, [
+    el("div", { class: "text-xs text-gray-400 uppercase tracking-wider" }, ["MoneyWise"]),
+    el("h1", { class: "text-xl font-semibold mt-1" }, ["Connect " + (data.client_name || "an unnamed app")]),
+    el("div", { class: "text-xs text-gray-500 mt-1" }, ["→ " + (data.redirect_host || "")]),
+  ]);
+}
+
+function renderError(msg) {
+  const app = document.getElementById("app");
+  app.innerHTML = "";
+  app.appendChild(el("div", null, [
+    el("div", { class: "text-xs text-gray-400 uppercase tracking-wider" }, ["MoneyWise"]),
+    el("h1", { class: "text-xl font-semibold mt-1" }, ["Can't sign you in"]),
+  ]));
+  app.appendChild(el("p", { class: "text-sm text-red-700 bg-red-50 rounded px-3 py-2" }, [msg]));
+}
+
+function renderMagicLinkSent(email) {
+  const app = document.getElementById("app");
+  app.innerHTML = "";
+  app.appendChild(el("div", null, [
+    el("div", { class: "text-xs text-gray-400 uppercase tracking-wider" }, ["MoneyWise"]),
+    el("h1", { class: "text-xl font-semibold mt-1" }, ["Check your email"]),
+  ]));
+  app.appendChild(el("p", { class: "text-sm text-gray-700" }, [
+    "We sent a sign-in link to " + (email || "your email") + ". Open it on this device to continue.",
+  ]));
+}
+
+function renderSignIn(data, continueState, errorMsg) {
+  const app = document.getElementById("app");
+  app.innerHTML = "";
+  app.appendChild(renderHeader(data));
+  if (errorMsg) {
+    app.appendChild(el("div", { class: "bg-red-50 text-red-700 text-sm rounded px-3 py-2" }, [errorMsg]));
+  }
+
+  const callbackUrl = CONSENT + "?continue_state=" + encodeURIComponent(continueState);
+
+  const block = el("div", { class: "space-y-3" });
+  block.appendChild(el("a", {
+    class: "block w-full py-2 px-4 bg-black text-white rounded text-center",
+    href: SUPABASE + "/auth/v1/authorize?provider=apple&redirect_to=" + encodeURIComponent(callbackUrl),
+  }, ["Continue with Apple"]));
+  block.appendChild(el("a", {
+    class: "block w-full py-2 px-4 bg-white border border-gray-300 rounded text-center",
+    href: SUPABASE + "/auth/v1/authorize?provider=google&redirect_to=" + encodeURIComponent(callbackUrl),
+  }, ["Continue with Google"]));
+  block.appendChild(el("div", { class: "flex items-center gap-2 text-xs text-gray-400" }, [
+    el("div", { class: "flex-1 h-px bg-gray-200" }),
+    el("span", null, ["or"]),
+    el("div", { class: "flex-1 h-px bg-gray-200" }),
+  ]));
+
+  const pwdForm = el("form", {
+    class: "space-y-2",
+    method: "POST",
+    action: API + "/authorize",
+  }, [
+    el("input", { type: "hidden", name: "intent", value: "signin_password" }),
+    el("input", { type: "hidden", name: "continue_state", value: continueState }),
+    el("input", { type: "email", name: "email", placeholder: "Email", required: "required",
+      class: "w-full px-3 py-2 border rounded" }),
+    el("input", { type: "password", name: "password", placeholder: "Password", required: "required",
+      class: "w-full px-3 py-2 border rounded" }),
+    el("button", { type: "submit", class: "w-full py-2 px-4 bg-emerald-700 text-white rounded" }, ["Sign in"]),
+  ]);
+  block.appendChild(pwdForm);
+
+  const magicForm = el("form", {
+    class: "text-xs text-center text-gray-500 flex items-center justify-center gap-2",
+    method: "POST",
+    action: API + "/authorize",
+  }, [
+    el("input", { type: "hidden", name: "intent", value: "signin_magiclink" }),
+    el("input", { type: "hidden", name: "continue_state", value: continueState }),
+    el("span", null, ["Forgot password?"]),
+    el("input", { type: "email", name: "email", placeholder: "your@email.com", required: "required",
+      class: "px-2 py-1 border rounded text-xs" }),
+    el("button", { type: "submit", class: "underline" }, ["Email link"]),
+  ]);
+  block.appendChild(magicForm);
+
+  app.appendChild(block);
+}
+
+function renderConsent(data, continueState, errorMsg) {
+  const app = document.getElementById("app");
+  app.innerHTML = "";
+  app.appendChild(renderHeader(data));
+  if (errorMsg) {
+    app.appendChild(el("div", { class: "bg-red-50 text-red-700 text-sm rounded px-3 py-2" }, [errorMsg]));
+  }
+
+  const READ_TOOLS = ["list_accounts","list_categories","list_transactions","get_transaction",
+    "list_budgets","list_investments","get_net_worth","summarize_spending"];
+  const WRITE_TOOLS = ["create_transaction","update_transaction","delete_transaction"];
+  const requested = new Set(data.requested_scopes || []);
+
+  function checkbox(tool) {
+    const wrap = el("label", { class: "flex items-center gap-2 py-1 text-sm" }, [
+      el("input", { type: "checkbox", name: "scope", value: "mcp:" + tool, class: "rounded" }),
+      el("span", { class: "font-mono" }, [tool]),
+    ]);
+    if (requested.has("mcp:" + tool)) wrap.querySelector("input").checked = true;
+    return wrap;
+  }
+
+  const wsSelect = el("select", {
+    name: "workspace_id",
+    class: "w-full px-3 py-2 border rounded",
+  }, (data.workspaces || []).map((w) => {
+    const o = el("option", { value: w.id }, [w.name]);
+    if (w.id === data.default_workspace_id) o.selected = true;
+    return o;
+  }));
+
+  const readGrid = el("div", { class: "grid grid-cols-2 gap-x-4" }, READ_TOOLS.map(checkbox));
+  const writeGrid = el("div", { class: "grid grid-cols-2 gap-x-4" }, WRITE_TOOLS.map(checkbox));
+
+  const intentInput = el("input", { type: "hidden", name: "intent", value: "allow" });
+  const form = el("form", {
+    method: "POST",
+    action: API + "/authorize",
+    class: "space-y-4",
+  }, [
+    intentInput,
+    el("input", { type: "hidden", name: "continue_state", value: continueState }),
+    el("div", null, [
+      el("label", { class: "block text-sm font-medium mb-1" }, ["Workspace"]),
+      wsSelect,
+    ]),
+    el("div", null, [
+      el("div", { class: "text-sm font-medium mb-1" }, ["Read access"]),
+      readGrid,
+    ]),
+    el("div", null, [
+      el("div", { class: "text-sm font-medium mb-1" }, ["Write access"]),
+      writeGrid,
+    ]),
+    el("div", { class: "flex gap-2 pt-2" }, [
+      el("button", { type: "submit",
+        onclick: () => { intentInput.value = "allow"; },
+        class: "flex-1 py-2 px-4 bg-emerald-700 text-white rounded" }, ["Allow"]),
+      el("button", { type: "submit", formnovalidate: "formnovalidate",
+        onclick: () => { intentInput.value = "deny"; },
+        class: "flex-1 py-2 px-4 bg-gray-100 rounded" }, ["Deny"]),
+    ]),
+  ]);
+  app.appendChild(form);
+
+  const footer = el("div", { class: "text-xs text-center text-gray-500" }, [
+    el("span", null, ["Signed in as " + data.signed_in_as + ". "]),
+  ]);
+  const signoutForm = el("form", {
+    method: "POST",
+    action: API + "/authorize",
+    class: "inline",
+  }, [
+    el("input", { type: "hidden", name: "intent", value: "signout" }),
+    el("input", { type: "hidden", name: "continue_state", value: continueState }),
+    el("button", { type: "submit", class: "underline" }, ["Sign out"]),
+  ]);
+  footer.appendChild(signoutForm);
+  app.appendChild(footer);
+}
+</script>
+</body>
+</html>
