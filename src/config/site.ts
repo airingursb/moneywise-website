@@ -8,6 +8,11 @@ export const SITE = {
   appStoreId: '6762085775',
   appStoreUrl: 'https://apps.apple.com/app/id6762085775',
   appStoreAvailable: true,
+  // Mac App Store. Uses the same Apple ID as iOS via Universal Purchase.
+  // Flip `appStoreMacAvailable` to true once the Mac listing is live; until
+  // then the website renders a "Coming soon" Mac card without a click target.
+  appStoreMacUrl: 'https://apps.apple.com/app/id6762085775',
+  appStoreMacAvailable: false,
   playStoreUrl: 'https://airing.notion.site/35362eaec2c880d19a88e09d0b6d1f7c',
   playStoreAvailable: true,
   umamiScriptUrl: 'https://analytics.ursb.me/script.js',

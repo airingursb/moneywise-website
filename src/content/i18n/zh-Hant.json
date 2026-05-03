@@ -21,12 +21,15 @@
   },
   "platforms": {
     "app_store": "App Store",
+    "app_store_mac": "Mac App Store",
     "play_store": "Play Store",
     "mac": "Mac",
     "ipad": "iPad",
     "apple_watch": "Apple Watch",
     "status_available": "已上架 · iPhone, iOS 16+",
+    "status_available_mac": "已上架 · macOS 13+",
     "status_beta": "內測中 · 僅限邀請",
+    "status_coming_soon": "即將上線 · Mac App Store",
     "status_in_development": "開發中"
   },
   "features": {
@@ -55,6 +58,43 @@
       "家庭——伴侶共享工作空間",
       "資產報告——跨帳戶年度彙總"
     ]
+  },
+  "mac": {
+    "eyebrow": "Mac 版同步登場",
+    "title_part1": "同一份帳本，",
+    "title_italic": "在你信賴的 Mac 上",
+    "title_part2": "。",
+    "subhead": "側邊欄架構、多欄視圖、⌘ 鍵驅動導覽。記帳、投資、報表以桌面節奏鋪開——同樣本機優先的資料，同樣端到端加密的同步。",
+    "captions": [
+      "儀表板——淨資產一圖盡覽",
+      "記帳——橫向帳本，快速篩選",
+      "投資——持倉、配置、表現並排呈現",
+      "AI 顧問——寬螢幕對話，帳戶上下文一同帶入",
+      "資產報告——構成與時間趨勢"
+    ]
+  },
+  "extensions": {
+    "eyebrow": "開放式設計",
+    "title_part1": "自帶 AI Key，把 MoneyWise 接進你的",
+    "title_italic": "工具鏈",
+    "title_part2": "。",
+    "subhead": "OAuth 保護的 MCP 服務端，讓 Claude、Cursor 與任何相容 MCP 的助手讀取你的帳戶與交易。AI 用你自己的 API Key——資料與花費都在你掌控裡。",
+    "pillars": [
+      {
+        "title": "MCP 服務端",
+        "description": "OAuth 保護的 Model Context Protocol 端點，把帳戶、交易、淨資產以結構化工具的形式提供給你的 AI 助手呼叫。"
+      },
+      {
+        "title": "自帶 AI Key",
+        "description": "可接入 Anthropic、OpenAI 等 API Key，驅動應用內 AI 顧問與每日簡報。Key 存於系統鑰匙圈——絕不上我們的伺服器。"
+      },
+      {
+        "title": "與你常用的助手都能直連",
+        "description": "Claude Desktop、Cursor 原生支援。任何相容 MCP 的客戶端貼上服務位址即用。"
+      }
+    ],
+    "clients_label": "已對接客戶端",
+    "clients": ["Claude Desktop", "Cursor", "其他 MCP 客戶端"]
   },
   "privacyFirst": {
     "eyebrow": "隱私，不只是功能",

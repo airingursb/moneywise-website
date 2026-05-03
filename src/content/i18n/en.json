@@ -21,12 +21,15 @@
   },
   "platforms": {
     "app_store": "App Store",
+    "app_store_mac": "Mac App Store",
     "play_store": "Play Store",
     "mac": "Mac",
     "ipad": "iPad",
     "apple_watch": "Apple Watch",
     "status_available": "Available · iPhone, iOS 16+",
+    "status_available_mac": "Available · macOS 13+",
     "status_beta": "Beta · Invite only",
+    "status_coming_soon": "Coming soon · Mac App Store",
     "status_in_development": "In development"
   },
   "features": {
@@ -55,6 +58,43 @@
       "Family — shared workspaces for couples",
       "Asset Report — annual summary across accounts"
     ]
+  },
+  "mac": {
+    "eyebrow": "Also on Mac",
+    "title_part1": "The same ledger, on the Mac you ",
+    "title_italic": "already trust",
+    "title_part2": ".",
+    "subhead": "Sidebar shell, multi-pane views, ⌘-driven navigation. Records, investments and reports breathe at full desktop pace — same offline-first data, same end-to-end encrypted sync.",
+    "captions": [
+      "Dashboard — net worth at a glance",
+      "Records — landscape ledger, fast filters",
+      "Investments — holdings, allocation, performance side-by-side",
+      "AI Advisor — wide-screen chat with full account context",
+      "Asset Report — composition and trend over time"
+    ]
+  },
+  "extensions": {
+    "eyebrow": "Open by design",
+    "title_part1": "Bring your own AI. Wire MoneyWise into your ",
+    "title_italic": "tools",
+    "title_part2": ".",
+    "subhead": "An OAuth-protected MCP server lets Claude, Cursor and any MCP-compatible assistant read your accounts and transactions. Bring your own API keys — your data and your spend stay yours.",
+    "pillars": [
+      {
+        "title": "MCP server",
+        "description": "An OAuth-protected Model Context Protocol endpoint exposes accounts, transactions and net worth as structured tools your AI assistant can call."
+      },
+      {
+        "title": "Bring your own key",
+        "description": "Plug in Anthropic, OpenAI or other API keys for the in-app AI Advisor and Daily Brief. Keys live in the system keychain — never our servers."
+      },
+      {
+        "title": "Tested with the assistants you use",
+        "description": "Claude Desktop and Cursor work out of the box. Any MCP-compatible client can connect with one paste of the server URL."
+      }
+    ],
+    "clients_label": "Tested clients",
+    "clients": ["Claude Desktop", "Cursor", "Any MCP client"]
   },
   "privacyFirst": {
     "eyebrow": "Privacy, not a feature",

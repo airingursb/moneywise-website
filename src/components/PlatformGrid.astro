@@ -63,19 +63,44 @@ const ghostStatusClass = 'mt-0.5 text-[12px] opacity-90';
     </a>
   </div>
 
-  <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-    <div class={`${baseCard} ${ghost}`} aria-disabled="true">
+  <!--
+    Mac card. When `appStoreMacAvailable` is true, renders as an outlined
+    link to the Mac App Store; until then renders as a non-clickable
+    "Coming soon" card (still prominent — Mac is now a first-class
+    surface alongside iPhone, not a "future ghost" plan).
+  -->
+  {SITE.appStoreMacAvailable ? (
+    <a
+      href={SITE.appStoreMacUrl}
+      data-umami-event="mac_app_store_cta_click"
+      class={`${baseCard} ${outlined}`}
+    >
       <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <rect width="20" height="14" x="2" y="3" rx="2"/>
         <line x1="8" x2="16" y1="21" y2="21"/>
         <line x1="12" x2="12" y1="17" y2="21"/>
       </svg>
       <div class="flex-1 min-w-0">
-        <div class={ghostTitleClass}>{t.platforms.mac}</div>
-        <div class={ghostStatusClass}>{t.platforms.status_in_development}</div>
+        <div class={titleClass}>{t.platforms.app_store_mac}</div>
+        <div class={statusClass}>{t.platforms.status_available_mac}</div>
+      </div>
+      <span aria-hidden="true" class="text-base opacity-70">→</span>
+    </a>
+  ) : (
+    <div class={`${baseCard} ${outlined} opacity-80 cursor-default`} aria-disabled="true">
+      <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect width="20" height="14" x="2" y="3" rx="2"/>
+        <line x1="8" x2="16" y1="21" y2="21"/>
+        <line x1="12" x2="12" y1="17" y2="21"/>
+      </svg>
+      <div class="flex-1 min-w-0">
+        <div class={titleClass}>{t.platforms.app_store_mac}</div>
+        <div class={statusClass}>{t.platforms.status_coming_soon}</div>
       </div>
     </div>
+  )}
 
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
     <div class={`${baseCard} ${ghost}`} aria-disabled="true">
       <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <rect width="16" height="20" x="4" y="2" rx="2"/>

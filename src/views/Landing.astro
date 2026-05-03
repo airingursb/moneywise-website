@@ -6,6 +6,8 @@ import Nav from '../components/Nav.astro';
 import Hero from '../components/Hero.astro';
 import FeatureGrid from '../components/FeatureGrid.astro';
 import ScreenshotShowcase from '../components/ScreenshotShowcase.astro';
+import MacShowcase from '../components/MacShowcase.astro';
+import ExtensionsShowcase from '../components/ExtensionsShowcase.astro';
 import PrivacyFirst from '../components/PrivacyFirst.astro';
 import Pricing from '../components/Pricing.astro';
 import DownloadCta from '../components/DownloadCta.astro';
@@ -24,6 +26,8 @@ const t = await getI18n(locale);
     <Hero locale={locale} t={t} />
     <FeatureGrid t={t} />
     <ScreenshotShowcase locale={locale} t={t} />
+    <MacShowcase locale={locale} t={t} />
+    <ExtensionsShowcase locale={locale} t={t} />
     <PrivacyFirst locale={locale} t={t} />
     <Pricing t={t} />
     <DownloadCta t={t} />

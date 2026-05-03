@@ -24,12 +24,15 @@ const i18nSchema = z.object({
   }),
   platforms: z.object({
     app_store: z.string(),
+    app_store_mac: z.string(),
     play_store: z.string(),
     mac: z.string(),
     ipad: z.string(),
     apple_watch: z.string(),
     status_available: z.string(),
+    status_available_mac: z.string(),
     status_beta: z.string(),
+    status_coming_soon: z.string(),
     status_in_development: z.string(),
   }),
   features: z.object({
@@ -44,6 +47,27 @@ const i18nSchema = z.object({
     eyebrow: z.string(),
     title: z.string(),
     captions: z.array(z.string()).length(9),
+  }),
+  mac: z.object({
+    eyebrow: z.string(),
+    title_part1: z.string(),
+    title_italic: z.string(),
+    title_part2: z.string(),
+    subhead: z.string(),
+    captions: z.array(z.string()).length(5),
+  }),
+  extensions: z.object({
+    eyebrow: z.string(),
+    title_part1: z.string(),
+    title_italic: z.string(),
+    title_part2: z.string(),
+    subhead: z.string(),
+    pillars: z.array(z.object({
+      title: z.string(),
+      description: z.string(),
+    })).length(3),
+    clients_label: z.string(),
+    clients: z.array(z.string()),
   }),
   privacyFirst: z.object({
     eyebrow: z.string(),

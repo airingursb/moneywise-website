@@ -21,12 +21,15 @@
   },
   "platforms": {
     "app_store": "App Store",
+    "app_store_mac": "Mac App Store",
     "play_store": "Play Store",
     "mac": "Mac",
     "ipad": "iPad",
     "apple_watch": "Apple Watch",
     "status_available": "출시됨 · iPhone, iOS 16+",
+    "status_available_mac": "출시됨 · macOS 13+",
     "status_beta": "베타 · 초대 전용",
+    "status_coming_soon": "곧 출시 · Mac App Store",
     "status_in_development": "개발 중"
   },
   "features": {
@@ -55,6 +58,43 @@
       "패밀리 — 부부를 위한 공유 워크스페이스",
       "자산 리포트 — 계정 통합 연간 요약"
     ]
+  },
+  "mac": {
+    "eyebrow": "Mac에서도",
+    "title_part1": "같은 가계부를, 익숙한 ",
+    "title_italic": "Mac에서",
+    "title_part2": ".",
+    "subhead": "사이드바 셸, 멀티 페인 뷰, ⌘ 단축키 중심의 네비게이션. 기록·투자·리포트를 데스크톱의 호흡으로 — 같은 오프라인 우선 데이터, 같은 종단 간 암호화 동기화.",
+    "captions": [
+      "대시보드 — 순자산을 한눈에",
+      "기록 — 가로형 장부, 빠른 필터",
+      "투자 — 보유·배분·성과를 나란히",
+      "AI 어드바이저 — 계정 컨텍스트가 담긴 와이드 채팅",
+      "자산 리포트 — 구성과 시계열 추이"
+    ]
+  },
+  "extensions": {
+    "eyebrow": "열려 있는 설계",
+    "title_part1": "당신의 AI 키로. MoneyWise를 당신의 ",
+    "title_italic": "도구",
+    "title_part2": "에 연결.",
+    "subhead": "OAuth로 보호된 MCP 서버로 Claude, Cursor 그리고 MCP 호환 어시스턴트에서 계정과 거래를 읽을 수 있습니다. API 키는 직접 — 데이터도 비용도 당신의 손에.",
+    "pillars": [
+      {
+        "title": "MCP 서버",
+        "description": "OAuth로 보호된 Model Context Protocol 엔드포인트가 계정·거래·순자산을 구조화된 도구로 AI 어시스턴트에 제공합니다."
+      },
+      {
+        "title": "당신의 AI 키 사용",
+        "description": "Anthropic, OpenAI 등의 API 키로 앱 내 AI 어드바이저와 데일리 브리프를 구동. 키는 시스템 키체인에 — 저희 서버에는 절대 보내지 않습니다."
+      },
+      {
+        "title": "당신이 쓰는 어시스턴트와 바로 연결",
+        "description": "Claude Desktop과 Cursor는 기본 지원. MCP 호환 클라이언트라면 서버 URL을 붙여넣기만 하면 됩니다."
+      }
+    ],
+    "clients_label": "검증된 클라이언트",
+    "clients": ["Claude Desktop", "Cursor", "기타 MCP 클라이언트"]
   },
   "privacyFirst": {
     "eyebrow": "프라이버시는 기능이 아닙니다",

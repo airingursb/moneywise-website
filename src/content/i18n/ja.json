@@ -21,12 +21,15 @@
   },
   "platforms": {
     "app_store": "App Store",
+    "app_store_mac": "Mac App Store",
     "play_store": "Play Store",
     "mac": "Mac",
     "ipad": "iPad",
     "apple_watch": "Apple Watch",
     "status_available": "配信中 · iPhone, iOS 16+",
+    "status_available_mac": "配信中 · macOS 13+",
     "status_beta": "ベータ版 · 招待制",
+    "status_coming_soon": "近日公開 · Mac App Store",
     "status_in_development": "開発中"
   },
   "features": {
@@ -55,6 +58,43 @@
       "ファミリー——カップル向け共有ワークスペース",
       "資産レポート——口座横断の年次サマリー"
     ]
+  },
+  "mac": {
+    "eyebrow": "Mac でも",
+    "title_part1": "同じ家計簿を、いつもの ",
+    "title_italic": "Mac で",
+    "title_part2": "。",
+    "subhead": "サイドバーシェル、マルチペイン、⌘ キー中心のナビゲーション。記録・投資・レポートをデスクトップのテンポで——同じオフラインファーストのデータ、同じエンドツーエンド暗号化同期。",
+    "captions": [
+      "ダッシュボード——純資産を一目で",
+      "記録——横長台帳、素早いフィルター",
+      "投資——保有・配分・パフォーマンスを横並び表示",
+      "AI アドバイザー——口座コンテキストを乗せたワイドチャット",
+      "資産レポート——構成と時系列推移"
+    ]
+  },
+  "extensions": {
+    "eyebrow": "オープンに設計",
+    "title_part1": "AI キーは自分のものを。MoneyWise を ",
+    "title_italic": "ツール群",
+    "title_part2": " につなぐ。",
+    "subhead": "OAuth で保護された MCP サーバーで、Claude・Cursor をはじめ MCP 対応のあらゆるアシスタントから口座と取引を参照できます。API キーは持ち込み——データも費用もあなたの手元に。",
+    "pillars": [
+      {
+        "title": "MCP サーバー",
+        "description": "OAuth で保護された Model Context Protocol エンドポイント。口座・取引・純資産を構造化ツールとして AI アシスタントに公開します。"
+      },
+      {
+        "title": "自分の AI キーを使う",
+        "description": "Anthropic、OpenAI などの API キーを差し込んで、アプリ内の AI アドバイザーとデイリーブリーフを動かす。キーはシステムキーチェーン保管——当社サーバーには一切送りません。"
+      },
+      {
+        "title": "普段使いのアシスタントと相性ばっちり",
+        "description": "Claude Desktop と Cursor は標準対応。MCP 対応クライアントなら、サーバー URL を貼るだけで接続。"
+      }
+    ],
+    "clients_label": "動作確認済みクライアント",
+    "clients": ["Claude Desktop", "Cursor", "その他の MCP クライアント"]
   },
   "privacyFirst": {
     "eyebrow": "プライバシーは機能ではなく前提",
