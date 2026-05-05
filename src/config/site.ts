@@ -15,6 +15,14 @@ export const SITE = {
   appStoreMacAvailable: false,
   playStoreUrl: 'https://airing.notion.site/35362eaec2c880d19a88e09d0b6d1f7c',
   playStoreAvailable: true,
+  // Direct APK download for users without Play Store access (mainland China,
+  // Huawei devices, etc.). Hosted on this (public) website repo's GitHub
+  // Releases — the main `moneywise` source repo is private, so its release
+  // assets aren't reachable to anonymous visitors. The release flow uploads
+  // `app-release.apk` to this repo for each website-build version.
+  // See SHU-484 / SHU-488 for the rollout plan.
+  apkDirectUrl: 'https://github.com/airingursb/moneywise-website/releases/latest/download/app-release.apk',
+  apkDirectAvailable: true,
   umamiScriptUrl: 'https://analytics.ursb.me/script.js',
   umamiWebsiteId: 'fa8052bb-dd85-4287-9c63-da9b2f97fdef',
   gaMeasurementId: 'G-CZ727SS9LD',

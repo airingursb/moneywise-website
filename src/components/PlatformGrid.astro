@@ -64,6 +64,63 @@ const ghostStatusClass = 'mt-0.5 text-[12px] opacity-90';
   </div>
 
   <!--
+    Android direct-download (sideload) for users without Play Store access —
+    notably mainland China and HMS-only devices. SHU-484. Pro is upgraded via
+    Play Store today; Phase 2 (SHU-489) will route in-app upgrades through
+    Adapty Web Checkout (Stripe + Alipay/WeChat Pay).
+    The `data-android-cta` hook is used by the inline UA script below to add a
+    subtle highlight on actual Android user agents.
+  -->
+  {SITE.apkDirectAvailable && (
+    <a
+      href={SITE.apkDirectUrl}
+      data-umami-event="apk_direct_cta_click"
+      data-android-cta
+      class={`${baseCard} ${outlined} android-cta`}
+    >
+      <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+        <polyline points="7 10 12 15 17 10"/>
+        <line x1="12" x2="12" y1="15" y2="3"/>
+      </svg>
+      <div class="flex-1 min-w-0">
+        <div class={titleClass}>{t.platforms.apk_direct}</div>
+        <div class={statusClass}>{t.platforms.status_apk_direct}</div>
+      </div>
+      <span aria-hidden="true" class="text-base opacity-70">↓</span>
+    </a>
+  )}
+
+  <script is:inline>
+    // Highlight the direct-APK CTA on actual Android devices. We only use UA
+    // here as a UX hint — the link works for any visitor who clicks it.
+    (function () {
+      try {
+        if (/Android/i.test(navigator.userAgent)) {
+          document.querySelectorAll('[data-android-cta]').forEach(function (el) {
+            el.classList.add('is-android-ua');
+          });
+        }
+      } catch (_) {
+        // Ignore — server render or no userAgent.
+      }
+    })();
+  </script>
+
+  <style>
+    /*
+     * On Android user-agents, the inline script above tags the direct-APK
+     * card with `is-android-ua`; we lift it visually with a soft outer ring
+     * so users coming for the APK see the right path first. Non-Android
+     * visitors get the neutral outlined style.
+     */
+    .android-cta.is-android-ua {
+      box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5),
+                  0 6px 20px -8px rgba(0, 0, 0, 0.25);
+    }
+  </style>
+
+  <!--
     Mac card. When `appStoreMacAvailable` is true, renders as an outlined
     link to the Mac App Store; until then renders as a non-clickable
     "Coming soon" card (still prominent — Mac is now a first-class
