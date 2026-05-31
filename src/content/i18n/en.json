@@ -22,6 +22,7 @@
   "platforms": {
     "app_store": "App Store",
     "app_store_mac": "Mac App Store",
+    "dmg_direct": "macOS · Direct download",
     "play_store": "Play Store",
     "apk_direct": "Android · Direct download",
     "apk_direct_subtitle": "For users without Play Store access",
@@ -32,6 +33,7 @@
     "status_available_mac": "Available · macOS 13+",
     "status_beta": "Beta · Invite only",
     "status_apk_direct": "APK · Android 8+ · Pro upgrade via Play Store",
+    "status_dmg_direct": "DMG · macOS 13+ · Pro upgrade via web",
     "status_coming_soon": "Coming soon · Mac App Store",
     "status_in_development": "In development"
   },

@@ -25,6 +25,7 @@ const i18nSchema = z.object({
   platforms: z.object({
     app_store: z.string(),
     app_store_mac: z.string(),
+    dmg_direct: z.string(),
     play_store: z.string(),
     apk_direct: z.string(),
     apk_direct_subtitle: z.string(),
@@ -35,6 +36,7 @@ const i18nSchema = z.object({
     status_available_mac: z.string(),
     status_beta: z.string(),
     status_apk_direct: z.string(),
+    status_dmg_direct: z.string(),
     status_coming_soon: z.string(),
     status_in_development: z.string(),
   }),

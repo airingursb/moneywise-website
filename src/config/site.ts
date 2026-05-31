@@ -13,6 +13,14 @@ export const SITE = {
   // then the website renders a "Coming soon" Mac card without a click target.
   appStoreMacUrl: 'https://apps.apple.com/app/id6762085775',
   appStoreMacAvailable: false,
+  // Direct macOS .dmg download (Developer ID signed + notarized), for the
+  // website direct-install channel — same model as the Android APK below.
+  // Pro upgrades on this build go through Adapty Web Checkout (Stripe), not the
+  // Mac App Store. Asset name is stable (`MoneyWise.dmg`) so the link tracks
+  // whatever release is `latest`. Takes priority over the Mac App Store card
+  // until `appStoreMacAvailable` flips true.
+  dmgDirectUrl: 'https://github.com/airingursb/moneywise-website/releases/latest/download/MoneyWise.dmg',
+  dmgDirectAvailable: true,
   playStoreUrl: 'https://airing.notion.site/35362eaec2c880d19a88e09d0b6d1f7c',
   playStoreAvailable: true,
   // Direct APK download for users without Play Store access (mainland China,

@@ -22,6 +22,7 @@
   "platforms": {
     "app_store": "App Store",
     "app_store_mac": "Mac App Store",
+    "dmg_direct": "macOS · 공식 사이트에서 직접 다운로드",
     "play_store": "Play Store",
     "apk_direct": "Android · 공식 사이트에서 직접 다운로드",
     "apk_direct_subtitle": "Play Store를 사용할 수 없을 때",
@@ -32,6 +33,7 @@
     "status_available_mac": "출시됨 · macOS 13+",
     "status_beta": "베타 · 초대 전용",
     "status_apk_direct": "APK · Android 8+ · Pro 업그레이드는 Play Store에서",
+    "status_dmg_direct": "DMG · macOS 13+ · Pro 업그레이드는 웹에서",
     "status_coming_soon": "곧 출시 · Mac App Store",
     "status_in_development": "개발 중"
   },

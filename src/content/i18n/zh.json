@@ -22,6 +22,7 @@
   "platforms": {
     "app_store": "App Store",
     "app_store_mac": "Mac App Store",
+    "dmg_direct": "macOS · 官网直装",
     "play_store": "Play Store",
     "apk_direct": "Android · 官网直装",
     "apk_direct_subtitle": "无法访问 Play Store 时使用",
@@ -32,6 +33,7 @@
     "status_available_mac": "已上架 · macOS 13+",
     "status_beta": "内测中 · 仅限邀请",
     "status_apk_direct": "APK · Android 8+ · Pro 升级请走 Play Store",
+    "status_dmg_direct": "DMG · macOS 13+ · Pro 升级走网页",
     "status_coming_soon": "即将上线 · Mac App Store",
     "status_in_development": "开发中"
   },
