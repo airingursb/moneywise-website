@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>MoneyWise</title>
+    <item>
+      <title>Version 1.4.4</title>
+      <pubDate>Sun, 31 May 2026 11:36:09 +0000</pubDate>
+      <sparkle:version>33</sparkle:version>
+      <sparkle:shortVersionString>1.4.4</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
+      <enclosure url="https://github.com/airingursb/moneywise-website/releases/latest/download/MoneyWise.dmg" type="application/octet-stream" sparkle:edSignature="QdN/lp/1IbHL1G5bVUx5tzWJ3k9QPIRDOgD6yr8sP8xbWDlnHmy3YCsVjE6fwdQ77OmuY1x0oz5WK2P6tkwUDg==" length="41298734" />
+    </item>
+  </channel>
+</rss>
