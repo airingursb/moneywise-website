@@ -4,11 +4,11 @@
     <title>MoneyWise</title>
     <item>
       <title>Version 1.5.0</title>
-      <pubDate>Sat, 06 Jun 2026 15:29:07 +0000</pubDate>
-      <sparkle:version>34</sparkle:version>
+      <pubDate>Sat, 06 Jun 2026 15:57:41 +0000</pubDate>
+      <sparkle:version>35</sparkle:version>
       <sparkle:shortVersionString>1.5.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/airingursb/moneywise-website/releases/latest/download/MoneyWise.dmg" type="application/octet-stream" sparkle:edSignature="YlL/znX7uYJzrqWaMMce6dDIaRnythIFVP+dEqJpUET3TYOk1ILQDGiLAPHw5AgVT42RXq9V3PEWwuuIFAtJAw==" length="41297094" />
+      <enclosure url="https://github.com/airingursb/moneywise-website/releases/latest/download/MoneyWise.dmg" type="application/octet-stream" sparkle:edSignature="cNVKVDBkqyJhgJ+3yh+TzqUQpnN9NN9PMecoUGgjDzO0gc9bkO3R1VzBXP6FoYYBLxg813ITyPaIcoykn/mfAQ==" length="41296464" />
     </item>
   </channel>
 </rss>
