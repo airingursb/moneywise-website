@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://moneywise.airingdeng.com/sitemap-index.xml
+Sitemap: https://moneywise.ursb.me/sitemap-index.xml

@@ -3,7 +3,7 @@ export type Locale = typeof LOCALES[number];
 export const DEFAULT_LOCALE: Locale = 'en';
 
 export const SITE = {
-  url: 'https://moneywise.airingdeng.com',
+  url: 'https://moneywise.ursb.me',
   name: 'MoneyWise',
   appStoreId: '6762085775',
   appStoreUrl: 'https://apps.apple.com/app/id6762085775',

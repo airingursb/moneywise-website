@@ -3,7 +3,7 @@ import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://moneywise.airingdeng.com',
+  site: 'https://moneywise.ursb.me',
   integrations: [sitemap()],
   i18n: {
     defaultLocale: 'en',
