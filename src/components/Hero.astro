@@ -1,4 +1,5 @@
 ---
+import Ph from './Ph.astro';
 import type { Locale } from '../config/site';
 import type { I18nData } from '../content.config';
 import PlatformGrid from './PlatformGrid.astro';
@@ -28,8 +29,8 @@ const { locale, t } = Astro.props;
       </a>
 
       <h1 class="t-display mt-6">
-        {t.hero.headline_part1}
-        <span class="block t-serif">{t.hero.headline_italic}</span>
+        <Ph text={t.hero.headline_part1} />
+        <span class="block t-serif"><Ph text={t.hero.headline_italic} /></span>
       </h1>
       <p class="t-lead mt-6 max-w-[34rem]">{t.hero.subhead}</p>
 

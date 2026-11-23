@@ -1,4 +1,5 @@
 ---
+import Ph from '../components/Ph.astro';
 import type { Locale } from '../config/site';
 import type { SlotId } from '../config/screenshots';
 import { SLOTS } from '../config/screenshots';
@@ -27,7 +28,7 @@ const iconFor: Record<string, string> = { security: 'lock', family: 'users' };
       <div aria-hidden="true" class="absolute -top-40 left-1/2 -translate-x-1/2 w-[60rem] h-[36rem] [background:var(--glow)] -z-10"></div>
       <div class="container-x pt-14 pb-10 md:pt-20 md:pb-14 text-center">
         <p class="t-eyebrow">{t.nav.features}</p>
-        <h1 class="t-h1 mt-3 max-w-[48rem] mx-auto">{t.featuresPage.title}</h1>
+        <h1 class="t-h1 mt-3 max-w-[48rem] mx-auto"><Ph text={t.featuresPage.title} /></h1>
         <p class="t-lead mt-5 max-w-[40rem] mx-auto">{t.featuresPage.subhead}</p>
       </div>
       <nav aria-label={t.nav.features} class="sticky top-16 z-30 border-y border-line bg-[color-mix(in_oklab,var(--bg)_85%,transparent)] backdrop-blur-xl">
@@ -44,7 +45,7 @@ const iconFor: Record<string, string> = { security: 'lock', family: 'users' };
         <section id={m.id} class="reveal card overflow-hidden grid grid-cols-1 md:grid-cols-2 items-stretch">
           <div class={`p-7 md:p-12 flex flex-col justify-center ${i % 2 === 1 ? 'md:order-2' : ''}`}>
             <span class="t-num text-[13px] text-fg-3">{String(i + 1).padStart(2, '0')}</span>
-            <h2 class="t-h2 mt-3 !text-[clamp(1.75rem,1.3rem+1.6vw,2.5rem)]">{m.title}</h2>
+            <h2 class="t-h2 mt-3 !text-[clamp(1.75rem,1.3rem+1.6vw,2.5rem)]"><Ph text={m.title} /></h2>
             <p class="t-body mt-4 !text-[16px]">{m.description}</p>
             <ul class="mt-6 grid gap-2.5">
               {m.bullets.map((b) => (

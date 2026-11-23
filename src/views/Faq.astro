@@ -1,4 +1,5 @@
 ---
+import Ph from '../components/Ph.astro';
 import type { Locale } from '../config/site';
 import { SITE } from '../config/site';
 import { getI18n, pathFor } from '../lib/i18n';
@@ -34,7 +35,7 @@ const jsonLd = {
   <main id="main">
     <header class="container-x pt-14 pb-8 md:pt-20 md:pb-12">
       <p class="t-eyebrow">{f.faq.eyebrow}</p>
-      <h1 class="t-h1 mt-3 max-w-[44rem]">{f.faq.title}</h1>
+      <h1 class="t-h1 mt-3 max-w-[44rem]"><Ph text={f.faq.title} /></h1>
       <p class="t-lead mt-5 max-w-[40rem]">{f.faq.subhead}</p>
     </header>
 
@@ -55,7 +56,7 @@ const jsonLd = {
           <section id={s.id} class="scroll-mt-24">
             <div class="flex items-center gap-3">
               <span class="icon-tile"><Icon name={s.icon} /></span>
-              <h2 class="text-[22px] md:text-[26px] font-semibold tracking-[-0.02em]">{s.title}</h2>
+              <h2 class="text-[22px] md:text-[26px] font-semibold tracking-[-0.02em]"><Ph text={s.title} /></h2>
             </div>
             <div class="mt-4 border-t border-line">
               {s.items.map((it) => (
@@ -69,7 +70,7 @@ const jsonLd = {
         ))}
 
         <section class="card p-7 md:p-10 bg-bg-tint !border-transparent">
-          <h2 class="text-[22px] font-semibold tracking-[-0.02em]">{f.faq.still_title}</h2>
+          <h2 class="text-[22px] font-semibold tracking-[-0.02em]"><Ph text={f.faq.still_title} /></h2>
           <p class="t-body mt-2 max-w-[36rem]">{f.faq.still_body}</p>
           <div class="mt-6 flex flex-wrap gap-3">
             <a href={`mailto:${SITE.contactEmail}`} class="btn btn-primary" data-umami-event="faq_email_click"><Icon name="mail" class="w-4 h-4" />{f.faq.cta_email}</a>

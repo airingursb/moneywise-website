@@ -1,4 +1,5 @@
 ---
+import Ph from './Ph.astro';
 import type { I18nData } from '../content.config';
 import PlatformGrid from './PlatformGrid.astro';
 
@@ -15,7 +16,7 @@ const { t } = Astro.props;
       <div class="relative grid grid-cols-1 lg:grid-cols-[0.85fr_1.15fr] gap-10 items-center">
         <div class="reveal">
           <img src="/app-icon.png" alt="" width="56" height="56" class="rounded-[14px] shadow-lg" />
-          <h2 class="t-h2 mt-6">{t.downloadCta.title}</h2>
+          <h2 class="t-h2 mt-6"><Ph text={t.downloadCta.title} /></h2>
           <p class="t-lead mt-4 !text-on-ink-2">{t.downloadCta.subhead}</p>
         </div>
         <PlatformGrid t={t} tone="ink" />

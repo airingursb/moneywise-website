@@ -1,0 +1,8 @@
+---
+/** Heading text with CJK phrase-aware line breaks (see src/lib/cjk.ts). */
+import { phraseHtml, localeFromPath } from '../lib/cjk';
+interface Props { text?: string }
+const { text = '' } = Astro.props;
+const html = phraseHtml(text, localeFromPath(Astro.url.pathname));
+---
+<Fragment set:html={html} />

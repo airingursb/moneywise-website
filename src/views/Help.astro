@@ -1,4 +1,5 @@
 ---
+import Ph from '../components/Ph.astro';
 import type { Locale } from '../config/site';
 import { SITE } from '../config/site';
 import { getI18n, pathFor } from '../lib/i18n';
@@ -30,7 +31,7 @@ const links = [
       <div aria-hidden="true" class="absolute -top-48 left-1/2 -translate-x-1/2 w-[64rem] h-[36rem] [background:var(--glow)] -z-10"></div>
       <div class="container-x pt-14 pb-12 md:pt-20 md:pb-16 text-center">
         <p class="t-eyebrow">{h.eyebrow}</p>
-        <h1 class="t-h1 mt-3">{h.title}</h1>
+        <h1 class="t-h1 mt-3"><Ph text={h.title} /></h1>
         <p class="t-lead mt-5 max-w-[38rem] mx-auto">{h.subhead}</p>
         <div class="mt-8 flex flex-wrap justify-center gap-3">
           <a href={faqHref} class="btn btn-primary">{t.nav.faq}<Icon name="arrow" class="w-4 h-4" /></a>
@@ -40,7 +41,7 @@ const links = [
     </header>
 
     <section class="container-x pb-16 md:pb-20">
-      <h2 class="text-[22px] md:text-[26px] font-semibold tracking-[-0.02em]">{h.topics_title}</h2>
+      <h2 class="text-[22px] md:text-[26px] font-semibold tracking-[-0.02em]"><Ph text={h.topics_title} /></h2>
       <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {f.sections.map((s) => (
           <a href={`${faqHref}#${s.id}`} class="reveal card card-hover p-6 flex flex-col">
@@ -58,7 +59,7 @@ const links = [
 
     <section class="bg-bg-sunken section !py-16 md:!py-20">
       <div class="container-x">
-        <h2 class="text-[22px] md:text-[26px] font-semibold tracking-[-0.02em]">{h.start_title}</h2>
+        <h2 class="text-[22px] md:text-[26px] font-semibold tracking-[-0.02em]"><Ph text={h.start_title} /></h2>
         <ol class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
           {h.start_steps.map((s, i) => (
             <li class="reveal card p-6">
@@ -76,14 +77,14 @@ const links = [
         <div aria-hidden="true" class="absolute -top-20 -right-20 w-72 h-72 rounded-full [background:radial-gradient(circle,rgba(93,176,121,.3),transparent_70%)]"></div>
         <div class="relative">
           <span class="inline-flex w-10 h-10 items-center justify-center rounded-xl bg-white/[0.08] text-accent-on-ink"><Icon name="mail" /></span>
-          <h2 class="mt-5 text-[24px] md:text-[28px] font-semibold tracking-[-0.02em]">{h.contact_title}</h2>
+          <h2 class="mt-5 text-[24px] md:text-[28px] font-semibold tracking-[-0.02em]"><Ph text={h.contact_title} /></h2>
           <p class="mt-3 text-[15.5px] leading-relaxed text-on-ink-2 max-w-[34rem]">{h.contact_body}</p>
           <a href={`mailto:${SITE.contactEmail}`} class="btn mt-7 !bg-[#F4F7F4] !text-[#0F1C14] hover:!bg-white break-all whitespace-normal" data-umami-event="help_email_click">{SITE.contactEmail}</a>
           <p class="mt-5 text-[14px] text-on-ink-2">{h.contact_inapp}</p>
         </div>
       </div>
       <div class="card p-7 md:p-8">
-        <h2 class="text-[18px] font-semibold">{h.links_title}</h2>
+        <h2 class="text-[18px] font-semibold"><Ph text={h.links_title} /></h2>
         <ul class="mt-4">
           {links.map((l) => (
             <li class="border-b border-line last:border-0">

@@ -1,4 +1,5 @@
 ---
+import Ph from '../Ph.astro';
 import type { CompareI18nData, CompetitorCopy } from '../../content.config';
 import Icon from '../Icon.astro';
 
@@ -10,7 +11,7 @@ const { c, copy } = Astro.props;
 ---
 <section class="section">
   <div class="container-x max-w-[52rem]">
-    <h2 class="t-h2">{c.common.section_titles.faq}</h2>
+    <h2 class="t-h2"><Ph text={c.common.section_titles.faq} /></h2>
     <div class="mt-8 border-t border-line">
       {copy.faq.map((item: { q: string; a: string }) => (
         <details class="qa">

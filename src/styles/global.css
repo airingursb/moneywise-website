@@ -229,6 +229,14 @@ body {
     line-height: 1.18;
     font-weight: 700;
   }
+  /* Headings: break only at the <wbr> phrase boundaries inserted by
+     src/lib/cjk.ts (and at spaces for Korean), never inside a word.
+     Markdown headings in legal pages (.prose-mw) keep normal breaking. */
+  :is(:lang(zh), :lang(zh-Hant), :lang(ja), :lang(ko)) :is(h1, h2, .t-display, .t-h1, .t-h2):not(.prose-mw *) {
+    word-break: keep-all;
+    text-wrap: balance;
+  }
+  .cjk-clause { display: inline-block; }
   :is(:lang(zh), :lang(zh-Hant), :lang(ja), :lang(ko)) .t-eyebrow { letter-spacing: 0.08em; }
   /* The italic serif has no CJK glyphs — render CJK emphasis upright in accent. */
   :is(:lang(zh), :lang(zh-Hant), :lang(ja), :lang(ko)) .t-serif {

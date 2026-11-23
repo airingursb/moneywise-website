@@ -1,4 +1,5 @@
 ---
+import Ph from '../Ph.astro';
 import type { CompetitorData, CompareI18nData } from '../../content.config';
 
 interface Props {
@@ -33,7 +34,7 @@ const groups = [
 ];
 ---
 <section class="container-x pb-16 md:pb-24">
-  <h2 class="t-h2 text-center !text-[clamp(1.6rem,1.2rem+1.6vw,2.25rem)]">{c.common.section_titles.comparison_table}</h2>
+  <h2 class="t-h2 text-center !text-[clamp(1.6rem,1.2rem+1.6vw,2.25rem)]"><Ph text={c.common.section_titles.comparison_table} /></h2>
   <div class="mt-10 mx-auto max-w-[56rem] card overflow-hidden">
     <div class="overflow-x-auto">
       <table class="w-full min-w-[30rem] text-[14px]">
