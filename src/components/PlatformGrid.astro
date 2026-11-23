@@ -1,203 +1,157 @@
 ---
+/**
+ * Download entry points. Two layouts:
+ *  - `compact` (hero): two store buttons + a line of direct-download links
+ *  - `full` (download band): a card per platform, plus in-development platforms
+ * Every link keeps its original `data-umami-event` name.
+ */
 import type { I18nData } from '../content.config';
 import { SITE } from '../config/site';
+import Icon from './Icon.astro';
 
 interface Props {
   t: I18nData;
-  variant?: 'dark' | 'light';
+  layout?: 'compact' | 'full';
+  /** `ink` = rendered on the dark forest band. */
+  tone?: 'default' | 'ink';
   class?: string;
 }
 
-const { t, variant = 'dark', class: className = '' } = Astro.props;
-const isLight = variant === 'light';
+const { t, layout = 'full', tone = 'default', class: className = '' } = Astro.props;
+const ink = tone === 'ink';
 
-const baseCard = 'flex items-center gap-3.5 px-5 py-4 rounded-[14px] transition';
-const filled = isLight
-  ? 'bg-white text-[var(--color-surface-inverse)] hover:opacity-95'
-  : 'bg-[var(--color-surface-inverse)] text-white hover:opacity-90';
-const outlined = isLight
-  ? 'border-2 border-white text-white hover:bg-white hover:text-[var(--color-surface-inverse)]'
-  : 'border-2 border-[var(--color-surface-inverse)] text-[var(--color-surface-inverse)] hover:bg-[var(--color-surface-inverse)] hover:text-white';
-const ghost = isLight
-  ? 'border-2 border-dashed border-white/40 text-white/70 px-4 py-3.5 cursor-default'
-  : 'border-2 border-dashed border-[var(--color-border)] text-[var(--color-fg-muted)] px-4 py-3.5 cursor-default';
+const apple = '<path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>';
+const play = '<path d="M3.6 2.3c-.2.2-.3.6-.3 1v17.4c0 .4.1.8.3 1l9.7-9.7zM16.6 15.3l-3.3-3.3 3.3-3.3 3.8 2.1c1.1.6 1.1 1.7 0 2.3zM4.5 22.2c.3.1.7.1 1.1-.1l11-6.3-3.2-3.2zM4.5 1.8l8.9 8.9 3.2-3.2-11-6.2c-.4-.3-.8-.3-1.1-.2z"/>';
 
-const titleClass = 'font-semibold text-[15px] leading-tight';
-const ghostTitleClass = 'font-medium text-[15px] leading-tight';
-const statusClass = 'mt-0.5 text-[12px] opacity-70';
-const ghostStatusClass = 'mt-0.5 text-[12px] opacity-90';
+const cardBase = 'group relative flex items-center gap-3.5 rounded-2xl px-4 py-3.5 transition';
+const cardTone = ink
+  ? 'bg-white/[0.06] border border-line-on-ink text-on-ink hover:bg-white/[0.10]'
+  : 'bg-bg-elev border border-line text-fg hover:border-line-strong hover:shadow-[var(--shadow-md)]';
+const cardPrimary = ink
+  ? 'bg-[#F4F7F4] text-[#0F1C14] border border-transparent hover:bg-white'
+  : 'bg-fg text-bg border border-transparent hover:opacity-90';
+const sub = ink ? 'text-on-ink-2' : 'text-fg-3';
+const subPrimary = 'opacity-70';
 ---
 
-<div class={`flex flex-col gap-3 w-full max-w-[720px] ${className}`}>
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-    <a
-      href={SITE.appStoreUrl}
-      data-umami-event="app_store_cta_click"
-      class={`${baseCard} ${filled}`}
-    >
-      <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
-      </svg>
-      <div class="flex-1 min-w-0">
-        <div class={titleClass}>{t.platforms.app_store}</div>
-        <div class={statusClass}>{t.platforms.status_available}</div>
-      </div>
-      <span aria-hidden="true" class="text-base opacity-70">→</span>
-    </a>
-
-    <a
-      href={SITE.playStoreUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      data-umami-event="play_store_cta_click"
-      class={`${baseCard} ${outlined}`}
-    >
-      <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M17.523 15.341a.998.998 0 1 1 0-1.998.998.998 0 0 1 0 1.998m-11.046 0a.998.998 0 1 1 0-1.998.998.998 0 0 1 0 1.998m11.404-6.02 1.997-3.46a.416.416 0 1 0-.72-.415l-2.022 3.503A12.43 12.43 0 0 0 12 7.851a12.43 12.43 0 0 0-5.137 1.099L4.841 5.447a.416.416 0 1 0-.72.416l1.998 3.459C2.689 11.187.343 14.66 0 18.761h24c-.343-4.102-2.689-7.574-6.119-9.44"/>
-      </svg>
-      <div class="flex-1 min-w-0">
-        <div class={titleClass}>{t.platforms.play_store}</div>
-        <div class={statusClass}>{t.platforms.status_beta}</div>
-      </div>
-      <span aria-hidden="true" class="text-base opacity-70">→</span>
-    </a>
+{layout === 'compact' ? (
+  <div class={`flex flex-col gap-4 ${className}`}>
+    <div class="flex flex-wrap gap-3">
+      <a href={SITE.appStoreUrl} data-umami-event="app_store_cta_click" class="btn btn-primary !pl-4 !pr-5">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" set:html={apple} />
+        <span>{t.platforms.app_store}</span>
+      </a>
+      <a href={SITE.playStoreUrl} target="_blank" rel="noopener noreferrer" data-umami-event="play_store_cta_click" class="btn btn-ghost !pl-4 !pr-5">
+        <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" set:html={play} />
+        <span>{t.platforms.play_store}</span>
+      </a>
+    </div>
+    <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-[13px] text-fg-2">
+      {SITE.apkDirectAvailable && (
+        <a href={SITE.apkDirectUrl} data-umami-event="apk_direct_cta_click" data-android-cta class="android-cta inline-flex items-center gap-1.5 hover:text-fg underline decoration-line-strong underline-offset-4 hover:decoration-current">
+          <Icon name="download" class="w-3.5 h-3.5" />{t.platforms.apk_direct}
+        </a>
+      )}
+      {SITE.dmgDirectAvailable && (
+        <a href={SITE.dmgDirectUrl} download data-umami-event="mac_dmg_direct_cta_click" class="inline-flex items-center gap-1.5 hover:text-fg underline decoration-line-strong underline-offset-4 hover:decoration-current">
+          <Icon name="laptop" class="w-3.5 h-3.5" />{t.platforms.dmg_direct}
+        </a>
+      )}
+    </div>
   </div>
+) : (
+  <div class={`w-full ${className}`}>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+      <a href={SITE.appStoreUrl} data-umami-event="app_store_cta_click" class={`${cardBase} ${cardPrimary}`}>
+        <svg class="w-7 h-7 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" set:html={apple} />
+        <span class="flex-1 min-w-0 text-left">
+          <span class="block font-semibold text-[15px] leading-tight">{t.platforms.app_store}</span>
+          <span class={`block mt-0.5 text-[12.5px] ${subPrimary}`}>{t.platforms.status_available}</span>
+        </span>
+        <Icon name="arrow" class="w-4 h-4 opacity-60 transition group-hover:translate-x-0.5" />
+      </a>
 
-  <!--
-    Android direct-download (sideload) for users without Play Store access —
-    notably mainland China and HMS-only devices. SHU-484. Pro is upgraded via
-    Play Store today; Phase 2 (SHU-489) will route in-app upgrades through
-    Adapty Web Checkout (Stripe + Alipay/WeChat Pay).
-    The `data-android-cta` hook is used by the inline UA script below to add a
-    subtle highlight on actual Android user agents.
-  -->
-  {SITE.apkDirectAvailable && (
-    <a
-      href={SITE.apkDirectUrl}
-      data-umami-event="apk_direct_cta_click"
-      data-android-cta
-      class={`${baseCard} ${outlined} android-cta`}
-    >
-      <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-        <polyline points="7 10 12 15 17 10"/>
-        <line x1="12" x2="12" y1="15" y2="3"/>
-      </svg>
-      <div class="flex-1 min-w-0">
-        <div class={titleClass}>{t.platforms.apk_direct}</div>
-        <div class={statusClass}>{t.platforms.status_apk_direct}</div>
-      </div>
-      <span aria-hidden="true" class="text-base opacity-70">↓</span>
-    </a>
-  )}
+      <a href={SITE.playStoreUrl} target="_blank" rel="noopener noreferrer" data-umami-event="play_store_cta_click" class={`${cardBase} ${cardTone}`}>
+        <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" set:html={play} />
+        <span class="flex-1 min-w-0 text-left">
+          <span class="block font-semibold text-[15px] leading-tight">{t.platforms.play_store}</span>
+          <span class={`block mt-0.5 text-[12.5px] ${sub}`}>{t.platforms.status_beta}</span>
+        </span>
+        <Icon name="arrow" class="w-4 h-4 opacity-60 transition group-hover:translate-x-0.5" />
+      </a>
 
-  <script is:inline>
-    // Highlight the direct-APK CTA on actual Android devices. We only use UA
-    // here as a UX hint — the link works for any visitor who clicks it.
-    (function () {
-      try {
-        if (/Android/i.test(navigator.userAgent)) {
-          document.querySelectorAll('[data-android-cta]').forEach(function (el) {
-            el.classList.add('is-android-ua');
-          });
-        }
-      } catch (_) {
-        // Ignore — server render or no userAgent.
+      {/*
+        Android direct-download (sideload) for users without Play Store access —
+        notably mainland China and HMS-only devices (SHU-484). The
+        `data-android-cta` hook is used by the inline UA script below.
+      */}
+      {SITE.apkDirectAvailable && (
+        <a href={SITE.apkDirectUrl} data-umami-event="apk_direct_cta_click" data-android-cta class={`${cardBase} ${cardTone} android-cta`}>
+          <Icon name="download" class="w-6 h-6 shrink-0" />
+          <span class="flex-1 min-w-0 text-left">
+            <span class="block font-semibold text-[15px] leading-tight">{t.platforms.apk_direct}</span>
+            <span class={`block mt-0.5 text-[12.5px] ${sub}`}>{t.platforms.status_apk_direct}</span>
+          </span>
+          <Icon name="download" class="w-4 h-4 opacity-60" />
+        </a>
+      )}
+
+      {SITE.dmgDirectAvailable ? (
+        <a href={SITE.dmgDirectUrl} download data-umami-event="mac_dmg_direct_cta_click" class={`${cardBase} ${cardTone}`}>
+          <Icon name="laptop" class="w-6 h-6 shrink-0" />
+          <span class="flex-1 min-w-0 text-left">
+            <span class="block font-semibold text-[15px] leading-tight">{t.platforms.dmg_direct}</span>
+            <span class={`block mt-0.5 text-[12.5px] ${sub}`}>{t.platforms.status_dmg_direct}</span>
+          </span>
+          <Icon name="download" class="w-4 h-4 opacity-60" />
+        </a>
+      ) : SITE.appStoreMacAvailable ? (
+        <a href={SITE.appStoreMacUrl} data-umami-event="mac_app_store_cta_click" class={`${cardBase} ${cardTone}`}>
+          <Icon name="laptop" class="w-6 h-6 shrink-0" />
+          <span class="flex-1 min-w-0 text-left">
+            <span class="block font-semibold text-[15px] leading-tight">{t.platforms.app_store_mac}</span>
+            <span class={`block mt-0.5 text-[12.5px] ${sub}`}>{t.platforms.status_available_mac}</span>
+          </span>
+          <Icon name="arrow" class="w-4 h-4 opacity-60" />
+        </a>
+      ) : (
+        <div class={`${cardBase} ${cardTone} opacity-80 cursor-default`} aria-disabled="true">
+          <Icon name="laptop" class="w-6 h-6 shrink-0" />
+          <span class="flex-1 min-w-0 text-left">
+            <span class="block font-semibold text-[15px] leading-tight">{t.platforms.app_store_mac}</span>
+            <span class={`block mt-0.5 text-[12.5px] ${sub}`}>{t.platforms.status_coming_soon}</span>
+          </span>
+        </div>
+      )}
+    </div>
+
+    <div class={`mt-4 flex flex-wrap items-center gap-2 text-[13px] ${sub}`}>
+      <span class={`inline-flex items-center gap-2 rounded-full px-3 py-1.5 border border-dashed ${ink ? 'border-line-on-ink' : 'border-line-strong'}`}>
+        <Icon name="watch" class="w-4 h-4" />{t.platforms.apple_watch} · {t.platforms.status_watch}
+      </span>
+      <span class={`inline-flex items-center gap-2 rounded-full px-3 py-1.5 border border-dashed ${ink ? 'border-line-on-ink' : 'border-line-strong'}`}>
+        <Icon name="phone" class="w-4 h-4" />{t.platforms.ipad} · {t.platforms.status_in_development}
+      </span>
+    </div>
+  </div>
+)}
+
+<script is:inline>
+  // Highlight the direct-APK CTA on actual Android devices. UA is only a UX
+  // hint — the link works for any visitor who clicks it.
+  (function () {
+    try {
+      if (/Android/i.test(navigator.userAgent)) {
+        document.querySelectorAll('[data-android-cta]').forEach(function (el) {
+          el.classList.add('is-android-ua');
+        });
       }
-    })();
-  </script>
+    } catch (_) {}
+  })();
+</script>
 
-  <style>
-    /*
-     * On Android user-agents, the inline script above tags the direct-APK
-     * card with `is-android-ua`; we lift it visually with a soft outer ring
-     * so users coming for the APK see the right path first. Non-Android
-     * visitors get the neutral outlined style.
-     */
-    .android-cta.is-android-ua {
-      box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5),
-                  0 6px 20px -8px rgba(0, 0, 0, 0.25);
-    }
-  </style>
-
-  <!--
-    Mac card. When `appStoreMacAvailable` is true, renders as an outlined
-    link to the Mac App Store; until then renders as a non-clickable
-    "Coming soon" card (still prominent — Mac is now a first-class
-    surface alongside iPhone, not a "future ghost" plan).
-  -->
-  {SITE.dmgDirectAvailable ? (
-    <a
-      href={SITE.dmgDirectUrl}
-      download
-      data-umami-event="mac_dmg_direct_cta_click"
-      class={`${baseCard} ${outlined}`}
-    >
-      <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <rect width="20" height="14" x="2" y="3" rx="2"/>
-        <line x1="8" x2="16" y1="21" y2="21"/>
-        <line x1="12" x2="12" y1="17" y2="21"/>
-      </svg>
-      <div class="flex-1 min-w-0">
-        <div class={titleClass}>{t.platforms.dmg_direct}</div>
-        <div class={statusClass}>{t.platforms.status_dmg_direct}</div>
-      </div>
-      <span aria-hidden="true" class="text-base opacity-70">↓</span>
-    </a>
-  ) : SITE.appStoreMacAvailable ? (
-    <a
-      href={SITE.appStoreMacUrl}
-      data-umami-event="mac_app_store_cta_click"
-      class={`${baseCard} ${outlined}`}
-    >
-      <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <rect width="20" height="14" x="2" y="3" rx="2"/>
-        <line x1="8" x2="16" y1="21" y2="21"/>
-        <line x1="12" x2="12" y1="17" y2="21"/>
-      </svg>
-      <div class="flex-1 min-w-0">
-        <div class={titleClass}>{t.platforms.app_store_mac}</div>
-        <div class={statusClass}>{t.platforms.status_available_mac}</div>
-      </div>
-      <span aria-hidden="true" class="text-base opacity-70">→</span>
-    </a>
-  ) : (
-    <div class={`${baseCard} ${outlined} opacity-80 cursor-default`} aria-disabled="true">
-      <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <rect width="20" height="14" x="2" y="3" rx="2"/>
-        <line x1="8" x2="16" y1="21" y2="21"/>
-        <line x1="12" x2="12" y1="17" y2="21"/>
-      </svg>
-      <div class="flex-1 min-w-0">
-        <div class={titleClass}>{t.platforms.app_store_mac}</div>
-        <div class={statusClass}>{t.platforms.status_coming_soon}</div>
-      </div>
-    </div>
-  )}
-
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-    <div class={`${baseCard} ${ghost}`} aria-disabled="true">
-      <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <rect width="16" height="20" x="4" y="2" rx="2"/>
-        <line x1="12" x2="12.01" y1="18" y2="18"/>
-      </svg>
-      <div class="flex-1 min-w-0">
-        <div class={ghostTitleClass}>{t.platforms.ipad}</div>
-        <div class={ghostStatusClass}>{t.platforms.status_in_development}</div>
-      </div>
-    </div>
-
-    <div class={`${baseCard} ${ghost}`} aria-disabled="true">
-      <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <circle cx="12" cy="12" r="6"/>
-        <polyline points="12 10 12 12 13 13"/>
-        <path d="m16.13 7.66-.81-4.05a2 2 0 0 0-2-1.61h-2.68a2 2 0 0 0-2 1.61l-.78 4.05"/>
-        <path d="m7.88 16.36.8 4a2 2 0 0 0 2 1.61h2.72a2 2 0 0 0 2-1.61l.81-4.05"/>
-      </svg>
-      <div class="flex-1 min-w-0">
-        <div class={ghostTitleClass}>{t.platforms.apple_watch}</div>
-        <div class={ghostStatusClass}>{t.platforms.status_in_development}</div>
-      </div>
-    </div>
-  </div>
-</div>
+<style is:global>
+  .android-cta.is-android-ua {
+    box-shadow: 0 0 0 2px var(--accent), 0 6px 20px -8px rgba(0, 0, 0, 0.25);
+  }
+</style>

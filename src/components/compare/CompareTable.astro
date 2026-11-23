@@ -27,50 +27,52 @@ const featureKeys = [
   'receiptPhotos', 'voiceInput', 'bankSync', 'familySharing',
   'noAds', 'noTrackers', 'openSource',
 ] as const;
-
-const cell = (v: boolean) =>
-  v ? c.common.table.yes : c.common.table.no;
+const groups = [
+  { label: c.common.table.platforms_label, rows: platformKeys.map((k) => ({ label: c.common.platform_labels[k], a: self.platforms[k], b: competitor.platforms[k] })) },
+  { label: c.common.table.features_label, rows: featureKeys.map((k) => ({ label: c.common.feature_labels[k], a: self.features[k], b: competitor.features[k] })) },
+];
 ---
-<section class="mx-auto max-w-5xl px-6 py-12 md:py-16">
-  <h2 class="text-center font-[family-name:var(--font-display)] font-bold text-[28px] md:text-[36px] tracking-[-0.025em] text-[var(--color-fg-primary)]">
-    {c.common.section_titles.comparison_table}
-  </h2>
-  <div class="mt-10 overflow-hidden rounded-2xl border border-[var(--color-border)] bg-white">
-    <table class="w-full text-[14px]">
-      <thead class="bg-[var(--color-surface-secondary)] text-left">
-        <tr>
-          <th class="p-4 font-semibold text-[var(--color-fg-secondary)] uppercase text-[11px] tracking-[0.1em] w-1/3"></th>
-          <th class="p-4 font-bold text-[var(--color-accent-primary)]">{self.displayName}</th>
-          <th class="p-4 font-bold text-[var(--color-fg-primary)]">{competitor.displayName}</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="border-t border-[var(--color-border)]">
-          <td class="p-4 font-semibold text-[var(--color-fg-secondary)] uppercase text-[11px] tracking-[0.1em]">{c.common.table.pricing_label}</td>
-          <td class="p-4">{pricingCell(self.pricing)}</td>
-          <td class="p-4">{pricingCell(competitor.pricing)}</td>
-        </tr>
-        <tr class="border-t border-[var(--color-border)] bg-[var(--color-surface-secondary)]/40">
-          <td class="p-4 font-semibold text-[var(--color-fg-secondary)] uppercase text-[11px] tracking-[0.1em]" colspan="3">{c.common.table.platforms_label}</td>
-        </tr>
-        {platformKeys.map((k) => (
-          <tr class="border-t border-[var(--color-border)]">
-            <td class="p-4 text-[var(--color-fg-secondary)]">{c.common.platform_labels[k]}</td>
-            <td class="p-4">{cell(self.platforms[k])}</td>
-            <td class="p-4">{cell(competitor.platforms[k])}</td>
+<section class="container-x pb-16 md:pb-24">
+  <h2 class="t-h2 text-center !text-[clamp(1.6rem,1.2rem+1.6vw,2.25rem)]">{c.common.section_titles.comparison_table}</h2>
+  <div class="mt-10 mx-auto max-w-[56rem] card overflow-hidden">
+    <div class="overflow-x-auto">
+      <table class="w-full min-w-[30rem] text-[14px]">
+        <thead>
+          <tr class="bg-bg-sunken text-left">
+            <th class="p-4 w-[42%]"><span class="sr-only">—</span></th>
+            <th class="p-4 font-semibold text-accent-text">{self.displayName}</th>
+            <th class="p-4 font-semibold text-fg">{competitor.displayName}</th>
           </tr>
-        ))}
-        <tr class="border-t border-[var(--color-border)] bg-[var(--color-surface-secondary)]/40">
-          <td class="p-4 font-semibold text-[var(--color-fg-secondary)] uppercase text-[11px] tracking-[0.1em]" colspan="3">{c.common.table.features_label}</td>
-        </tr>
-        {featureKeys.map((k) => (
-          <tr class="border-t border-[var(--color-border)]">
-            <td class="p-4 text-[var(--color-fg-secondary)]">{c.common.feature_labels[k]}</td>
-            <td class="p-4">{cell(self.features[k])}</td>
-            <td class="p-4">{cell(competitor.features[k])}</td>
+        </thead>
+        <tbody>
+          <tr class="border-t border-line">
+            <td class="p-4 text-[12px] uppercase tracking-[0.1em] font-semibold text-fg-3">{c.common.table.pricing_label}</td>
+            <td class="p-4 font-medium bg-accent-soft/50">{pricingCell(self.pricing)}</td>
+            <td class="p-4">{pricingCell(competitor.pricing)}</td>
           </tr>
-        ))}
-      </tbody>
-    </table>
+          {groups.map((g) => (
+            <>
+              <tr class="border-t border-line bg-bg-sunken/60">
+                <td class="px-4 pt-5 pb-2 text-[12px] uppercase tracking-[0.1em] font-semibold text-fg-3" colspan="3">{g.label}</td>
+              </tr>
+              {g.rows.map((r) => (
+                <tr class="border-t border-line">
+                  <td class="p-4 text-fg-2">{r.label}</td>
+                  {[r.a, r.b].map((v, idx) => (
+                    <td class={`p-4 ${idx === 0 ? 'bg-accent-soft/50' : ''}`}>
+                      {v ? (
+                        <span class="inline-flex items-center gap-2 text-fg"><span class="inline-flex w-5 h-5 items-center justify-center rounded-full bg-accent text-accent-fg text-[11px]" aria-hidden="true">✓</span><span class="sr-only">{c.common.table.yes}</span></span>
+                      ) : (
+                        <span class="inline-flex items-center gap-2 text-fg-3"><span class="inline-flex w-5 h-5 items-center justify-center rounded-full border border-line-strong text-[11px]" aria-hidden="true">–</span><span class="sr-only">{c.common.table.no}</span></span>
+                      )}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </>
+          ))}
+        </tbody>
+      </table>
+    </div>
   </div>
 </section>

@@ -2,59 +2,85 @@
 import type { Locale } from '../config/site';
 import type { I18nData } from '../content.config';
 import PlatformGrid from './PlatformGrid.astro';
-import PhoneMockup from './PhoneMockup.astro';
+import Device from './device/Device.astro';
+import Icon from './Icon.astro';
 
 interface Props {
   locale: Locale;
   t: I18nData;
 }
 const { locale, t } = Astro.props;
-const screenshot = `/screenshots/${locale}/01-dashboard.png`;
 ---
 
-<section class="mx-auto max-w-6xl px-6 py-20 md:py-28">
-  <div class="grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-12 md:gap-16 items-center">
-    <div>
-      <h1
-        class="font-[family-name:var(--font-display)] font-bold text-[44px] md:text-[68px] leading-[0.98] tracking-[-0.04em] text-[var(--color-fg-primary)]"
-      >
-        {t.hero.headline_part1}{' '}
-        <em
-          class="font-[family-name:var(--font-serif-italic)] not-italic [font-style:italic] font-medium text-[var(--color-accent-primary)]"
-        >
-          {t.hero.headline_italic}
-        </em>
+<section class="relative overflow-hidden">
+  <!-- soft brand wash -->
+  <div aria-hidden="true" class="pointer-events-none absolute inset-0 -z-10">
+    <div class="absolute -top-40 right-[-20%] w-[70rem] h-[50rem] [background:var(--glow)] opacity-90"></div>
+    <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-bg"></div>
+  </div>
+
+  <div class="container-x pt-10 pb-16 md:pt-16 md:pb-24 lg:pt-20 grid grid-cols-1 lg:grid-cols-[1.08fr_1fr] gap-12 lg:gap-8 items-center">
+    <div class="max-w-[38rem]">
+      <a href="#whats-new" class="pill hover:border-line-strong transition" data-umami-event="hero_whats_new_click">
+        <span class="pill-tag">{t.hero.badge_new}</span>
+        <span class="truncate">{t.hero.badge_text}</span>
+        <Icon name="arrow" class="w-3.5 h-3.5 shrink-0 text-fg-3" />
+      </a>
+
+      <h1 class="t-display mt-6">
+        {t.hero.headline_part1}
+        <span class="block t-serif">{t.hero.headline_italic}</span>
       </h1>
-      <p class="mt-5 max-w-[460px] text-[17px] leading-[1.55] text-[var(--color-fg-secondary)]">
-        {t.hero.subhead}
-      </p>
-      <div class="mt-7">
-        <PlatformGrid t={t} variant="dark" />
-        <a
-          href="#features"
-          data-umami-event="hero_secondary_click"
-          class="mt-6 inline-block text-sm font-medium text-[var(--color-fg-primary)] underline decoration-[var(--color-border)] underline-offset-4 hover:decoration-[var(--color-accent-primary)]"
-        >
-          {t.hero.cta_secondary}
-        </a>
-      </div>
-      <div class="mt-8 pt-5 border-t border-[var(--color-border)] flex flex-wrap gap-8">
+      <p class="t-lead mt-6 max-w-[34rem]">{t.hero.subhead}</p>
+
+      <PlatformGrid t={t} layout="compact" class="mt-8" />
+
+      <dl class="mt-10 pt-6 border-t border-line grid grid-cols-3 gap-4 max-w-[30rem]">
         <div>
-          <div class="font-[family-name:var(--font-mono)] text-[22px] font-bold text-[var(--color-fg-primary)]">100%</div>
-          <div class="mt-1 text-[11px] uppercase tracking-[0.1em] text-[var(--color-fg-secondary)]">{t.hero.stat_offline_label}</div>
+          <dt class="sr-only">{t.hero.stat_offline_label}</dt>
+          <dd class="t-num text-[22px] md:text-[26px] font-semibold text-fg">100%</dd>
+          <dd class="mt-1 text-[12px] leading-snug text-fg-3">{t.hero.stat_offline_label}</dd>
         </div>
         <div>
-          <div class="font-[family-name:var(--font-mono)] text-[22px] font-bold text-[var(--color-fg-primary)]">0</div>
-          <div class="mt-1 text-[11px] uppercase tracking-[0.1em] text-[var(--color-fg-secondary)]">{t.hero.stat_ads_label}</div>
+          <dt class="sr-only">{t.hero.stat_ads_label}</dt>
+          <dd class="t-num text-[22px] md:text-[26px] font-semibold text-fg">0</dd>
+          <dd class="mt-1 text-[12px] leading-snug text-fg-3">{t.hero.stat_ads_label}</dd>
         </div>
         <div>
-          <div class="font-[family-name:var(--font-mono)] text-[22px] font-bold text-[var(--color-fg-primary)]">BYOK</div>
-          <div class="mt-1 text-[11px] uppercase tracking-[0.1em] text-[var(--color-fg-secondary)]">{t.hero.stat_byok_label}</div>
+          <dt class="sr-only">{t.hero.stat_byok_label}</dt>
+          <dd class="t-num text-[22px] md:text-[26px] font-semibold text-fg">BYOK</dd>
+          <dd class="mt-1 text-[12px] leading-snug text-fg-3">{t.hero.stat_byok_label}</dd>
         </div>
-      </div>
+      </dl>
+      <a href="#features" data-umami-event="hero_secondary_click" class="link-arrow mt-6 text-[14px]">
+        {t.hero.cta_secondary}<Icon name="arrow" class="w-4 h-4" />
+      </a>
     </div>
-    <div class="flex justify-center md:justify-end">
-      <PhoneMockup src={screenshot} alt="MoneyWise Dashboard screenshot" class="w-[280px] md:w-[340px]" />
+
+    <!-- Device stage: iPhone (front), iPhone (back), Apple Watch -->
+    <div class="relative mx-auto w-full max-w-[30rem] lg:max-w-none">
+      <div class="relative mx-auto w-[min(100%,27rem)] aspect-[1/1.12]">
+        <div class="absolute left-[5%] top-[9%] w-[42%] hero-back">
+          <Device slot="hero.iphone-back" locale={locale} alt={t.screenshots.captions[4]} sizes="(min-width: 1024px) 200px, 40vw" />
+        </div>
+        <div class="absolute left-[30%] top-0 w-[50%] hero-front">
+          <Device slot="hero.iphone" locale={locale} alt={t.screenshots.captions[0]} sizes="(min-width: 1024px) 230px, 48vw" eager />
+        </div>
+        <div class="absolute right-[0%] bottom-[2%] w-[27%] hero-watch">
+          <Device slot="hero.watch" locale={locale} alt={t.watch.alt_primary} sizes="(min-width: 1024px) 130px, 26vw" eager />
+        </div>
+      </div>
     </div>
   </div>
 </section>
+
+<style>
+  .hero-back { transform: rotate(-7deg); opacity: .95; }
+  @media (prefers-reduced-motion: no-preference) {
+    .hero-front { animation: hero-rise 1s var(--ease-out-soft) both; }
+    .hero-back { animation: hero-rise-back 1.1s .1s var(--ease-out-soft) both; }
+    .hero-watch { animation: hero-rise 1.1s .25s var(--ease-out-soft) both; }
+  }
+  @keyframes hero-rise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+  @keyframes hero-rise-back { from { opacity: 0; transform: translateY(24px) rotate(-7deg); } to { opacity: .95; transform: rotate(-7deg); } }
+</style>

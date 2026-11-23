@@ -7,7 +7,9 @@
     "features": "機能",
     "privacy": "プライバシー",
     "pricing": "料金",
-    "download": "ダウンロード"
+    "download": "ダウンロード",
+    "faq": "よくある質問",
+    "help": "ヘルプ"
   },
   "hero": {
     "headline_part1": "すべての支出を記録。",
@@ -17,7 +19,9 @@
     "stat_offline_label": "オフラインファースト",
     "stat_ads_label": "広告・トラッカー",
     "stat_byok_label": "AI キーをデバイスに保存",
-    "coming_soon": "App Store で近日公開"
+    "coming_soon": "App Store で近日公開",
+    "badge_new": "1.8 の新機能",
+    "badge_text": "貯蓄目標、ダークモード、ウィジェットなど"
   },
   "platforms": {
     "app_store": "App Store",
@@ -35,19 +39,112 @@
     "status_apk_direct": "APK · Android 8+ · Pro へのアップグレードは Play Store から",
     "status_dmg_direct": "DMG · macOS 13+ · Pro へのアップグレードは Web から",
     "status_coming_soon": "近日公開 · Mac App Store",
-    "status_in_development": "開発中"
+    "status_in_development": "開発中",
+    "status_watch": "配信中 · watchOS 10+",
+    "kicker_app_store": "ダウンロード",
+    "kicker_play": "入手する"
   },
   "features": {
     "eyebrow": "日常のために設計",
     "title": "お金のことは、このアプリひとつで。",
     "items": [
-      { "title": "ダッシュボード", "description": "純資産・トレンド・支払予定をひと目で確認。" },
-      { "title": "記録", "description": "高速入力・音声入力・レシート撮影・カレンダー表示。" },
-      { "title": "口座", "description": "普通預金・カード・現金——あらゆる通貨に対応。" },
-      { "title": "投資", "description": "リアルタイム価格・ポートフォリオ配分・銘柄別履歴。" },
-      { "title": "予算", "description": "カテゴリー別の月次予算。進捗管理とカテゴリー間移動に対応。" },
-      { "title": "AI アドバイザー", "description": "Anthropic または OpenAI の自前キーでオンデバイスインサイトを取得（BYOK）。" }
+      {
+        "title": "ダッシュボード",
+        "description": "純資産・トレンド・支払予定をひと目で確認。"
+      },
+      {
+        "title": "記録",
+        "description": "高速入力・音声入力・レシート撮影・カレンダー表示。"
+      },
+      {
+        "title": "口座",
+        "description": "普通預金・カード・現金——あらゆる通貨に対応。"
+      },
+      {
+        "title": "投資",
+        "description": "リアルタイム価格・ポートフォリオ配分・銘柄別履歴。"
+      },
+      {
+        "title": "予算",
+        "description": "カテゴリー別の月次予算。進捗管理とカテゴリー間移動に対応。"
+      },
+      {
+        "title": "AI アドバイザー",
+        "description": "Anthropic または OpenAI の自前キーでオンデバイスインサイトを取得（BYOK）。"
+      }
     ]
+  },
+  "whatsNew": {
+    "eyebrow": "1.8 の新機能",
+    "title": "自分らしく使える、小さな工夫。",
+    "subhead": "今回のアップデートは毎日のためのもの。目標に向けた貯蓄、よりすばやい記録、そしてアプリを開かなくても数字がわかること。",
+    "items": [
+      {
+        "title": "貯蓄目標",
+        "description": "目標額と期日を設定。リンクした口座の残高、または手動の記録で進捗を管理し、毎月いくら積み立てればよいかを確認できます。"
+      },
+      {
+        "title": "ダークモード",
+        "description": "すべての画面で丁寧に調整したダークテーマ。システムの設定に合わせることも、ライトかダークを自分で選ぶこともできます。"
+      },
+      {
+        "title": "共有して記録",
+        "description": "レシートの写真、メッセージ、CSV/XLSX の明細を、どのアプリからでも MoneyWise に共有。記録として取り込まれるか、インポート画面が開きます。"
+      },
+      {
+        "title": "ホーム画面・ロック画面ウィジェット",
+        "description": "今日の支出と予算をひと目で。iPhone のホーム画面とロック画面、Android のホーム画面に対応。"
+      }
+    ]
+  },
+  "duo": {
+    "eyebrow": "折りたたみ式 iPhone",
+    "title_part1": "開けば、",
+    "title_italic": "見える情報は 2 倍に。",
+    "subhead": "折りたたみ式 iPhone では、MoneyWise が本格的な 2 ペインレイアウトで開きます。片側に一覧、もう片側に詳細。大切な情報が折り目にかかることはありません。",
+    "bullets": [
+      {
+        "title": "ブックポーズで 2 ペイン表示",
+        "description": "口座とアクティビティでは一覧の横に詳細を表示。行き来せずに、ざっと見渡しながら中身も確認できます。"
+      },
+      {
+        "title": "折り目を考えたデザイン",
+        "description": "折り目の上には操作ボタンを置きません。細いタブレールはステータスバー側に移動し、コンテンツは画面幅いっぱいに表示されます。"
+      },
+      {
+        "title": "半開きでも快適",
+        "description": "ラップトップポーズで立てても、タブバーはそのまま。長い一覧も読みやすい幅で表示します。"
+      }
+    ],
+    "alt": "折りたたみ式 iPhone で記録とダッシュボードを並べて表示している MoneyWise"
+  },
+  "watch": {
+    "eyebrow": "Apple Watch",
+    "title_part1": "予算を、",
+    "title_italic": "手首の上に。",
+    "subhead": "あといくら使えるかを確認し、支出を数秒で記録。iPhone を取り出す必要はありません。",
+    "bullets": [
+      {
+        "title": "使える金額をひと目で",
+        "description": "今日の支出、今月の予算の消化状況、そして直近 5 件の取引を表示します。"
+      },
+      {
+        "title": "クイック追加",
+        "description": "キーパッドか Digital Crown で金額を入力し、カテゴリーと口座を選ぶだけ。iPhone から離れた場所で記録した内容は、iPhone が近くに戻ったときに同期されます。"
+      },
+      {
+        "title": "コンプリケーション",
+        "description": "使える金額、今日の支出、ワンタップの追加ボタンを文字盤に直接配置できます。"
+      }
+    ],
+    "alt_primary": "今月あといくら使えるかを表示している Apple Watch 版 MoneyWise",
+    "alt_secondary": "月間予算リングを表示している Apple Watch 版 MoneyWise"
+  },
+  "faqTeaser": {
+    "eyebrow": "よくある質問",
+    "title": "疑問に、お答えします。",
+    "subhead": "同期、家族との共有、Pro、インポートとエクスポートなど、特によくいただく質問をまとめました。",
+    "cta": "よくある質問をすべて見る"
   },
   "screenshots": {
     "eyebrow": "実際の画面を見る",
@@ -99,16 +196,29 @@
       }
     ],
     "clients_label": "動作確認済みクライアント",
-    "clients": ["Claude Desktop", "Cursor", "その他の MCP クライアント"]
+    "clients": [
+      "Claude Desktop",
+      "Cursor",
+      "その他の MCP クライアント"
+    ]
   },
   "privacyFirst": {
     "eyebrow": "プライバシーは機能ではなく前提",
     "title": "あなたのデータは、あなたのスマートフォンに。",
     "subhead": "MoneyWise はローカルファーストで設計されています。広告なし、トラッカーなし、データ販売なし——永久に。",
     "pillars": [
-      { "title": "オフラインファースト", "description": "すべての記録は暗号化された SQLite データベースにローカル保存。機内モードでも問題なく使えます。" },
-      { "title": "オプションのクラウド同期", "description": "オンにすると自分のデバイス間で同期できます。行データは保存時に暗号化され、私たちには読めません。" },
-      { "title": "BYOK AI", "description": "Anthropic または OpenAI の自前キーを使用。キーは iOS キーチェーンに保存され、当社サーバーを経由しません。" }
+      {
+        "title": "オフラインファースト",
+        "description": "すべての記録は暗号化された SQLite データベースにローカル保存。機内モードでも問題なく使えます。"
+      },
+      {
+        "title": "オプションのクラウド同期",
+        "description": "オンにすると自分のデバイス間で同期できます。行データは保存時に暗号化され、私たちには読めません。"
+      },
+      {
+        "title": "BYOK AI",
+        "description": "Anthropic または OpenAI の自前キーを使用。キーは iOS キーチェーンに保存され、当社サーバーを経由しません。"
+      }
     ],
     "learn_more": "プライバシーポリシーを読む →"
   },
@@ -150,7 +260,11 @@
     "copyright": "© 2026 Airing. All rights reserved.",
     "contact": "お問い合わせ",
     "compare": "他社比較",
-    "account_deletion": "アカウント削除"
+    "account_deletion": "アカウント削除",
+    "product": "製品",
+    "support": "サポート",
+    "legal": "法的情報",
+    "terms": "利用規約"
   },
   "featuresPage": {
     "title": "全機能を、わかりやすく。",

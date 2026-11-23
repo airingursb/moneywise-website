@@ -1,0 +1,37 @@
+---
+import type { Locale } from '../config/site';
+import type { I18nData } from '../content.config';
+import { pathFor } from '../lib/i18n';
+import { getFaq, renderAnswer } from '../lib/faq';
+import SectionHeader from './SectionHeader.astro';
+import Icon from './Icon.astro';
+
+interface Props {
+  locale: Locale;
+  t: I18nData;
+}
+const { locale, t } = Astro.props;
+const faq = await getFaq(locale);
+// A hand-picked handful of the most-asked questions: [sectionId, index].
+const picks: [string, number][] = [['sync', 1], ['getting-started', 0], ['family', 0], ['pro', 0], ['data-privacy', 0]];
+const items = picks
+  .map(([id, i]) => faq.sections.find((s) => s.id === id)?.items[i])
+  .filter((x): x is { q: string; a: string } => Boolean(x));
+---
+
+<section class="section bg-bg-sunken">
+  <div class="container-x grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-10 lg:gap-16">
+    <div>
+      <SectionHeader eyebrow={t.faqTeaser.eyebrow} title={t.faqTeaser.title} lead={t.faqTeaser.subhead} />
+      <a href={pathFor(locale, 'faq')} class="btn btn-ghost mt-8">{t.faqTeaser.cta}<Icon name="arrow" class="w-4 h-4" /></a>
+    </div>
+    <div class="reveal border-t border-line">
+      {items.map((it) => (
+        <details class="qa">
+          <summary>{it.q}<span class="qa-icon"><Icon name="plus" class="w-3.5 h-3.5" /></span></summary>
+          <div class="qa-body" set:html={renderAnswer(it.a, locale)} />
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

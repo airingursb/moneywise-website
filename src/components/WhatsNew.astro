@@ -1,0 +1,44 @@
+---
+import type { Locale } from '../config/site';
+import type { I18nData } from '../content.config';
+import type { SlotId } from '../config/screenshots';
+import SectionHeader from './SectionHeader.astro';
+import Device from './device/Device.astro';
+import Icon from './Icon.astro';
+
+interface Props {
+  locale: Locale;
+  t: I18nData;
+}
+const { locale, t } = Astro.props;
+const meta: { slot: SlotId; icon: string; stage: string }[] = [
+  { slot: 'new.goals', icon: 'target', stage: 'bg-bg-tint' },
+  { slot: 'new.dark', icon: 'moon', stage: 'bg-ink' },
+  { slot: 'new.share', icon: 'share', stage: 'bg-gold-soft' },
+  { slot: 'new.widgets', icon: 'widgets', stage: 'bg-bg-sunken' },
+];
+---
+
+<section id="whats-new" class="section pt-0">
+  <div class="container-x">
+    <SectionHeader eyebrow={t.whatsNew.eyebrow} title={t.whatsNew.title} lead={t.whatsNew.subhead} />
+    <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
+      {t.whatsNew.items.map((item, i) => (
+        <article class="reveal card overflow-hidden flex flex-col">
+          <div class={`relative h-56 overflow-hidden ${meta[i].stage}`}>
+            <div class="absolute left-1/2 -translate-x-1/2 top-8 w-[46%] max-w-[10.5rem]">
+              <Device slot={meta[i].slot} locale={locale} alt={item.title} sizes="170px" />
+            </div>
+          </div>
+          <div class="p-6 border-t border-line flex-1">
+            <div class="flex items-center gap-2.5">
+              <span class="icon-tile !w-8 !h-8 !rounded-lg"><Icon name={meta[i].icon} class="w-4 h-4" /></span>
+              <h3 class="t-h3 text-fg">{item.title}</h3>
+            </div>
+            <p class="t-body mt-3">{item.description}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

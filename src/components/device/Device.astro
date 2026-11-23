@@ -1,0 +1,57 @@
+---
+/**
+ * CSS-drawn device frame around a screenshot slot. The device type comes from
+ * the slot's `device` field in src/config/screenshots.ts.
+ */
+import type { Locale } from '../../config/site';
+import type { SlotId } from '../../config/screenshots';
+import { resolveScreen } from '../../lib/screens';
+import Screen from './Screen.astro';
+
+interface Props {
+  slot: SlotId;
+  locale: Locale;
+  alt: string;
+  sizes?: string;
+  eager?: boolean;
+  class?: string;
+  /** Watch only: draw the band above/below the case. */
+  band?: boolean;
+}
+const { slot, locale, alt, sizes, eager, class: cls = '', band = true } = Astro.props;
+const { device, light } = resolveScreen(slot, locale);
+const ar = `--ar:${(light.width / light.height).toFixed(4)}`;
+---
+{device === 'iphone' && (
+  <div class={`dev dev-iphone ${cls}`}>
+    <div class="dev-screen" style={ar}>
+      <span class="dev-island" aria-hidden="true"></span>
+      <Screen slot={slot} locale={locale} alt={alt} sizes={sizes} eager={eager} />
+    </div>
+  </div>
+)}
+{device === 'duo' && (
+  <div class={`dev dev-duo ${cls}`}>
+    <div class="dev-screen" style={ar}>
+      <Screen slot={slot} locale={locale} alt={alt} sizes={sizes} eager={eager} />
+      <span class="dev-hinge" aria-hidden="true"></span>
+      <span class="dev-cam" aria-hidden="true"></span>
+    </div>
+  </div>
+)}
+{device === 'watch' && (
+  <div class={`dev dev-watch ${cls}`}>
+    {band && <span class="dev-band top" aria-hidden="true"></span>}
+    <div class="dev-case">
+      <div class="dev-screen" style={ar}>
+        <Screen slot={slot} locale={locale} alt={alt} sizes={sizes} eager={eager} />
+      </div>
+    </div>
+    {band && <span class="dev-band bottom" aria-hidden="true"></span>}
+  </div>
+)}
+{device === 'mac' && (
+  <div class={`dev dev-mac ${cls}`}>
+    <Screen slot={slot} locale={locale} alt={alt} sizes={sizes} eager={eager} />
+  </div>
+)}

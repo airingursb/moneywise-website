@@ -1,0 +1,43 @@
+---
+/**
+ * Renders a slot from src/config/screenshots.ts as an optimized <picture>
+ * (webp, responsive srcset, optional prefers-color-scheme dark source).
+ */
+import { getImage } from 'astro:assets';
+import type { Locale } from '../../config/site';
+import type { SlotId } from '../../config/screenshots';
+import { resolveScreen } from '../../lib/screens';
+
+interface Props {
+  slot: SlotId;
+  locale: Locale;
+  alt: string;
+  sizes?: string;
+  eager?: boolean;
+  class?: string;
+}
+const { slot, locale, alt, sizes = '(min-width: 1024px) 360px, 70vw', eager = false, class: cls = '' } = Astro.props;
+const s = resolveScreen(slot, locale);
+const candidate = [240, 360, 480, 640, 800, 1080, 1440, 2048];
+const widthsFor = (w: number) => {
+  const ws = candidate.filter((x) => x < w);
+  return [...ws, Math.min(w, 2400)];
+};
+const light = await getImage({ src: s.light, widths: widthsFor(s.light.width), format: 'webp', quality: 80 });
+const dark = s.dark ? await getImage({ src: s.dark, widths: widthsFor(s.dark.width), format: 'webp', quality: 80 }) : null;
+---
+<picture>
+  {dark && <source media="(prefers-color-scheme: dark)" srcset={dark.srcSet.attribute} sizes={sizes} />}
+  <img
+    src={light.src}
+    srcset={light.srcSet.attribute}
+    sizes={sizes}
+    alt={alt}
+    width={s.light.width}
+    height={s.light.height}
+    loading={eager ? 'eager' : 'lazy'}
+    decoding="async"
+    fetchpriority={eager ? 'high' : undefined}
+    class={cls}
+  />
+</picture>

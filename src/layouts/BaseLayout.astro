@@ -19,11 +19,15 @@ const { title, description, locale, slug = '' } = Astro.props;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#2D6B3F" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FAF9F5" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0B100D" />
+    <script is:inline>document.documentElement.classList.add('js');</script>
     {SITE.searchConsoleVerification && (
       <meta name="google-site-verification" content={SITE.searchConsoleVerification} />
     )}
     <SeoHead title={title} description={description} locale={locale} slug={slug} />
+    <slot name="head" />
     <script
       is:inline
       defer
@@ -55,7 +59,20 @@ const { title, description, locale, slug = '' } = Astro.props;
       })();
     </script>
   </head>
-  <body class="bg-[var(--color-surface-primary)] text-[var(--color-fg-primary)]">
+  <body class="bg-bg text-fg">
+    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] btn btn-primary">Skip to content</a>
     <slot />
+    <script is:inline>
+      // Fade-up reveal for `.reveal` elements. Content is visible without JS
+      // (the `.js` class gates the hidden state) and under reduced motion.
+      (function () {
+        var els = document.querySelectorAll('.reveal');
+        if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('is-in'); }); return; }
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('is-in'); io.unobserve(en.target); } });
+        }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+        els.forEach(function (e) { io.observe(e); });
+      })();
+    </script>
   </body>
 </html>

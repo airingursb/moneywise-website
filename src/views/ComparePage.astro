@@ -36,7 +36,7 @@ const description = interpolate(c.common.meta.description_template, { competitor
 ---
 <BaseLayout title={title} description={description} locale={locale} slug={slug}>
   <Nav locale={locale} slug={slug} t={t} />
-  <main>
+  <main id="main">
     <CompareHero self={self} competitor={competitor} c={c} copy={copy} />
     <CompareTable self={self} competitor={competitor} c={c} />
     <CompareAdvantages c={c} />

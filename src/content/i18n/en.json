@@ -7,7 +7,9 @@
     "features": "Features",
     "privacy": "Privacy",
     "pricing": "Pricing",
-    "download": "Download"
+    "download": "Download",
+    "faq": "FAQ",
+    "help": "Help"
   },
   "hero": {
     "headline_part1": "Track every dollar.",
@@ -17,7 +19,9 @@
     "stat_offline_label": "Offline-first",
     "stat_ads_label": "Ads · Trackers",
     "stat_byok_label": "AI keys on-device",
-    "coming_soon": "Coming soon to the App Store"
+    "coming_soon": "Coming soon to the App Store",
+    "badge_new": "New in 1.8",
+    "badge_text": "Savings goals, dark mode, widgets & more"
   },
   "platforms": {
     "app_store": "App Store",
@@ -35,19 +39,112 @@
     "status_apk_direct": "APK · Android 8+ · Pro upgrade via Play Store",
     "status_dmg_direct": "DMG · macOS 13+ · Pro upgrade via web",
     "status_coming_soon": "Coming soon · Mac App Store",
-    "status_in_development": "In development"
+    "status_in_development": "In development",
+    "status_watch": "Available · watchOS 10+",
+    "kicker_app_store": "Download on the",
+    "kicker_play": "Get it on"
   },
   "features": {
     "eyebrow": "Built for real life",
     "title": "Everything about your money, in one app.",
     "items": [
-      { "title": "Dashboard", "description": "Net worth, trends, and upcoming bills at a glance." },
-      { "title": "Records", "description": "Fast entry, voice input, receipt photos, calendar view." },
-      { "title": "Accounts", "description": "Checking, savings, cards, cash — in any currency." },
-      { "title": "Investments", "description": "Live quotes, portfolio allocation, per-holding history." },
-      { "title": "Budgets", "description": "Monthly budgets per category with pacing and transfers." },
-      { "title": "AI Advisor", "description": "Bring your own Anthropic or OpenAI key for on-device insights." }
+      {
+        "title": "Dashboard",
+        "description": "Net worth, trends, and upcoming bills at a glance."
+      },
+      {
+        "title": "Records",
+        "description": "Fast entry, voice input, receipt photos, calendar view."
+      },
+      {
+        "title": "Accounts",
+        "description": "Checking, savings, cards, cash — in any currency."
+      },
+      {
+        "title": "Investments",
+        "description": "Live quotes, portfolio allocation, per-holding history."
+      },
+      {
+        "title": "Budgets",
+        "description": "Monthly budgets per category with pacing and transfers."
+      },
+      {
+        "title": "AI Advisor",
+        "description": "Bring your own Anthropic or OpenAI key for on-device insights."
+      }
     ]
+  },
+  "whatsNew": {
+    "eyebrow": "New in 1.8",
+    "title": "Small things that make it feel like yours.",
+    "subhead": "This release is about the everyday: saving toward something, logging faster, and seeing your numbers without opening the app.",
+    "items": [
+      {
+        "title": "Savings goals",
+        "description": "Set a target and a date. Track progress from linked account balances or a manual log, and see how much you need to put aside each month."
+      },
+      {
+        "title": "Dark mode",
+        "description": "A carefully tuned dark theme across every screen. Follow the system, or choose Light or Dark yourself."
+      },
+      {
+        "title": "Share to capture",
+        "description": "Share a receipt photo, a message, or a CSV/XLSX statement into MoneyWise from any app. It becomes a record — or opens the importer."
+      },
+      {
+        "title": "Home & Lock Screen widgets",
+        "description": "Today's spending and your budget at a glance, on the iPhone Home and Lock Screen and on Android home screens."
+      }
+    ]
+  },
+  "duo": {
+    "eyebrow": "Foldable iPhone",
+    "title_part1": "Unfold it. ",
+    "title_italic": "See twice as much.",
+    "subhead": "On a foldable iPhone, MoneyWise opens into a true two-pane layout — the list on one side, the details on the other, and nothing important on the crease.",
+    "bullets": [
+      {
+        "title": "Two panes in book pose",
+        "description": "Accounts and Activity show the list beside the detail, so you can scan and inspect without tapping back and forth."
+      },
+      {
+        "title": "Designed around the crease",
+        "description": "No controls sit on the fold. A slim tab rail moves into the status strip so your content gets the full width."
+      },
+      {
+        "title": "Half-open, too",
+        "description": "Prop it up in laptop pose and the tab bar stays put, with a comfortable reading width for long lists."
+      }
+    ],
+    "alt": "MoneyWise on a foldable iPhone, showing records and the dashboard side by side"
+  },
+  "watch": {
+    "eyebrow": "Apple Watch",
+    "title_part1": "Your budget, ",
+    "title_italic": "on your wrist.",
+    "subhead": "Check what's left to spend and log an expense in seconds — without reaching for your phone.",
+    "bullets": [
+      {
+        "title": "Left to spend, at a glance",
+        "description": "Today's spending, how much of this month's budget is used, and your five most recent transactions."
+      },
+      {
+        "title": "Quick add",
+        "description": "Enter an amount with the keypad or the Digital Crown, pick a category and account, done. Entries made away from your iPhone sync when it's back in range."
+      },
+      {
+        "title": "Complications",
+        "description": "Put free-to-spend, today's spending, or a one-tap Add button right on your watch face."
+      }
+    ],
+    "alt_primary": "MoneyWise on Apple Watch showing what's left to spend this month",
+    "alt_secondary": "MoneyWise on Apple Watch showing the monthly budget ring"
+  },
+  "faqTeaser": {
+    "eyebrow": "FAQ",
+    "title": "Questions, answered.",
+    "subhead": "Sync, family sharing, Pro, importing and exporting — the things people ask about most.",
+    "cta": "Read the full FAQ"
   },
   "screenshots": {
     "eyebrow": "See it in action",
@@ -99,16 +196,29 @@
       }
     ],
     "clients_label": "Tested clients",
-    "clients": ["Claude Desktop", "Cursor", "Any MCP client"]
+    "clients": [
+      "Claude Desktop",
+      "Cursor",
+      "Any MCP client"
+    ]
   },
   "privacyFirst": {
     "eyebrow": "Privacy, not a feature",
     "title": "Your data stays on your phone.",
     "subhead": "MoneyWise is built local-first. No ads, no trackers, no data sale — ever.",
     "pillars": [
-      { "title": "Offline-first", "description": "Every record is stored locally in an encrypted SQLite database. Works with airplane mode on." },
-      { "title": "Optional cloud sync", "description": "Sync across your own devices when you turn it on. Rows are encrypted at rest; we can't read them." },
-      { "title": "BYOK AI", "description": "Bring your own Anthropic or OpenAI key. Keys live in the iOS keychain and never transit our servers." }
+      {
+        "title": "Offline-first",
+        "description": "Every record is stored locally in an encrypted SQLite database. Works with airplane mode on."
+      },
+      {
+        "title": "Optional cloud sync",
+        "description": "Sync across your own devices when you turn it on. Rows are encrypted at rest; we can't read them."
+      },
+      {
+        "title": "BYOK AI",
+        "description": "Bring your own Anthropic or OpenAI key. Keys live in the iOS keychain and never transit our servers."
+      }
     ],
     "learn_more": "Read the privacy policy →"
   },
@@ -150,7 +260,11 @@
     "copyright": "© 2026 Airing. All rights reserved.",
     "contact": "Contact",
     "compare": "Compare alternatives",
-    "account_deletion": "Delete account"
+    "account_deletion": "Delete account",
+    "product": "Product",
+    "support": "Support",
+    "legal": "Legal",
+    "terms": "Terms of Service"
   },
   "featuresPage": {
     "title": "Every feature, in plain English.",

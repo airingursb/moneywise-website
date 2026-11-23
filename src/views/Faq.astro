@@ -1,0 +1,94 @@
+---
+import type { Locale } from '../config/site';
+import { SITE } from '../config/site';
+import { getI18n, pathFor } from '../lib/i18n';
+import { getFaq, renderAnswer, stripHtml } from '../lib/faq';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import Icon from '../components/Icon.astro';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const [t, f] = await Promise.all([getI18n(locale), getFaq(locale)]);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  inLanguage: locale,
+  mainEntity: f.sections.flatMap((s) =>
+    s.items.map((it) => ({
+      '@type': 'Question',
+      name: it.q,
+      acceptedAnswer: { '@type': 'Answer', text: stripHtml(renderAnswer(it.a, locale, { onFaqPage: true })) },
+    })),
+  ),
+};
+---
+
+<BaseLayout title={f.faq.meta_title} description={f.faq.meta_description} locale={locale} slug="faq">
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <Nav locale={locale} slug="faq" t={t} />
+  <main id="main">
+    <header class="container-x pt-14 pb-8 md:pt-20 md:pb-12">
+      <p class="t-eyebrow">{f.faq.eyebrow}</p>
+      <h1 class="t-h1 mt-3 max-w-[44rem]">{f.faq.title}</h1>
+      <p class="t-lead mt-5 max-w-[40rem]">{f.faq.subhead}</p>
+    </header>
+
+    <div class="container-x pb-20 grid grid-cols-1 lg:grid-cols-[15rem_1fr] gap-10 lg:gap-16">
+      <aside class="lg:sticky lg:top-24 lg:self-start">
+        <p class="text-[12px] uppercase tracking-[0.12em] font-semibold text-fg-3">{f.faq.toc_label}</p>
+        <nav class="mt-3 flex lg:flex-col flex-wrap gap-2 lg:gap-0.5">
+          {f.sections.map((s) => (
+            <a href={`#${s.id}`} class="inline-flex items-center gap-2.5 rounded-full lg:rounded-lg border lg:border-0 border-line bg-bg-elev lg:bg-transparent px-3 py-1.5 lg:py-2 text-[13.5px] lg:text-[14.5px] text-fg-2 hover:text-fg hover:bg-bg-sunken transition">
+              <Icon name={s.icon} class="w-4 h-4 hidden lg:block text-fg-3" />{s.title}
+            </a>
+          ))}
+        </nav>
+      </aside>
+
+      <div class="min-w-0 space-y-14">
+        {f.sections.map((s) => (
+          <section id={s.id} class="scroll-mt-24">
+            <div class="flex items-center gap-3">
+              <span class="icon-tile"><Icon name={s.icon} /></span>
+              <h2 class="text-[22px] md:text-[26px] font-semibold tracking-[-0.02em]">{s.title}</h2>
+            </div>
+            <div class="mt-4 border-t border-line">
+              {s.items.map((it) => (
+                <details class="qa">
+                  <summary>{it.q}<span class="qa-icon"><Icon name="plus" class="w-3.5 h-3.5" /></span></summary>
+                  <div class="qa-body" set:html={renderAnswer(it.a, locale, { onFaqPage: true })} />
+                </details>
+              ))}
+            </div>
+          </section>
+        ))}
+
+        <section class="card p-7 md:p-10 bg-bg-tint !border-transparent">
+          <h2 class="text-[22px] font-semibold tracking-[-0.02em]">{f.faq.still_title}</h2>
+          <p class="t-body mt-2 max-w-[36rem]">{f.faq.still_body}</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href={`mailto:${SITE.contactEmail}`} class="btn btn-primary" data-umami-event="faq_email_click"><Icon name="mail" class="w-4 h-4" />{f.faq.cta_email}</a>
+            <a href={pathFor(locale, 'help')} class="btn btn-ghost">{f.faq.cta_help}<Icon name="arrow" class="w-4 h-4" /></a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <Footer locale={locale} slug="faq" t={t} />
+  <script is:inline>
+    // Open the question block when arriving via #section links.
+    (function () {
+      function openFromHash() {
+        var el = location.hash && document.getElementById(location.hash.slice(1));
+        if (el) { var d = el.querySelector('details'); if (d) d.open = true; }
+      }
+      window.addEventListener('hashchange', openFromHash);
+      openFromHash();
+    })();
+  </script>
+</BaseLayout>
