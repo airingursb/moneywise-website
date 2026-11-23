@@ -11,11 +11,11 @@ interface Props {
   t: I18nData;
 }
 const { locale, t } = Astro.props;
-const meta: { slot: SlotId; icon: string; stage: string }[] = [
+const meta: { slot?: SlotId; icon: string; stage: string }[] = [
   { slot: 'new.goals', icon: 'target', stage: 'bg-bg-tint' },
   { slot: 'new.dark', icon: 'moon', stage: 'bg-ink' },
   { slot: 'new.share', icon: 'share', stage: 'bg-gold-soft' },
-  { slot: 'new.widgets', icon: 'widgets', stage: 'bg-bg-sunken' },
+  { icon: 'widgets', stage: 'bg-bg-sunken' }, // no widget capture yet → icon
 ];
 ---
 
@@ -26,9 +26,15 @@ const meta: { slot: SlotId; icon: string; stage: string }[] = [
       {t.whatsNew.items.map((item, i) => (
         <article class="reveal card overflow-hidden flex flex-col">
           <div class={`relative h-56 overflow-hidden ${meta[i].stage}`}>
-            <div class="absolute left-1/2 -translate-x-1/2 top-8 w-[46%] max-w-[10.5rem]">
-              <Device slot={meta[i].slot} locale={locale} alt={item.title} sizes="170px" />
-            </div>
+            {meta[i].slot ? (
+              <div class="absolute left-1/2 -translate-x-1/2 top-8 w-[46%] max-w-[10.5rem]">
+                <Device slot={meta[i].slot} locale={locale} alt={item.title} sizes="170px" />
+              </div>
+            ) : (
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="icon-tile !w-24 !h-24 !rounded-3xl"><Icon name={meta[i].icon} class="w-11 h-11" /></span>
+              </div>
+            )}
           </div>
           <div class="p-6 border-t border-line flex-1">
             <div class="flex items-center gap-2.5">

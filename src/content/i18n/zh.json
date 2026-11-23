@@ -116,7 +116,8 @@
         "description": "以笔记本形态立起时，标签栏稳稳留在原位，长列表也保持舒适的阅读宽度。"
       }
     ],
-    "alt": "折叠屏 iPhone 上的 MoneyWise，记录与仪表盘并排显示"
+    "alt": "折叠屏 iPhone 上的 MoneyWise：账户列表与账户详情并排显示",
+    "alt_secondary": "折叠屏 iPhone 上的 MoneyWise：记录列表与交易详情并排显示"
   },
   "watch": {
     "eyebrow": "Apple Watch",
@@ -138,7 +139,8 @@
       }
     ],
     "alt_primary": "Apple Watch 上的 MoneyWise，显示本月还能花多少",
-    "alt_secondary": "Apple Watch 上的 MoneyWise，显示月度预算环"
+    "alt_secondary": "Apple Watch 上的 MoneyWise，显示最近 5 笔交易",
+    "alt_tertiary": "Apple Watch 上的 MoneyWise：快速记账，输入金额"
   },
   "faqTeaser": {
     "eyebrow": "常见问题",
@@ -150,15 +152,15 @@
     "eyebrow": "看看实际效果",
     "title": "专为 iPhone 打造的原生体验。",
     "captions": [
-      "仪表盘——净资产与每日动态",
-      "记账——快速录入，按日分组",
-      "每日简报——每天早晨一行摘要",
-      "预算——进度跟踪与类别明细",
-      "投资——持仓概览与资产分布",
-      "安全——Face ID、PIN 锁定、隐藏余额",
-      "AI 顾问——BYOK 洞察",
-      "家庭——伴侣共享工作空间",
-      "资产报告——跨账户年度汇总"
+      "首页——净资产、预算与近期动态",
+      "账户——多币种账户与银行卡",
+      "记录——按天分组，跨币种",
+      "预算——进度节奏与分类明细",
+      "投资——持仓与收益",
+      "储蓄目标——每个目标的进度",
+      "AI 顾问——使用你自己的密钥",
+      "资产报告——净资产趋势与构成",
+      "记一笔——金额、分类与账户"
     ]
   },
   "mac": {

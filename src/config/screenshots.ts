@@ -25,9 +25,12 @@
  *   3. `pnpm run build`. A missing file fails the build with the slot id in the
  *      error message, so typos can't ship silently.
  *
- * Current state: placeholders. `placeholder/iphone/*` are crops of the old App
- * Store marketing images, `placeholder/duo/*` are two of those crops side by
- * side, and `placeholder/watch/*` are hand-drawn mock screens (NOT real app UI).
+ * Current state: real app captures (iPhone, iPhone dark, foldable "Duo"
+ * two-pane, Apple Watch), en + zh only, imported with
+ * `node scripts/import-captures.mjs <dir> --skip duo/zh/invest-split`
+ * (that zh capture shows a known currency-symbol bug). Slots without a
+ * capture are simply absent: e.g. the widgets card and the security module
+ * render an icon instead of a device (see WhatsNew.astro / Features.astro).
  */
 import type { Locale } from './site';
 
@@ -49,35 +52,40 @@ export const LOCALE_FALLBACK: Record<Locale, Locale[]> = {
   ko: ['ko', 'en'],
 };
 
-const P = 'placeholder/iphone/{locale}';
+const I = 'captures/iphone/{locale}';
+const ID = 'captures/iphone-dark/{locale}';
+const D = 'captures/duo/{locale}';
+const DD = 'captures/duo-dark/{locale}';
+const W = 'captures/watch/{locale}';
 
 export const SLOTS = {
   // ── Home: hero stage ────────────────────────────────────────────────
-  'hero.iphone':        { device: 'iphone', src: `${P}/dashboard.webp` },
-  'hero.iphone-back':   { device: 'iphone', src: `${P}/investments.webp` },
-  'hero.watch':         { device: 'watch',  src: 'placeholder/watch/{locale}/summary.webp' },
+  'hero.iphone':        { device: 'iphone', src: `${I}/home.webp`, dark: `${ID}/home.webp` },
+  'hero.iphone-back':   { device: 'iphone', src: `${I}/investments.webp`, dark: `${ID}/investments.webp` },
+  'hero.watch':         { device: 'watch',  src: `${W}/home.webp` },
 
-  // ── Home: "New in 1.8" cards ────────────────────────────────────────
-  'new.goals':          { device: 'iphone', src: `${P}/budget.webp` },
-  'new.dark':           { device: 'iphone', src: `${P}/dashboard.webp` },
-  'new.share':          { device: 'iphone', src: `${P}/records.webp` },
-  'new.widgets':        { device: 'iphone', src: `${P}/daily-brief.webp` },
+  // ── Home: "New in 1.8" cards (widgets card has no capture → icon) ──
+  'new.goals':          { device: 'iphone', src: `${I}/goals.webp` },
+  'new.dark':           { device: 'iphone', src: `${ID}/home.webp` },
+  'new.share':          { device: 'iphone', src: `${I}/new-transaction.webp` },
 
   // ── Home: foldable "Duo" two-pane + Apple Watch sections ───────────
-  'duo.main':           { device: 'duo',    src: 'placeholder/duo/{locale}/home.webp' },
-  'watch.primary':      { device: 'watch',  src: 'placeholder/watch/{locale}/summary.webp' },
-  'watch.secondary':    { device: 'watch',  src: 'placeholder/watch/{locale}/today.webp' },
+  'duo.main':           { device: 'duo',    src: `${D}/accounts-split.webp`, dark: `${DD}/accounts-split.webp` },
+  'duo.secondary':      { device: 'duo',    src: `${D}/records-split.webp` },
+  'watch.primary':      { device: 'watch',  src: `${W}/home.webp` },
+  'watch.secondary':    { device: 'watch',  src: `${W}/recent.webp` },
+  'watch.tertiary':     { device: 'watch',  src: `${W}/quick-add.webp` },
 
   // ── Home: iPhone gallery (order = t.screenshots.captions order) ────
-  'gallery.1':          { device: 'iphone', src: `${P}/dashboard.webp` },
-  'gallery.2':          { device: 'iphone', src: `${P}/records.webp` },
-  'gallery.3':          { device: 'iphone', src: `${P}/daily-brief.webp` },
-  'gallery.4':          { device: 'iphone', src: `${P}/budget.webp` },
-  'gallery.5':          { device: 'iphone', src: `${P}/investments.webp` },
-  'gallery.6':          { device: 'iphone', src: `${P}/security.webp` },
-  'gallery.7':          { device: 'iphone', src: `${P}/advisor.webp` },
-  'gallery.8':          { device: 'iphone', src: `${P}/family.webp` },
-  'gallery.9':          { device: 'iphone', src: `${P}/asset-report.webp` },
+  'gallery.1':          { device: 'iphone', src: `${I}/home.webp`, dark: `${ID}/home.webp` },
+  'gallery.2':          { device: 'iphone', src: `${I}/accounts.webp`, dark: `${ID}/accounts.webp` },
+  'gallery.3':          { device: 'iphone', src: `${I}/records.webp`, dark: `${ID}/records.webp` },
+  'gallery.4':          { device: 'iphone', src: `${I}/budget.webp` },
+  'gallery.5':          { device: 'iphone', src: `${I}/investments.webp`, dark: `${ID}/investments.webp` },
+  'gallery.6':          { device: 'iphone', src: `${I}/goals.webp` },
+  'gallery.7':          { device: 'iphone', src: `${I}/ai-chat.webp` },
+  'gallery.8':          { device: 'iphone', src: `${I}/asset-report.webp` },
+  'gallery.9':          { device: 'iphone', src: `${I}/new-transaction.webp` },
 
   // ── Home: Mac section (already-chromed macOS window captures) ──────
   'mac.1':              { device: 'mac',    src: 'legacy/mac/{locale}/01-dashboard.png' },
@@ -86,17 +94,15 @@ export const SLOTS = {
   'mac.4':              { device: 'mac',    src: 'legacy/mac/{locale}/07-advisor.png' },
   'mac.5':              { device: 'mac',    src: 'legacy/mac/{locale}/09-asset-report.png' },
 
-  // ── /features modules (keyed by module id in i18n featuresPage) ─────
-  'features.dashboard':   { device: 'iphone', src: `${P}/dashboard.webp` },
-  'features.records':     { device: 'iphone', src: `${P}/records.webp` },
-  'features.budgets':     { device: 'iphone', src: `${P}/budget.webp` },
-  'features.investments': { device: 'iphone', src: `${P}/investments.webp` },
-  'features.advisor':     { device: 'iphone', src: `${P}/advisor.webp` },
-  'features.security':    { device: 'iphone', src: `${P}/security.webp` },
-  'features.family':      { device: 'iphone', src: `${P}/family.webp` },
+  // ── /features modules (keyed by module id; no slot → icon instead) ─
+  'features.dashboard':   { device: 'iphone', src: `${I}/home.webp`, dark: `${ID}/home.webp` },
+  'features.records':     { device: 'iphone', src: `${I}/records.webp`, dark: `${ID}/records.webp` },
+  'features.budgets':     { device: 'iphone', src: `${I}/budget.webp` },
+  'features.investments': { device: 'iphone', src: `${I}/investments.webp`, dark: `${ID}/investments.webp` },
+  'features.advisor':     { device: 'iphone', src: `${I}/ai-chat.webp` },
 
   // ── Compare pages hero ─────────────────────────────────────────────
-  'compare.iphone':     { device: 'iphone', src: `${P}/dashboard.webp` },
+  'compare.iphone':     { device: 'iphone', src: `${I}/home.webp`, dark: `${ID}/home.webp` },
 } satisfies Record<string, ScreenSlot>;
 
 export type SlotId = keyof typeof SLOTS;

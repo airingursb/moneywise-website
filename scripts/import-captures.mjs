@@ -1,28 +1,42 @@
 #!/usr/bin/env node
 /**
- * Copy app screen captures into src/assets/screens/captures/ so the site can use them.
+ * Import app screen captures into src/assets/screens/captures/ as optimized WebP.
  *
- *   node scripts/import-captures.mjs <captures-dir>
+ *   node scripts/import-captures.mjs <captures-dir> [--skip <device/locale/screen>]...
  *
  * Expects <captures-dir>/<device>/<locale>/<screen>.(png|jpg|webp), e.g.
- *   site-captures/iphone/en/dashboard.png
- *   site-captures/iphone-dark/zh/dashboard.png
- *   site-captures/duo/en/records.png
- *   site-captures/watch/en/summary.png
- * Any manifest.json at the root is copied alongside for reference.
+ *   site-captures/iphone/en/home.png
+ *   site-captures/iphone-dark/zh/home.png
+ *   site-captures/duo/en/records-split.png
+ *   site-captures/watch/en/home.png
+ * and writes src/assets/screens/captures/<device>/<locale>/<screen>.webp.
  *
+ * Raw captures are huge (an iPhone PNG is ~1 MB at 1320×2868), so each file is
+ * downscaled to a source width that still covers 2× the largest size the site
+ * renders it at, then stored as WebP. Astro generates the responsive variants
+ * from these at build time.
+ *
+ * Use --skip for captures that must not ship, e.g. `--skip duo/zh/invest-split`.
  * After importing, point the slots in src/config/screenshots.ts at
- * `captures/<device>/{locale}/<screen>.png` and run `pnpm run build`.
- * Astro optimizes the images at build time — no need to pre-resize.
+ * `captures/<device>/{locale}/<screen>.webp` and run `pnpm run build`.
  */
 import fs from 'node:fs';
 import path from 'node:path';
+import sharp from 'sharp';
 
-const src = process.argv[2];
+const args = process.argv.slice(2);
+const src = args[0];
+const skip = new Set();
+for (let i = 1; i < args.length; i++) if (args[i] === '--skip' && args[i + 1]) skip.add(args[++i]);
 if (!src || !fs.existsSync(src)) {
-  console.error('usage: node scripts/import-captures.mjs <captures-dir>');
+  console.error('usage: node scripts/import-captures.mjs <captures-dir> [--skip device/locale/screen]');
   process.exit(1);
 }
+
+// Max source width per device family (≈ 2× the largest rendered width).
+const MAX_W = { iphone: 900, duo: 2000, watch: 416 };
+const family = (device) => device.replace(/-dark$/, '');
+
 const dest = path.resolve('src/assets/screens/captures');
 const exts = new Set(['.png', '.jpg', '.jpeg', '.webp']);
 let n = 0;
@@ -33,11 +47,21 @@ for (const device of fs.readdirSync(src)) {
     const lDir = path.join(dDir, locale);
     if (!fs.statSync(lDir).isDirectory()) continue;
     for (const f of fs.readdirSync(lDir)) {
-      if (!exts.has(path.extname(f).toLowerCase())) continue;
-      const out = path.join(dest, device, locale, f);
+      const ext = path.extname(f).toLowerCase();
+      if (!exts.has(ext)) continue;
+      const screen = path.basename(f, ext);
+      if (skip.has(`${device}/${locale}/${screen}`)) {
+        console.log(`skip ${device}/${locale}/${f}`);
+        continue;
+      }
+      const out = path.join(dest, device, locale, `${screen}.webp`);
       fs.mkdirSync(path.dirname(out), { recursive: true });
-      fs.copyFileSync(path.join(lDir, f), out);
-      console.log(`${device}/${locale}/${f}`);
+      const maxW = MAX_W[family(device)] ?? 1600;
+      await sharp(path.join(lDir, f))
+        .resize({ width: maxW, withoutEnlargement: true })
+        .webp({ quality: 88, effort: 5 })
+        .toFile(out);
+      console.log(`${device}/${locale}/${screen}.webp`);
       n++;
     }
   }

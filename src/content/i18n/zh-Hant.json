@@ -116,7 +116,8 @@
         "description": "像筆電一樣立起來，標籤列依然穩穩待在原位，長清單也有舒適的閱讀寬度。"
       }
     ],
-    "alt": "摺疊 iPhone 上的 MoneyWise，並排顯示紀錄與儀表板"
+    "alt": "摺疊 iPhone 上的 MoneyWise：帳戶列表與帳戶詳情並排顯示",
+    "alt_secondary": "摺疊 iPhone 上的 MoneyWise：記錄列表與交易詳情並排顯示"
   },
   "watch": {
     "eyebrow": "Apple Watch",
@@ -138,7 +139,8 @@
       }
     ],
     "alt_primary": "Apple Watch 上的 MoneyWise，顯示本月還能花多少",
-    "alt_secondary": "Apple Watch 上的 MoneyWise，顯示每月預算環"
+    "alt_secondary": "Apple Watch 上的 MoneyWise，顯示最近 5 筆交易",
+    "alt_tertiary": "Apple Watch 上的 MoneyWise：快速記帳，輸入金額"
   },
   "faqTeaser": {
     "eyebrow": "常見問題",
@@ -150,15 +152,15 @@
     "eyebrow": "看看實際效果",
     "title": "專為 iPhone 打造的原生體驗。",
     "captions": [
-      "儀表板——淨資產與每日動態",
-      "記帳——快速輸入，依日分組",
-      "每日簡報——每天早晨一行摘要",
-      "預算——進度追蹤與類別明細",
-      "投資——持倉概覽與資產分布",
-      "安全——Face ID、PIN 碼鎖定、隱藏餘額",
-      "AI 顧問——BYOK 洞察",
-      "家庭——伴侶共享工作空間",
-      "資產報告——跨帳戶年度彙總"
+      "首頁——淨資產、預算與近期動態",
+      "帳戶——多幣種帳戶與卡片",
+      "記錄——按天分組，跨幣種",
+      "預算——進度節奏與類別明細",
+      "投資——持倉與報酬",
+      "儲蓄目標——每個目標的進度",
+      "AI 顧問——使用你自己的金鑰",
+      "資產報告——淨資產趨勢與組成",
+      "記一筆——金額、類別與帳戶"
     ]
   },
   "mac": {

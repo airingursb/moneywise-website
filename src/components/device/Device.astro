@@ -45,6 +45,7 @@ const ar = `--ar:${(light.width / light.height).toFixed(4)}`;
     <div class="dev-case">
       <div class="dev-screen" style={ar}>
         <Screen slot={slot} locale={locale} alt={alt} sizes={sizes} eager={eager} />
+        <span class="dev-clock-mask" aria-hidden="true"></span>
       </div>
     </div>
     {band && <span class="dev-band bottom" aria-hidden="true"></span>}

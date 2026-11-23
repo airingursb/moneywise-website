@@ -356,6 +356,12 @@ body {
     box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.16), inset 0 0 0 5px rgba(0,0,0,.6), var(--shadow-device);
   }
   .dev-watch .dev-screen { background: #000; border-radius: 22% / 19%; }
+  /* Covers the system clock in the status area of real watch captures
+     (top-right, above all app content) so the shots don't show a stray time. */
+  .dev-watch .dev-clock-mask {
+    position: absolute; top: 0; right: 0; width: 34%; height: 15.5%;
+    background: #000; pointer-events: none;
+  }
   .dev-watch .dev-case::before { /* digital crown */
     content: ""; position: absolute; right: -4.5%; top: 22%; width: 6%; height: 17%; border-radius: 30%;
     background: repeating-linear-gradient(180deg, #4b5054 0 2px, #2c2f32 2px 4px);

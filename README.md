@@ -40,8 +40,9 @@ Device frames (iPhone, foldable, Apple Watch, Mac) are drawn in CSS (`src/compon
 optimized by Astro at build time. To swap in new captures:
 
 ```bash
-node scripts/import-captures.mjs /path/to/site-captures   # → src/assets/screens/captures/<device>/<locale>/
-# then edit SLOTS in src/config/screenshots.ts to point at captures/<device>/{locale}/<screen>.png
+node scripts/import-captures.mjs /path/to/site-captures --skip duo/zh/invest-split
+#   → resized WebP in src/assets/screens/captures/<device>/<locale>/<screen>.webp
+# then edit SLOTS in src/config/screenshots.ts to point at captures/<device>/{locale}/<screen>.webp
 pnpm run build                                              # a missing file fails the build with the slot id
 ```
 

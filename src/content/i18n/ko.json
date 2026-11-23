@@ -116,7 +116,8 @@
         "description": "노트북처럼 세워 두어도 탭 바는 그대로 자리를 지키고, 긴 목록도 편안한 너비로 읽을 수 있습니다."
       }
     ],
-    "alt": "폴더블 iPhone에서 기록과 대시보드를 나란히 보여주는 MoneyWise"
+    "alt": "폴더블 iPhone의 MoneyWise: 계좌 목록과 계좌 상세를 나란히 표시",
+    "alt_secondary": "폴더블 iPhone의 MoneyWise: 기록 목록과 거래 상세를 나란히 표시"
   },
   "watch": {
     "eyebrow": "Apple Watch",
@@ -137,8 +138,9 @@
         "description": "쓸 수 있는 금액, 오늘 지출, 또는 탭 한 번으로 기록하는 버튼을 워치 페이스에 바로 올려두세요."
       }
     ],
-    "alt_primary": "이번 달 쓸 수 있는 금액을 보여주는 Apple Watch의 MoneyWise",
-    "alt_secondary": "월간 예산 링을 보여주는 Apple Watch의 MoneyWise"
+    "alt_primary": "Apple Watch의 MoneyWise, 이번 달 남은 지출 가능 금액 표시",
+    "alt_secondary": "Apple Watch의 MoneyWise, 최근 거래 5건 표시",
+    "alt_tertiary": "Apple Watch의 MoneyWise: 빠른 추가에서 금액 입력"
   },
   "faqTeaser": {
     "eyebrow": "FAQ",
@@ -150,15 +152,15 @@
     "eyebrow": "실제 화면 보기",
     "title": "iPhone에 자연스럽게 어울리도록 설계.",
     "captions": [
-      "대시보드 — 순자산과 일일 동향",
-      "기록 — 빠른 입력, 일자별 그룹",
-      "데일리 브리프 — 매일 아침 한 줄 요약",
-      "예산 — 진행률과 카테고리 내역",
-      "투자 — 포트폴리오와 자산 배분",
-      "보안 — Face ID, PIN 잠금, 잔액 숨기기",
-      "AI 어드바이저 — BYOK 인사이트",
-      "패밀리 — 부부를 위한 공유 워크스페이스",
-      "자산 리포트 — 계정 통합 연간 요약"
+      "홈 — 순자산, 예산, 최근 활동",
+      "계좌 — 다중 통화 계좌와 카드",
+      "기록 — 날짜별, 통화 구분 없이",
+      "예산 — 진행 속도와 카테고리별 내역",
+      "투자 — 포트폴리오와 수익",
+      "저축 목표 — 목표별 진행 상황",
+      "AI 어드바이저 — 내 키로 답변",
+      "자산 리포트 — 순자산 추이와 구성",
+      "새 기록 — 금액, 카테고리, 계좌"
     ]
   },
   "mac": {

@@ -16,12 +16,15 @@ const icons = ['watch', 'plus', 'target'];
 <section id="watch" class="section bg-ink text-on-ink overflow-hidden relative">
   <div aria-hidden="true" class="absolute inset-0 opacity-60 [background:radial-gradient(50%_60%_at_75%_50%,rgba(93,176,121,.22),transparent_70%)]"></div>
   <div class="container-x relative grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-16 items-center">
-    <div class="order-2 lg:order-1 reveal flex justify-center items-end gap-[6%]">
-      <div class="w-[40%] max-w-[13rem] translate-y-[8%]">
-        <Device slot="watch.secondary" locale={locale} alt={t.watch.alt_secondary} sizes="(min-width: 1024px) 210px, 40vw" />
+    <div class="order-2 lg:order-1 reveal flex justify-center items-center gap-[4%]">
+      <div class="w-[29%] max-w-[10.5rem] translate-y-[10%]">
+        <Device slot="watch.secondary" locale={locale} alt={t.watch.alt_secondary} sizes="(min-width: 1024px) 170px, 29vw" />
       </div>
-      <div class="w-[46%] max-w-[15rem]">
-        <Device slot="watch.primary" locale={locale} alt={t.watch.alt_primary} sizes="(min-width: 1024px) 240px, 46vw" />
+      <div class="w-[35%] max-w-[13rem]">
+        <Device slot="watch.primary" locale={locale} alt={t.watch.alt_primary} sizes="(min-width: 1024px) 210px, 35vw" />
+      </div>
+      <div class="w-[29%] max-w-[10.5rem] translate-y-[10%]">
+        <Device slot="watch.tertiary" locale={locale} alt={t.watch.alt_tertiary} sizes="(min-width: 1024px) 170px, 29vw" />
       </div>
     </div>
     <div class="order-1 lg:order-2">

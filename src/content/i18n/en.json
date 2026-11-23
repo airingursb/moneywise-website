@@ -116,7 +116,8 @@
         "description": "Prop it up in laptop pose and the tab bar stays put, with a comfortable reading width for long lists."
       }
     ],
-    "alt": "MoneyWise on a foldable iPhone, showing records and the dashboard side by side"
+    "alt": "MoneyWise on a foldable iPhone: the accounts list beside an account's detail",
+    "alt_secondary": "MoneyWise on a foldable iPhone: the records list beside a transaction's detail"
   },
   "watch": {
     "eyebrow": "Apple Watch",
@@ -138,7 +139,8 @@
       }
     ],
     "alt_primary": "MoneyWise on Apple Watch showing what's left to spend this month",
-    "alt_secondary": "MoneyWise on Apple Watch showing the monthly budget ring"
+    "alt_secondary": "MoneyWise on Apple Watch showing the last five transactions",
+    "alt_tertiary": "MoneyWise on Apple Watch: quick add, entering an amount"
   },
   "faqTeaser": {
     "eyebrow": "FAQ",
@@ -150,15 +152,15 @@
     "eyebrow": "See it in action",
     "title": "Designed to feel native on iPhone.",
     "captions": [
-      "Dashboard — net worth and daily pulse",
-      "Records — fast entry, grouped by day",
-      "Daily Brief — one-line summary each morning",
+      "Home — net worth, budget and recent activity",
+      "Accounts — multi-currency accounts and cards",
+      "Records — grouped by day, across currencies",
       "Budgets — pacing and category breakdown",
-      "Investments — portfolio and allocation",
-      "Security — Face ID, PIN lock, hidden balances",
-      "AI Advisor — BYOK insights",
-      "Family — shared workspaces for couples",
-      "Asset Report — annual summary across accounts"
+      "Investments — portfolio and returns",
+      "Savings goals — progress toward each target",
+      "AI Advisor — answers using your own key",
+      "Asset Report — net worth trend and composition",
+      "New record — amount, category and account"
     ]
   },
   "mac": {

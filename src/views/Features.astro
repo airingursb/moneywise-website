@@ -15,7 +15,9 @@ interface Props {
 }
 const { locale } = Astro.props;
 const t = await getI18n(locale);
-const slotFor = (id: string): SlotId => (`features.${id}` in SLOTS ? `features.${id}` : 'features.dashboard') as SlotId;
+const slotFor = (id: string): SlotId | undefined => (`features.${id}` in SLOTS ? (`features.${id}` as SlotId) : undefined);
+// Modules without a capture show their icon instead of a device.
+const iconFor: Record<string, string> = { security: 'lock', family: 'users' };
 ---
 
 <BaseLayout title={`${t.featuresPage.title} · MoneyWise`} description={t.featuresPage.subhead} locale={locale} slug="features">
@@ -54,9 +56,15 @@ const slotFor = (id: string): SlotId => (`features.${id}` in SLOTS ? `features.$
           </div>
           <div class={`relative min-h-[22rem] bg-bg-sunken overflow-hidden flex justify-center items-start pt-10 md:pt-14 ${i % 2 === 1 ? 'md:order-1' : ''}`}>
             <div aria-hidden="true" class="absolute inset-0 [background:var(--glow)] opacity-70"></div>
-            <div class="relative w-[58%] max-w-[16rem] -mb-24">
-              <Device slot={slotFor(m.id)} locale={locale} alt={m.title} sizes="(min-width: 768px) 256px, 58vw" />
-            </div>
+            {slotFor(m.id) ? (
+              <div class="relative w-[58%] max-w-[16rem] -mb-24">
+                <Device slot={slotFor(m.id)!} locale={locale} alt={m.title} sizes="(min-width: 768px) 256px, 58vw" />
+              </div>
+            ) : (
+              <div class="relative self-center -mt-10 md:-mt-14">
+                <span class="icon-tile !w-28 !h-28 !rounded-[2rem]"><Icon name={iconFor[m.id] ?? 'check'} class="w-12 h-12" /></span>
+              </div>
+            )}
           </div>
         </section>
       ))}

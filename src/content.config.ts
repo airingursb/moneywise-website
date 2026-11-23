@@ -68,6 +68,7 @@ const i18nSchema = z.object({
     subhead: z.string(),
     bullets: z.array(z.object({ title: z.string(), description: z.string() })).length(3),
     alt: z.string(),
+    alt_secondary: z.string(),
   }),
   watch: z.object({
     eyebrow: z.string(),
@@ -77,6 +78,7 @@ const i18nSchema = z.object({
     bullets: z.array(z.object({ title: z.string(), description: z.string() })).length(3),
     alt_primary: z.string(),
     alt_secondary: z.string(),
+    alt_tertiary: z.string(),
   }),
   faqTeaser: z.object({
     eyebrow: z.string(),
