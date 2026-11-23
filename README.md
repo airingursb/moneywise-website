@@ -1,6 +1,6 @@
 # MoneyWise website
 
-Source for https://moneywise.airingdeng.com
+Source for https://moneywise.ursb.me
 
 ## Stack
 

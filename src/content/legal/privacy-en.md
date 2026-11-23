@@ -15,7 +15,7 @@ This policy explains what MoneyWise does with your data.
 - We collect **no analytics about you personally** on the app itself — no crash reporters, no tracking SDKs.
 - If you turn on **cloud sync**, your data is encrypted before leaving your device. We store the encrypted rows on Supabase and cannot read them.
 - If you use the **AI advisor** with your own API key, requests go directly from your device to the AI provider. We do not route, log, or relay those requests.
-- On this website (`moneywise.airingdeng.com`), we use **Umami** for privacy-friendly, cookieless page view analytics. No IP addresses or identifiers are stored.
+- On this website (`moneywise.ursb.me`), we use **Umami** for privacy-friendly, cookieless page view analytics. No IP addresses or identifiers are stored.
 
 ## What MoneyWise collects
 

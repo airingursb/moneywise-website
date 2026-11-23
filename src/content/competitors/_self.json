@@ -2,7 +2,7 @@
   "slug": "_self",
   "displayName": "MoneyWise",
   "fullName": "MoneyWise — Local-first finance",
-  "websiteUrl": "https://moneywise.airingdeng.com",
+  "websiteUrl": "https://moneywise.ursb.me",
   "hideFromIndex": true,
   "region": "self",
   "pricing": {
@@ -37,7 +37,7 @@
     "openSource": false
   },
   "sources": [
-    { "label": "MoneyWise pricing", "url": "https://moneywise.airingdeng.com/#pricing" }
+    { "label": "MoneyWise pricing", "url": "https://moneywise.ursb.me/#pricing" }
   ],
   "lastVerified": "2026-04-27",
   "verificationConfidence": "high"
