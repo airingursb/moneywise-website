@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "MoneyWise — AI Multi-Currency Finance App",
-    "description": "The personal finance app that keeps every record, budget, and insight on your device. Multi-currency. BYOK AI advisor. Optional encrypted sync."
+    "description": "The personal finance app that keeps every record, budget, and insight on your device. Multi-currency. BYOK AI advisor. Optional cloud sync."
   },
   "nav": {
     "features": "Features",
@@ -17,7 +17,7 @@
     "subhead": "Records, budgets, investments, and AI insights — all stored on your phone. Cloud sync is optional; privacy isn't.",
     "cta_secondary": "See how it works",
     "stat_offline_label": "Offline-first",
-    "stat_ads_label": "Ads · Trackers",
+    "stat_ads_label": "Ads",
     "stat_byok_label": "AI keys on-device",
     "coming_soon": "Coming soon to the App Store",
     "badge_new": "New in 1.8",
@@ -33,7 +33,7 @@
     "mac": "Mac",
     "ipad": "iPad",
     "apple_watch": "Apple Watch",
-    "status_available": "Available · iPhone, iOS 16+",
+    "status_available": "Available · iPhone, iOS 15+",
     "status_available_mac": "Available · macOS 13+",
     "status_beta": "Beta · Invite only",
     "status_apk_direct": "APK · Android 8+ · Pro upgrade via Play Store",
@@ -70,7 +70,7 @@
       },
       {
         "title": "AI Advisor",
-        "description": "Bring your own Anthropic or OpenAI key for on-device insights."
+        "description": "Use your own Anthropic or OpenAI key — requests go straight from your device to the provider."
       }
     ]
   },
@@ -155,7 +155,7 @@
       "Daily Brief — one-line summary each morning",
       "Budgets — pacing and category breakdown",
       "Investments — portfolio and allocation",
-      "Security — biometric lock, local encryption",
+      "Security — Face ID, PIN lock, hidden balances",
       "AI Advisor — BYOK insights",
       "Family — shared workspaces for couples",
       "Asset Report — annual summary across accounts"
@@ -166,7 +166,7 @@
     "title_part1": "The same ledger, on the Mac you ",
     "title_italic": "already trust",
     "title_part2": ".",
-    "subhead": "Sidebar shell, multi-pane views, ⌘-driven navigation. Records, investments and reports breathe at full desktop pace — same offline-first data, same end-to-end encrypted sync.",
+    "subhead": "Sidebar shell, multi-pane views, ⌘-driven navigation. Records, investments and reports breathe at full desktop pace — same offline-first data, same cloud sync.",
     "captions": [
       "Dashboard — net worth at a glance",
       "Records — landscape ledger, fast filters",
@@ -188,7 +188,7 @@
       },
       {
         "title": "Bring your own key",
-        "description": "Plug in Anthropic, OpenAI or other API keys for the in-app AI Advisor and Daily Brief. Keys live in the system keychain — never our servers."
+        "description": "Plug in your own Anthropic or OpenAI API key for the in-app AI Advisor and Daily Report. Keys stay in your device's secure storage — never on our servers."
       },
       {
         "title": "Tested with the assistants you use",
@@ -205,19 +205,19 @@
   "privacyFirst": {
     "eyebrow": "Privacy, not a feature",
     "title": "Your data stays on your phone.",
-    "subhead": "MoneyWise is built local-first. No ads, no trackers, no data sale — ever.",
+    "subhead": "MoneyWise is built local-first. No ads and no data sale — ever.",
     "pillars": [
       {
         "title": "Offline-first",
-        "description": "Every record is stored locally in an encrypted SQLite database. Works with airplane mode on."
+        "description": "Every record is stored in a database on your device, so the app works fully offline — even in airplane mode."
       },
       {
         "title": "Optional cloud sync",
-        "description": "Sync across your own devices when you turn it on. Rows are encrypted at rest; we can't read them."
+        "description": "Turn it on (Pro) to sync across your devices. Data travels over encrypted connections (TLS), and server access rules keep it separate from other accounts."
       },
       {
         "title": "BYOK AI",
-        "description": "Bring your own Anthropic or OpenAI key. Keys live in the iOS keychain and never transit our servers."
+        "description": "Bring your own Anthropic or OpenAI key. It stays in your device's secure storage (the Keychain on iPhone), and AI requests go directly to the provider — never through our servers."
       }
     ],
     "learn_more": "Read the privacy policy →"
@@ -229,19 +229,21 @@
     "free_name": "Free",
     "free_tagline": "Everything you need on a single device.",
     "free_features": [
-      "Unlimited records, accounts, and budgets",
-      "Investments and portfolio tracking",
-      "AI advisor (bring your own key)",
-      "Local encrypted storage"
+      "Unlimited records, accounts, budgets and bills",
+      "Import (CSV, XLSX) and CSV export",
+      "Widgets, Apple Watch and 1 savings goal",
+      "On-device coach insights",
+      "Works offline — your data stays on your device"
     ],
     "pro_name": "Pro",
-    "pro_tagline": "Sync, backup, and more across every device.",
+    "pro_tagline": "Sync, family sharing, investments and AI tools.",
     "pro_features": [
       "Everything in Free",
-      "Multi-device encrypted cloud sync",
-      "Automatic cloud backup",
-      "Receipt and attachment photos",
-      "Pooled AI credits (no API key needed)"
+      "Cloud sync across iPhone, Android and Mac",
+      "Family sharing with split and settle-up",
+      "Investments with live quotes",
+      "AI advisor, receipt scanning and daily reports (uses your own API key)",
+      "Unlimited goals and voice entries, plus MCP extensions"
     ],
     "per_month": "/mo",
     "per_year": "/yr",
@@ -321,11 +323,11 @@
       {
         "id": "advisor",
         "title": "AI Advisor",
-        "description": "Bring your own Anthropic or OpenAI key. The advisor reads your (local) data and answers questions — nothing leaves your device unless you ask.",
+        "description": "Bring your own Anthropic or OpenAI key. The advisor answers questions about your finances — requests go straight from your device to the provider you chose, and only when you ask.",
         "screenshot": "07-advisor.png",
         "bullets": [
           "Works with Anthropic Claude or OpenAI",
-          "Keys stored in iOS keychain",
+          "Keys kept in your device's secure storage",
           "Monthly spending analysis",
           "Portfolio rebalancing suggestions"
         ]
@@ -333,13 +335,13 @@
       {
         "id": "security",
         "title": "Security",
-        "description": "Face ID / Touch ID lock. All data encrypted at rest. Optional cloud sync uses end-to-end encrypted rows — we can't read them.",
+        "description": "Face ID / Touch ID or a 6-digit PIN, auto-lock, and hidden balances. Optional cloud sync travels over encrypted connections (TLS).",
         "screenshot": "06-security.png",
         "bullets": [
           "Biometric app lock",
-          "Local SQLite encryption",
-          "End-to-end encrypted cloud sync",
-          "No third-party analytics or ads"
+          "6-digit PIN and auto-lock",
+          "Hide balances; blur in the app switcher",
+          "No ads; usage analytics can be turned off"
         ]
       }
     ]

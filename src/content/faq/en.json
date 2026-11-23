@@ -313,11 +313,15 @@
         },
         {
           "q": "How do I delete my account?",
-          "a": "Settings › tap your profile (My Account) › Delete Account, then type DELETE to confirm. This removes your cloud data, receipts and avatar, leaves (or dissolves) your family, and wipes the app on that device. It does not cancel an App Store or Google Play subscription — cancel that separately. More on the <a href=\"{account_deletion}\">account deletion page</a>."
+          "a": "Settings › tap your profile (My Account) › Delete Account, then type DELETE to confirm. This removes your cloud data, receipts and avatar, leaves (or dissolves) your family, and signs you out. Data stored locally stays on that device until you uninstall the app or use Delete All Data. It does not cancel an App Store or Google Play subscription — cancel that separately. More on the <a href=\"{account_deletion}\">account deletion page</a>."
         },
         {
           "q": "Can I erase the data on one device only?",
           "a": "Yes: Settings › Account & Data › Security & Privacy › Delete All Data wipes the local data on that device. Anything already synced to your account stays in the cloud."
+        },
+        {
+          "q": "Does MoneyWise collect analytics or crash reports?",
+          "a": "Yes, two kinds. <strong>Usage statistics</strong> (which screens and features are used) go to our self-hosted analytics server; you can turn them off in Settings › Account & Data › Security & Privacy. <strong>Crash and performance reports</strong> go to Sentry so we can find and fix bugs; these can include device details and your IP address, and the analytics switch doesn't turn them off. MoneyWise has no ads and doesn't sell your data. See the <a href=\"{privacy}\">privacy policy</a>."
         },
         {
           "q": "How can I lock the app?",

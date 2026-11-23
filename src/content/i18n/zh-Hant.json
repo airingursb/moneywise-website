@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "MoneyWise —— AI 多幣種智能記帳 App",
-    "description": "MoneyWise 把你的每一筆帳、預算和洞察都留在手機裡。多幣種支援，自帶 AI 顧問，可選加密雲端同步。"
+    "description": "MoneyWise 把你的每一筆帳、預算和洞察都留在手機裡。多幣種支援，自帶 AI 顧問，可選雲端同步。"
   },
   "nav": {
     "features": "功能",
@@ -17,7 +17,7 @@
     "subhead": "帳單、預算、投資和 AI 洞察——全部存在手機裡。雲端同步是可選項，隱私保護不是。",
     "cta_secondary": "了解運作方式",
     "stat_offline_label": "離線優先",
-    "stat_ads_label": "廣告 · 追蹤器",
+    "stat_ads_label": "廣告",
     "stat_byok_label": "AI 金鑰本機存放",
     "coming_soon": "即將登陸 App Store",
     "badge_new": "1.8 新功能",
@@ -33,7 +33,7 @@
     "mac": "Mac",
     "ipad": "iPad",
     "apple_watch": "Apple Watch",
-    "status_available": "已上架 · iPhone, iOS 16+",
+    "status_available": "已上架 · iPhone, iOS 15+",
     "status_available_mac": "已上架 · macOS 13+",
     "status_beta": "內測中 · 僅限邀請",
     "status_apk_direct": "APK · Android 8+ · Pro 升級請透過 Play Store",
@@ -70,7 +70,7 @@
       },
       {
         "title": "AI 顧問",
-        "description": "接入自己的 Anthropic 或 OpenAI 金鑰，獲取本機 AI 洞察。"
+        "description": "使用你自己的 Anthropic 或 OpenAI 金鑰——請求直接從你的裝置送往服務供應商。"
       }
     ]
   },
@@ -155,7 +155,7 @@
       "每日簡報——每天早晨一行摘要",
       "預算——進度追蹤與類別明細",
       "投資——持倉概覽與資產分布",
-      "安全——生物辨識鎖定，本機加密",
+      "安全——Face ID、PIN 碼鎖定、隱藏餘額",
       "AI 顧問——BYOK 洞察",
       "家庭——伴侶共享工作空間",
       "資產報告——跨帳戶年度彙總"
@@ -166,7 +166,7 @@
     "title_part1": "同一份帳本，",
     "title_italic": "在你信賴的 Mac 上",
     "title_part2": "。",
-    "subhead": "側邊欄架構、多欄視圖、⌘ 鍵驅動導覽。記帳、投資、報表以桌面節奏鋪開——同樣本機優先的資料，同樣端到端加密的同步。",
+    "subhead": "側邊欄架構、多欄視圖、⌘ 鍵驅動導覽。記帳、投資、報表以桌面節奏鋪開——同樣本機優先的資料，同樣的雲端同步。",
     "captions": [
       "儀表板——淨資產一圖盡覽",
       "記帳——橫向帳本，快速篩選",
@@ -188,7 +188,7 @@
       },
       {
         "title": "自帶 AI Key",
-        "description": "可接入 Anthropic、OpenAI 等 API Key，驅動應用內 AI 顧問與每日簡報。Key 存於系統鑰匙圈——絕不上我們的伺服器。"
+        "description": "接入你自己的 Anthropic 或 OpenAI API Key，驅動應用內 AI 顧問與每日報告。Key 存放在裝置的安全儲存區——絕不上我們的伺服器。"
       },
       {
         "title": "與你常用的助手都能直連",
@@ -205,19 +205,19 @@
   "privacyFirst": {
     "eyebrow": "隱私，不只是功能",
     "title": "你的資料，留在手機裡。",
-    "subhead": "MoneyWise 以本機優先理念打造。無廣告、無追蹤、永不出售資料。",
+    "subhead": "MoneyWise 以本機優先理念打造。無廣告、永不出售資料。",
     "pillars": [
       {
         "title": "離線優先",
-        "description": "所有紀錄存放在本機加密的 SQLite 資料庫中，飛航模式下照常使用。"
+        "description": "所有紀錄都存放在你裝置上的資料庫中，App 可完全離線使用——飛航模式下也照常運作。"
       },
       {
         "title": "可選雲端同步",
-        "description": "開啟後可在你自己的裝置間同步。資料列靜止時加密存放，我們無法讀取。"
+        "description": "開啟後（Pro）即可在你的裝置間同步。資料透過加密連線（TLS）傳輸，伺服器存取規則會將其與其他帳戶隔離。"
       },
       {
         "title": "BYOK AI",
-        "description": "接入自己的 Anthropic 或 OpenAI 金鑰。金鑰存放在 iOS 鑰匙圈中，絕不經過我們的伺服器。"
+        "description": "接入自己的 Anthropic 或 OpenAI 金鑰。金鑰保存在裝置的安全儲存區（iPhone 上為鑰匙圈），AI 請求直接送往服務供應商——絕不經過我們的伺服器。"
       }
     ],
     "learn_more": "閱讀隱私權政策 →"
@@ -229,19 +229,21 @@
     "free_name": "免費版",
     "free_tagline": "單一裝置上你所需的一切。",
     "free_features": [
-      "無限紀錄、帳戶和預算",
-      "投資與持倉追蹤",
-      "AI 顧問（自備金鑰）",
-      "本機加密儲存"
+      "無限紀錄、帳戶、預算與帳單",
+      "匯入（CSV、XLSX）與 CSV 匯出",
+      "小工具、Apple Watch 與 1 個儲蓄目標",
+      "裝置端理財教練洞察",
+      "可離線使用——資料留在你的裝置上"
     ],
     "pro_name": "Pro 版",
-    "pro_tagline": "多裝置同步、備份及更多功能。",
+    "pro_tagline": "同步、家庭共享、投資與 AI 工具。",
     "pro_features": [
       "包含免費版全部功能",
-      "多裝置端對端加密雲端同步",
-      "自動雲端備份",
-      "收據與附件照片",
-      "共享 AI 額度（無需 API 金鑰）"
+      "iPhone、Android 與 Mac 雲端同步",
+      "家庭共享，支援分帳與結清",
+      "投資追蹤與即時報價",
+      "AI 顧問、收據掃描與每日報告（使用你自己的 API 金鑰）",
+      "無限目標與語音記帳，以及 MCP 擴充"
     ],
     "per_month": "/月",
     "per_year": "/年",
@@ -321,11 +323,11 @@
       {
         "id": "advisor",
         "title": "AI 顧問",
-        "description": "接入自己的 Anthropic 或 OpenAI 金鑰。顧問讀取你的本機資料並回答問題——除非你主動詢問，否則任何內容都不會離開裝置。",
+        "description": "接入自己的 Anthropic 或 OpenAI 金鑰。顧問回答關於你財務狀況的問題——請求直接從你的裝置送往你選擇的服務供應商，而且只在你主動詢問時才會發送。",
         "screenshot": "07-advisor.png",
         "bullets": [
           "支援 Anthropic Claude 或 OpenAI",
-          "金鑰存放在 iOS 鑰匙圈中",
+          "金鑰保存在裝置的安全儲存區",
           "月度支出分析",
           "投資組合再平衡建議"
         ]
@@ -333,13 +335,13 @@
       {
         "id": "security",
         "title": "安全",
-        "description": "Face ID / Touch ID 鎖定。所有資料靜止加密。可選雲端同步採用端對端加密列存放——我們無法讀取。",
+        "description": "Face ID / Touch ID 或 6 位數 PIN 碼、自動鎖定、隱藏餘額。可選的雲端同步透過加密連線（TLS）傳輸。",
         "screenshot": "06-security.png",
         "bullets": [
           "生物辨識應用程式鎖",
-          "本機 SQLite 加密",
-          "端對端加密雲端同步",
-          "無第三方分析或廣告"
+          "6 位數 PIN 碼與自動鎖定",
+          "隱藏餘額；在 App 切換器中模糊顯示",
+          "無廣告；使用統計可關閉"
         ]
       }
     ]
