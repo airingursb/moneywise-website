@@ -321,7 +321,7 @@
         },
         {
           "q": "Does MoneyWise collect analytics or crash reports?",
-          "a": "Yes, two kinds. <strong>Usage statistics</strong> (which screens and features are used) go to our self-hosted analytics server; you can turn them off in Settings › Account & Data › Security & Privacy. <strong>Crash and performance reports</strong> go to Sentry so we can find and fix bugs; these can include device details and your IP address, and the analytics switch doesn't turn them off. MoneyWise has no ads and doesn't sell your data. See the <a href=\"{privacy}\">privacy policy</a>."
+          "a": "Yes, two kinds. <strong>Usage statistics</strong> (which screens and features are used) go to our self-hosted analytics server; you can turn them off in Settings › Account & Data › Security & Privacy. <strong>Crash and performance reports</strong> go to Sentry so we can find and fix bugs; these contain the error, device model and OS version, not your IP address or financial data. The same switch turns them off. MoneyWise has no ads and doesn't sell your data. See the <a href=\"{privacy}\">privacy policy</a>."
         },
         {
           "q": "How can I lock the app?",

@@ -126,7 +126,7 @@
         },
         {
           "q": "Does MoneyWise have bank sync like Mint did?",
-          "a": "MoneyWise focuses on manual and receipt-based entry for maximum privacy. Automatic bank sync is on the roadmap. In the meantime, you can connect accounts via CSV export from your bank."
+          "a": "MoneyWise focuses on manual and receipt-based entry for maximum privacy. It does not connect to banks; you can import a CSV file exported from your bank instead."
         },
         {
           "q": "Is MoneyWise free like Mint was?",
@@ -314,7 +314,7 @@
         },
         {
           "q": "Can Spendee sync to my bank accounts?",
-          "a": "Yes — bank sync is available on Spendee's Basic (limited), Plus, and Premium tiers. MoneyWise focuses on manual entry and receipt capture for maximum privacy, with bank sync on the roadmap."
+          "a": "Yes — bank sync is available on Spendee's Basic (limited), Plus, and Premium tiers. MoneyWise focuses on manual entry and receipt capture for maximum privacy and does not connect to banks."
         },
         {
           "q": "Is Spendee available on desktop?",
@@ -470,7 +470,7 @@
         },
         {
           "q": "Does MoneyKeeper have bank sync?",
-          "a": "No — MoneyKeeper is a manual-entry app. MoneyWise is also manual-entry focused for privacy, with bank sync on the roadmap."
+          "a": "No — MoneyKeeper is a manual-entry app. MoneyWise is also manual-entry focused for privacy and does not connect to banks."
         },
         {
           "q": "Does MoneyKeeper have AI features?",
@@ -494,7 +494,7 @@
         },
         {
           "q": "Does 편한가계부 have bank sync?",
-          "a": "No — 편한가계부 is a manual entry app. MoneyWise is also manual-entry focused for privacy, with bank sync on the roadmap."
+          "a": "No — 편한가계부 is a manual entry app. MoneyWise is also manual-entry focused for privacy and does not connect to banks."
         },
         {
           "q": "Does 편한가계부 support multiple currencies?",
@@ -730,7 +730,7 @@
         },
         {
           "q": "Does 1Money support bank sync?",
-          "a": "No — 1Money is a manual-entry tracker without automatic bank sync. MoneyWise is also manual-entry today; bank sync is on the roadmap. Both apps are good choices if you prefer manual control over automatic bank connections."
+          "a": "No — 1Money is a manual-entry tracker without automatic bank sync. MoneyWise is also manual-entry and does not connect to banks. Both apps are good choices if you prefer manual control over automatic bank connections."
         },
         {
           "q": "Does 1Money work on Android?",
@@ -758,7 +758,7 @@
         },
         {
           "q": "Does MoneyCoach support automatic bank sync?",
-          "a": "Yes — MoneyCoach connects to 2,800+ European bank accounts. MoneyWise is manual-entry today with bank sync on the roadmap, which trades automation for stronger privacy: no third-party data broker access."
+          "a": "Yes — MoneyCoach connects to 2,800+ European bank accounts. MoneyWise is manual-entry and does not connect to banks, which trades automation for stronger privacy: no third-party data broker access."
         },
         {
           "q": "Does MoneyCoach support multiple currencies?",

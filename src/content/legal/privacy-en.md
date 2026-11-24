@@ -12,7 +12,7 @@ This policy explains what MoneyWise does with your data.
 ## Summary (TL;DR)
 
 - All your financial records are stored **on your device** in a local database, protected by your device's built-in security (app sandbox and, where enabled, device encryption).
-- The app sends **usage statistics** (screens and features used) to our self-hosted Umami server — you can turn this off in Settings › Account & Data › Security & Privacy — and **crash and performance reports** to Sentry so we can fix bugs. We don't run ads and don't sell your data.
+- The app sends **usage statistics** (screens and features used) to our self-hosted Umami server, and **crash and performance reports** to Sentry so we can fix bugs. One switch in Settings › Account & Data › Security & Privacy turns both off. We don't run ads and don't sell your data.
 - If you turn on **cloud sync** (Pro), your data is sent over encrypted connections (TLS) to our Supabase backend and stored in your account, separated from other users by row-level access rules. It is not end-to-end encrypted.
 - If you use the **AI advisor** with your own API key, requests go directly from your device to the AI provider. We do not route, log, or relay those requests.
 - On this website (`moneywise.ursb.me`), we use **Umami** for privacy-friendly, cookieless page view analytics. No IP addresses or identifiers are stored.
@@ -34,7 +34,7 @@ This policy explains what MoneyWise does with your data.
 
 **In-app diagnostics:**
 - Usage statistics: which screens and features are used, app version, language and device type, sent to our self-hosted Umami server. You can turn this off in Settings › Account & Data › Security & Privacy.
-- Crash and performance reports: error details, device and OS information, and your IP address, sent to Sentry. The usage-statistics switch does not turn these off.
+- Crash and performance reports: error details, stack trace, device model, OS version and app version, sent to Sentry. They do not include your IP address, account details or financial data. The same switch as usage statistics turns these off.
 
 **If you connect an AI assistant via MCP extensions** (Pro):
 - The assistant you authorise can read — and, if you allow it, create — data in your synced account through our MCP server, using the token or OAuth grant you create. You can revoke access at any time in the app.
