@@ -11,6 +11,8 @@ const i18nSchema = z.object({
     privacy: z.string(),
     pricing: z.string(),
     download: z.string(),
+    faq: z.string(),
+    help: z.string(),
   }),
   hero: z.object({
     headline_part1: z.string(),
@@ -21,6 +23,8 @@ const i18nSchema = z.object({
     stat_ads_label: z.string(),
     stat_byok_label: z.string(),
     coming_soon: z.string(),
+    badge_new: z.string(),
+    badge_text: z.string(),
   }),
   platforms: z.object({
     app_store: z.string(),
@@ -39,6 +43,9 @@ const i18nSchema = z.object({
     status_dmg_direct: z.string(),
     status_coming_soon: z.string(),
     status_in_development: z.string(),
+    status_watch: z.string(),
+    kicker_app_store: z.string(),
+    kicker_play: z.string(),
   }),
   features: z.object({
     eyebrow: z.string(),
@@ -47,6 +54,37 @@ const i18nSchema = z.object({
       title: z.string(),
       description: z.string(),
     })).length(6),
+  }),
+  whatsNew: z.object({
+    eyebrow: z.string(),
+    title: z.string(),
+    subhead: z.string(),
+    items: z.array(z.object({ title: z.string(), description: z.string() })).length(4),
+  }),
+  duo: z.object({
+    eyebrow: z.string(),
+    title_part1: z.string(),
+    title_italic: z.string(),
+    subhead: z.string(),
+    bullets: z.array(z.object({ title: z.string(), description: z.string() })).length(3),
+    alt: z.string(),
+    alt_secondary: z.string(),
+  }),
+  watch: z.object({
+    eyebrow: z.string(),
+    title_part1: z.string(),
+    title_italic: z.string(),
+    subhead: z.string(),
+    bullets: z.array(z.object({ title: z.string(), description: z.string() })).length(3),
+    alt_primary: z.string(),
+    alt_secondary: z.string(),
+    alt_tertiary: z.string(),
+  }),
+  faqTeaser: z.object({
+    eyebrow: z.string(),
+    title: z.string(),
+    subhead: z.string(),
+    cta: z.string(),
   }),
   screenshots: z.object({
     eyebrow: z.string(),
@@ -112,6 +150,10 @@ const i18nSchema = z.object({
     contact: z.string(),
     compare: z.string(),
     account_deletion: z.string(),
+    product: z.string(),
+    support: z.string(),
+    legal: z.string(),
+    terms: z.string(),
   }),
   featuresPage: z.object({
     title: z.string(),
@@ -296,5 +338,55 @@ const compareI18n = defineCollection({
 export type CompareI18nData = z.infer<typeof compareI18nSchema>;
 export type CompetitorCopy = z.infer<typeof competitorCopySchema>;
 
-export const collections = { i18n, competitors, 'compare-i18n': compareI18n };
+// FAQ + Help center copy (src/content/faq/<locale>.json). Answers may contain
+// inline HTML (links, <strong>, <code>) — authored by us, rendered with set:html.
+const faqSchema = z.object({
+  faq: z.object({
+    meta_title: z.string(),
+    meta_description: z.string(),
+    eyebrow: z.string(),
+    title: z.string(),
+    subhead: z.string(),
+    toc_label: z.string(),
+    still_title: z.string(),
+    still_body: z.string(),
+    cta_help: z.string(),
+    cta_email: z.string(),
+  }),
+  help: z.object({
+    meta_title: z.string(),
+    meta_description: z.string(),
+    eyebrow: z.string(),
+    title: z.string(),
+    subhead: z.string(),
+    start_title: z.string(),
+    start_steps: z.array(z.object({ title: z.string(), body: z.string() })).min(3),
+    topics_title: z.string(),
+    topic_cta: z.string(),
+    contact_title: z.string(),
+    contact_body: z.string(),
+    contact_email_cta: z.string(),
+    contact_inapp: z.string(),
+    links_title: z.string(),
+    link_privacy: z.string(),
+    link_delete: z.string(),
+    link_download: z.string(),
+    link_compare: z.string(),
+  }),
+  sections: z.array(z.object({
+    id: z.string().regex(/^[a-z0-9-]+$/),
+    icon: z.string(),
+    title: z.string(),
+    summary: z.string(),
+    items: z.array(z.object({ q: z.string(), a: z.string() })).min(1),
+  })).min(1),
+});
+
+const faq = defineCollection({
+  loader: glob({ pattern: '*.json', base: './src/content/faq' }),
+  schema: faqSchema,
+});
+export type FaqData = z.infer<typeof faqSchema>;
+
+export const collections = { i18n, competitors, 'compare-i18n': compareI18n, faq };
 export type I18nData = z.infer<typeof i18nSchema>;

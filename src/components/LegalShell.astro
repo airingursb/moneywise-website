@@ -1,0 +1,22 @@
+---
+/** Shared shell for legal / long-form pages. Restyles only — content comes from markdown verbatim. */
+interface Props {
+  eyebrow: string;
+  title?: string;
+  effective?: string;
+}
+const { eyebrow, effective } = Astro.props;
+---
+<main id="main">
+  <div class="container-x pt-12 md:pt-16 pb-20 md:pb-28">
+    <div class="mx-auto max-w-[46rem]">
+      <div class="flex flex-wrap items-center gap-3">
+        <span class="t-eyebrow">{eyebrow}</span>
+        {effective && <span class="text-[13px] text-fg-3 t-num">{effective}</span>}
+      </div>
+      <article class="prose prose-mw prose-base md:prose-lg max-w-none mt-4">
+        <slot />
+      </article>
+    </div>
+  </div>
+</main>

@@ -11,37 +11,59 @@ interface Props {
   t: I18nData;
 }
 const { locale, slug, t } = Astro.props;
+const cols = [
+  {
+    title: t.footer.product,
+    links: [
+      { href: pathFor(locale, 'features'), label: t.nav.features },
+      { href: `${pathFor(locale)}#pricing`, label: t.nav.pricing },
+      { href: pathFor(locale, 'compare'), label: t.footer.compare },
+      { href: `${pathFor(locale)}#download`, label: t.nav.download },
+    ],
+  },
+  {
+    title: t.footer.support,
+    links: [
+      { href: pathFor(locale, 'help'), label: t.nav.help },
+      { href: pathFor(locale, 'faq'), label: t.nav.faq },
+      { href: pathFor(locale, 'account-deletion'), label: t.footer.account_deletion },
+      { href: `mailto:${SITE.contactEmail}`, label: t.footer.contact },
+    ],
+  },
+  {
+    title: t.footer.legal,
+    links: [
+      { href: pathFor(locale, 'privacy'), label: t.nav.privacy },
+      { href: pathFor(locale, 'terms'), label: t.footer.terms },
+      { href: SITE.githubUrl, label: 'GitHub' },
+    ],
+  },
+];
 ---
 
-<footer class="border-t border-[var(--color-border)] py-12">
-  <div class="mx-auto max-w-6xl px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
-    <div>
-      <div class="flex items-center gap-2">
-        <img src="/app-icon.png" alt="" width="28" height="28" class="rounded-[7px]" />
-        <span class="text-[15px] font-bold">MoneyWise</span>
+<footer class="border-t border-line bg-bg-sunken">
+  <div class="container-x py-14 md:py-16 grid grid-cols-2 md:grid-cols-[1.4fr_1fr_1fr_1fr] gap-x-6 gap-y-10">
+    <div class="col-span-2 md:col-span-1">
+      <a href={pathFor(locale)} class="inline-flex items-center gap-2.5">
+        <img src="/app-icon.png" alt="" width="30" height="30" class="rounded-[8px]" />
+        <span class="text-[16px] font-semibold tracking-[-0.01em]">MoneyWise</span>
+      </a>
+      <p class="mt-4 text-[14px] leading-relaxed text-fg-2 max-w-[280px]">{t.footer.tagline}</p>
+      <a href={`mailto:${SITE.contactEmail}`} class="mt-4 inline-block text-[14px] text-fg-2 hover:text-accent-text break-all">{SITE.contactEmail}</a>
+    </div>
+    {cols.map((c) => (
+      <div>
+        <p class="text-[12px] uppercase tracking-[0.12em] font-semibold text-fg-3">{c.title}</p>
+        <ul class="mt-4 space-y-2.5 text-[14px]">
+          {c.links.map((l) => (
+            <li><a href={l.href} class="text-fg-2 hover:text-fg transition">{l.label}</a></li>
+          ))}
+        </ul>
       </div>
-      <p class="mt-3 text-[13px] text-[var(--color-fg-secondary)] max-w-[240px]">{t.footer.tagline}</p>
-    </div>
-    <div>
-      <p class="text-[11px] uppercase tracking-[0.12em] font-semibold text-[var(--color-fg-secondary)]">{t.footer.links_header}</p>
-      <ul class="mt-3 space-y-2 text-[14px]">
-        <li><a href={pathFor(locale, 'features')} class="hover:text-[var(--color-accent-primary)]">{t.nav.features}</a></li>
-        <li><a href={pathFor(locale, 'privacy')} class="hover:text-[var(--color-accent-primary)]">{t.nav.privacy}</a></li>
-        <li><a href={pathFor(locale, 'terms')} class="hover:text-[var(--color-accent-primary)]">Terms</a></li>
-        <li><a href={pathFor(locale, 'compare')} class="hover:text-[var(--color-accent-primary)]">{t.footer.compare}</a></li>
-        <li><a href={pathFor(locale, 'account-deletion')} class="hover:text-[var(--color-accent-primary)]">{t.footer.account_deletion}</a></li>
-        <li><a href={SITE.githubUrl} class="hover:text-[var(--color-accent-primary)]">GitHub</a></li>
-      </ul>
-    </div>
-    <div>
-      <p class="text-[11px] uppercase tracking-[0.12em] font-semibold text-[var(--color-fg-secondary)]">{t.footer.contact}</p>
-      <a href={`mailto:${SITE.contactEmail}`} class="mt-3 block text-[14px] hover:text-[var(--color-accent-primary)]">{SITE.contactEmail}</a>
-      <div class="mt-4">
-        <LocaleSwitcher current={locale} slug={slug} />
-      </div>
-    </div>
+    ))}
   </div>
-  <div class="mt-10 mx-auto max-w-6xl px-6 text-[12px] text-[var(--color-fg-secondary)]">
-    {t.footer.copyright}
+  <div class="container-x pb-10 flex flex-col-reverse sm:flex-row sm:items-center justify-between gap-4 text-[13px] text-fg-3">
+    <span>{t.footer.copyright}</span>
+    <LocaleSwitcher current={locale} slug={slug} placement="up" />
   </div>
 </footer>

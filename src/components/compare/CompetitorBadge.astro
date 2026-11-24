@@ -5,11 +5,12 @@ interface Props {
   variant?: 'self' | 'competitor';
 }
 const { name, size = 'md', variant = 'competitor' } = Astro.props;
-const sizeClass = size === 'lg' ? 'text-[28px] px-5 py-3' : size === 'sm' ? 'text-[14px] px-3 py-1.5' : 'text-[20px] px-4 py-2';
+const sizeClass = size === 'lg' ? 'text-[18px] md:text-[22px] px-4 py-2.5 md:px-5 md:py-3' : size === 'sm' ? 'text-[13.5px] px-3 py-1.5' : 'text-[18px] px-4 py-2';
 const variantClass = variant === 'self'
-  ? 'bg-[var(--color-accent-primary)] text-white'
-  : 'bg-[var(--color-surface-secondary)] text-[var(--color-fg-primary)] border border-[var(--color-border)]';
+  ? 'bg-accent text-accent-fg'
+  : 'bg-bg-elev text-fg border border-line-strong';
 ---
-<span class={`inline-flex items-center rounded-xl font-bold tracking-tight ${sizeClass} ${variantClass}`}>
+<span class={`inline-flex items-center gap-2 rounded-2xl font-semibold tracking-tight ${sizeClass} ${variantClass}`}>
+  {variant === 'self' && <img src="/app-icon.png" alt="" width="24" height="24" class="rounded-[6px] w-[1.1em] h-[1.1em]" />}
   {name}
 </span>

@@ -1,4 +1,5 @@
 ---
+import Ph from '../components/Ph.astro';
 import type { Locale } from '../config/site';
 import type { CompetitorData } from '../content.config';
 import { getI18n } from '../lib/i18n';
@@ -28,17 +29,14 @@ const grouped = regions.map((r) => ({
 ---
 <BaseLayout title={c.common.index.title} description={c.common.index.subtitle} locale={locale} slug="compare">
   <Nav locale={locale} slug="compare" t={t} />
-  <main class="mx-auto max-w-6xl px-6 py-20 md:py-24">
-    <h1 class="font-[family-name:var(--font-display)] font-bold text-[40px] md:text-[60px] leading-[1.02] tracking-[-0.035em] text-[var(--color-fg-primary)]">
-      {c.common.index.title}
-    </h1>
-    <p class="mt-5 max-w-2xl text-[17px] leading-[1.6] text-[var(--color-fg-secondary)]">
-      {c.common.index.subtitle}
-    </p>
+  <main id="main" class="container-x pt-14 pb-20 md:pt-20 md:pb-28">
+    <p class="t-eyebrow">{t.footer.compare}</p>
+    <h1 class="t-h1 mt-3 max-w-[48rem]"><Ph text={c.common.index.title} /></h1>
+    <p class="t-lead mt-5 max-w-[42rem]">{c.common.index.subtitle}</p>
     {grouped.map((g) => g.items.length > 0 && (
       <section class="mt-16">
-        <h2 class="text-[11px] uppercase tracking-[0.12em] text-[var(--color-accent-primary)] font-semibold">{g.label}</h2>
-        <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <h2 class="text-[20px] font-semibold tracking-[-0.015em] pb-4 border-b border-line"><Ph text={g.label} /></h2>
+        <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {g.items.map((competitor: CompetitorData) => (
             <CompareIndexCard
               competitor={competitor}

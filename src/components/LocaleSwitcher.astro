@@ -2,33 +2,38 @@
 import type { Locale } from '../config/site';
 import { LOCALE_LABELS, LOCALES } from '../config/site';
 import { pathFor } from '../lib/i18n';
+import Icon from './Icon.astro';
 
 interface Props {
   current: Locale;
   slug: string;
+  /** Which way the menu opens. */
+  placement?: 'down' | 'up';
 }
 
-const { current, slug } = Astro.props;
+const { current, slug, placement = 'down' } = Astro.props;
 ---
 
-<div class="relative inline-block">
-  <details class="group">
-    <summary class="list-none cursor-pointer flex items-center gap-1.5 text-sm text-[var(--color-fg-primary)] hover:text-[var(--color-accent-primary)] transition">
-      <span>{LOCALE_LABELS[current]}</span>
-      <span aria-hidden="true" class="text-xs opacity-60">▾</span>
-    </summary>
-    <div class="absolute right-0 mt-2 min-w-[140px] rounded-xl border border-[var(--color-border)] bg-white shadow-lg py-1 z-50">
-      {LOCALES.map((l) => (
-        <a
-          href={pathFor(l, slug)}
-          data-umami-event="locale_switch"
-          data-umami-event-from={current}
-          data-umami-event-to={l}
-          class={`block px-4 py-2 text-sm transition ${l === current ? 'text-[var(--color-accent-primary)] font-semibold' : 'text-[var(--color-fg-primary)] hover:bg-[var(--color-surface-secondary)]'}`}
-        >
-          {LOCALE_LABELS[l]}
-        </a>
-      ))}
-    </div>
-  </details>
-</div>
+<details class="relative group locale-switcher">
+  <summary class="list-none cursor-pointer inline-flex items-center gap-1.5 rounded-full px-2.5 py-1.5 text-[13px] text-fg-2 hover:text-fg hover:bg-bg-sunken transition [&::-webkit-details-marker]:hidden">
+    <Icon name="globe" class="w-4 h-4" />
+    <span>{LOCALE_LABELS[current]}</span>
+    <Icon name="chevron" class="w-3.5 h-3.5 opacity-60 transition group-open:rotate-180" />
+  </summary>
+  <div class={`absolute right-0 ${placement === 'up' ? 'bottom-full mb-2' : 'top-full mt-2'} min-w-[160px] card p-1.5 z-50 shadow-[var(--shadow-md)]`}>
+    {LOCALES.map((l) => (
+      <a
+        href={pathFor(l, slug)}
+        lang={l}
+        data-umami-event="locale_switch"
+        data-umami-event-from={current}
+        data-umami-event-to={l}
+        aria-current={l === current ? 'true' : undefined}
+        class={`flex items-center justify-between gap-3 rounded-lg px-3 py-2 text-sm transition ${l === current ? 'text-accent-text font-semibold bg-accent-soft' : 'text-fg hover:bg-bg-sunken'}`}
+      >
+        {LOCALE_LABELS[l]}
+        {l === current && <Icon name="check" class="w-4 h-4" />}
+      </a>
+    ))}
+  </div>
+</details>

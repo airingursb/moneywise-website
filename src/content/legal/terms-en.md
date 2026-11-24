@@ -1,11 +1,11 @@
 ---
 title: Terms of Service
-effective: 2026-04-18
+effective: 2026-11-24
 ---
 
 # Terms of Service
 
-**Effective date:** 2026-04-18
+**Effective date:** 2026-11-24
 
 These terms govern your use of the MoneyWise iOS app and this website.
 
@@ -35,7 +35,7 @@ Don't use MoneyWise to:
 
 ## 6. AI features
 
-The AI advisor uses either your own API key (Free) or pooled credits (Pro). The advisor's output may be wrong, outdated, or misleading. Do not rely on it for tax filings, investment decisions, or legal conclusions.
+AI features use your own Anthropic or OpenAI API key; you are responsible for that provider's charges and terms. The advisor's output may be wrong, outdated, or misleading. Do not rely on it for tax filings, investment decisions, or legal conclusions.
 
 ## 7. Third-party data
 

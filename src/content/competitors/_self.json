@@ -9,23 +9,23 @@
     "model": "freemium",
     "monthly": 6.99,
     "annual": 49.99,
-    "notes": "Free for unlimited records on a single device. Pro adds sync, backup, pooled AI."
+    "notes": "Free for unlimited records on a single device. Pro adds cloud sync, family sharing, investments and AI tools (with your own API key)."
   },
   "platforms": {
     "ios": true,
-    "android": false,
+    "android": true,
     "web": false,
-    "macos": false,
+    "macos": true,
     "windows": false,
     "linux": false
   },
   "features": {
     "multiCurrency": true,
     "offlineFirst": true,
-    "localEncryption": true,
+    "localEncryption": false,
     "optionalCloudSync": true,
     "byokAi": true,
-    "builtinAi": true,
+    "builtinAi": false,
     "investments": true,
     "budgets": true,
     "receiptPhotos": true,
@@ -33,12 +33,15 @@
     "bankSync": false,
     "familySharing": true,
     "noAds": true,
-    "noTrackers": true,
+    "noTrackers": false,
     "openSource": false
   },
   "sources": [
-    { "label": "MoneyWise pricing", "url": "https://moneywise.ursb.me/#pricing" }
+    {
+      "label": "MoneyWise pricing",
+      "url": "https://moneywise.ursb.me/#pricing"
+    }
   ],
-  "lastVerified": "2026-04-27",
+  "lastVerified": "2026-11-24",
   "verificationConfidence": "high"
 }

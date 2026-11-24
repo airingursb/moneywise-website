@@ -1,13 +1,15 @@
 {
   "meta": {
     "title": "MoneyWise —— AI 多幣種智能記帳 App",
-    "description": "MoneyWise 把你的每一筆帳、預算和洞察都留在手機裡。多幣種支援，自帶 AI 顧問，可選加密雲端同步。"
+    "description": "MoneyWise 把你的每一筆帳、預算和洞察都留在手機裡。多幣種支援，自帶 AI 顧問，可選雲端同步。"
   },
   "nav": {
     "features": "功能",
     "privacy": "隱私",
     "pricing": "定價",
-    "download": "下載"
+    "download": "下載",
+    "faq": "常見問題",
+    "help": "說明"
   },
   "hero": {
     "headline_part1": "記下每一筆。",
@@ -15,9 +17,11 @@
     "subhead": "帳單、預算、投資和 AI 洞察——全部存在手機裡。雲端同步是可選項，隱私保護不是。",
     "cta_secondary": "了解運作方式",
     "stat_offline_label": "離線優先",
-    "stat_ads_label": "廣告 · 追蹤器",
+    "stat_ads_label": "廣告",
     "stat_byok_label": "AI 金鑰本機存放",
-    "coming_soon": "即將登陸 App Store"
+    "coming_soon": "即將登陸 App Store",
+    "badge_new": "1.8 新功能",
+    "badge_text": "儲蓄目標、深色模式、小工具等等"
   },
   "platforms": {
     "app_store": "App Store",
@@ -29,39 +33,134 @@
     "mac": "Mac",
     "ipad": "iPad",
     "apple_watch": "Apple Watch",
-    "status_available": "已上架 · iPhone, iOS 16+",
+    "status_available": "已上架 · iPhone, iOS 15+",
     "status_available_mac": "已上架 · macOS 13+",
     "status_beta": "內測中 · 僅限邀請",
     "status_apk_direct": "APK · Android 8+ · Pro 升級請透過 Play Store",
     "status_dmg_direct": "DMG · macOS 13+ · Pro 升級走網頁",
     "status_coming_soon": "即將上線 · Mac App Store",
-    "status_in_development": "開發中"
+    "status_in_development": "開發中",
+    "status_watch": "已上架 · watchOS 10+",
+    "kicker_app_store": "下載自",
+    "kicker_play": "立即前往"
   },
   "features": {
     "eyebrow": "為真實生活而生",
     "title": "關於你的錢，一個 App 搞定一切。",
     "items": [
-      { "title": "儀表板", "description": "一眼掌握淨資產、趨勢和即將到期的帳單。" },
-      { "title": "記帳", "description": "快速輸入、語音記帳、收據拍照、行事曆檢視。" },
-      { "title": "帳戶", "description": "存款、信用卡、現金——支援任意幣種。" },
-      { "title": "投資", "description": "即時報價、持倉分布、逐檔持倉歷史紀錄。" },
-      { "title": "預算", "description": "按類別設定月度預算，支援進度追蹤和類別轉移。" },
-      { "title": "AI 顧問", "description": "接入自己的 Anthropic 或 OpenAI 金鑰，獲取本機 AI 洞察。" }
+      {
+        "title": "儀表板",
+        "description": "一眼掌握淨資產、趨勢和即將到期的帳單。"
+      },
+      {
+        "title": "記帳",
+        "description": "快速輸入、語音記帳、收據拍照、行事曆檢視。"
+      },
+      {
+        "title": "帳戶",
+        "description": "存款、信用卡、現金——支援任意幣種。"
+      },
+      {
+        "title": "投資",
+        "description": "即時報價、持倉分布、逐檔持倉歷史紀錄。"
+      },
+      {
+        "title": "預算",
+        "description": "按類別設定月度預算，支援進度追蹤和類別轉移。"
+      },
+      {
+        "title": "AI 顧問",
+        "description": "使用你自己的 Anthropic 或 OpenAI 金鑰——請求直接從你的裝置送往服務供應商。"
+      }
     ]
+  },
+  "whatsNew": {
+    "eyebrow": "1.8 新功能",
+    "title": "小地方，讓它更像你的。",
+    "subhead": "這次更新聚焦在日常：為目標存錢、更快記帳，還有不必打開 App 也能看到你的數字。",
+    "items": [
+      {
+        "title": "儲蓄目標",
+        "description": "設定目標金額與日期。可依連結帳戶的餘額或手動紀錄追蹤進度，並清楚看到每個月需要存下多少。"
+      },
+      {
+        "title": "深色模式",
+        "description": "每個畫面都經過細心調校的深色主題。可跟隨系統，也可自行選擇淺色或深色。"
+      },
+      {
+        "title": "分享即記帳",
+        "description": "從任何 App 將收據照片、訊息或 CSV/XLSX 帳單分享到 MoneyWise，就能變成一筆紀錄，或直接開啟匯入工具。"
+      },
+      {
+        "title": "主畫面與鎖定畫面小工具",
+        "description": "今日支出與預算一眼掌握，iPhone 主畫面、鎖定畫面以及 Android 主畫面都能使用。"
+      }
+    ]
+  },
+  "duo": {
+    "eyebrow": "摺疊 iPhone",
+    "title_part1": "展開它，",
+    "title_italic": "看見兩倍內容。",
+    "subhead": "在摺疊 iPhone 上，MoneyWise 會展開成真正的雙欄版面：一側是清單，另一側是詳細資料，重要內容都不會落在摺痕上。",
+    "bullets": [
+      {
+        "title": "書本模式，雙欄並陳",
+        "description": "「帳戶」與「活動」會將清單和詳細資料並排顯示，瀏覽與查看不必來回點按。"
+      },
+      {
+        "title": "圍繞摺痕而設計",
+        "description": "摺痕上不放任何控制項。纖細的標籤列移到狀態列區域，讓內容享有完整寬度。"
+      },
+      {
+        "title": "半展開也好用",
+        "description": "像筆電一樣立起來，標籤列依然穩穩待在原位，長清單也有舒適的閱讀寬度。"
+      }
+    ],
+    "alt": "摺疊 iPhone 上的 MoneyWise：帳戶列表與帳戶詳情並排顯示",
+    "alt_secondary": "摺疊 iPhone 上的 MoneyWise：記錄列表與交易詳情並排顯示"
+  },
+  "watch": {
+    "eyebrow": "Apple Watch",
+    "title_part1": "你的預算，",
+    "title_italic": "就在手腕上。",
+    "subhead": "幾秒內就能查看還能花多少、記下一筆支出，不必拿出手機。",
+    "bullets": [
+      {
+        "title": "還能花多少，一眼掌握",
+        "description": "今日支出、本月預算已用多少，以及最近五筆交易。"
+      },
+      {
+        "title": "快速記帳",
+        "description": "用數字鍵盤或數位錶冠輸入金額，選好類別與帳戶就完成。不在 iPhone 身邊時記下的項目，會在回到連線範圍後自動同步。"
+      },
+      {
+        "title": "複雜功能",
+        "description": "把可自由支配金額、今日支出，或一點即可記帳的「新增」按鈕直接放上錶面。"
+      }
+    ],
+    "alt_primary": "Apple Watch 上的 MoneyWise，顯示本月還能花多少",
+    "alt_secondary": "Apple Watch 上的 MoneyWise，顯示最近 5 筆交易",
+    "alt_tertiary": "Apple Watch 上的 MoneyWise：快速記帳，輸入金額"
+  },
+  "faqTeaser": {
+    "eyebrow": "常見問題",
+    "title": "你的疑問，這裡有解答。",
+    "subhead": "同步、家庭共享、Pro、匯入與匯出——大家最常問的問題都在這裡。",
+    "cta": "閱讀完整常見問題"
   },
   "screenshots": {
     "eyebrow": "看看實際效果",
     "title": "專為 iPhone 打造的原生體驗。",
     "captions": [
-      "儀表板——淨資產與每日動態",
-      "記帳——快速輸入，依日分組",
-      "每日簡報——每天早晨一行摘要",
-      "預算——進度追蹤與類別明細",
-      "投資——持倉概覽與資產分布",
-      "安全——生物辨識鎖定，本機加密",
-      "AI 顧問——BYOK 洞察",
-      "家庭——伴侶共享工作空間",
-      "資產報告——跨帳戶年度彙總"
+      "首頁——淨資產、預算與近期動態",
+      "帳戶——多幣種帳戶與卡片",
+      "記錄——按天分組，跨幣種",
+      "預算——進度節奏與類別明細",
+      "投資——持倉與報酬",
+      "儲蓄目標——每個目標的進度",
+      "AI 顧問——使用你自己的金鑰",
+      "資產報告——淨資產趨勢與組成",
+      "記一筆——金額、類別與帳戶"
     ]
   },
   "mac": {
@@ -69,7 +168,7 @@
     "title_part1": "同一份帳本，",
     "title_italic": "在你信賴的 Mac 上",
     "title_part2": "。",
-    "subhead": "側邊欄架構、多欄視圖、⌘ 鍵驅動導覽。記帳、投資、報表以桌面節奏鋪開——同樣本機優先的資料，同樣端到端加密的同步。",
+    "subhead": "側邊欄架構、多欄視圖、⌘ 鍵驅動導覽。記帳、投資、報表以桌面節奏鋪開——同樣本機優先的資料，同樣的雲端同步。",
     "captions": [
       "儀表板——淨資產一圖盡覽",
       "記帳——橫向帳本，快速篩選",
@@ -91,7 +190,7 @@
       },
       {
         "title": "自帶 AI Key",
-        "description": "可接入 Anthropic、OpenAI 等 API Key，驅動應用內 AI 顧問與每日簡報。Key 存於系統鑰匙圈——絕不上我們的伺服器。"
+        "description": "接入你自己的 Anthropic 或 OpenAI API Key，驅動應用內 AI 顧問與每日報告。Key 存放在裝置的安全儲存區——絕不上我們的伺服器。"
       },
       {
         "title": "與你常用的助手都能直連",
@@ -99,16 +198,29 @@
       }
     ],
     "clients_label": "已對接客戶端",
-    "clients": ["Claude Desktop", "Cursor", "其他 MCP 客戶端"]
+    "clients": [
+      "Claude Desktop",
+      "Cursor",
+      "其他 MCP 客戶端"
+    ]
   },
   "privacyFirst": {
     "eyebrow": "隱私，不只是功能",
     "title": "你的資料，留在手機裡。",
-    "subhead": "MoneyWise 以本機優先理念打造。無廣告、無追蹤、永不出售資料。",
+    "subhead": "MoneyWise 以本機優先理念打造。無廣告、永不出售資料。",
     "pillars": [
-      { "title": "離線優先", "description": "所有紀錄存放在本機加密的 SQLite 資料庫中，飛航模式下照常使用。" },
-      { "title": "可選雲端同步", "description": "開啟後可在你自己的裝置間同步。資料列靜止時加密存放，我們無法讀取。" },
-      { "title": "BYOK AI", "description": "接入自己的 Anthropic 或 OpenAI 金鑰。金鑰存放在 iOS 鑰匙圈中，絕不經過我們的伺服器。" }
+      {
+        "title": "離線優先",
+        "description": "所有紀錄都存放在你裝置上的資料庫中，App 可完全離線使用——飛航模式下也照常運作。"
+      },
+      {
+        "title": "可選雲端同步",
+        "description": "開啟後（Pro）即可在你的裝置間同步。資料透過加密連線（TLS）傳輸，伺服器存取規則會將其與其他帳戶隔離。"
+      },
+      {
+        "title": "BYOK AI",
+        "description": "接入自己的 Anthropic 或 OpenAI 金鑰。金鑰保存在裝置的安全儲存區（iPhone 上為鑰匙圈），AI 請求直接送往服務供應商——絕不經過我們的伺服器。"
+      }
     ],
     "learn_more": "閱讀隱私權政策 →"
   },
@@ -119,19 +231,21 @@
     "free_name": "免費版",
     "free_tagline": "單一裝置上你所需的一切。",
     "free_features": [
-      "無限紀錄、帳戶和預算",
-      "投資與持倉追蹤",
-      "AI 顧問（自備金鑰）",
-      "本機加密儲存"
+      "無限紀錄、帳戶、預算與帳單",
+      "匯入（CSV、XLSX）與 CSV 匯出",
+      "小工具、Apple Watch 與 1 個儲蓄目標",
+      "裝置端理財教練洞察",
+      "可離線使用——資料留在你的裝置上"
     ],
     "pro_name": "Pro 版",
-    "pro_tagline": "多裝置同步、備份及更多功能。",
+    "pro_tagline": "同步、家庭共享、投資與 AI 工具。",
     "pro_features": [
       "包含免費版全部功能",
-      "多裝置端對端加密雲端同步",
-      "自動雲端備份",
-      "收據與附件照片",
-      "共享 AI 額度（無需 API 金鑰）"
+      "iPhone、Android 與 Mac 雲端同步",
+      "家庭共享，支援分帳與結清",
+      "投資追蹤與即時報價",
+      "AI 顧問、收據掃描與每日報告（使用你自己的 API 金鑰）",
+      "無限目標與語音記帳，以及 MCP 擴充"
     ],
     "per_month": "/月",
     "per_year": "/年",
@@ -150,7 +264,11 @@
     "copyright": "© 2026 Airing. 保留所有權利。",
     "contact": "聯絡我們",
     "compare": "競品對比",
-    "account_deletion": "刪除帳號"
+    "account_deletion": "刪除帳號",
+    "product": "產品",
+    "support": "支援",
+    "legal": "法律",
+    "terms": "服務條款"
   },
   "featuresPage": {
     "title": "每一項功能，一目了然。",
@@ -207,11 +325,11 @@
       {
         "id": "advisor",
         "title": "AI 顧問",
-        "description": "接入自己的 Anthropic 或 OpenAI 金鑰。顧問讀取你的本機資料並回答問題——除非你主動詢問，否則任何內容都不會離開裝置。",
+        "description": "接入自己的 Anthropic 或 OpenAI 金鑰。顧問回答關於你財務狀況的問題——請求直接從你的裝置送往你選擇的服務供應商，而且只在你主動詢問時才會發送。",
         "screenshot": "07-advisor.png",
         "bullets": [
           "支援 Anthropic Claude 或 OpenAI",
-          "金鑰存放在 iOS 鑰匙圈中",
+          "金鑰保存在裝置的安全儲存區",
           "月度支出分析",
           "投資組合再平衡建議"
         ]
@@ -219,13 +337,13 @@
       {
         "id": "security",
         "title": "安全",
-        "description": "Face ID / Touch ID 鎖定。所有資料靜止加密。可選雲端同步採用端對端加密列存放——我們無法讀取。",
+        "description": "Face ID / Touch ID 或 6 位數 PIN 碼、自動鎖定、隱藏餘額。可選的雲端同步透過加密連線（TLS）傳輸。",
         "screenshot": "06-security.png",
         "bullets": [
           "生物辨識應用程式鎖",
-          "本機 SQLite 加密",
-          "端對端加密雲端同步",
-          "無第三方分析或廣告"
+          "6 位數 PIN 碼與自動鎖定",
+          "隱藏餘額；在 App 切換器中模糊顯示",
+          "無廣告；使用統計可關閉"
         ]
       }
     ]

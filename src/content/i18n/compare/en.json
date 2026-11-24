@@ -58,25 +58,25 @@
     "advantages": [
       {
         "title": "Offline-first by design",
-        "description": "Every record is in an encrypted SQLite database on your phone. Works in airplane mode."
+        "description": "Every record is in a SQLite database on your phone. Works in airplane mode."
       },
       {
         "title": "Bring your own AI key",
-        "description": "Plug in your Anthropic or OpenAI key. Insights run with no extra subscription. Or use pooled credits in Pro."
+        "description": "Plug in your own Anthropic or OpenAI key — requests go straight from your device to the provider, and you pay the provider directly for what you use."
       },
       {
         "title": "Multi-currency from day one",
         "description": "Hold accounts in any currency. Convert with daily rates. No 'home currency only' lock-in."
       },
       {
-        "title": "No ads, no trackers",
-        "description": "Nothing leaves your device unless you turn on optional encrypted sync. We literally cannot read your data."
+        "title": "No ads, no data sale",
+        "description": "No ads, and your records stay on your device unless you turn on optional cloud sync. We don't sell your data."
       }
     ],
     "ai_deep_dive": {
       "eyebrow": "AI you control",
       "title": "An advisor that runs on your terms",
-      "description": "Most finance apps either don't have AI, or send your transactions to a vendor's server. MoneyWise lets you choose: bring your own Anthropic or OpenAI key, or use Pro's pooled credits. Either way, the AI sees only what you ask it to see.",
+      "description": "Most finance apps either don't have AI, or send your transactions to a vendor's server. MoneyWise lets you choose: bring your own Anthropic or OpenAI key, and requests go straight from your device to the provider. Either way, the AI sees only what you ask it to see.",
       "bullets": [
         "Keys stored in iOS Keychain — never on our servers",
         "Daily Brief, monthly summaries, and ad-hoc Q&A",
@@ -118,11 +118,11 @@
         },
         {
           "q": "Can I import my old Mint data into MoneyWise?",
-          "a": "MoneyWise doesn't have a one-click Mint CSV importer yet. You can export your Mint transactions as CSV from Credit Karma and manually import the most important accounts to start fresh."
+          "a": "Yes. Export your transactions as CSV, then import them in MoneyWise — it reads any CSV or Excel (XLSX) file and lets you map the columns. There's no dedicated one-click Mint importer."
         },
         {
           "q": "How is MoneyWise different from what Mint offered?",
-          "a": "Mint was free but ad-supported and stored all your data on Intuit's servers. MoneyWise is local-first — your data stays on your device in an encrypted database, with no ads and no trackers."
+          "a": "Mint was free but ad-supported and stored all your data on Intuit's servers. MoneyWise is local-first — your data stays on your device, with no ads."
         },
         {
           "q": "Does MoneyWise have bank sync like Mint did?",
@@ -130,7 +130,7 @@
         },
         {
           "q": "Is MoneyWise free like Mint was?",
-          "a": "MoneyWise is free for unlimited records on a single device. Pro ($6.99/mo or $49.99/yr) adds multi-device sync, backup, and AI. Unlike Mint's free model, there are no ads or data brokering."
+          "a": "MoneyWise is free for unlimited records on a single device. Pro ($6.99/mo or $49.99/yr) adds multi-device sync, family sharing, and AI (with your own key). Unlike Mint's free model, there are no ads or data brokering."
         }
       ]
     },
@@ -138,7 +138,7 @@
       "one_liner": "a freemium subscription-tracker with AI",
       "positioning": "Rocket Money (formerly Truebill) blends budgeting with an AI-powered subscription cancellation service, bank sync, and a generous free tier. MoneyWise trades cloud automation for local-first privacy, multi-currency tracking, and BYOK AI.",
       "when_choose_competitor": "You have lots of unwanted subscriptions to cancel, you want a free budgeting app with automatic bank sync, and you're comfortable with an ad-supported model backed by Rocket Companies.",
-      "when_choose_moneywise": "You want your financial data stored locally with no trackers, you travel internationally and need multi-currency support, or you want a clean AI advisor using your own key rather than a built-in black box.",
+      "when_choose_moneywise": "You want your financial data stored locally with no ads, you travel internationally and need multi-currency support, or you want a clean AI advisor using your own key rather than a built-in black box.",
       "faq": [
         {
           "q": "Is Rocket Money actually free?",
@@ -154,7 +154,7 @@
         },
         {
           "q": "How does Rocket Money compare to MoneyWise on privacy?",
-          "a": "Rocket Money is owned by Rocket Companies and earns revenue through ads, upsells, and data partnerships. MoneyWise stores your data locally with no ads and no trackers — nothing leaves your device unless you opt into encrypted cloud sync."
+          "a": "Rocket Money is owned by Rocket Companies and earns revenue through ads, upsells, and data partnerships. MoneyWise stores your data locally with no ads — your records stay on your device unless you opt into cloud sync."
         },
         {
           "q": "Does Rocket Money have family or couple sharing?",
@@ -182,11 +182,11 @@
         },
         {
           "q": "Where does Monarch Money store my data?",
-          "a": "Monarch stores your linked bank data on their servers via Plaid and Finicity. MoneyWise keeps everything in an encrypted database on your device; cloud sync is optional and end-to-end encrypted."
+          "a": "Monarch stores your linked bank data on their servers via Plaid and Finicity. MoneyWise keeps everything in a database on your device; cloud sync is optional (Pro)."
         },
         {
           "q": "Does Monarch Money have AI features?",
-          "a": "Monarch Money has some AI-powered categorization and reporting. MoneyWise has an AI advisor using your own Anthropic or OpenAI key — giving you AI insights without your full transaction history being processed by a third party."
+          "a": "Monarch Money has some AI-powered categorization and reporting. MoneyWise has an AI advisor using your own Anthropic or OpenAI key — requests go straight from your device to the provider you choose, only when you use an AI feature, rather than through a vendor's server."
         },
         {
           "q": "Is Monarch Money good for couples?",
@@ -194,7 +194,7 @@
         },
         {
           "q": "Can I import my Monarch Money data into MoneyWise?",
-          "a": "MoneyWise doesn't yet have a direct Monarch importer. You can export transactions as CSV from Monarch and re-enter key accounts in MoneyWise to get started."
+          "a": "Yes. Export your transactions as CSV from Monarch and import them in MoneyWise — it reads any CSV or Excel (XLSX) file and lets you map the columns. There's no dedicated one-click Monarch importer."
         }
       ]
     },
@@ -222,7 +222,7 @@
         },
         {
           "q": "Where does Copilot store my financial data?",
-          "a": "Copilot syncs your bank data through Plaid and stores it on Copilot's servers. MoneyWise stores everything on your device in an encrypted database; cloud sync is optional and encrypted end-to-end."
+          "a": "Copilot syncs your bank data through Plaid and stores it on Copilot's servers. MoneyWise stores everything on your device; cloud sync is optional (Pro)."
         },
         {
           "q": "Can I use both Copilot and MoneyWise?",
@@ -238,7 +238,7 @@
       "faq": [
         {
           "q": "Can I import my YNAB data into MoneyWise?",
-          "a": "Today, no automatic importer. You can re-create accounts and start fresh. YNAB users tend to onboard quickly because they already think in categories."
+          "a": "There's no dedicated YNAB importer, but you can export your YNAB register as CSV and import it with MoneyWise's generic CSV/XLSX import, mapping the columns yourself. YNAB users tend to onboard quickly because they already think in categories."
         },
         {
           "q": "Does MoneyWise do zero-based budgeting?",
@@ -246,11 +246,11 @@
         },
         {
           "q": "Will MoneyWise work without internet?",
-          "a": "Yes. Every record is on your phone in an encrypted database. The app is fully usable in airplane mode."
+          "a": "Yes. Every record is on your phone. The app is fully usable in airplane mode."
         },
         {
           "q": "How is MoneyWise's pricing different from YNAB's?",
-          "a": "MoneyWise is free for unlimited records on one device. Pro adds multi-device sync, backup, and pooled AI for $6.99/mo or $49.99/yr. YNAB is subscription-only at $14.99/mo or $109/yr."
+          "a": "MoneyWise is free for unlimited records on one device. Pro adds multi-device sync, family sharing, investments and AI tools (with your own key) for $6.99/mo or $49.99/yr. YNAB is subscription-only at $14.99/mo or $109/yr."
         },
         {
           "q": "Does MoneyWise have AI like the new YNAB features?",
@@ -274,11 +274,11 @@
         },
         {
           "q": "How does Empower differ from MoneyWise?",
-          "a": "Empower is built around investment portfolios and retirement planning — it shines for wealth tracking. MoneyWise is built around everyday budgeting, manual entry for privacy, multi-currency accounts, and a local-first encrypted database. They serve different primary needs."
+          "a": "Empower is built around investment portfolios and retirement planning — it shines for wealth tracking. MoneyWise is built around everyday budgeting, manual entry for privacy, multi-currency accounts, and local-first storage on your device. They serve different primary needs."
         },
         {
           "q": "Does Empower store my financial data on their servers?",
-          "a": "Yes. Empower syncs all linked accounts to their cloud servers to power its dashboards. MoneyWise stores your data locally on your device in an encrypted database, with optional end-to-end encrypted cloud sync."
+          "a": "Yes. Empower syncs all linked accounts to their cloud servers to power its dashboards. MoneyWise stores your data locally on your device, with optional cloud sync."
         },
         {
           "q": "Does Empower support multiple currencies?",
@@ -292,9 +292,9 @@
     },
     "spendee": {
       "one_liner": "a multi-currency expense tracker popular in Europe",
-      "positioning": "Spendee is a freemium expense tracker with strong multi-currency support, wallet sharing, and bank sync — widely used in Europe. Both Spendee and MoneyWise support multi-currency accounts, but MoneyWise's local-first encrypted storage and BYOK AI give privacy-conscious users a unique edge.",
+      "positioning": "Spendee is a freemium expense tracker with strong multi-currency support, wallet sharing, and bank sync — widely used in Europe. Both Spendee and MoneyWise support multi-currency accounts, but MoneyWise's local-first storage and BYOK AI give privacy-conscious users a unique edge.",
       "when_choose_competitor": "You want a polished visual expense tracker with wallet sharing for groups or couples, multi-currency support, and don't mind a modest monthly subscription for bank sync features.",
-      "when_choose_moneywise": "You want your financial data stored locally in an encrypted database, you travel with multiple currencies and need robust tracking, or you want to use your own AI key for financial insights without your data leaving your device.",
+      "when_choose_moneywise": "You want your financial data stored locally on your device, you travel with multiple currencies and need robust tracking, or you want to use your own AI key for financial insights without your data leaving your device.",
       "faq": [
         {
           "q": "How does Spendee pricing compare to MoneyWise?",
@@ -302,11 +302,11 @@
         },
         {
           "q": "Does Spendee store data locally or in the cloud?",
-          "a": "Spendee syncs your data to the cloud. MoneyWise stores your data locally in an encrypted database on your device, with optional end-to-end encrypted cloud sync available in the Pro plan."
+          "a": "Spendee syncs your data to the cloud. MoneyWise stores your data locally in a database on your device, with optional cloud sync available in the Pro plan."
         },
         {
           "q": "Both apps support multi-currency — what's different?",
-          "a": "Spendee's multi-currency support is well-regarded for group wallets and travel. MoneyWise adds local-first encryption so your multi-currency data stays private on device, plus BYOK AI for analyzing spending in any currency."
+          "a": "Spendee's multi-currency support is well-regarded for group wallets and travel. MoneyWise is local-first, so your multi-currency data stays on your device by default, plus BYOK AI for analyzing spending in any currency."
         },
         {
           "q": "Does Spendee have AI features?",
@@ -318,7 +318,7 @@
         },
         {
           "q": "Is Spendee available on desktop?",
-          "a": "Spendee has a web interface; its primary experience is on iOS and Android. MoneyWise also has iOS, Android, and web support."
+          "a": "Spendee has a web interface; its primary experience is on iOS and Android. MoneyWise runs on iPhone, Android and Mac, with an Apple Watch app — there's no web version."
         }
       ]
     },
@@ -342,15 +342,15 @@
         },
         {
           "q": "Where does PocketGuard store my financial data?",
-          "a": "PocketGuard syncs linked accounts to their cloud servers. MoneyWise stores all data in an encrypted database on your device, with optional end-to-end encrypted cloud sync in the Pro plan."
+          "a": "PocketGuard syncs linked accounts to their cloud servers. MoneyWise stores all data in a database on your device, with optional cloud sync in the Pro plan."
         },
         {
           "q": "Does PocketGuard have AI features?",
-          "a": "PocketGuard Plus includes an AI chat assistant for spending guidance. MoneyWise Pro offers a BYOK AI advisor using your own Anthropic or OpenAI key, so your full transaction history is never sent to a third party."
+          "a": "PocketGuard Plus includes an AI chat assistant for spending guidance. MoneyWise Pro offers a BYOK AI advisor using your own Anthropic or OpenAI key, so requests go straight from your device to the provider you choose rather than through a vendor's server."
         },
         {
           "q": "Is there a web version of PocketGuard?",
-          "a": "PocketGuard is primarily a mobile app for iOS and Android; a full web version is not available. MoneyWise supports iOS, Android, and web."
+          "a": "PocketGuard is primarily a mobile app for iOS and Android; a full web version is not available. MoneyWise runs on iPhone, Android and Mac, with an Apple Watch app — there's no web version either."
         }
       ]
     },
@@ -358,7 +358,7 @@
       "one_liner": "China's largest personal-finance app with bank sync and voice input",
       "positioning": "随手记 (Feidee Money Manager) is the most widely used personal-finance app in China, made by 随手科技 (Feidee). It offers bank sync via Chinese bank partnerships, investment tracking, receipt photos, and voice input. MoneyWise brings local-first privacy, multi-currency support, and BYOK AI to users who need more than a China-centric cloud platform.",
       "when_choose_competitor": "You are based in mainland China, want seamless sync with Chinese bank accounts, prefer a feature-rich app with a large local community, and are comfortable with a cloud-based, ad-supported freemium model.",
-      "when_choose_moneywise": "You handle multiple currencies, want your financial data stored locally on your device with no ads or trackers, need an AI advisor you fully control with your own API key, or you are outside mainland China where 随手记's bank sync does not function.",
+      "when_choose_moneywise": "You handle multiple currencies, want your financial data stored locally on your device with no ads, need an AI advisor you fully control with your own API key, or you are outside mainland China where 随手记's bank sync does not function.",
       "faq": [
         {
           "q": "Is 随手记 available outside mainland China?",
@@ -370,7 +370,7 @@
         },
         {
           "q": "Does 随手记 store my data locally or in the cloud?",
-          "a": "随手记 syncs data to Feidee's cloud servers. MoneyWise stores everything in an encrypted database on your device. Cloud sync in MoneyWise is optional and end-to-end encrypted."
+          "a": "随手记 syncs data to Feidee's cloud servers. MoneyWise stores everything in a database on your device. Cloud sync in MoneyWise is optional (Pro)."
         },
         {
           "q": "Does 随手记 support multiple currencies?",
@@ -390,7 +390,7 @@
       "one_liner": "a lightweight, design-forward expense tracker for the Chinese market",
       "positioning": "鲨鱼记账 is a clean, minimalist expense tracker popular in China for its attractive design and simple user experience. It focuses on daily expense logging with budgets and receipt photos. MoneyWise offers broader platform reach, multi-currency support, local-first privacy, and BYOK AI.",
       "when_choose_competitor": "You want an extremely simple, visually clean expense tracker for everyday CNY spending, and you prefer a very low-cost annual VIP option (about ¥25/yr) on iOS or Android.",
-      "when_choose_moneywise": "You handle multiple currencies, want your financial data stored locally in an encrypted database, need more than basic budgeting and receipt capture, or want an AI advisor powered by your own API key.",
+      "when_choose_moneywise": "You handle multiple currencies, want your financial data stored locally on your device, need more than basic budgeting and receipt capture, or want an AI advisor powered by your own API key.",
       "faq": [
         {
           "q": "Is 鲨鱼记账 available outside China?",
@@ -398,11 +398,11 @@
         },
         {
           "q": "How does 鲨鱼记账 pricing compare to MoneyWise?",
-          "a": "鲨鱼记账 VIP is approximately ¥25/year (about $3.50/yr) — one of the cheapest upgrade options available. MoneyWise is free on a single device; Pro is $6.99/mo or $49.99/yr and includes sync, backup, and AI."
+          "a": "鲨鱼记账 VIP is approximately ¥25/year (about $3.50/yr) — one of the cheapest upgrade options available. MoneyWise is free on a single device; Pro is $6.99/mo or $49.99/yr and includes sync, family sharing, and AI (with your own key)."
         },
         {
           "q": "Does 鲨鱼记账 have bank sync?",
-          "a": "No — 鲨鱼记账 is a manual-entry app. MoneyWise is also manual-entry focused, which keeps both apps private by default, though MoneyWise adds local encrypted storage."
+          "a": "No — 鲨鱼记账 is a manual-entry app. MoneyWise is also manual-entry focused, which keeps both apps private by default, though MoneyWise adds multi-currency accounts and BYOK AI."
         },
         {
           "q": "Does 鲨鱼记账 support multiple currencies?",
@@ -414,23 +414,23 @@
         },
         {
           "q": "Is there a web version of 鲨鱼记账?",
-          "a": "鲨鱼记账 is mobile-only (iOS and Android). MoneyWise additionally offers a web interface alongside its mobile apps."
+          "a": "鲨鱼记账 is mobile-only (iOS and Android). MoneyWise additionally offers a Mac app and an Apple Watch app alongside its mobile apps."
         }
       ]
     },
     "qianji": {
       "one_liner": "a privacy-conscious, offline-first Chinese expense tracker",
-      "positioning": "钱迹 (Qianji) is a privacy-focused Chinese expense tracker that explicitly markets 'won't upload your data' (不会上传你的数据). It stores records locally by default, supports WebDAV for optional self-hosted sync, and has no ads or trackers — values it shares with MoneyWise. Where MoneyWise goes further: BYOK AI, multi-currency, and cross-platform reach beyond iOS/Android.",
+      "positioning": "钱迹 (Qianji) is a privacy-focused Chinese expense tracker that explicitly markets 'won't upload your data' (不会上传你的数据). It stores records locally by default, supports WebDAV for optional self-hosted sync, and has no ads — values it shares with MoneyWise. Where MoneyWise goes further: BYOK AI, multi-currency, and cross-platform reach beyond iOS/Android.",
       "when_choose_competitor": "If you want a fully offline, local-storage-focused Chinese expense tracker with a one-time purchase model and no subscription, 钱迹 is an excellent choice. 如果你想要一个完全离线、专注于本地存储的中文记账工具，钱迹是非常好的选择。",
-      "when_choose_moneywise": "You need multi-currency support for international accounts, want an AI advisor powered by your own API key, need a web interface beyond mobile, or you are outside China and want an app designed for a global audience.",
+      "when_choose_moneywise": "You need multi-currency support for international accounts, want an AI advisor powered by your own API key, want a Mac app alongside mobile, or you are outside China and want an app designed for a global audience.",
       "faq": [
         {
           "q": "Do 钱迹 and MoneyWise share the same privacy philosophy?",
-          "a": "Yes — both apps are built on the principle that your financial data should stay on your device. 钱迹 explicitly says it won't upload your data. MoneyWise stores everything in an encrypted SQLite database on-device; cloud sync is optional and end-to-end encrypted. This makes 钱迹 MoneyWise's closest sibling in the Chinese-app space."
+          "a": "Yes — both apps are built on the principle that your financial data should stay on your device. 钱迹 explicitly says it won't upload your data. MoneyWise stores everything in a SQLite database on your device; cloud sync is optional (Pro). This makes 钱迹 MoneyWise's closest sibling in the Chinese-app space."
         },
         {
           "q": "How does 钱迹's cloud sync work compared to MoneyWise?",
-          "a": "钱迹 supports WebDAV-based sync — you can use your own cloud storage (e.g., Nextcloud) to sync data. MoneyWise Pro uses end-to-end encrypted cloud sync managed by MoneyWise, without requiring you to set up your own server."
+          "a": "钱迹 supports WebDAV-based sync — you can use your own cloud storage (e.g., Nextcloud) to sync data. MoneyWise Pro uses cloud sync managed by MoneyWise, without requiring you to set up your own server."
         },
         {
           "q": "Does 钱迹 support multiple currencies?",
@@ -442,19 +442,19 @@
         },
         {
           "q": "How does 钱迹 pricing compare to MoneyWise?",
-          "a": "钱迹 uses a one-time in-app purchase to unlock the Pro version — no recurring subscription. MoneyWise is free on a single device; Pro is $6.99/mo or $49.99/yr with sync, backup, and AI. If you prefer to avoid subscriptions entirely, 钱迹's one-time model is appealing."
+          "a": "钱迹 uses a one-time in-app purchase to unlock the Pro version — no recurring subscription. MoneyWise is free on a single device; Pro is $6.99/mo or $49.99/yr with sync, family sharing, and AI (with your own key). If you prefer to avoid subscriptions entirely, 钱迹's one-time model is appealing."
         },
         {
           "q": "Is 钱迹 available on web or desktop?",
-          "a": "钱迹 is mobile-only (iOS and Android). MoneyWise also supports a web interface, which is useful when you are at a computer and want to review your finances."
+          "a": "钱迹 is mobile-only (iOS and Android). MoneyWise also has a Mac app, which is useful when you are at a computer and want to review your finances."
         }
       ]
     },
     "moneykeeper": {
       "one_liner": "a Chinese-developed multi-currency expense tracker",
-      "positioning": "MoneyKeeper (记账本) is a Chinese-developed expense tracker with a cross-border audience. It supports multi-currency tracking, budgets, and receipt photos — features that make it useful for travelers. MoneyWise goes further with local-first encrypted storage, BYOK AI, optional cloud sync, and no ads.",
+      "positioning": "MoneyKeeper (记账本) is a Chinese-developed expense tracker with a cross-border audience. It supports multi-currency tracking, budgets, and receipt photos — features that make it useful for travelers. MoneyWise goes further with local-first storage, BYOK AI, optional cloud sync, and no ads.",
       "when_choose_competitor": "You want a simple, free expense tracker with multi-currency support and are comfortable with an ad-supported model or a small one-time purchase to remove ads.",
-      "when_choose_moneywise": "You want your financial data stored privately on-device, need BYOK AI insights, prefer no ads or trackers from the start, or want optional end-to-end encrypted cloud sync.",
+      "when_choose_moneywise": "You want your financial data stored privately on-device, need BYOK AI insights, prefer no ads from the start, or want optional cloud sync across devices.",
       "faq": [
         {
           "q": "Is MoneyKeeper free?",
@@ -466,7 +466,7 @@
         },
         {
           "q": "Where does MoneyKeeper store my data?",
-          "a": "MoneyKeeper stores data on-device but does not offer end-to-end encrypted cloud backup. MoneyWise stores everything in an encrypted database on your device; cloud sync is optional and end-to-end encrypted in Pro."
+          "a": "MoneyKeeper stores data on-device. MoneyWise stores everything in a database on your device; cloud sync is optional, in Pro."
         },
         {
           "q": "Does MoneyKeeper have bank sync?",
@@ -484,9 +484,9 @@
     },
     "pyeonhan": {
       "one_liner": "a simple Korean manual expense tracker with ads",
-      "positioning": "편한가계부 is a popular Korean manual expense tracker — simple, lightweight, and free with ads (ad removal is a small one-time purchase). It covers daily spending and basic budgeting without bank sync or AI. MoneyWise offers local-first encrypted storage, multi-currency support, web access, and BYOK AI for users who want more depth and privacy.",
+      "positioning": "편한가계부 is a popular Korean manual expense tracker — simple, lightweight, and free with ads (ad removal is a small one-time purchase). It covers daily spending and basic budgeting without bank sync or AI. MoneyWise offers local-first storage, multi-currency support, a Mac app, and BYOK AI for users who want more depth and privacy.",
       "when_choose_competitor": "You want the simplest possible expense-logging experience for KRW spending, you are comfortable with ads, and you don't need bank sync, web access, or AI features.",
-      "when_choose_moneywise": "You want your data stored locally in an encrypted database with no ads or trackers, need multi-currency support, want a web interface alongside mobile, or need an AI advisor that runs on your own API key.",
+      "when_choose_moneywise": "You want your data stored locally on your device with no ads, need multi-currency support, want a Mac app alongside mobile, or need an AI advisor that runs on your own API key.",
       "faq": [
         {
           "q": "Is 편한가계부 free?",
@@ -502,7 +502,7 @@
         },
         {
           "q": "Does 편한가계부 have a web version?",
-          "a": "No — 편한가계부 is iOS and Android only. MoneyWise supports iOS, Android, and web."
+          "a": "No — 편한가계부 is iOS and Android only. MoneyWise runs on iPhone, Android and Mac, with an Apple Watch app — there's no web version either."
         },
         {
           "q": "Does 편한가계부 have AI features?",
@@ -518,7 +518,7 @@
       "one_liner": "South Korea's largest personal-finance aggregator with built-in AI",
       "positioning": "뱅크샐러드 (Banksalad) is the dominant personal-finance app in South Korea, connecting to Korean banks, cards, and insurance accounts with a built-in AI financial assistant. It is free, monetized through financial product recommendations. MoneyWise offers local-first privacy, global multi-currency support, and BYOK AI — designed for users who need privacy and international flexibility beyond the Korean financial system.",
       "when_choose_competitor": "You are based in South Korea, want free automatic aggregation of all your Korean bank accounts, credit cards, and insurance policies, and are comfortable with a recommendation-based monetization model.",
-      "when_choose_moneywise": "You handle multiple currencies, want your financial data stored locally on your device with no trackers, need a BYOK AI advisor that processes your data on your own terms, or you are outside South Korea where Banksalad's Korean financial system integration does not apply.",
+      "when_choose_moneywise": "You handle multiple currencies, want your financial data stored locally on your device with no ads, need a BYOK AI advisor that processes your data on your own terms, or you are outside South Korea where Banksalad's Korean financial system integration does not apply.",
       "faq": [
         {
           "q": "Is Banksalad available outside South Korea?",
@@ -538,23 +538,23 @@
         },
         {
           "q": "Does Banksalad store my data locally or in the cloud?",
-          "a": "Banksalad syncs all linked account data to its cloud servers. MoneyWise stores everything in an encrypted database on your device. Cloud sync in MoneyWise is optional and end-to-end encrypted."
+          "a": "Banksalad syncs all linked account data to its cloud servers. MoneyWise stores everything in a database on your device. Cloud sync in MoneyWise is optional (Pro)."
         },
         {
           "q": "How does Banksalad's business model affect my privacy?",
-          "a": "Banksalad is free because it analyzes your financial profile to recommend products — your data informs its recommendation engine. MoneyWise has no trackers and earns revenue only through Pro subscriptions, so your data is never analyzed for product matching."
+          "a": "Banksalad is free because it analyzes your financial profile to recommend products — your data informs its recommendation engine. MoneyWise has no ads, doesn't sell your data, and earns revenue only through Pro subscriptions, so your data is never analyzed for product matching."
         }
       ]
     },
     "moneytree": {
       "one_liner": "a privacy-focused Japanese financial data aggregator",
-      "positioning": "Moneytree (マネーツリー) is a Japanese financial data aggregator with a strong privacy positioning — no ads, no data brokering, no trackers. Like MoneyWise, Moneytree values user data privacy. The key difference: Moneytree focuses on aggregation (bank sync + investments) without budgeting tools, and is Japan-only. MoneyWise goes further with local-first encrypted storage, multi-currency support, budgeting, and BYOK AI.",
+      "positioning": "Moneytree (マネーツリー) is a Japanese financial data aggregator with a strong privacy positioning — no ads, no data brokering, no trackers. Like MoneyWise, Moneytree values user data privacy. The key difference: Moneytree focuses on aggregation (bank sync + investments) without budgeting tools, and is Japan-only. MoneyWise goes further with local-first storage, multi-currency support, budgeting, and BYOK AI.",
       "when_choose_competitor": "You are based in Japan, want a no-ads, privacy-respecting aggregator for Japanese bank and investment accounts, and don't need detailed budgeting features.",
-      "when_choose_moneywise": "You want active budgeting tools alongside account aggregation, handle multiple currencies, need your data stored locally in an encrypted database, or want a BYOK AI advisor that processes your data privately on your own terms.",
+      "when_choose_moneywise": "You want active budgeting tools alongside account aggregation, handle multiple currencies, need your data stored locally on your device, or want a BYOK AI advisor that processes your data privately on your own terms.",
       "faq": [
         {
           "q": "Do Moneytree and MoneyWise share the same privacy philosophy?",
-          "a": "Both apps take privacy seriously — Moneytree explicitly avoids ads and data brokering, and MoneyWise stores all data locally in an encrypted database. The key difference: Moneytree is a cloud aggregator (your data lives on their servers), while MoneyWise keeps everything on-device unless you opt into encrypted sync."
+          "a": "Both apps take privacy seriously — Moneytree explicitly avoids ads and data brokering, and MoneyWise stores all data locally on your device. The key difference: Moneytree is a cloud aggregator (your data lives on their servers), while MoneyWise keeps everything on-device unless you opt into cloud sync."
         },
         {
           "q": "Does Moneytree support budgeting?",
@@ -574,7 +574,7 @@
         },
         {
           "q": "How does Moneytree pricing compare to MoneyWise?",
-          "a": "Moneytree has a free tier; Moneytree Plus is approximately ¥500/month (about $3.30/mo). MoneyWise is free on a single device; Pro is $6.99/mo or $49.99/yr with multi-device sync, backup, budgeting, and BYOK AI."
+          "a": "Moneytree has a free tier; Moneytree Plus is approximately ¥500/month (about $3.30/mo). MoneyWise is free on a single device; Pro is $6.99/mo or $49.99/yr with multi-device sync, investments, and BYOK AI."
         }
       ]
     },
@@ -582,7 +582,7 @@
       "one_liner": "Japan's largest personal-finance aggregator with 2,500+ institution connections",
       "positioning": "Money Forward ME (マネーフォワード ME) is the dominant personal-finance aggregator in Japan, connecting to 2,500+ financial institutions — banks, credit cards, brokerage accounts, and more. MoneyWise brings local-first privacy, multi-currency tracking, and BYOK AI to users who need more than a Japan-centric cloud aggregation platform.",
       "when_choose_competitor": "You are based in Japan, want automatic aggregation of all your Japanese bank accounts, credit cards, and investment portfolios in one place, and are comfortable with a cloud-based subscription service.",
-      "when_choose_moneywise": "You handle multiple currencies, want your financial data stored locally on your device with no ads or trackers, need an AI advisor you fully control with your own API key, or you are outside Japan where Money Forward ME's institution sync does not function.",
+      "when_choose_moneywise": "You handle multiple currencies, want your financial data stored locally on your device with no ads, need an AI advisor you fully control with your own API key, or you are outside Japan where Money Forward ME's institution sync does not function.",
       "faq": [
         {
           "q": "Is Money Forward ME available outside Japan?",
@@ -594,7 +594,7 @@
         },
         {
           "q": "Does Money Forward ME store my data locally or in the cloud?",
-          "a": "Money Forward ME syncs all linked account data to its cloud servers. MoneyWise stores everything in an encrypted database on your device. Cloud sync in MoneyWise is optional and end-to-end encrypted."
+          "a": "Money Forward ME syncs all linked account data to its cloud servers. MoneyWise stores everything in a database on your device. Cloud sync in MoneyWise is optional (Pro)."
         },
         {
           "q": "Does Money Forward ME support multiple currencies?",
@@ -614,7 +614,7 @@
       "one_liner": "Japan's most popular household-finance app (家計簿)",
       "positioning": "Zaim is the leading 家計簿 (household finance) app in Japan, with Japanese bank sync, receipt scanning, and budgeting built for domestic users. MoneyWise brings local-first privacy, multi-currency tracking, and BYOK AI to users who need more than a Japan-centric cloud platform.",
       "when_choose_competitor": "You are based in Japan, want seamless sync with Japanese bank accounts and credit cards, prefer a mature app with a large local community, and are comfortable with a cloud-based freemium model.",
-      "when_choose_moneywise": "You handle multiple currencies, want your financial data stored locally on your device with no ads or trackers, need an AI advisor you fully control with your own API key, or you are outside Japan where Zaim's bank sync does not function.",
+      "when_choose_moneywise": "You handle multiple currencies, want your financial data stored locally on your device with no ads, need an AI advisor you fully control with your own API key, or you are outside Japan where Zaim's bank sync does not function.",
       "faq": [
         {
           "q": "Is Zaim available outside Japan?",
@@ -626,7 +626,7 @@
         },
         {
           "q": "Does Zaim store my data locally or in the cloud?",
-          "a": "Zaim syncs data to its cloud servers. MoneyWise stores everything in an encrypted database on your device. Cloud sync in MoneyWise is optional and end-to-end encrypted."
+          "a": "Zaim syncs data to its cloud servers. MoneyWise stores everything in a database on your device. Cloud sync in MoneyWise is optional (Pro)."
         },
         {
           "q": "Does Zaim support multiple currencies?",
@@ -646,7 +646,7 @@
       "one_liner": "a cute illustrated expense tracker popular with younger Chinese users",
       "positioning": "一木记账 stands out for its sticker-style illustrations and friendly, approachable design — popular among younger Chinese users who want expense tracking to feel less like a chore. It offers budgets, receipt photos, and optional cloud sync. MoneyWise complements with local-first privacy, multi-currency support, and BYOK AI.",
       "when_choose_competitor": "You want a visually charming, approachable expense tracker with a light-hearted aesthetic, mainly use CNY, and prefer an affordable VIP subscription at around ¥12/month or ¥98/year.",
-      "when_choose_moneywise": "You need multi-currency accounts, want your data stored privately on-device in an encrypted database, want an AI advisor powered by your own API key, or need a web interface alongside your mobile app.",
+      "when_choose_moneywise": "You need multi-currency accounts, want your data stored privately on-device, want an AI advisor powered by your own API key, or want a Mac app alongside your phone.",
       "faq": [
         {
           "q": "What makes 一木记账 different from other Chinese expense trackers?",
@@ -654,7 +654,7 @@
         },
         {
           "q": "How does 一木记账 pricing compare to MoneyWise?",
-          "a": "一木记账 VIP is approximately ¥12/month or ¥98/year (about $1.70/mo or $13.70/yr). MoneyWise is free on a single device; Pro is $6.99/mo or $49.99/yr with multi-device sync, backup, and BYOK AI."
+          "a": "一木记账 VIP is approximately ¥12/month or ¥98/year (about $1.70/mo or $13.70/yr). MoneyWise is free on a single device; Pro is $6.99/mo or $49.99/yr with multi-device sync, family sharing, and BYOK AI."
         },
         {
           "q": "Does 一木记账 support multiple currencies?",
@@ -662,7 +662,7 @@
         },
         {
           "q": "Does 一木记账 store data locally or in the cloud?",
-          "a": "一木记账 offers optional cloud sync. MoneyWise stores all data in an encrypted database on your device; cloud sync is optional and end-to-end encrypted in Pro."
+          "a": "一木记账 offers optional cloud sync. MoneyWise stores all data in a database on your device; cloud sync is optional, in Pro."
         },
         {
           "q": "Does 一木记账 have AI features?",
@@ -676,17 +676,17 @@
     },
     "money-pro": {
       "one_liner": "a full-featured iOS/macOS finance manager from iBear LLC",
-      "positioning": "Money Pro by iBear LLC is a well-established iOS and macOS personal finance app with strong multi-currency support, automatic bank sync, budgets, and Apple Watch integration. It is one of the closest feature peers to MoneyWise in the Apple ecosystem. The key difference: Money Pro syncs your bank accounts to the cloud, while MoneyWise is offline-first and stores everything encrypted on your device. MoneyWise also adds BYOK AI — bring your own Anthropic or OpenAI key for private financial advice without an extra subscription.",
-      "when_choose_competitor": "You want automatic bank sync deeply integrated with Apple's financial APIs, you use macOS as your primary platform and want a native Mac app today, or you prefer a one-time lifetime purchase ($59.99) to avoid recurring subscriptions.",
+      "positioning": "Money Pro by iBear LLC is a well-established iOS and macOS personal finance app with strong multi-currency support, automatic bank sync, budgets, and Apple Watch integration. It is one of the closest feature peers to MoneyWise in the Apple ecosystem. The key difference: Money Pro syncs your bank accounts to the cloud, while MoneyWise is offline-first and stores everything on your device. MoneyWise also adds BYOK AI — bring your own Anthropic or OpenAI key for private financial advice without an extra subscription.",
+      "when_choose_competitor": "You want automatic bank sync deeply integrated with Apple's financial APIs, you use macOS as your primary platform, or you prefer a one-time lifetime purchase ($59.99) to avoid recurring subscriptions.",
       "when_choose_moneywise": "You want your data stored locally with no cloud dependency, you want an AI advisor powered by your own API key, or you need investment tracking alongside your budgets and multi-currency accounts.",
       "faq": [
         {
           "q": "How does Money Pro's pricing compare to MoneyWise?",
-          "a": "Money Pro offers a subscription at $4.99/mo or $14.99/yr, or a one-time lifetime purchase for $59.99. MoneyWise is free on a single device; Pro is $6.99/mo or $49.99/yr with multi-device sync, backup, and BYOK AI."
+          "a": "Money Pro offers a subscription at $4.99/mo or $14.99/yr, or a one-time lifetime purchase for $59.99. MoneyWise is free on a single device; Pro is $6.99/mo or $49.99/yr with multi-device sync, family sharing, and BYOK AI."
         },
         {
           "q": "Does Money Pro work on macOS?",
-          "a": "Yes — Money Pro has a native macOS app, which is a strong point for users who manage finances on a Mac. MoneyWise is currently iOS-only, with macOS support on the roadmap."
+          "a": "Yes — Money Pro has a native macOS app, which is a strong point for users who manage finances on a Mac. MoneyWise also has a Mac app, downloadable from this site."
         },
         {
           "q": "Does Money Pro support multiple currencies?",
@@ -694,7 +694,7 @@
         },
         {
           "q": "Where does Money Pro store my data?",
-          "a": "Money Pro syncs via iCloud, meaning your data passes through Apple's servers. MoneyWise stores everything in an encrypted SQLite database on your device; cloud sync is optional and end-to-end encrypted."
+          "a": "Money Pro syncs via iCloud, meaning your data passes through Apple's servers. MoneyWise stores everything in a SQLite database on your device; cloud sync is optional (Pro)."
         },
         {
           "q": "Does Money Pro have AI features?",
@@ -714,11 +714,11 @@
       "faq": [
         {
           "q": "Is 1Money truly offline-first?",
-          "a": "Yes — 1Money stores data locally on your device by default, with optional iCloud sync. MoneyWise is also offline-first with an encrypted SQLite database on-device and optional end-to-end encrypted sync in Pro."
+          "a": "Yes — 1Money stores data locally on your device by default, with optional iCloud sync. MoneyWise is also offline-first with a SQLite database on your device and optional cloud sync in Pro."
         },
         {
           "q": "How does 1Money's pricing compare to MoneyWise?",
-          "a": "1Money has a free tier and a Premium plan at $4.99/mo with a lifetime purchase option. MoneyWise is free on a single device; Pro is $6.99/mo or $49.99/yr and adds multi-device sync, backup, and BYOK AI."
+          "a": "1Money has a free tier and a Premium plan at $4.99/mo with a lifetime purchase option. MoneyWise is free on a single device; Pro is $6.99/mo or $49.99/yr and adds multi-device sync, family sharing, and BYOK AI."
         },
         {
           "q": "Does 1Money support multiple currencies?",
@@ -734,15 +734,15 @@
         },
         {
           "q": "Does 1Money work on Android?",
-          "a": "Yes — 1Money is available on both iOS and Android. MoneyWise is currently iOS-only, with Android support planned for a future release."
+          "a": "Yes — 1Money is available on both iOS and Android. MoneyWise is also on Android (Google Play or direct APK download, Android 8+), as well as iPhone and Mac."
         }
       ]
     },
     "moneycoach": {
       "one_liner": "an AI-powered iOS budgeting app with European bank sync",
-      "positioning": "MoneyCoach is a polished iOS and macOS budgeting app from a Greek developer team, with a built-in AI Coach, European bank connections (2,800+ institutions), investment tracking, and deep Apple ecosystem integration including Apple Watch and Apple Vision Pro. The key distinction from MoneyWise: MoneyCoach's AI is built-in and sends your data to their servers, while MoneyWise's BYOK AI uses your own Anthropic or OpenAI key — your transactions never leave your device for AI analysis. MoneyWise is also offline-first; MoneyCoach requires cloud connectivity for bank sync.",
-      "when_choose_competitor": "You want automatic bank sync with European bank accounts, you value a native macOS app today, or you prefer a built-in AI Coach that works without configuring your own API key.",
-      "when_choose_moneywise": "You want your data stored locally with no trackers, you prefer to control your AI with your own API key (BYOK), you are outside Europe where MoneyCoach's bank sync may not cover your banks, or you want true offline-first operation.",
+      "positioning": "MoneyCoach is a polished iOS and macOS budgeting app from a Greek developer team, with a built-in AI Coach, European bank connections (2,800+ institutions), investment tracking, and deep Apple ecosystem integration including Apple Watch and Apple Vision Pro. The key distinction from MoneyWise: MoneyCoach's AI is built-in and sends your data to their servers, while MoneyWise's BYOK AI uses your own Anthropic or OpenAI key — requests go straight from your device to the provider you choose, not through a vendor's server. MoneyWise is also offline-first; MoneyCoach requires cloud connectivity for bank sync.",
+      "when_choose_competitor": "You want automatic bank sync with European bank accounts, or you prefer a built-in AI Coach that works without configuring your own API key.",
+      "when_choose_moneywise": "You want your data stored locally with no ads, you prefer to control your AI with your own API key (BYOK), you are outside Europe where MoneyCoach's bank sync may not cover your banks, or you want true offline-first operation.",
       "faq": [
         {
           "q": "How is MoneyCoach's AI different from MoneyWise's AI?",
@@ -750,11 +750,11 @@
         },
         {
           "q": "How does MoneyCoach pricing compare to MoneyWise?",
-          "a": "MoneyCoach Premium is $4.99/mo or $39.99/yr with a limited free tier. MoneyWise is free on a single device; Pro is $6.99/mo or $49.99/yr with multi-device sync, backup, and BYOK AI."
+          "a": "MoneyCoach Premium is $4.99/mo or $39.99/yr with a limited free tier. MoneyWise is free on a single device; Pro is $6.99/mo or $49.99/yr with multi-device sync, family sharing, and BYOK AI."
         },
         {
           "q": "Does MoneyCoach work on macOS?",
-          "a": "Yes — MoneyCoach has a native macOS app (macOS 14 Sonoma or later), as well as Apple Watch and Apple Vision Pro support. MoneyWise is currently iOS-only, with macOS support planned."
+          "a": "Yes — MoneyCoach has a native macOS app (macOS 14 Sonoma or later), as well as Apple Watch and Apple Vision Pro support. MoneyWise also has a Mac app, downloadable from this site, plus an Apple Watch app."
         },
         {
           "q": "Does MoneyCoach support automatic bank sync?",
@@ -766,7 +766,7 @@
         },
         {
           "q": "Where does MoneyCoach store my data?",
-          "a": "MoneyCoach syncs data to iCloud and uses third-party services for bank connections and AI features, meaning some data passes through external servers. MoneyWise stores everything in an encrypted database on your device; cloud sync is optional and end-to-end encrypted."
+          "a": "MoneyCoach syncs data to iCloud and uses third-party services for bank connections and AI features, meaning some data passes through external servers. MoneyWise stores everything in a database on your device; cloud sync is optional (Pro)."
         }
       ]
     }

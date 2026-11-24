@@ -1,56 +1,77 @@
 ---
+import Ph from '../components/Ph.astro';
 import type { Locale } from '../config/site';
+import type { SlotId } from '../config/screenshots';
+import { SLOTS } from '../config/screenshots';
 import { getI18n } from '../lib/i18n';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
+import DownloadCta from '../components/DownloadCta.astro';
+import Device from '../components/device/Device.astro';
+import Icon from '../components/Icon.astro';
 
 interface Props {
   locale: Locale;
 }
 const { locale } = Astro.props;
 const t = await getI18n(locale);
+const slotFor = (id: string): SlotId | undefined => (`features.${id}` in SLOTS ? (`features.${id}` as SlotId) : undefined);
+// Modules without a capture show their icon instead of a device.
+const iconFor: Record<string, string> = { security: 'lock', family: 'users' };
 ---
 
 <BaseLayout title={`${t.featuresPage.title} · MoneyWise`} description={t.featuresPage.subhead} locale={locale} slug="features">
   <Nav locale={locale} slug="features" t={t} />
-  <main class="mx-auto max-w-6xl px-6 py-20 md:py-28">
-    <header class="max-w-2xl">
-      <h1 class="font-[family-name:var(--font-display)] font-bold text-[44px] md:text-[56px] leading-[1.05] tracking-[-0.03em] text-[var(--color-fg-primary)]">
-        {t.featuresPage.title}
-      </h1>
-      <p class="mt-5 text-[18px] leading-[1.6] text-[var(--color-fg-secondary)]">{t.featuresPage.subhead}</p>
+  <main id="main">
+    <header class="relative overflow-hidden">
+      <div aria-hidden="true" class="absolute -top-40 left-1/2 -translate-x-1/2 w-[60rem] h-[36rem] [background:var(--glow)] -z-10"></div>
+      <div class="container-x pt-14 pb-10 md:pt-20 md:pb-14 text-center">
+        <p class="t-eyebrow">{t.nav.features}</p>
+        <h1 class="t-h1 mt-3 max-w-[48rem] mx-auto"><Ph text={t.featuresPage.title} /></h1>
+        <p class="t-lead mt-5 max-w-[40rem] mx-auto">{t.featuresPage.subhead}</p>
+      </div>
+      <nav aria-label={t.nav.features} class="sticky top-16 z-30 border-y border-line bg-[color-mix(in_oklab,var(--bg)_85%,transparent)] backdrop-blur-xl">
+        <div class="scroller !gap-2 py-3">
+          {t.featuresPage.modules.map((m) => (
+            <a href={`#${m.id}`} class="rounded-full border border-line bg-bg-elev px-3.5 py-1.5 text-[13.5px] text-fg-2 hover:text-fg hover:border-line-strong transition whitespace-nowrap">{m.title}</a>
+          ))}
+        </div>
+      </nav>
     </header>
-    <div class="mt-16 space-y-24">
+
+    <div class="container-x py-14 md:py-20 space-y-6 md:space-y-8">
       {t.featuresPage.modules.map((m, i) => (
-        <section id={m.id} class="grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-10 md:gap-16 items-center">
-          <div class={`order-1 ${i % 2 === 1 ? 'md:order-2' : ''}`}>
-            <h2 class="font-[family-name:var(--font-display)] font-bold text-[32px] md:text-[40px] leading-[1.08] tracking-[-0.02em] text-[var(--color-fg-primary)]">
-              {m.title}
-            </h2>
-            <p class="mt-5 text-[16px] leading-[1.65] text-[var(--color-fg-secondary)]">{m.description}</p>
-            <ul class="mt-6 space-y-2 text-[14px] text-[var(--color-fg-primary)]">
+        <section id={m.id} class="reveal card overflow-hidden grid grid-cols-1 md:grid-cols-2 items-stretch">
+          <div class={`p-7 md:p-12 flex flex-col justify-center ${i % 2 === 1 ? 'md:order-2' : ''}`}>
+            <span class="t-num text-[13px] text-fg-3">{String(i + 1).padStart(2, '0')}</span>
+            <h2 class="t-h2 mt-3 !text-[clamp(1.75rem,1.3rem+1.6vw,2.5rem)]"><Ph text={m.title} /></h2>
+            <p class="t-body mt-4 !text-[16px]">{m.description}</p>
+            <ul class="mt-6 grid gap-2.5">
               {m.bullets.map((b) => (
-                <li class="flex gap-3"><span class="text-[var(--color-accent-primary)] font-bold">✓</span><span>{b}</span></li>
+                <li class="flex gap-3 text-[15px] text-fg">
+                  <Icon name="check" class="w-4 h-4 mt-1 shrink-0 text-accent-text" /><span>{b}</span>
+                </li>
               ))}
             </ul>
           </div>
-          <div class={`order-2 flex justify-center ${i % 2 === 1 ? 'md:order-1 md:justify-start' : 'md:justify-end'}`}>
-            <div class="rounded-[36px] bg-[#111] p-2 shadow-[0_24px_60px_rgba(30,51,34,0.18)] w-[260px]">
-              <img
-                src={`/screenshots/${locale}/${m.screenshot}`}
-                alt={m.title}
-                loading="lazy"
-                decoding="async"
-                width="390"
-                height="844"
-                class="block w-full h-auto rounded-[30px]"
-              />
-            </div>
+          <div class={`relative min-h-[22rem] bg-bg-sunken overflow-hidden flex justify-center items-start pt-10 md:pt-14 ${i % 2 === 1 ? 'md:order-1' : ''}`}>
+            <div aria-hidden="true" class="absolute inset-0 [background:var(--glow)] opacity-70"></div>
+            {slotFor(m.id) ? (
+              <div class="relative w-[58%] max-w-[16rem] -mb-24">
+                <Device slot={slotFor(m.id)!} locale={locale} alt={m.title} sizes="(min-width: 768px) 256px, 58vw" />
+              </div>
+            ) : (
+              <div class="relative self-center -mt-10 md:-mt-14">
+                <span class="icon-tile !w-28 !h-28 !rounded-[2rem]"><Icon name={iconFor[m.id] ?? 'check'} class="w-12 h-12" /></span>
+              </div>
+            )}
           </div>
         </section>
       ))}
     </div>
+    <DownloadCta t={t} />
+    <div class="h-10 md:h-16"></div>
   </main>
   <Footer locale={locale} slug="features" t={t} />
 </BaseLayout>

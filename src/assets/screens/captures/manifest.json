@@ -1,0 +1,472 @@
+{
+  "captures": [
+    {
+      "file": "iphone/en/home.png",
+      "device": "iphone",
+      "locale": "en",
+      "screen": "home",
+      "width": 1320,
+      "height": 2868,
+      "description": "Home dashboard: net worth hero, trend, budget and recent activity"
+    },
+    {
+      "file": "iphone/en/accounts.png",
+      "device": "iphone",
+      "locale": "en",
+      "screen": "accounts",
+      "width": 1320,
+      "height": 2868,
+      "description": "Accounts list: multi-currency bank cards, credit card, cash wallet, brokerage"
+    },
+    {
+      "file": "iphone/en/account-detail.png",
+      "device": "iphone",
+      "locale": "en",
+      "screen": "account-detail",
+      "width": 1320,
+      "height": 2868,
+      "description": "Account detail for the main SGD salary account with balance history"
+    },
+    {
+      "file": "iphone/en/records.png",
+      "device": "iphone",
+      "locale": "en",
+      "screen": "records",
+      "width": 1320,
+      "height": 2868,
+      "description": "Records: transaction list grouped by day across currencies"
+    },
+    {
+      "file": "iphone/en/transaction-detail.png",
+      "device": "iphone",
+      "locale": "en",
+      "screen": "transaction-detail",
+      "width": 1320,
+      "height": 2868,
+      "description": "Transaction detail"
+    },
+    {
+      "file": "iphone/en/new-transaction.png",
+      "device": "iphone",
+      "locale": "en",
+      "screen": "new-transaction",
+      "width": 1320,
+      "height": 2868,
+      "description": "New transaction form (amount keypad, category, account)"
+    },
+    {
+      "file": "iphone/en/budget.png",
+      "device": "iphone",
+      "locale": "en",
+      "screen": "budget",
+      "width": 1320,
+      "height": 2868,
+      "description": "Monthly budgets, some near or over their limit"
+    },
+    {
+      "file": "iphone/en/goals.png",
+      "device": "iphone",
+      "locale": "en",
+      "screen": "goals",
+      "width": 1320,
+      "height": 2868,
+      "description": "Savings goals with progress"
+    },
+    {
+      "file": "iphone/en/investments.png",
+      "device": "iphone",
+      "locale": "en",
+      "screen": "investments",
+      "width": 1320,
+      "height": 2868,
+      "description": "Investment portfolio with gains"
+    },
+    {
+      "file": "iphone/en/ai-chat.png",
+      "device": "iphone",
+      "locale": "en",
+      "screen": "ai-chat",
+      "width": 1320,
+      "height": 2868,
+      "description": "AI advisor conversation"
+    },
+    {
+      "file": "iphone/en/asset-report.png",
+      "device": "iphone",
+      "locale": "en",
+      "screen": "asset-report",
+      "width": 1320,
+      "height": 2868,
+      "description": "Asset report"
+    },
+    {
+      "file": "iphone/zh/home.png",
+      "device": "iphone",
+      "locale": "zh",
+      "screen": "home",
+      "width": 1320,
+      "height": 2868,
+      "description": "Home dashboard: net worth hero, trend, budget and recent activity"
+    },
+    {
+      "file": "iphone/zh/accounts.png",
+      "device": "iphone",
+      "locale": "zh",
+      "screen": "accounts",
+      "width": 1320,
+      "height": 2868,
+      "description": "Accounts list: multi-currency bank cards, credit card, cash wallet, brokerage"
+    },
+    {
+      "file": "iphone/zh/account-detail.png",
+      "device": "iphone",
+      "locale": "zh",
+      "screen": "account-detail",
+      "width": 1320,
+      "height": 2868,
+      "description": "Account detail for the main SGD salary account with balance history"
+    },
+    {
+      "file": "iphone/zh/records.png",
+      "device": "iphone",
+      "locale": "zh",
+      "screen": "records",
+      "width": 1320,
+      "height": 2868,
+      "description": "Records: transaction list grouped by day across currencies"
+    },
+    {
+      "file": "iphone/zh/transaction-detail.png",
+      "device": "iphone",
+      "locale": "zh",
+      "screen": "transaction-detail",
+      "width": 1320,
+      "height": 2868,
+      "description": "Transaction detail"
+    },
+    {
+      "file": "iphone/zh/new-transaction.png",
+      "device": "iphone",
+      "locale": "zh",
+      "screen": "new-transaction",
+      "width": 1320,
+      "height": 2868,
+      "description": "New transaction form (amount keypad, category, account)"
+    },
+    {
+      "file": "iphone/zh/budget.png",
+      "device": "iphone",
+      "locale": "zh",
+      "screen": "budget",
+      "width": 1320,
+      "height": 2868,
+      "description": "Monthly budgets, some near or over their limit"
+    },
+    {
+      "file": "iphone/zh/goals.png",
+      "device": "iphone",
+      "locale": "zh",
+      "screen": "goals",
+      "width": 1320,
+      "height": 2868,
+      "description": "Savings goals with progress"
+    },
+    {
+      "file": "iphone/zh/investments.png",
+      "device": "iphone",
+      "locale": "zh",
+      "screen": "investments",
+      "width": 1320,
+      "height": 2868,
+      "description": "Investment portfolio with gains"
+    },
+    {
+      "file": "iphone/zh/ai-chat.png",
+      "device": "iphone",
+      "locale": "zh",
+      "screen": "ai-chat",
+      "width": 1320,
+      "height": 2868,
+      "description": "AI advisor conversation"
+    },
+    {
+      "file": "iphone/zh/asset-report.png",
+      "device": "iphone",
+      "locale": "zh",
+      "screen": "asset-report",
+      "width": 1320,
+      "height": 2868,
+      "description": "Asset report"
+    },
+    {
+      "file": "iphone-dark/en/home.png",
+      "device": "iphone-dark",
+      "locale": "en",
+      "screen": "home",
+      "width": 1320,
+      "height": 2868,
+      "description": "Home dashboard: net worth hero, trend, budget and recent activity"
+    },
+    {
+      "file": "iphone-dark/en/accounts.png",
+      "device": "iphone-dark",
+      "locale": "en",
+      "screen": "accounts",
+      "width": 1320,
+      "height": 2868,
+      "description": "Accounts list: multi-currency bank cards, credit card, cash wallet, brokerage"
+    },
+    {
+      "file": "iphone-dark/en/records.png",
+      "device": "iphone-dark",
+      "locale": "en",
+      "screen": "records",
+      "width": 1320,
+      "height": 2868,
+      "description": "Records: transaction list grouped by day across currencies"
+    },
+    {
+      "file": "iphone-dark/en/investments.png",
+      "device": "iphone-dark",
+      "locale": "en",
+      "screen": "investments",
+      "width": 1320,
+      "height": 2868,
+      "description": "Investment portfolio with gains"
+    },
+    {
+      "file": "iphone-dark/zh/home.png",
+      "device": "iphone-dark",
+      "locale": "zh",
+      "screen": "home",
+      "width": 1320,
+      "height": 2868,
+      "description": "Home dashboard: net worth hero, trend, budget and recent activity"
+    },
+    {
+      "file": "iphone-dark/zh/accounts.png",
+      "device": "iphone-dark",
+      "locale": "zh",
+      "screen": "accounts",
+      "width": 1320,
+      "height": 2868,
+      "description": "Accounts list: multi-currency bank cards, credit card, cash wallet, brokerage"
+    },
+    {
+      "file": "iphone-dark/zh/records.png",
+      "device": "iphone-dark",
+      "locale": "zh",
+      "screen": "records",
+      "width": 1320,
+      "height": 2868,
+      "description": "Records: transaction list grouped by day across currencies"
+    },
+    {
+      "file": "iphone-dark/zh/investments.png",
+      "device": "iphone-dark",
+      "locale": "zh",
+      "screen": "investments",
+      "width": 1320,
+      "height": 2868,
+      "description": "Investment portfolio with gains"
+    },
+    {
+      "file": "duo/en/home.png",
+      "device": "duo",
+      "locale": "en",
+      "screen": "home",
+      "width": 2853,
+      "height": 2007,
+      "description": "Two-pane dashboard: assets left of the hinge, spending right"
+    },
+    {
+      "file": "duo/en/budget.png",
+      "device": "duo",
+      "locale": "en",
+      "screen": "budget",
+      "width": 2853,
+      "height": 2007,
+      "description": "Two-pane budget: category budgets + spending breakdown"
+    },
+    {
+      "file": "duo/en/accounts-split.png",
+      "device": "duo",
+      "locale": "en",
+      "screen": "accounts-split",
+      "width": 2853,
+      "height": 2007,
+      "description": "Two-pane: accounts list + account detail"
+    },
+    {
+      "file": "duo/en/records-split.png",
+      "device": "duo",
+      "locale": "en",
+      "screen": "records-split",
+      "width": 2853,
+      "height": 2007,
+      "description": "Two-pane: records list + transaction detail"
+    },
+    {
+      "file": "duo/en/invest-split.png",
+      "device": "duo",
+      "locale": "en",
+      "screen": "invest-split",
+      "width": 2853,
+      "height": 2007,
+      "description": "Two-pane: portfolio + holding detail"
+    },
+    {
+      "file": "duo/zh/home.png",
+      "device": "duo",
+      "locale": "zh",
+      "screen": "home",
+      "width": 2853,
+      "height": 2007,
+      "description": "Two-pane dashboard: assets left of the hinge, spending right"
+    },
+    {
+      "file": "duo/zh/budget.png",
+      "device": "duo",
+      "locale": "zh",
+      "screen": "budget",
+      "width": 2853,
+      "height": 2007,
+      "description": "Two-pane budget: category budgets + spending breakdown"
+    },
+    {
+      "file": "duo/zh/accounts-split.png",
+      "device": "duo",
+      "locale": "zh",
+      "screen": "accounts-split",
+      "width": 2853,
+      "height": 2007,
+      "description": "Two-pane: accounts list + account detail"
+    },
+    {
+      "file": "duo/zh/records-split.png",
+      "device": "duo",
+      "locale": "zh",
+      "screen": "records-split",
+      "width": 2853,
+      "height": 2007,
+      "description": "Two-pane: records list + transaction detail"
+    },
+    {
+      "file": "duo/zh/invest-split.png",
+      "device": "duo",
+      "locale": "zh",
+      "screen": "invest-split",
+      "width": 2853,
+      "height": 2007,
+      "description": "Two-pane: portfolio + holding detail"
+    },
+    {
+      "file": "duo-dark/en/home.png",
+      "device": "duo-dark",
+      "locale": "en",
+      "screen": "home",
+      "width": 2853,
+      "height": 2007,
+      "description": "Two-pane dashboard, dark mode"
+    },
+    {
+      "file": "duo-dark/en/accounts-split.png",
+      "device": "duo-dark",
+      "locale": "en",
+      "screen": "accounts-split",
+      "width": 2853,
+      "height": 2007,
+      "description": "Two-pane: accounts list + account detail"
+    },
+    {
+      "file": "duo-dark/zh/home.png",
+      "device": "duo-dark",
+      "locale": "zh",
+      "screen": "home",
+      "width": 2853,
+      "height": 2007,
+      "description": "Two-pane dashboard, dark mode"
+    },
+    {
+      "file": "duo-dark/zh/accounts-split.png",
+      "device": "duo-dark",
+      "locale": "zh",
+      "screen": "accounts-split",
+      "width": 2853,
+      "height": 2007,
+      "description": "Two-pane: accounts list + account detail"
+    },
+    {
+      "file": "watch/en/home.png",
+      "device": "watch",
+      "locale": "en",
+      "screen": "home",
+      "width": 416,
+      "height": 496,
+      "description": "Watch home: left to spend this month and today's spending, from the phone"
+    },
+    {
+      "file": "watch/en/recent.png",
+      "device": "watch",
+      "locale": "en",
+      "screen": "recent",
+      "width": 416,
+      "height": 496,
+      "description": "Watch: last 5 transactions synced from the phone"
+    },
+    {
+      "file": "watch/en/quick-add.png",
+      "device": "watch",
+      "locale": "en",
+      "screen": "quick-add",
+      "width": 416,
+      "height": 496,
+      "description": "Watch quick add: amount step (crown + presets)"
+    },
+    {
+      "file": "watch/en/quick-add-category.png",
+      "device": "watch",
+      "locale": "en",
+      "screen": "quick-add-category",
+      "width": 416,
+      "height": 496,
+      "description": "Watch quick add: category step"
+    },
+    {
+      "file": "watch/zh/home.png",
+      "device": "watch",
+      "locale": "zh",
+      "screen": "home",
+      "width": 416,
+      "height": 496,
+      "description": "Watch home: left to spend this month and today's spending, from the phone"
+    },
+    {
+      "file": "watch/zh/recent.png",
+      "device": "watch",
+      "locale": "zh",
+      "screen": "recent",
+      "width": 416,
+      "height": 496,
+      "description": "Watch: last 5 transactions synced from the phone"
+    },
+    {
+      "file": "watch/zh/quick-add.png",
+      "device": "watch",
+      "locale": "zh",
+      "screen": "quick-add",
+      "width": 416,
+      "height": 496,
+      "description": "Watch quick add: amount step (crown + presets)"
+    },
+    {
+      "file": "watch/zh/quick-add-category.png",
+      "device": "watch",
+      "locale": "zh",
+      "screen": "quick-add-category",
+      "width": 416,
+      "height": 496,
+      "description": "Watch quick add: category step"
+    }
+  ]
+}

@@ -15,21 +15,18 @@ const subtitle = interpolate(c.common.hero.subtitle_template, {
   one_liner: copy.one_liner,
 });
 ---
-<section class="mx-auto max-w-6xl px-6 pt-16 pb-12 md:pt-24 md:pb-16">
-  <div class="flex items-center justify-center gap-4 md:gap-6">
-    <CompetitorBadge name={self.displayName} size="lg" variant="self" />
-    <span class="text-[18px] md:text-[22px] font-semibold text-[var(--color-fg-secondary)]">
-      {c.common.hero.versus_label}
-    </span>
-    <CompetitorBadge name={competitor.displayName} size="lg" />
+<section class="relative overflow-hidden">
+  <div aria-hidden="true" class="absolute -top-40 left-1/2 -translate-x-1/2 w-[60rem] h-[34rem] [background:var(--glow)] -z-10"></div>
+  <div class="container-x pt-14 pb-10 md:pt-20 md:pb-14 text-center">
+    <div class="flex flex-wrap items-center justify-center gap-3 md:gap-5">
+      <CompetitorBadge name={self.displayName} size="lg" variant="self" />
+      <span class="t-serif text-[20px] md:text-[24px]">{c.common.hero.versus_label}</span>
+      <CompetitorBadge name={competitor.displayName} size="lg" />
+    </div>
+    <h1 class="t-h1 mt-8 max-w-[48rem] mx-auto">
+      {self.displayName} <span class="t-serif">{c.common.hero.versus_label}</span> {competitor.displayName}
+    </h1>
+    <p class="t-lead mt-5 max-w-[42rem] mx-auto">{copy.positioning}</p>
+    <p class="mt-3 max-w-[42rem] mx-auto text-[14.5px] leading-relaxed text-fg-3">{subtitle}</p>
   </div>
-  <h1 class="mt-10 max-w-3xl mx-auto text-center font-[family-name:var(--font-display)] font-bold text-[40px] md:text-[60px] leading-[1.02] tracking-[-0.035em] text-[var(--color-fg-primary)]">
-    {self.displayName} <em class="font-[family-name:var(--font-serif-italic)] not-italic [font-style:italic] font-medium text-[var(--color-accent-primary)]">{c.common.hero.versus_label}</em> {competitor.displayName}
-  </h1>
-  <p class="mt-6 max-w-2xl mx-auto text-center text-[17px] leading-[1.6] text-[var(--color-fg-secondary)]">
-    {copy.positioning}
-  </p>
-  <p class="mt-3 max-w-2xl mx-auto text-center text-[14px] leading-[1.55] text-[var(--color-fg-secondary)]/80">
-    {subtitle}
-  </p>
 </section>

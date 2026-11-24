@@ -5,11 +5,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Nav from '../components/Nav.astro';
 import Hero from '../components/Hero.astro';
 import FeatureGrid from '../components/FeatureGrid.astro';
+import WhatsNew from '../components/WhatsNew.astro';
+import DuoShowcase from '../components/DuoShowcase.astro';
+import WatchShowcase from '../components/WatchShowcase.astro';
 import ScreenshotShowcase from '../components/ScreenshotShowcase.astro';
 import MacShowcase from '../components/MacShowcase.astro';
 import ExtensionsShowcase from '../components/ExtensionsShowcase.astro';
 import PrivacyFirst from '../components/PrivacyFirst.astro';
 import Pricing from '../components/Pricing.astro';
+import FaqTeaser from '../components/FaqTeaser.astro';
 import DownloadCta from '../components/DownloadCta.astro';
 import Footer from '../components/Footer.astro';
 
@@ -22,14 +26,18 @@ const t = await getI18n(locale);
 
 <BaseLayout title={t.meta.title} description={t.meta.description} locale={locale} slug="">
   <Nav locale={locale} slug="" t={t} />
-  <main>
+  <main id="main">
     <Hero locale={locale} t={t} />
     <FeatureGrid t={t} />
+    <WhatsNew locale={locale} t={t} />
+    <DuoShowcase locale={locale} t={t} />
+    <WatchShowcase locale={locale} t={t} />
     <ScreenshotShowcase locale={locale} t={t} />
     <MacShowcase locale={locale} t={t} />
     <ExtensionsShowcase locale={locale} t={t} />
     <PrivacyFirst locale={locale} t={t} />
     <Pricing t={t} />
+    <FaqTeaser locale={locale} t={t} />
     <DownloadCta t={t} />
   </main>
   <Footer locale={locale} slug="" t={t} />

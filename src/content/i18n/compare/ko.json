@@ -58,25 +58,25 @@
     "advantages": [
       {
         "title": "설계부터 오프라인 우선",
-        "description": "모든 기록은 스마트폰의 암호화된 SQLite 데이터베이스에 저장됩니다. 비행기 모드에서도 완벽하게 작동합니다."
+        "description": "모든 기록은 스마트폰의 SQLite 데이터베이스에 저장됩니다. 비행기 모드에서도 완벽하게 작동합니다."
       },
       {
         "title": "내 AI 키 직접 연결",
-        "description": "Anthropic 또는 OpenAI 키를 연결하면 추가 구독 없이 AI 인사이트를 사용할 수 있습니다. Pro 플랜의 공유 크레딧도 이용 가능합니다."
+        "description": "Anthropic 또는 OpenAI 키를 연결하세요. 요청은 기기에서 제공업체로 바로 전송되며, 사용한 만큼만 제공업체에 직접 지불합니다."
       },
       {
         "title": "첫날부터 다중 통화 지원",
         "description": "원하는 통화로 계좌를 관리하고 매일 환율로 환산하세요. '본국 통화만' 같은 제한은 없습니다."
       },
       {
-        "title": "광고 없음, 트래커 없음",
-        "description": "선택적 암호화 동기화를 켜지 않는 한 어떤 데이터도 기기 밖으로 나가지 않습니다. 기술적으로 우리는 당신의 데이터를 읽을 수 없습니다."
+        "title": "광고 없음, 데이터 판매 없음",
+        "description": "광고가 없으며, 선택형 클라우드 동기화를 켜지 않는 한 기록은 기기에 머뭅니다. 데이터를 판매하지 않습니다."
       }
     ],
     "ai_deep_dive": {
       "eyebrow": "내가 제어하는 AI",
       "title": "내 조건으로 작동하는 재무 어드바이저",
-      "description": "대부분의 가계부 앱은 AI가 없거나, 있더라도 거래 데이터를 벤더 서버로 전송합니다. MoneyWise는 선택권을 드립니다: Anthropic 또는 OpenAI의 내 키를 사용하거나, Pro의 공유 크레딧을 사용하거나. 어느 쪽이든 AI는 내가 보여주고 싶은 내용만 봅니다.",
+      "description": "대부분의 가계부 앱은 AI가 없거나, 있더라도 거래 데이터를 벤더 서버로 전송합니다. MoneyWise는 선택권을 드립니다: Anthropic 또는 OpenAI의 내 키를 사용하면 요청이 기기에서 제공업체로 바로 전송됩니다. 어느 쪽이든 AI는 내가 보여주고 싶은 내용만 봅니다.",
       "bullets": [
         "키는 iOS Keychain에 저장 — 당사 서버에는 절대 전송되지 않음",
         "데일리 브리프, 월간 요약, 언제든 가능한 Q&A",
@@ -84,8 +84,8 @@
       ]
     },
     "when_to_choose": {
-      "moneywise_heading": "MoneyWise를 선택하세요, 만약",
-      "competitor_heading_template": "{competitor}를 선택하세요, 만약"
+      "moneywise_heading": "MoneyWise가 잘 맞는 경우",
+      "competitor_heading_template": "{competitor}가 잘 맞는 경우"
     },
     "back_to_index": "전체 비교 목록",
     "index": {
@@ -118,11 +118,11 @@
         },
         {
           "q": "Mint 데이터를 MoneyWise로 가져올 수 있나요?",
-          "a": "MoneyWise에는 아직 Mint CSV 일괄 가져오기 기능이 없습니다. Credit Karma에서 거래 내역을 CSV로 내보낸 후, 중요한 계좌를 수동으로 추가해 새롭게 시작할 수 있습니다."
+          "a": "네. 거래 내역을 CSV로 내보낸 뒤 MoneyWise에서 가져오세요. MoneyWise는 모든 CSV 또는 Excel(XLSX) 파일을 읽고 열을 직접 매칭할 수 있습니다. 원클릭 Mint 전용 가져오기 기능은 없습니다."
         },
         {
           "q": "MoneyWise와 Mint는 어떻게 다른가요?",
-          "a": "Mint는 무료였지만 광고가 포함되어 있었고 모든 데이터를 Intuit 서버에 저장했습니다. MoneyWise는 로컬 우선 방식으로 데이터가 기기의 암호화된 데이터베이스에 저장되며, 광고도 트래커도 없습니다."
+          "a": "Mint는 무료였지만 광고가 포함되어 있었고 모든 데이터를 Intuit 서버에 저장했습니다. MoneyWise는 로컬 우선 방식으로 데이터가 기기에 저장되며, 광고도 없습니다."
         },
         {
           "q": "MoneyWise도 Mint처럼 은행 자동 동기화를 지원하나요?",
@@ -130,7 +130,7 @@
         },
         {
           "q": "MoneyWise도 Mint처럼 무료인가요?",
-          "a": "MoneyWise는 단일 기기에서 무제한 무료로 사용할 수 있습니다. Pro 플랜($6.99/월 또는 $49.99/년)은 멀티 기기 동기화, 백업, AI 기능을 추가합니다. Mint의 무료 모델과 달리 광고도, 데이터 판매도 없습니다."
+          "a": "MoneyWise는 단일 기기에서 무제한 무료로 사용할 수 있습니다. Pro 플랜($6.99/월 또는 $49.99/년)은 멀티 기기 동기화, 가족 공유, AI(본인 키 사용)를 추가합니다. Mint의 무료 모델과 달리 광고도, 데이터 판매도 없습니다."
         }
       ]
     },
@@ -138,7 +138,7 @@
       "one_liner": "AI 탑재 프리미엄 구독 관리 가계부 앱",
       "positioning": "Rocket Money(구 Truebill)는 가계부 기능과 AI 기반 구독 해지 서비스, 은행 동기화, 넉넉한 무료 플랜을 하나로 통합한 앱입니다. MoneyWise는 클라우드 자동화 대신 로컬 우선 프라이버시, 다중 통화 추적, BYOK AI를 선택합니다.",
       "when_choose_competitor": "해지하고 싶은 구독 서비스가 많거나, 자동 은행 동기화가 포함된 무료 가계부 앱을 원하고, Rocket Companies의 광고 모델을 수용할 수 있다면 Rocket Money가 적합합니다.",
-      "when_choose_moneywise": "재무 데이터를 트래커 없이 로컬에 저장하고 싶거나, 다중 통화가 필요하거나, 자주 해외 여행을 하거나, 내장 AI 대신 자신의 키를 사용하는 AI 어드바이저를 원한다면 MoneyWise가 더 적합합니다.",
+      "when_choose_moneywise": "재무 데이터를 광고 없이 로컬에 저장하고 싶거나, 다중 통화가 필요하거나, 자주 해외 여행을 하거나, 내장 AI 대신 자신의 키를 사용하는 AI 어드바이저를 원한다면 MoneyWise가 더 적합합니다.",
       "faq": [
         {
           "q": "Rocket Money는 정말 무료인가요?",
@@ -154,7 +154,7 @@
         },
         {
           "q": "프라이버시 면에서 Rocket Money와 MoneyWise는 어떻게 다른가요?",
-          "a": "Rocket Money는 Rocket Companies 산하로 광고, 추가 판매, 데이터 파트너십으로 수익을 창출합니다. MoneyWise는 데이터를 로컬에 저장하며 광고도 트래커도 없습니다. 암호화된 클라우드 동기화를 활성화하지 않는 한 데이터는 기기를 벗어나지 않습니다."
+          "a": "Rocket Money는 Rocket Companies 산하로 광고, 추가 판매, 데이터 파트너십으로 수익을 창출합니다. MoneyWise는 데이터를 로컬에 저장하며 광고가 없습니다. 클라우드 동기화를 켜지 않는 한 기록은 기기에 머뭅니다."
         },
         {
           "q": "Rocket Money는 가족 또는 커플 공유를 지원하나요?",
@@ -182,11 +182,11 @@
         },
         {
           "q": "Monarch Money는 내 데이터를 어디에 저장하나요?",
-          "a": "Monarch는 Plaid와 Finicity를 통해 연결된 은행 데이터를 서버에 저장합니다. MoneyWise는 모든 내용을 기기의 암호화된 데이터베이스에 저장하며 클라우드 동기화는 선택 사항으로 종단 간 암호화됩니다."
+          "a": "Monarch는 Plaid와 Finicity를 통해 연결된 은행 데이터를 서버에 저장합니다. MoneyWise는 모든 내용을 기기의 데이터베이스에 저장하며, 클라우드 동기화는 선택 사항(Pro)입니다."
         },
         {
           "q": "Monarch Money에는 AI 기능이 있나요?",
-          "a": "Monarch Money에는 AI 기반 분류 및 리포트 기능이 있습니다. MoneyWise의 AI 어드바이저는 자신의 Anthropic 또는 OpenAI 키를 사용하므로 거래 내역이 서드파티에서 처리되지 않습니다."
+          "a": "Monarch Money에는 AI 기반 분류 및 리포트 기능이 있습니다. MoneyWise의 AI 어드바이저는 자신의 Anthropic 또는 OpenAI 키를 사용하며, 요청은 AI 기능을 사용할 때만 벤더 서버를 거치지 않고 기기에서 선택한 제공업체로 바로 전송됩니다."
         },
         {
           "q": "Monarch Money는 커플 사용에 적합한가요?",
@@ -194,7 +194,7 @@
         },
         {
           "q": "Monarch Money 데이터를 MoneyWise로 가져올 수 있나요?",
-          "a": "MoneyWise에는 아직 직접적인 Monarch 가져오기 기능이 없습니다. Monarch에서 CSV로 거래를 내보낸 후 MoneyWise에서 주요 계좌를 다시 등록해 시작할 수 있습니다."
+          "a": "네. Monarch에서 거래 내역을 CSV로 내보낸 뒤 MoneyWise에서 가져오세요. MoneyWise는 모든 CSV 또는 Excel(XLSX) 파일을 읽고 열을 직접 매칭할 수 있습니다. 원클릭 Monarch 전용 가져오기 기능은 없습니다."
         }
       ]
     },
@@ -222,7 +222,7 @@
         },
         {
           "q": "Copilot은 내 재무 데이터를 어디에 저장하나요?",
-          "a": "Copilot은 Plaid를 통해 은행 데이터를 동기화하고 Copilot 서버에 저장합니다. MoneyWise는 모든 데이터를 기기의 암호화된 데이터베이스에 저장하며, 클라우드 동기화는 선택 사항으로 종단 간 암호화됩니다."
+          "a": "Copilot은 Plaid를 통해 은행 데이터를 동기화하고 Copilot 서버에 저장합니다. MoneyWise는 모든 데이터를 기기에 저장하며, 클라우드 동기화는 선택 사항(Pro)입니다."
         },
         {
           "q": "Copilot과 MoneyWise를 함께 사용할 수 있나요?",
@@ -231,34 +231,34 @@
       ]
     },
     "ynab": {
-      "one_liner": "a strict zero-based-budgeting system",
-      "positioning": "YNAB and MoneyWise both help you understand where your money goes — but they're built for different people. YNAB enforces a budget method. MoneyWise tracks your real life.",
-      "when_choose_competitor": "You've already adopted zero-based budgeting and want every dollar assigned a job. Your finances are mostly in one currency, and you're happy paying for a strong methodology coach.",
-      "when_choose_moneywise": "You handle multiple currencies, you want your data on your device (not in a vendor's cloud), or you want AI insights without paying for yet another subscription.",
+      "one_liner": "엄격한 제로 기반 예산 시스템",
+      "positioning": "YNAB과 MoneyWise는 모두 돈이 어디로 가는지 파악하도록 도와주지만, 대상 사용자가 다릅니다. YNAB은 하나의 예산 방법론을 따르게 하고, MoneyWise는 실제 생활을 그대로 기록합니다.",
+      "when_choose_competitor": "이미 제로 기반 예산을 실천하고 있고 모든 돈에 역할을 부여하고 싶은 분. 재무가 대부분 한 가지 통화로 이루어져 있고, 탄탄한 방법론 코치에 비용을 지불할 의향이 있다면 YNAB이 적합합니다.",
+      "when_choose_moneywise": "여러 통화를 관리하거나, 데이터를 벤더의 클라우드가 아닌 내 기기에 두고 싶거나, 또 하나의 구독 없이 AI 인사이트를 원한다면 MoneyWise가 더 적합합니다.",
       "faq": [
         {
-          "q": "Can I import my YNAB data into MoneyWise?",
-          "a": "Today, no automatic importer. You can re-create accounts and start fresh. YNAB users tend to onboard quickly because they already think in categories."
+          "q": "YNAB 데이터를 MoneyWise로 가져올 수 있나요?",
+          "a": "YNAB 전용 가져오기 기능은 없지만, YNAB 거래 내역을 CSV로 내보낸 뒤 MoneyWise의 범용 CSV/XLSX 가져오기로 열을 직접 매칭해 가져올 수 있습니다. YNAB 사용자는 이미 카테고리 단위로 생각하는 데 익숙해서 대체로 빠르게 적응합니다."
         },
         {
-          "q": "Does MoneyWise do zero-based budgeting?",
-          "a": "MoneyWise has monthly category budgets with pacing, but not the strict YNAB rule-set. If the rule-set is what you love about YNAB, stay with YNAB."
+          "q": "MoneyWise는 제로 기반 예산을 지원하나요?",
+          "a": "MoneyWise는 진행률을 보여주는 월별 카테고리 예산을 제공하지만, YNAB처럼 엄격한 규칙 체계는 아닙니다. YNAB의 규칙 체계가 마음에 든다면 YNAB을 계속 사용하세요."
         },
         {
-          "q": "Will MoneyWise work without internet?",
-          "a": "Yes. Every record is on your phone in an encrypted database. The app is fully usable in airplane mode."
+          "q": "인터넷 없이도 MoneyWise를 사용할 수 있나요?",
+          "a": "네. 모든 기록은 스마트폰에 저장됩니다. 비행기 모드에서도 앱을 완전히 사용할 수 있습니다."
         },
         {
-          "q": "How is MoneyWise's pricing different from YNAB's?",
-          "a": "MoneyWise is free for unlimited records on one device. Pro adds multi-device sync, backup, and pooled AI for $6.99/mo or $49.99/yr. YNAB is subscription-only at $14.99/mo or $109/yr."
+          "q": "MoneyWise와 YNAB의 가격은 어떻게 다른가요?",
+          "a": "MoneyWise는 한 기기에서 무제한 기록을 무료로 사용할 수 있습니다. Pro는 다중 기기 동기화, 가족 공유, 투자, AI 도구(본인 키 사용)를 추가하며 월 $6.99 또는 연 $49.99입니다. YNAB은 구독 전용으로 월 $14.99 또는 연 $109입니다."
         },
         {
-          "q": "Does MoneyWise have AI like the new YNAB features?",
-          "a": "Yes — MoneyWise has an AI advisor. The difference: you can plug in your own Anthropic or OpenAI key, so your data isn't sent to a vendor's pipeline."
+          "q": "MoneyWise에도 YNAB의 새 기능 같은 AI가 있나요?",
+          "a": "네 — MoneyWise에는 AI 어드바이저가 있습니다. 차이점은 본인의 Anthropic 또는 OpenAI 키를 연결할 수 있어서, 데이터가 벤더의 파이프라인으로 전송되지 않는다는 점입니다."
         },
         {
-          "q": "Can I use MoneyWise alongside YNAB?",
-          "a": "Yes — many people start with MoneyWise for quick mobile entry and keep YNAB for the budget method. There's no lock-in either way."
+          "q": "YNAB과 MoneyWise를 함께 사용할 수 있나요?",
+          "a": "네 — 많은 분들이 빠른 모바일 입력은 MoneyWise로 시작하고, 예산 방법론은 YNAB으로 유지합니다. 어느 쪽이든 종속되지 않습니다."
         }
       ]
     },
@@ -274,11 +274,11 @@
         },
         {
           "q": "Empower와 MoneyWise는 어떻게 다른가요?",
-          "a": "Empower는 투자 포트폴리오와 은퇴 계획에 특화된 자산 추적 도구입니다. MoneyWise는 일상 가계부 관리, 프라이버시 보호, 다중 통화 계좌, 로컬 암호화 데이터베이스에 집중하여 서로 다른 핵심 니즈를 충족합니다."
+          "a": "Empower는 투자 포트폴리오와 은퇴 계획에 특화된 자산 추적 도구입니다. MoneyWise는 일상 가계부 관리, 프라이버시를 위한 수동 입력, 다중 통화 계좌, 기기 내 로컬 우선 저장에 집중하여 서로 다른 핵심 니즈를 충족합니다."
         },
         {
           "q": "Empower는 제 금융 데이터를 서버에 저장하나요?",
-          "a": "네. Empower는 연결된 모든 계좌 데이터를 클라우드 서버에 동기화합니다. MoneyWise는 모든 데이터를 기기의 암호화된 데이터베이스에 저장하며 클라우드 동기화는 선택 사항으로 종단간 암호화됩니다."
+          "a": "네. Empower는 연결된 모든 계좌 데이터를 클라우드 서버에 동기화합니다. MoneyWise는 데이터를 기기에 로컬로 저장하며, 클라우드 동기화는 선택 사항입니다."
         },
         {
           "q": "Empower는 다중 통화를 지원하나요?",
@@ -292,9 +292,9 @@
     },
     "spendee": {
       "one_liner": "유럽에서 인기 있는 다중 통화 지출 추적 앱",
-      "positioning": "Spendee는 다중 통화 지원, 지갑 공유, 은행 동기화를 특징으로 하는 유럽에서 널리 사용되는 프리미엄 지출 관리 앱입니다. Spendee와 MoneyWise 모두 다중 통화 계좌를 지원하지만, MoneyWise의 로컬 우선 암호화 저장소와 BYOK AI는 프라이버시를 중시하는 사용자에게 독특한 강점을 제공합니다.",
+      "positioning": "Spendee는 다중 통화 지원, 지갑 공유, 은행 동기화를 특징으로 하는 유럽에서 널리 사용되는 프리미엄 지출 관리 앱입니다. Spendee와 MoneyWise 모두 다중 통화 계좌를 지원하지만, MoneyWise의 로컬 우선 저장과 BYOK AI는 프라이버시를 중시하는 사용자에게 독특한 강점을 제공합니다.",
       "when_choose_competitor": "시각적으로 세련된 지출 추적 앱에서 그룹 또는 커플 지갑 공유, 다중 통화 추적을 원하고 은행 동기화 기능을 위한 소액 구독료를 지불해도 괜찮다면 Spendee가 적합합니다.",
-      "when_choose_moneywise": "재무 데이터를 기기의 암호화된 데이터베이스에 저장하고 싶거나, 다중 통화로 여행이 잦아 본격적인 추적이 필요하거나, 데이터를 기기 밖으로 내보내지 않고 자신의 AI 키로 재무 인사이트를 얻고 싶다면 MoneyWise가 더 적합합니다.",
+      "when_choose_moneywise": "재무 데이터를 기기에 로컬로 저장하고 싶거나, 다중 통화로 여행이 잦아 본격적인 추적이 필요하거나, 데이터를 기기 밖으로 내보내지 않고 자신의 AI 키로 재무 인사이트를 얻고 싶다면 MoneyWise가 더 적합합니다.",
       "faq": [
         {
           "q": "Spendee와 MoneyWise의 가격은 어떻게 비교되나요?",
@@ -302,11 +302,11 @@
         },
         {
           "q": "Spendee는 데이터를 로컬에 저장하나요, 클라우드에 저장하나요?",
-          "a": "Spendee는 데이터를 클라우드에 동기화합니다. MoneyWise는 모든 데이터를 기기의 암호화된 데이터베이스에 저장하며 Pro 플랜에서 선택적 종단간 암호화 클라우드 동기화를 제공합니다."
+          "a": "Spendee는 데이터를 클라우드에 동기화합니다. MoneyWise는 데이터를 기기의 데이터베이스에 로컬로 저장하며, Pro 플랜에서 선택적 클라우드 동기화를 제공합니다."
         },
         {
           "q": "두 앱 모두 다중 통화를 지원하는데, 차이점은 무엇인가요?",
-          "a": "Spendee의 다중 통화 지원은 그룹 지갑과 여행 사용에 강점이 있습니다. MoneyWise는 추가로 로컬 우선 암호화를 통해 다중 통화 데이터를 기기에 보관하고 BYOK AI로 모든 통화의 지출을 분석할 수 있습니다."
+          "a": "Spendee의 다중 통화 지원은 그룹 지갑과 여행 사용에 강점이 있습니다. MoneyWise는 로컬 우선이라 다중 통화 데이터가 기본적으로 기기에 머물며, BYOK AI로 모든 통화의 지출을 분석할 수 있습니다."
         },
         {
           "q": "Spendee에는 AI 기능이 있나요?",
@@ -318,7 +318,7 @@
         },
         {
           "q": "Spendee는 데스크톱에서 사용할 수 있나요?",
-          "a": "Spendee에는 웹 인터페이스가 있으며 주요 경험은 iOS와 Android입니다. MoneyWise도 iOS, Android, 웹을 지원합니다."
+          "a": "Spendee에는 웹 인터페이스가 있으며 주요 경험은 iOS와 Android입니다. MoneyWise는 iPhone, Android, Mac과 Apple Watch 앱을 지원하며, 웹 버전은 없습니다."
         }
       ]
     },
@@ -342,15 +342,15 @@
         },
         {
           "q": "PocketGuard는 금융 데이터를 어디에 저장하나요?",
-          "a": "PocketGuard는 연결된 계좌를 클라우드 서버에 동기화합니다. MoneyWise는 모든 데이터를 기기의 암호화된 데이터베이스에 저장하며 Pro 플랜에서 선택적 종단간 암호화 클라우드 동기화를 제공합니다."
+          "a": "PocketGuard는 연결된 계좌를 클라우드 서버에 동기화합니다. MoneyWise는 모든 데이터를 기기의 데이터베이스에 저장하며, Pro 플랜에서 선택적 클라우드 동기화를 제공합니다."
         },
         {
           "q": "PocketGuard에는 AI 기능이 있나요?",
-          "a": "PocketGuard Plus에는 지출 가이던스를 위한 AI 채팅 어시스턴트가 포함되어 있습니다. MoneyWise Pro는 자신의 Anthropic 또는 OpenAI 키를 사용하는 BYOK AI 어드바이저를 제공하여 거래 내역이 서드파티로 전송되지 않습니다."
+          "a": "PocketGuard Plus에는 지출 가이던스를 위한 AI 채팅 어시스턴트가 포함되어 있습니다. MoneyWise Pro는 자신의 Anthropic 또는 OpenAI 키를 사용하는 BYOK AI 어드바이저를 제공하므로, 요청이 벤더 서버를 거치지 않고 기기에서 선택한 제공업체로 바로 전송됩니다."
         },
         {
           "q": "PocketGuard의 웹 버전이 있나요?",
-          "a": "PocketGuard는 주로 iOS와 Android 모바일 앱이며 완전한 웹 버전은 없습니다. MoneyWise는 iOS, Android, 웹을 지원합니다."
+          "a": "PocketGuard는 주로 iOS와 Android 모바일 앱이며 완전한 웹 버전은 없습니다. MoneyWise도 웹 버전은 없으며, iPhone·Android·Mac과 Apple Watch를 지원합니다."
         }
       ]
     },
@@ -358,7 +358,7 @@
       "one_liner": "중국 최대의 개인 재무 관리 앱（은행 동기화 및 음성 입력 지원）",
       "positioning": "随手記（Feidee Money Manager）는 중국에서 가장 널리 사용되는 개인 재무 앱으로, 随手科技（Feidee）가 개발했습니다. 중국 은행 연동을 통한 계좌 동기화, 투자 관리, 영수증 촬영, 음성 입력 기능을 갖추고 있습니다. MoneyWise는 로컬 우선 설계, 다중 통화 지원, BYOK AI를 통해 더 높은 개인정보 보호 수준을 원하는 사용자를 위한 앱입니다.",
       "when_choose_competitor": "중국 본토에 거주하며 중국 은행 계좌와 자동 연동을 원하고, 기능이 풍부하고 커뮤니티가 활발한 앱을 선호하며, 클라우드 저장 및 광고 포함 무료 모델을 수용할 수 있다면 随手記가 적합합니다.",
-      "when_choose_moneywise": "여러 통화를 관리해야 하거나, 데이터를 기기에 암호화 저장하고 싶거나, 광고와 추적기 없는 환경을 원하거나, 자신의 API 키로 AI 어드바이저를 사용하고 싶다면 MoneyWise가 더 적합합니다.",
+      "when_choose_moneywise": "여러 통화를 관리해야 하거나, 재무 데이터를 광고 없이 기기에 로컬로 저장하고 싶거나, 자신의 API 키로 완전히 제어하는 AI 어드바이저가 필요하거나, 随手记의 은행 동기화가 작동하지 않는 중국 본토 밖에 있다면 MoneyWise가 더 적합합니다.",
       "faq": [
         {
           "q": "随手記를 중국 본토 밖에서도 사용할 수 있나요?",
@@ -370,7 +370,7 @@
         },
         {
           "q": "随手記는 데이터를 어디에 저장하나요?",
-          "a": "随手記는 Feidee의 클라우드 서버에 동기화합니다. MoneyWise는 모든 데이터를 기기 내 암호화 데이터베이스에 저장하며, 클라우드 동기화는 선택적이고 종단간 암호화됩니다."
+          "a": "随手記는 Feidee의 클라우드 서버에 동기화합니다. MoneyWise는 모든 데이터를 기기 내 데이터베이스에 저장하며, 클라우드 동기화는 선택 사항(Pro)입니다."
         },
         {
           "q": "随手記는 다중 통화를 지원하나요?",
@@ -390,7 +390,7 @@
       "one_liner": "깔끔한 디자인의 중국 시장 가계부 앱",
       "positioning": "鲨鱼记账은 중국에서 깔끔한 디자인과 간편한 사용성으로 인기 있는 경량 가계부 앱입니다. 일상 지출 기록, 예산 관리, 영수증 촬영에 특화되어 있습니다. MoneyWise는 더 넓은 플랫폼 지원, 다중 통화, 로컬 우선 개인정보 보호, BYOK AI를 제공합니다.",
       "when_choose_competitor": "중국 내에서 CNY 중심의 간단한 지출 기록 앱을 원하고, 연간 약 ¥25（약 $3.50）의 매우 저렴한 VIP 옵션을 찾는다면 鲨鱼记账이 적합합니다.",
-      "when_choose_moneywise": "여러 통화를 관리하거나, 데이터를 기기에 로컬 저장하거나, AI 어드바이저나 폭넓은 플랫폼 지원이 필요하다면 MoneyWise가 더 적합합니다.",
+      "when_choose_moneywise": "여러 통화를 관리하거나, 재무 데이터를 기기에 로컬로 저장하고 싶거나, 기본 예산·영수증 기록 이상의 기능이 필요하거나, 자신의 API 키로 작동하는 AI 어드바이저를 원한다면 MoneyWise가 더 적합합니다.",
       "faq": [
         {
           "q": "鲨鱼记账을 중국 밖에서도 사용할 수 있나요?",
@@ -398,11 +398,11 @@
         },
         {
           "q": "鲨鱼记账의 가격은 MoneyWise와 어떻게 다른가요?",
-          "a": "VIP 플랜은 연간 약 ¥25（약 $3.50）로 매우 저렴합니다. MoneyWise는 1기기 무료, Pro 플랜은 AI·동기화·백업 포함 $6.99/월 또는 $49.99/년입니다."
+          "a": "VIP 플랜은 연간 약 ¥25（약 $3.50）로 매우 저렴합니다. MoneyWise는 1기기 무료, Pro 플랜은 동기화·가족 공유·AI(본인 키 사용) 포함 $6.99/월 또는 $49.99/년입니다."
         },
         {
           "q": "鲨鱼记账은 은행 동기화를 지원하나요?",
-          "a": "지원하지 않습니다. 수동 입력 전용 앱입니다. MoneyWise도 수동 입력 중심이지만 로컬 암호화 저장소로 데이터를 보호합니다."
+          "a": "지원하지 않습니다. 수동 입력 전용 앱입니다. MoneyWise도 수동 입력 중심이라 두 앱 모두 기본적으로 프라이버시가 보호되며, MoneyWise는 여기에 다중 통화 계좌와 BYOK AI를 더합니다."
         },
         {
           "q": "鲨鱼记账은 다중 통화를 지원하나요?",
@@ -414,23 +414,23 @@
         },
         {
           "q": "鲨鱼记账에 웹 버전이 있나요?",
-          "a": "모바일 전용（iOS·Android）입니다. MoneyWise는 모바일 외에도 웹을 지원합니다."
+          "a": "모바일 전용（iOS·Android）입니다. MoneyWise는 모바일 앱 외에 Mac 앱과 Apple Watch 앱도 제공합니다."
         }
       ]
     },
     "qianji": {
       "one_liner": "개인정보 보호 중심, 오프라인 우선 중국 가계부 앱",
-      "positioning": "钱迹는 '데이터를 업로드하지 않는다'고 명시하는 개인정보 보호 중심의 중국 가계부 앱입니다. 데이터는 기본적으로 로컬에 저장되며, WebDAV 자체 호스팅 동기화를 지원하고 광고와 추적기가 없습니다——MoneyWise와 공통된 가치관을 지닙니다. MoneyWise가 추가로 제공하는 것: BYOK AI 어드바이저, 다중 통화 지원, 웹 인터페이스.",
+      "positioning": "钱迹는 '데이터를 업로드하지 않는다'고 명시하는 개인정보 보호 중심의 중국 가계부 앱입니다. 데이터는 기본적으로 로컬에 저장되며, WebDAV 자체 호스팅 동기화를 지원하고 광고가 없습니다——MoneyWise와 공통된 가치관을 지닙니다. MoneyWise가 추가로 제공하는 것: BYOK AI, 다중 통화 지원, iOS/Android를 넘어서는 크로스 플랫폼 지원.",
       "when_choose_competitor": "오프라인 우선 중국어 가계부 앱을 원하고, 구독 없이 일회성 결제 모델을 선호하며, 개인정보 보호를 최우선으로 생각한다면 钱迹가 훌륭한 선택입니다.",
-      "when_choose_moneywise": "다중 통화 관리가 필요하거나, 자신의 API 키로 AI 어드바이저를 사용하고 싶거나, 웹 인터페이스가 필요하거나, 중국 시장 외 글로벌 사용자라면 MoneyWise가 더 적합합니다.",
+      "when_choose_moneywise": "해외 계좌를 위한 다중 통화 관리가 필요하거나, 자신의 API 키로 AI 어드바이저를 사용하고 싶거나, 모바일과 함께 Mac 앱을 원하거나, 중국 밖에서 글로벌 사용자를 위해 설계된 앱을 원한다면 MoneyWise가 더 적합합니다.",
       "faq": [
         {
           "q": "钱迹와 MoneyWise는 같은 개인정보 철학을 공유하나요?",
-          "a": "네. 두 앱 모두 '재무 데이터는 기기에 머물러야 한다'는 원칙으로 만들어졌습니다. 钱迹는 데이터 비업로드를 명시하고, MoneyWise는 모든 데이터를 기기 내 암호화 데이터베이스에 저장합니다. 중국 앱 중 MoneyWise와 가장 가까운 형제 앱입니다."
+          "a": "네. 두 앱 모두 '재무 데이터는 기기에 머물러야 한다'는 원칙으로 만들어졌습니다. 钱迹는 데이터 비업로드를 명시하고, MoneyWise는 모든 데이터를 기기 내 SQLite 데이터베이스에 저장하며 클라우드 동기화는 선택 사항(Pro)입니다. 중국 앱 중 MoneyWise와 가장 가까운 형제 앱입니다."
         },
         {
           "q": "钱迹의 클라우드 동기화와 MoneyWise는 어떻게 다른가요?",
-          "a": "钱迹는 WebDAV 동기화를 지원해 자신의 클라우드 저장소(예: Nextcloud)로 동기화할 수 있습니다. MoneyWise Pro는 MoneyWise가 관리하는 종단간 암호화 클라우드 동기화를 제공하며 별도 서버 설정이 필요 없습니다."
+          "a": "钱迹는 WebDAV 동기화를 지원해 자신의 클라우드 저장소(예: Nextcloud)로 동기화할 수 있습니다. MoneyWise Pro는 MoneyWise가 관리하는 클라우드 동기화를 제공하며 별도 서버 설정이 필요 없습니다."
         },
         {
           "q": "钱迹는 다중 통화를 지원하나요?",
@@ -442,19 +442,19 @@
         },
         {
           "q": "钱迹와 MoneyWise의 가격 차이는 무엇인가요?",
-          "a": "钱迹는 일회성 인앱 구매로 프로 기능을 해제합니다(구독 없음). MoneyWise는 1기기 무료, Pro 플랜은 AI·동기화·백업 포함 $6.99/월 또는 $49.99/년입니다."
+          "a": "钱迹는 일회성 인앱 구매로 프로 기능을 해제합니다(구독 없음). MoneyWise는 1기기 무료, Pro 플랜은 동기화·가족 공유·AI(본인 키 사용) 포함 $6.99/월 또는 $49.99/년입니다."
         },
         {
           "q": "钱迹에 웹 버전이 있나요?",
-          "a": "모바일 전용(iOS·Android)입니다. MoneyWise는 모바일 외에도 웹을 지원합니다."
+          "a": "모바일 전용(iOS·Android)입니다. MoneyWise는 Mac 앱도 있어 컴퓨터 앞에서 재무를 검토할 때 편리합니다."
         }
       ]
     },
     "moneykeeper": {
       "one_liner": "다중 통화를 지원하는 중국 개발 가계부 앱",
-      "positioning": "MoneyKeeper（记账本）는 중국 개발자가 만든 가계부 앱으로, 다중 통화 지원, 예산 관리, 영수증 촬영 기능을 갖춰 여행자에게 유용합니다. MoneyWise는 로컬 암호화 저장, BYOK AI, 선택적 종단간 암호화 클라우드 동기화, 광고 없음을 추가로 제공합니다.",
+      "positioning": "MoneyKeeper（记账本）는 중국 개발자가 만든 가계부 앱으로, 다중 통화 지원, 예산 관리, 영수증 촬영 기능을 갖춰 여행자에게 유용합니다. MoneyWise는 로컬 우선 저장, BYOK AI, 선택적 클라우드 동기화, 광고 없음을 추가로 제공합니다.",
       "when_choose_competitor": "무료 다중 통화 가계부를 원하고 광고 포함 모델이나 소액 일회성 광고 제거를 수용할 수 있다면 MoneyKeeper가 간단한 선택입니다.",
-      "when_choose_moneywise": "데이터를 기기에 개인적으로 저장하고 싶거나, BYOK AI 재무 분석이 필요하거나, 광고와 추적기가 없는 환경을 원하거나, 선택적 종단간 암호화 클라우드 동기화가 필요하다면 MoneyWise가 더 적합합니다.",
+      "when_choose_moneywise": "데이터를 기기에 개인적으로 저장하고 싶거나, BYOK AI 재무 분석이 필요하거나, 처음부터 광고 없는 환경을 원하거나, 기기 간 선택적 클라우드 동기화가 필요하다면 MoneyWise가 더 적합합니다.",
       "faq": [
         {
           "q": "MoneyKeeper는 무료인가요?",
@@ -466,7 +466,7 @@
         },
         {
           "q": "MoneyKeeper는 데이터를 어디에 저장하나요?",
-          "a": "기기에 저장되지만 종단간 암호화 클라우드 백업은 없습니다. MoneyWise는 모든 데이터를 기기 내 암호화 데이터베이스에 저장하고, Pro에서는 종단간 암호화 동기화도 선택할 수 있습니다."
+          "a": "MoneyKeeper는 데이터를 기기에 저장합니다. MoneyWise는 모든 데이터를 기기 내 데이터베이스에 저장하며, Pro에서는 클라우드 동기화도 선택할 수 있습니다."
         },
         {
           "q": "MoneyKeeper는 은행 동기화를 지원하나요?",
@@ -484,9 +484,9 @@
     },
     "pyeonhan": {
       "one_liner": "광고가 포함된 심플한 한국 수동 입력 가계부 앱",
-      "positioning": "편한가계부는 한국에서 인기 있는 심플한 수동 입력 가계부 앱으로, 광고가 포함된 무료 버전과 소액 일회성 광고 제거 구매로 제공됩니다. 일상 지출 기록과 기본 예산 관리를 지원하지만 은행 동기화나 AI 기능은 없습니다. MoneyWise는 로컬 우선 암호화 저장소, 다중 통화 지원, 웹 접근, BYOK AI로 더 깊은 기능과 프라이버시를 원하는 사용자에게 적합합니다.",
+      "positioning": "편한가계부는 한국에서 인기 있는 심플한 수동 입력 가계부 앱으로, 광고가 포함된 무료 버전과 소액 일회성 광고 제거 구매로 제공됩니다. 일상 지출 기록과 기본 예산 관리를 지원하지만 은행 동기화나 AI 기능은 없습니다. MoneyWise는 로컬 우선 저장, 다중 통화 지원, Mac 앱, BYOK AI로 더 깊은 기능과 프라이버시를 원하는 사용자에게 적합합니다.",
       "when_choose_competitor": "원화 일상 지출을 가장 간단하게 기록하고 싶고, 광고에 불편함이 없으며, 은행 동기화·웹 접근·AI 기능이 필요 없다면 편한가계부가 적합합니다.",
-      "when_choose_moneywise": "광고·트래커 없이 암호화된 로컬 데이터베이스에 데이터를 저장하고 싶거나, 다중 통화 지원이 필요하거나, 모바일과 함께 웹 인터페이스를 원하거나, 자신의 API 키로 작동하는 AI 어드바이저가 필요하다면 MoneyWise가 더 적합합니다.",
+      "when_choose_moneywise": "광고 없이 기기에 로컬로 데이터를 저장하고 싶거나, 다중 통화 지원이 필요하거나, 모바일과 함께 Mac 앱을 원하거나, 자신의 API 키로 작동하는 AI 어드바이저가 필요하다면 MoneyWise가 더 적합합니다.",
       "faq": [
         {
           "q": "편한가계부는 무료인가요?",
@@ -502,7 +502,7 @@
         },
         {
           "q": "편한가계부에 웹 버전이 있나요?",
-          "a": "없습니다. iOS와 Android만 지원합니다. MoneyWise는 iOS·Android·웹을 지원합니다."
+          "a": "없습니다. iOS와 Android만 지원합니다. MoneyWise는 iPhone·Android·Mac과 Apple Watch를 지원하며, 웹 버전은 없습니다."
         },
         {
           "q": "편한가계부에는 AI 기능이 있나요?",
@@ -518,7 +518,7 @@
       "one_liner": "AI 금융 비서가 탑재된 대한민국 최대의 자산 관리 앱",
       "positioning": "뱅크샐러드는 국내 은행·카드·보험 계좌를 연동하는 대한민국 최대의 개인 재무 앱으로, AI 금융 비서를 내장하고 있습니다. 무료로 제공되며 금융 상품 추천을 통해 수익을 창출합니다. MoneyWise는 로컬 우선 프라이버시, 글로벌 다중 통화 지원, BYOK AI를 제공하여 한국 금융 시스템을 넘어 프라이버시와 국제적 유연성이 필요한 사용자에게 적합합니다.",
       "when_choose_competitor": "대한민국에 거주하며 모든 국내 은행 계좌, 신용카드, 보험을 무료로 자동 집계하고 싶고 추천 기반 수익 모델을 수용할 수 있다면 뱅크샐러드가 적합합니다.",
-      "when_choose_moneywise": "여러 통화를 사용하거나, 트래커 없이 기기에 재무 데이터를 저장하고 싶거나, 자신의 조건으로 데이터를 처리하는 BYOK AI 어드바이저가 필요하거나, 한국 외 지역에 거주하여 뱅크샐러드의 국내 금융 시스템 연동이 해당되지 않는다면 MoneyWise가 더 적합합니다.",
+      "when_choose_moneywise": "여러 통화를 사용하거나, 광고 없이 기기에 재무 데이터를 로컬로 저장하고 싶거나, 자신의 조건으로 데이터를 처리하는 BYOK AI 어드바이저가 필요하거나, 한국 외 지역에 거주하여 뱅크샐러드의 국내 금융 시스템 연동이 해당되지 않는다면 MoneyWise가 더 적합합니다.",
       "faq": [
         {
           "q": "뱅크샐러드는 해외에서도 사용할 수 있나요?",
@@ -538,23 +538,23 @@
         },
         {
           "q": "뱅크샐러드는 데이터를 로컬에 저장하나요, 클라우드에 저장하나요?",
-          "a": "뱅크샐러드는 연결된 모든 계좌 데이터를 클라우드 서버에 동기화합니다. MoneyWise는 모든 데이터를 기기의 암호화된 데이터베이스에 저장합니다. MoneyWise의 클라우드 동기화는 선택 사항으로 종단간 암호화됩니다."
+          "a": "뱅크샐러드는 연결된 모든 계좌 데이터를 클라우드 서버에 동기화합니다. MoneyWise는 모든 데이터를 기기의 데이터베이스에 저장합니다. MoneyWise의 클라우드 동기화는 선택 사항(Pro)입니다."
         },
         {
           "q": "뱅크샐러드의 비즈니스 모델은 내 프라이버시에 어떤 영향을 미치나요?",
-          "a": "뱅크샐러드가 무료인 이유는 재무 프로필을 분석하여 금융 상품을 추천하기 때문입니다. MoneyWise에는 트래커가 없으며 Pro 구독만으로 수익을 얻으므로 상품 매칭을 위한 데이터 분석이 이루어지지 않습니다."
+          "a": "뱅크샐러드가 무료인 이유는 재무 프로필을 분석하여 금융 상품을 추천하기 때문입니다. MoneyWise는 광고가 없고 데이터를 판매하지 않으며 Pro 구독만으로 수익을 얻으므로, 상품 매칭을 위한 데이터 분석이 이루어지지 않습니다."
         }
       ]
     },
     "moneytree": {
       "one_liner": "프라이버시를 중시하는 일본의 금융 데이터 집계 앱",
-      "positioning": "Moneytree(マネーツリー)는 광고 없음, 데이터 브로커링 없음, 트래커 없음을 내세우는 프라이버시 중심의 일본 금융 데이터 집계 서비스입니다. MoneyWise와 유사하게 사용자 데이터 프라이버시를 중요하게 여기지만, 핵심 차이점은 Moneytree가 예산 관리 기능 없이 집계(은행 동기화·투자)에 집중하고 일본 전용이라는 점입니다. MoneyWise는 로컬 암호화 저장소, 다중 통화 지원, 예산 관리, BYOK AI로 한발 더 나아갑니다.",
+      "positioning": "Moneytree(マネーツリー)는 광고 없음, 데이터 브로커링 없음, 트래커 없음을 내세우는 프라이버시 중심의 일본 금융 데이터 집계 서비스입니다. MoneyWise와 유사하게 사용자 데이터 프라이버시를 중요하게 여기지만, 핵심 차이점은 Moneytree가 예산 관리 기능 없이 집계(은행 동기화·투자)에 집중하고 일본 전용이라는 점입니다. MoneyWise는 로컬 우선 저장, 다중 통화 지원, 예산 관리, BYOK AI로 한발 더 나아갑니다.",
       "when_choose_competitor": "일본에 거주하며 광고 없이 프라이버시를 존중하는 방식으로 일본 은행 및 투자 계좌를 집계하고 싶고 상세한 예산 관리 기능은 필요하지 않다면 Moneytree가 적합합니다.",
-      "when_choose_moneywise": "계좌 집계와 함께 적극적인 예산 관리 도구가 필요하거나, 여러 통화를 사용하거나, 데이터를 로컬 암호화 데이터베이스에 저장하고 싶거나, 자신의 조건으로 데이터를 비공개로 처리하는 BYOK AI 어드바이저가 필요하다면 MoneyWise가 더 적합합니다.",
+      "when_choose_moneywise": "계좌 집계와 함께 적극적인 예산 관리 도구가 필요하거나, 여러 통화를 사용하거나, 데이터를 기기에 로컬로 저장하고 싶거나, 자신의 조건으로 데이터를 비공개로 처리하는 BYOK AI 어드바이저가 필요하다면 MoneyWise가 더 적합합니다.",
       "faq": [
         {
           "q": "Moneytree와 MoneyWise는 같은 프라이버시 철학을 가지고 있나요?",
-          "a": "두 앱 모두 프라이버시를 진지하게 다룹니다. Moneytree는 광고와 데이터 브로커링을 명확히 배제하고, MoneyWise는 모든 데이터를 로컬 암호화 데이터베이스에 저장합니다. 주요 차이점은 Moneytree가 클라우드 집계 서비스(데이터가 Moneytree 서버에 저장)인 반면, MoneyWise는 암호화 동기화를 선택하지 않는 한 모든 데이터를 기기에 유지한다는 점입니다."
+          "a": "두 앱 모두 프라이버시를 진지하게 다룹니다. Moneytree는 광고와 데이터 브로커링을 명확히 배제하고, MoneyWise는 모든 데이터를 기기에 로컬로 저장합니다. 주요 차이점은 Moneytree가 클라우드 집계 서비스(데이터가 Moneytree 서버에 저장)인 반면, MoneyWise는 클라우드 동기화를 선택하지 않는 한 모든 데이터를 기기에 유지한다는 점입니다."
         },
         {
           "q": "Moneytree는 예산 관리를 지원하나요?",
@@ -574,7 +574,7 @@
         },
         {
           "q": "Moneytree와 MoneyWise의 가격은 어떻게 다른가요?",
-          "a": "Moneytree에는 무료 플랜이 있고 Moneytree Plus는 약 ¥500/월(약 $3.30/월)입니다. MoneyWise는 단일 기기에서 무료이고 Pro 플랜은 멀티 기기 동기화·백업·예산 관리·BYOK AI 포함 $6.99/월 또는 $49.99/년입니다."
+          "a": "Moneytree에는 무료 플랜이 있고 Moneytree Plus는 약 ¥500/월(약 $3.30/월)입니다. MoneyWise는 단일 기기에서 무료이고 Pro 플랜은 멀티 기기 동기화·투자·BYOK AI 포함 $6.99/월 또는 $49.99/년입니다."
         }
       ]
     },
@@ -582,7 +582,7 @@
       "one_liner": "2,500개 이상 일본 금융 기관을 연동하는 일본 최대의 자산 관리 앱",
       "positioning": "마네포워드 ME(マネーフォワード ME)는 일본 최대의 개인 재무 집계 서비스로, 은행·신용카드·증권 계좌 등 2,500개 이상의 일본 금융 기관과 연동됩니다. MoneyWise는 로컬 우선 프라이버시, 다중 통화 추적, BYOK AI로 일본 중심 클라우드 집계 플랫폼 이상을 원하는 사용자에게 적합합니다.",
       "when_choose_competitor": "일본에 거주하며 모든 일본 은행 계좌, 신용카드, 투자 포트폴리오를 한 곳에서 자동 집계하고 싶고 클라우드 기반 구독 서비스를 수용할 수 있다면 마네포워드 ME가 적합합니다.",
-      "when_choose_moneywise": "여러 통화를 사용하거나, 광고·트래커 없이 기기에 재무 데이터를 저장하고 싶거나, 자신의 API 키로 완전히 제어하는 AI 어드바이저가 필요하거나, 일본 외 지역에서 마네포워드 ME의 기관 연동이 작동하지 않는 분께는 MoneyWise가 더 적합합니다.",
+      "when_choose_moneywise": "여러 통화를 사용하거나, 광고 없이 기기에 재무 데이터를 로컬로 저장하고 싶거나, 자신의 API 키로 완전히 제어하는 AI 어드바이저가 필요하거나, 일본 외 지역에서 마네포워드 ME의 기관 연동이 작동하지 않는 분께는 MoneyWise가 더 적합합니다.",
       "faq": [
         {
           "q": "마네포워드 ME는 일본 외 지역에서도 사용할 수 있나요?",
@@ -594,7 +594,7 @@
         },
         {
           "q": "마네포워드 ME는 데이터를 로컬에 저장하나요, 클라우드에 저장하나요?",
-          "a": "마네포워드 ME는 연결된 모든 계좌 데이터를 클라우드 서버에 동기화합니다. MoneyWise는 모든 데이터를 기기의 암호화된 데이터베이스에 저장합니다. MoneyWise의 클라우드 동기화는 선택 사항으로 종단간 암호화됩니다."
+          "a": "마네포워드 ME는 연결된 모든 계좌 데이터를 클라우드 서버에 동기화합니다. MoneyWise는 모든 데이터를 기기의 데이터베이스에 저장합니다. MoneyWise의 클라우드 동기화는 선택 사항(Pro)입니다."
         },
         {
           "q": "마네포워드 ME는 다중 통화를 지원하나요?",
@@ -614,7 +614,7 @@
       "one_liner": "일본 최대의 가계부 앱",
       "positioning": "Zaim은 일본에서 가장 인기 있는 가계부(家計簿) 앱으로, 일본 은행 연동, 영수증 스캔, 예산 관리 기능을 제공합니다. MoneyWise는 로컬 우선 프라이버시, 다중 통화 추적, BYOK AI로 일본 중심 클라우드 플랫폼 이상을 필요로 하는 사용자에게 적합합니다.",
       "when_choose_competitor": "일본에 거주하며 일본 은행 계좌와 신용카드를 손쉽게 연동하고 싶고, 넓은 사용자 커뮤니티를 가진 성숙한 앱을 선호하며 클라우드 기반 프리미엄 모델을 수용할 수 있다면 Zaim이 적합합니다.",
-      "when_choose_moneywise": "여러 통화를 사용하거나, 광고·트래커 없이 기기에 재무 데이터를 저장하고 싶거나, 자신의 API 키로 완전히 제어하는 AI 어드바이저가 필요하거나, 일본 외 지역에서 Zaim의 은행 동기화가 작동하지 않는 분께는 MoneyWise가 더 적합합니다.",
+      "when_choose_moneywise": "여러 통화를 사용하거나, 광고 없이 기기에 재무 데이터를 로컬로 저장하고 싶거나, 자신의 API 키로 완전히 제어하는 AI 어드바이저가 필요하거나, 일본 외 지역에서 Zaim의 은행 동기화가 작동하지 않는 분께는 MoneyWise가 더 적합합니다.",
       "faq": [
         {
           "q": "Zaim은 일본 외 지역에서도 사용할 수 있나요?",
@@ -626,7 +626,7 @@
         },
         {
           "q": "Zaim은 데이터를 로컬에 저장하나요, 클라우드에 저장하나요?",
-          "a": "Zaim은 데이터를 클라우드 서버에 동기화합니다. MoneyWise는 모든 데이터를 기기의 암호화된 데이터베이스에 저장합니다. MoneyWise의 클라우드 동기화는 선택 사항으로 종단간 암호화됩니다."
+          "a": "Zaim은 데이터를 클라우드 서버에 동기화합니다. MoneyWise는 모든 데이터를 기기의 데이터베이스에 저장합니다. MoneyWise의 클라우드 동기화는 선택 사항(Pro)입니다."
         },
         {
           "q": "Zaim은 다중 통화를 지원하나요?",
@@ -646,7 +646,7 @@
       "one_liner": "귀여운 일러스트로 젊은 중국 사용자에게 인기 있는 가계부 앱",
       "positioning": "一木记账는 스티커 스타일 일러스트와 친근한 디자인으로, 딱딱한 재무 앱이 부담스러운 젊은 중국 사용자들에게 인기 있는 가계부 앱입니다. 예산 관리, 영수증 촬영, 선택적 클라우드 동기화를 제공합니다. MoneyWise는 로컬 우선 개인정보 보호, 다중 통화 지원, BYOK AI를 추가로 제공합니다.",
       "when_choose_competitor": "귀여운 디자인의 가벼운 가계부를 원하고, 주로 CNY를 사용하며, 월 약 ¥12 또는 연 ¥98의 저렴한 VIP 구독을 원한다면 一木记账가 재미있는 선택입니다.",
-      "when_choose_moneywise": "다중 통화 계좌 관리가 필요하거나, 데이터를 기기에 암호화 저장하고 싶거나, BYOK AI 어드바이저가 필요하거나, 웹 인터페이스가 필요하다면 MoneyWise가 더 적합합니다.",
+      "when_choose_moneywise": "다중 통화 계좌 관리가 필요하거나, 데이터를 기기에 개인적으로 저장하고 싶거나, 자신의 API 키로 작동하는 AI 어드바이저가 필요하거나, 휴대폰과 함께 Mac 앱을 원한다면 MoneyWise가 더 적합합니다.",
       "faq": [
         {
           "q": "一木记账는 다른 중국 가계부 앱과 무엇이 다른가요?",
@@ -654,7 +654,7 @@
         },
         {
           "q": "一木记账의 가격은 MoneyWise와 어떻게 다른가요?",
-          "a": "VIP는 약 ¥12/월 또는 ¥98/년（약 $1.70/월 · $13.70/년）입니다. MoneyWise는 1기기 무료, Pro 플랜은 AI·동기화·백업 포함 $6.99/월 또는 $49.99/년입니다."
+          "a": "VIP는 약 ¥12/월 또는 ¥98/년（약 $1.70/월 · $13.70/년）입니다. MoneyWise는 1기기 무료, Pro 플랜은 멀티 기기 동기화·가족 공유·BYOK AI 포함 $6.99/월 또는 $49.99/년입니다."
         },
         {
           "q": "一木记账는 다중 통화를 지원하나요?",
@@ -662,7 +662,7 @@
         },
         {
           "q": "一木记账는 데이터를 로컬에 저장하나요, 클라우드에 저장하나요?",
-          "a": "선택적 클라우드 동기화를 제공합니다. MoneyWise는 모든 데이터를 기기 내 암호화 데이터베이스에 저장하고, Pro에서는 종단간 암호화 동기화를 선택할 수 있습니다."
+          "a": "선택적 클라우드 동기화를 제공합니다. MoneyWise는 모든 데이터를 기기 내 데이터베이스에 저장하며, Pro에서는 클라우드 동기화를 선택할 수 있습니다."
         },
         {
           "q": "一木记账에 AI 기능이 있나요?",
@@ -676,17 +676,17 @@
     },
     "money-pro": {
       "one_liner": "iBear LLC의 풀 기능 iOS/macOS 재무 관리 앱",
-      "positioning": "Money Pro는 iBear LLC가 만든 iOS 및 macOS 개인 재무 앱으로, 강력한 다중 통화 지원, 자동 은행 동기화, 예산 관리, Apple Watch 연동이 특징입니다. Apple 생태계에서 MoneyWise와 가장 유사한 기능을 제공하는 앱 중 하나입니다. 핵심 차이점: Money Pro는 iCloud를 통해 은행 계좌 데이터를 클라우드에 동기화하지만, MoneyWise는 오프라인 우선으로 모든 데이터를 기기의 암호화된 데이터베이스에 저장합니다. MoneyWise에는 BYOK AI도 탑재되어 있어 자신의 Anthropic 또는 OpenAI 키를 사용해 추가 비용 없이 비공개 AI 재무 조언을 받을 수 있습니다.",
-      "when_choose_competitor": "Apple 금융 API와 깊이 통합된 자동 은행 동기화가 필요하거나, 지금 당장 네이티브 macOS 앱이 필요하거나, 구독 대신 일회성 구매($59.99 평생 라이선스)를 선호한다면 Money Pro가 좋은 선택입니다.",
+      "positioning": "Money Pro는 iBear LLC가 만든 iOS 및 macOS 개인 재무 앱으로, 강력한 다중 통화 지원, 자동 은행 동기화, 예산 관리, Apple Watch 연동이 특징입니다. Apple 생태계에서 MoneyWise와 가장 유사한 기능을 제공하는 앱 중 하나입니다. 핵심 차이점: Money Pro는 은행 계좌 데이터를 클라우드에 동기화하지만, MoneyWise는 오프라인 우선으로 모든 데이터를 기기에 저장합니다. MoneyWise에는 BYOK AI도 탑재되어 있어 자신의 Anthropic 또는 OpenAI 키를 사용해 추가 구독 없이 비공개 AI 재무 조언을 받을 수 있습니다.",
+      "when_choose_competitor": "Apple 금융 API와 깊이 통합된 자동 은행 동기화가 필요하거나, macOS를 주 플랫폼으로 사용하거나, 구독 대신 일회성 구매($59.99 평생 라이선스)를 선호한다면 Money Pro가 좋은 선택입니다.",
       "when_choose_moneywise": "클라우드에 의존하지 않고 데이터를 로컬에 저장하고 싶거나, 자신의 API 키를 사용하는 BYOK AI 어드바이저가 필요하거나, 예산 및 다중 통화 관리 외에 투자 포트폴리오도 추적하고 싶다면 MoneyWise가 더 적합합니다.",
       "faq": [
         {
           "q": "Money Pro와 MoneyWise의 가격을 비교하면 어떤가요?",
-          "a": "Money Pro는 $4.99/월 또는 $14.99/년 구독, $59.99 일회성 구매도 가능합니다. MoneyWise는 단일 기기에서 무료이며, Pro 플랜은 $6.99/월 또는 $49.99/년으로 멀티 디바이스 동기화·백업·BYOK AI가 포함됩니다."
+          "a": "Money Pro는 $4.99/월 또는 $14.99/년 구독, $59.99 일회성 구매도 가능합니다. MoneyWise는 단일 기기에서 무료이며, Pro 플랜은 $6.99/월 또는 $49.99/년으로 멀티 디바이스 동기화·가족 공유·BYOK AI가 포함됩니다."
         },
         {
           "q": "Money Pro는 macOS를 지원하나요?",
-          "a": "네 — Money Pro에는 네이티브 macOS 앱이 있어 Mac에서 재무 관리를 하는 사용자에게 큰 장점입니다. MoneyWise는 현재 iOS 전용이며 macOS 지원은 로드맵에 포함되어 있습니다."
+          "a": "네 — Money Pro에는 네이티브 macOS 앱이 있어 Mac에서 재무 관리를 하는 사용자에게 큰 장점입니다. MoneyWise도 이 사이트에서 다운로드할 수 있는 Mac 앱이 있습니다."
         },
         {
           "q": "Money Pro는 다중 통화를 지원하나요?",
@@ -694,7 +694,7 @@
         },
         {
           "q": "Money Pro는 데이터를 어디에 저장하나요?",
-          "a": "Money Pro는 iCloud를 통해 데이터를 동기화하므로 데이터가 Apple 서버를 거칩니다. MoneyWise는 모든 데이터를 기기의 암호화된 SQLite 데이터베이스에 저장하고, 클라우드 동기화는 선택 사항으로 종단간 암호화됩니다."
+          "a": "Money Pro는 iCloud를 통해 데이터를 동기화하므로 데이터가 Apple 서버를 거칩니다. MoneyWise는 모든 데이터를 기기의 SQLite 데이터베이스에 저장하며, 클라우드 동기화는 선택 사항(Pro)입니다."
         },
         {
           "q": "Money Pro에는 AI 기능이 있나요?",
@@ -714,11 +714,11 @@
       "faq": [
         {
           "q": "1Money는 정말 오프라인 우선인가요?",
-          "a": "네 — 1Money는 기본적으로 데이터를 기기에 로컬 저장하며 선택적 iCloud 동기화를 지원합니다. MoneyWise도 오프라인 우선으로 기기의 암호화된 SQLite 데이터베이스에 데이터를 저장하고, Pro에서는 선택적 종단간 암호화 동기화를 사용할 수 있습니다."
+          "a": "네 — 1Money는 기본적으로 데이터를 기기에 로컬 저장하며 선택적 iCloud 동기화를 지원합니다. MoneyWise도 오프라인 우선으로 기기의 SQLite 데이터베이스에 데이터를 저장하며, Pro에서는 선택적 클라우드 동기화를 사용할 수 있습니다."
         },
         {
           "q": "1Money와 MoneyWise의 가격을 비교하면 어떤가요?",
-          "a": "1Money는 무료 플랜이 있고 Premium은 $4.99/월이며 평생 구매 옵션도 있습니다. MoneyWise는 단일 기기에서 무료이며 Pro 플랜은 $6.99/월 또는 $49.99/년으로 멀티 디바이스 동기화·백업·BYOK AI가 포함됩니다."
+          "a": "1Money는 무료 플랜이 있고 Premium은 $4.99/월이며 평생 구매 옵션도 있습니다. MoneyWise는 단일 기기에서 무료이며 Pro 플랜은 $6.99/월 또는 $49.99/년으로 멀티 디바이스 동기화·가족 공유·BYOK AI가 포함됩니다."
         },
         {
           "q": "1Money는 다중 통화를 지원하나요?",
@@ -734,15 +734,15 @@
         },
         {
           "q": "1Money는 Android를 지원하나요?",
-          "a": "네 — 1Money는 iOS와 Android 모두에서 사용할 수 있습니다. MoneyWise는 현재 iOS 전용이며 Android는 향후 릴리스에서 지원 예정입니다."
+          "a": "네 — 1Money는 iOS와 Android 모두에서 사용할 수 있습니다. MoneyWise도 Android(Google Play 또는 APK 직접 다운로드, Android 8 이상)는 물론 iPhone과 Mac에서도 사용할 수 있습니다."
         }
       ]
     },
     "moneycoach": {
       "one_liner": "유럽 은행 동기화를 지원하는 AI 코치 내장 iOS 예산 앱",
-      "positioning": "MoneyCoach는 그리스 개발팀이 만든 세련된 iOS 및 macOS 예산 앱으로, 내장 AI 코치, 2,800개 이상의 유럽 은행 연결, 투자 추적, Apple Watch와 Apple Vision Pro를 포함한 깊은 Apple 생태계 통합이 특징입니다. MoneyWise와의 핵심 차이점은 AI 구현 방식입니다: MoneyCoach의 AI는 서버 측 내장 서비스로 데이터가 그들의 서버로 전송되지만, MoneyWise의 BYOK AI는 귀하 자신의 Anthropic 또는 OpenAI 키를 사용하므로 거래 데이터가 AI 분석을 위해 기기를 떠나지 않습니다. MoneyWise는 오프라인 우선 아키텍처를 채택하고 있으며, MoneyCoach의 은행 동기화는 클라우드 연결이 필요합니다.",
-      "when_choose_competitor": "유럽 은행 계좌 자동 동기화가 필요하거나, 지금 당장 네이티브 macOS 앱이 필요하거나, API 키 설정 없이 바로 사용할 수 있는 내장 AI 코치를 선호한다면 MoneyCoach가 훌륭한 선택입니다.",
-      "when_choose_moneywise": "트래커 없이 로컬에 데이터를 저장하고 싶거나, 자신의 API 키로 AI를 제어하고 싶거나(BYOK), MoneyCoach의 유럽 은행 동기화 범위 밖에 있는 은행을 사용하거나, 진정한 오프라인 우선 작동이 필요하다면 MoneyWise가 더 적합합니다.",
+      "positioning": "MoneyCoach는 그리스 개발팀이 만든 세련된 iOS 및 macOS 예산 앱으로, 내장 AI 코치, 2,800개 이상의 유럽 은행 연결, 투자 추적, Apple Watch와 Apple Vision Pro를 포함한 깊은 Apple 생태계 통합이 특징입니다. MoneyWise와의 핵심 차이점은 AI 구현 방식입니다: MoneyCoach의 AI는 서버 측 내장 서비스로 데이터가 그들의 서버로 전송되지만, MoneyWise의 BYOK AI는 귀하 자신의 Anthropic 또는 OpenAI 키를 사용하므로 요청이 벤더 서버를 거치지 않고 기기에서 선택한 제공업체로 바로 전송됩니다. MoneyWise는 오프라인 우선 아키텍처를 채택하고 있으며, MoneyCoach의 은행 동기화는 클라우드 연결이 필요합니다.",
+      "when_choose_competitor": "유럽 은행 계좌 자동 동기화가 필요하거나, API 키 설정 없이 바로 사용할 수 있는 내장 AI 코치를 선호한다면 MoneyCoach가 훌륭한 선택입니다.",
+      "when_choose_moneywise": "광고 없이 로컬에 데이터를 저장하고 싶거나, 자신의 API 키로 AI를 제어하고 싶거나(BYOK), MoneyCoach의 은행 동기화가 지원하지 않는 유럽 밖 은행을 사용하거나, 진정한 오프라인 우선 작동이 필요하다면 MoneyWise가 더 적합합니다.",
       "faq": [
         {
           "q": "MoneyCoach의 AI와 MoneyWise의 AI는 어떻게 다른가요?",
@@ -750,11 +750,11 @@
         },
         {
           "q": "MoneyCoach와 MoneyWise의 가격을 비교하면 어떤가요?",
-          "a": "MoneyCoach Premium은 $4.99/월 또는 $39.99/년이며 제한적인 무료 플랜도 있습니다. MoneyWise는 단일 기기에서 무료이며 Pro 플랜은 $6.99/월 또는 $49.99/년으로 멀티 디바이스 동기화·백업·BYOK AI가 포함됩니다."
+          "a": "MoneyCoach Premium은 $4.99/월 또는 $39.99/년이며 제한적인 무료 플랜도 있습니다. MoneyWise는 단일 기기에서 무료이며 Pro 플랜은 $6.99/월 또는 $49.99/년으로 멀티 디바이스 동기화·가족 공유·BYOK AI가 포함됩니다."
         },
         {
           "q": "MoneyCoach는 macOS를 지원하나요?",
-          "a": "네 — MoneyCoach에는 네이티브 macOS 앱(macOS 14 Sonoma 이상 필요)이 있으며 Apple Watch와 Apple Vision Pro도 지원합니다. MoneyWise는 현재 iOS 전용이며 macOS 지원은 계획 중입니다."
+          "a": "네 — MoneyCoach에는 네이티브 macOS 앱(macOS 14 Sonoma 이상 필요)이 있으며 Apple Watch와 Apple Vision Pro도 지원합니다. MoneyWise도 이 사이트에서 다운로드할 수 있는 Mac 앱과 Apple Watch 앱이 있습니다."
         },
         {
           "q": "MoneyCoach는 자동 은행 동기화를 지원하나요?",
@@ -766,7 +766,7 @@
         },
         {
           "q": "MoneyCoach는 데이터를 어디에 저장하나요?",
-          "a": "MoneyCoach는 iCloud를 통해 데이터를 동기화하고 은행 연결 및 AI 기능에 서드파티 서비스를 사용하므로 일부 데이터가 외부 서버를 거칩니다. MoneyWise는 모든 데이터를 기기의 암호화된 데이터베이스에 저장하고, 클라우드 동기화는 선택 사항으로 종단간 암호화됩니다."
+          "a": "MoneyCoach는 iCloud를 통해 데이터를 동기화하고 은행 연결 및 AI 기능에 서드파티 서비스를 사용하므로 일부 데이터가 외부 서버를 거칩니다. MoneyWise는 모든 데이터를 기기의 데이터베이스에 저장하며, 클라우드 동기화는 선택 사항(Pro)입니다."
         }
       ]
     }

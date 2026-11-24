@@ -1,0 +1,349 @@
+{
+  "faq": {
+    "meta_title": "FAQ · MoneyWise",
+    "meta_description": "Answers about MoneyWise: offline-first sync, multi-currency accounts, family sharing, budgets and savings goals, investments, the AI advisor, importing, widgets, Apple Watch, Pro, data export and account deletion.",
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions",
+    "subhead": "Straight answers about how MoneyWise works — what's free, what's Pro, where your data lives, and where to find things in the app.",
+    "toc_label": "Topics",
+    "still_title": "Didn't find your answer?",
+    "still_body": "Write to us — a real person reads every message. Mention your device and app version (Settings › About) so we can help faster.",
+    "cta_help": "Visit the Help Center",
+    "cta_email": "Email support"
+  },
+  "help": {
+    "meta_title": "Help Center · MoneyWise",
+    "meta_description": "Get started with MoneyWise, browse help by topic, and contact support.",
+    "eyebrow": "Help Center",
+    "title": "How can we help?",
+    "subhead": "Start here if you're new, jump to a topic, or get in touch. Most answers are a tap away.",
+    "start_title": "Get started in five steps",
+    "start_steps": [
+      {
+        "title": "Sign in",
+        "body": "Create an account with email, Google, or Sign in with Apple. On the Free plan your financial data stays on your device."
+      },
+      {
+        "title": "Pick your base currency",
+        "body": "Settings › General › Default Currency. Totals and reports are shown in this currency."
+      },
+      {
+        "title": "Add your accounts",
+        "body": "Cash, cards, savings, brokerage — each with its own currency and opening balance."
+      },
+      {
+        "title": "Record or import",
+        "body": "Tap + to add a transaction, share a receipt into the app, or import a CSV/XLSX statement from Settings › Account & Data › Import Data."
+      },
+      {
+        "title": "Set a budget and a goal",
+        "body": "Tap the Free to Spend card on Home to set up budgets; savings goals live in the Goals section of the Budget screen."
+      }
+    ],
+    "topics_title": "Browse by topic",
+    "topic_cta": "View answers",
+    "contact_title": "Still stuck? Talk to a human.",
+    "contact_body": "We're a small team and read every message. Include your device, app version, and a screenshot if you can.",
+    "contact_email_cta": "Email support",
+    "contact_inapp": "In the app: Settings › Help & Feedback lets you report a bug or request a feature directly.",
+    "links_title": "Useful links",
+    "link_privacy": "Privacy policy",
+    "link_delete": "Delete your account",
+    "link_download": "Download MoneyWise",
+    "link_compare": "Compare with other apps"
+  },
+  "sections": [
+    {
+      "id": "getting-started",
+      "icon": "help",
+      "title": "Getting started",
+      "summary": "Accounts, platforms and languages.",
+      "items": [
+        {
+          "q": "Do I need an account to use MoneyWise?",
+          "a": "Yes. You sign in with email and password, Google, or Sign in with Apple (iPhone and Mac). Signing in doesn't mean your data goes to the cloud: on the Free plan your records stay on your device, and cloud sync only starts if you have Pro and turn it on."
+        },
+        {
+          "q": "Which devices does MoneyWise run on?",
+          "a": "iPhone (iOS 15 or later), Apple Watch (watchOS 10 or later), Android 8.0 or later (Play Store beta, or the direct APK download for devices without Google Play), and macOS via a direct download. There's no dedicated iPad app yet."
+        },
+        {
+          "q": "Which languages are supported?",
+          "a": "English, Simplified Chinese, Traditional Chinese, Japanese and Korean."
+        },
+        {
+          "q": "Does it support the foldable iPhone?",
+          "a": "Yes. Unfolded in book pose, MoneyWise switches to a two-pane layout — Accounts and Activity show the list next to the details — and keeps controls off the crease. In laptop pose the tab bar stays at the bottom with a comfortable reading width."
+        },
+        {
+          "q": "Is there a dark mode?",
+          "a": "Yes, since 1.8. Go to Settings › General › Appearance and choose System, Light or Dark. System follows your phone's setting."
+        }
+      ]
+    },
+    {
+      "id": "sync",
+      "icon": "sync",
+      "title": "Sync & offline",
+      "summary": "How offline-first works and how cloud sync behaves.",
+      "items": [
+        {
+          "q": "Does MoneyWise work offline?",
+          "a": "Completely. Every record is written to a database on your device first, so you can add, edit and browse with no connection. If sync is on, changes queue up and upload automatically when you're back online."
+        },
+        {
+          "q": "How do I sync between my devices?",
+          "a": "Cloud sync is part of Pro. Sign in with the same account on each device, then go to Settings › Account & Data › Cloud Sync and turn it on. That screen also has <strong>Sync now</strong>, <strong>Re-download everything</strong>, and a sync history. It works across iPhone, Android and Mac."
+        },
+        {
+          "q": "Does it use iCloud?",
+          "a": "No. MoneyWise syncs through its own service (built on Supabase), tied to your MoneyWise account rather than your Apple ID — which is why it also works on Android."
+        },
+        {
+          "q": "What happens if I edit the same record on two devices?",
+          "a": "When both changes reach the server, the most recent edit wins."
+        },
+        {
+          "q": "How is my data protected?",
+          "a": "Data is sent over encrypted HTTPS connections and stored in your account, isolated from other users by server-side access rules. On your device it's covered by your phone's built-in storage protection, and you can add Face ID / Touch ID or a 6-digit PIN lock in Settings › Account & Data › Security & Privacy. See the <a href=\"{privacy}\">privacy policy</a> for details."
+        },
+        {
+          "q": "What happens to sync if my Pro subscription ends?",
+          "a": "Sync switches off, but nothing is deleted from your device — you keep using MoneyWise locally on the Free plan. Re-subscribe and sync resumes."
+        }
+      ]
+    },
+    {
+      "id": "accounts-currency",
+      "icon": "globe",
+      "title": "Accounts & currencies",
+      "summary": "Multi-currency accounts, exchange rates and transfers.",
+      "items": [
+        {
+          "q": "Can I have accounts in different currencies?",
+          "a": "Yes. Every account has its own currency. Set your base currency in Settings › General › Default Currency, and net worth, reports and the dashboard are converted into it."
+        },
+        {
+          "q": "Where do exchange rates come from?",
+          "a": "From the European Central Bank's reference rates (via Frankfurter). You can refresh them any time with Settings › General › Refresh Exchange Rates. MoneyWise supports the 31 currencies on the ECB list."
+        },
+        {
+          "q": "What happens if I change my base currency?",
+          "a": "Your history is recalculated into the new currency using today's exchange rate."
+        },
+        {
+          "q": "How do transfers between currencies work?",
+          "a": "When you transfer between accounts with different currencies, you can enter the exact amount that arrived (or the rate you got), so both balances stay accurate."
+        },
+        {
+          "q": "Can I connect my bank?",
+          "a": "No — MoneyWise doesn't link to banks. You record transactions yourself, share receipts into the app, or import statements (see <a href=\"#import-capture\">Import & capture</a>)."
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "icon": "users",
+      "title": "Family & shared ledgers",
+      "summary": "Sharing with a partner, roles, splitting and settling up.",
+      "items": [
+        {
+          "q": "How do I share a ledger with my partner or family?",
+          "a": "Family is a Pro feature. Go to Settings › Family and create one, then invite members with a 6-digit code (valid for 24 hours, single use). Each invite is either <strong>Editor</strong> (full read & write) or <strong>Viewer</strong> (read-only). Members join from the same screen. You can be in one family at a time."
+        },
+        {
+          "q": "Can we track who paid and split expenses?",
+          "a": "Yes. On shared expenses you can set who paid and split it equally, by amounts, or by percentage. The Settle up screen shows who owes whom, suggests settlements, and keeps a history. Settlements don't count as income or spending."
+        },
+        {
+          "q": "Can a family use more than one currency?",
+          "a": "The family's primary currency is fixed when you create it, but members can still record transactions in any currency — the dashboard converts them."
+        },
+        {
+          "q": "What happens when someone leaves, or the family is dissolved?",
+          "a": "A member who leaves gets their records copied back to their Personal ledger. The owner can't leave but can dissolve the family (by typing its name to confirm): everyone's records return to their Personal ledger, shared goals move to the owner, and family data is permanently deleted after 30 days."
+        }
+      ]
+    },
+    {
+      "id": "budgets-goals",
+      "icon": "target",
+      "title": "Budgets & savings goals",
+      "summary": "Budget periods, alerts, and the new savings goals.",
+      "items": [
+        {
+          "q": "How do budgets work?",
+          "a": "Tap the Free to Spend card on Home. Budgets can be weekly, monthly or yearly, cover one or several categories, and be organised into groups. You can move money between budgets with Transfer Budget, or reset one."
+        },
+        {
+          "q": "Will I get a warning before I overspend?",
+          "a": "Turn on Settings › General › Notifications › Budget alerts and MoneyWise notifies you at 80% of a budget and again if you go over. Alerts are scheduled on your device."
+        },
+        {
+          "q": "How do savings goals work?",
+          "a": "Open the Goals section on the Budget screen. Give a goal a target amount and a date, then track progress in one of two ways: from the combined balance of accounts you link to it, or from a manual log of deposits and withdrawals. Each goal shows how much you need per month and an estimated finish date at your recent pace."
+        },
+        {
+          "q": "How many goals can I create?",
+          "a": "One on the Free plan, unlimited with Pro."
+        }
+      ]
+    },
+    {
+      "id": "investments",
+      "icon": "chart",
+      "title": "Investments",
+      "summary": "Holdings, quotes and portfolio views.",
+      "items": [
+        {
+          "q": "What can I track?",
+          "a": "Stocks (including ETFs and funds), crypto, bonds and cash, with buy and sell transactions per holding, portfolio allocation, returns, and company events like earnings and dividends. Investments are part of Pro."
+        },
+        {
+          "q": "Where do prices come from?",
+          "a": "Market quotes come from Yahoo Finance. If a symbol doesn't show up in search, you can add it manually."
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "icon": "sparkles",
+      "title": "AI advisor & coach",
+      "summary": "Bring-your-own-key AI, what's shared, voice entry and MCP.",
+      "items": [
+        {
+          "q": "How does the AI advisor work?",
+          "a": "MoneyWise uses your own API key from Anthropic (Claude) or OpenAI. Add it in Settings › AI › AI Advisor. The key is stored in your device's secure storage (the Keychain on iPhone), and requests go straight from your device to the provider — not through MoneyWise servers. AI features such as the Investments daily report, monthly review write-ups and receipt scanning also require Pro."
+        },
+        {
+          "q": "What data is sent to the AI provider?",
+          "a": "Only what a feature needs. The monthly coach sends aggregated numbers and built-in category names — never your custom category or budget names, notes, merchants or account names. The Investments daily report sends your holdings (symbol, shares, price, value, day change) and recent return."
+        },
+        {
+          "q": "What does the coach do without AI?",
+          "a": "Coach insights and the monthly review card are calculated on your device, for free, with no API key. AI only comes in if you tap <strong>Explain & suggest</strong> or <strong>Write my review</strong>."
+        },
+        {
+          "q": "How does voice entry work?",
+          "a": "Say something like \"lunch 18 dollars\" and MoneyWise fills in the transaction. Voice entry uses an OpenAI key (even if Claude is your main provider). Free users get 5 voice entries a month; Pro is unlimited."
+        },
+        {
+          "q": "Can Claude, ChatGPT or Cursor access my MoneyWise data?",
+          "a": "Yes, with Pro. Settings › Account & Data › Extensions sets up a Model Context Protocol (MCP) connection, authorised with OAuth or a token, so your assistant can read — and if you allow it, add — accounts and transactions."
+        }
+      ]
+    },
+    {
+      "id": "import-capture",
+      "icon": "import",
+      "title": "Import & capture",
+      "summary": "Importing statements, share-to-capture, receipts and Shortcuts.",
+      "items": [
+        {
+          "q": "Can I import data from another app or my bank?",
+          "a": "Yes: Settings › Account & Data › Import Data. Supported: Alipay CSV, WeChat Pay CSV or XLSX, MoneyWise exports (ZIP or JSON), and any other CSV where you match the columns. Files are processed on your device, duplicates can be skipped, and MoneyWise remembers your category and payment-method mappings for next time."
+        },
+        {
+          "q": "What is share to capture?",
+          "a": "New in 1.8: from any app, tap Share and choose MoneyWise. A receipt photo is scanned into a draft transaction (Pro, with your AI key), text such as a payment message is turned into a record, and a CSV or XLSX statement opens the importer. Works on iPhone and Android."
+        },
+        {
+          "q": "How does receipt scanning work?",
+          "a": "Use Scan on Home (or share a photo into the app). The image is sent to your Anthropic or OpenAI key to read the amount, merchant, date, currency and category; you review it before saving. Receipt scanning is a Pro feature."
+        },
+        {
+          "q": "Does MoneyWise work with Siri and Shortcuts?",
+          "a": "On iPhone (iOS 16+) there are two Shortcuts actions: <strong>Log Expense</strong> and <strong>Today's Spending</strong>. Power users can also use the <code>moneywise://add</code> link with amount, note, category and currency parameters."
+        }
+      ]
+    },
+    {
+      "id": "widgets-watch",
+      "icon": "watch",
+      "title": "Widgets & Apple Watch",
+      "summary": "Home and Lock Screen widgets, the Watch app and complications.",
+      "items": [
+        {
+          "q": "Which widgets are available?",
+          "a": "On iPhone: <strong>Today & Budget</strong> (small) and <strong>Spending Overview</strong> (medium, with an Add button) for the Home Screen, plus <strong>Budget Ring</strong> and <strong>Today's Spending</strong> for the Lock Screen. On Android: small and medium home-screen widgets. Widgets are free."
+        },
+        {
+          "q": "What can I do on Apple Watch?",
+          "a": "See what's left to spend, today's spending, how much of the month's budget is used, and your last five transactions. Add an expense with the keypad or Digital Crown and pick a category, account and date. Complications put free-to-spend, today's spending, or an Add shortcut on your watch face. The Watch app is free and respects Hide Balances."
+        },
+        {
+          "q": "Why does my Watch say \"Pending sync\"?",
+          "a": "Entries made while your iPhone is out of reach are stored on the Watch and sync once it reconnects. Balances on the Watch update after the iPhone app has been opened."
+        }
+      ]
+    },
+    {
+      "id": "pro",
+      "icon": "crown",
+      "title": "Pro membership",
+      "summary": "What's included, trials, cancelling and restoring.",
+      "items": [
+        {
+          "q": "What's free and what's in Pro?",
+          "a": "<strong>Free:</strong> the full local ledger — accounts, transactions, budgets, bills, import and export, coach insights, one savings goal, widgets and Apple Watch, plus 5 voice entries a month. <strong>Pro</strong> adds cloud sync across devices, Family sharing, investments, receipt scanning and AI features (with your own key), transaction photos, unlimited goals and voice entry, and MCP extensions."
+        },
+        {
+          "q": "How much does Pro cost? Is there a trial?",
+          "a": "Pro is available monthly or yearly; the exact price in your currency is shown in the App Store or Google Play before you buy. New annual subscribers get a 7-day free trial."
+        },
+        {
+          "q": "How do I cancel?",
+          "a": "Settings › Subscription › Manage Subscription takes you to your App Store or Google Play subscriptions. On iPhone you can also go to Settings › your name › Subscriptions. Deleting the app or your account doesn't cancel the subscription by itself."
+        },
+        {
+          "q": "I reinstalled or got a new phone. How do I get Pro back?",
+          "a": "Sign in with the same MoneyWise account, then tap Settings › Subscription › Restore Purchases (or Restore at the bottom of the upgrade screen)."
+        }
+      ]
+    },
+    {
+      "id": "data-privacy",
+      "icon": "shield",
+      "title": "Data, privacy & security",
+      "summary": "Exporting, deleting your account, and locking the app.",
+      "items": [
+        {
+          "q": "How do I export my data?",
+          "a": "Settings › Account & Data › Export Data. Choose a range (30 days, 3 months, 1 year, all time, or custom) and you'll get a ZIP with <code>transactions.csv</code>, <code>accounts.csv</code> and <code>categories.csv</code> to save or share. The Mac app can also export JSON."
+        },
+        {
+          "q": "How do I delete my account?",
+          "a": "Settings › tap your profile (My Account) › Delete Account, then type DELETE to confirm. This removes your cloud data, receipts and avatar, leaves (or dissolves) your family, and signs you out. Data stored locally stays on that device until you uninstall the app or use Delete All Data. It does not cancel an App Store or Google Play subscription — cancel that separately. More on the <a href=\"{account_deletion}\">account deletion page</a>."
+        },
+        {
+          "q": "Can I erase the data on one device only?",
+          "a": "Yes: Settings › Account & Data › Security & Privacy › Delete All Data wipes the local data on that device. Anything already synced to your account stays in the cloud."
+        },
+        {
+          "q": "Does MoneyWise collect analytics or crash reports?",
+          "a": "Yes, two kinds. <strong>Usage statistics</strong> (which screens and features are used) go to our self-hosted analytics server; you can turn them off in Settings › Account & Data › Security & Privacy. <strong>Crash and performance reports</strong> go to Sentry so we can find and fix bugs; these can include device details and your IP address, and the analytics switch doesn't turn them off. MoneyWise has no ads and doesn't sell your data. See the <a href=\"{privacy}\">privacy policy</a>."
+        },
+        {
+          "q": "How can I lock the app?",
+          "a": "Security & Privacy offers Face ID / Touch ID (Touch ID on Mac too), a 6-digit PIN, auto-lock (immediately, or after 1, 5 or 15 minutes), Hide Balances, and a privacy blur that hides the app's contents in the app switcher."
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "icon": "mail",
+      "title": "Contact & support",
+      "summary": "How to reach us and report problems.",
+      "items": [
+        {
+          "q": "How do I contact support?",
+          "a": "Email <a href=\"mailto:{email}\">{email}</a>. In the app, Settings › Help & Feedback also lets you send a bug report or feature request directly."
+        },
+        {
+          "q": "What should I include in a bug report?",
+          "a": "Your device and OS version, the MoneyWise version (Settings › About), what you did, what you expected, and a screenshot or screen recording if possible. Never send your password or API keys."
+        }
+      ]
+    }
+  ]
+}

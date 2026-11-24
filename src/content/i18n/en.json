@@ -1,13 +1,15 @@
 {
   "meta": {
     "title": "MoneyWise — AI Multi-Currency Finance App",
-    "description": "The personal finance app that keeps every record, budget, and insight on your device. Multi-currency. BYOK AI advisor. Optional encrypted sync."
+    "description": "The personal finance app that keeps every record, budget, and insight on your device. Multi-currency. BYOK AI advisor. Optional cloud sync."
   },
   "nav": {
     "features": "Features",
     "privacy": "Privacy",
     "pricing": "Pricing",
-    "download": "Download"
+    "download": "Download",
+    "faq": "FAQ",
+    "help": "Help"
   },
   "hero": {
     "headline_part1": "Track every dollar.",
@@ -15,9 +17,11 @@
     "subhead": "Records, budgets, investments, and AI insights — all stored on your phone. Cloud sync is optional; privacy isn't.",
     "cta_secondary": "See how it works",
     "stat_offline_label": "Offline-first",
-    "stat_ads_label": "Ads · Trackers",
+    "stat_ads_label": "Ads",
     "stat_byok_label": "AI keys on-device",
-    "coming_soon": "Coming soon to the App Store"
+    "coming_soon": "Coming soon to the App Store",
+    "badge_new": "New in 1.8",
+    "badge_text": "Savings goals, dark mode, widgets & more"
   },
   "platforms": {
     "app_store": "App Store",
@@ -29,39 +33,134 @@
     "mac": "Mac",
     "ipad": "iPad",
     "apple_watch": "Apple Watch",
-    "status_available": "Available · iPhone, iOS 16+",
+    "status_available": "Available · iPhone, iOS 15+",
     "status_available_mac": "Available · macOS 13+",
     "status_beta": "Beta · Invite only",
     "status_apk_direct": "APK · Android 8+ · Pro upgrade via Play Store",
     "status_dmg_direct": "DMG · macOS 13+ · Pro upgrade via web",
     "status_coming_soon": "Coming soon · Mac App Store",
-    "status_in_development": "In development"
+    "status_in_development": "In development",
+    "status_watch": "Available · watchOS 10+",
+    "kicker_app_store": "Download on the",
+    "kicker_play": "Get it on"
   },
   "features": {
     "eyebrow": "Built for real life",
     "title": "Everything about your money, in one app.",
     "items": [
-      { "title": "Dashboard", "description": "Net worth, trends, and upcoming bills at a glance." },
-      { "title": "Records", "description": "Fast entry, voice input, receipt photos, calendar view." },
-      { "title": "Accounts", "description": "Checking, savings, cards, cash — in any currency." },
-      { "title": "Investments", "description": "Live quotes, portfolio allocation, per-holding history." },
-      { "title": "Budgets", "description": "Monthly budgets per category with pacing and transfers." },
-      { "title": "AI Advisor", "description": "Bring your own Anthropic or OpenAI key for on-device insights." }
+      {
+        "title": "Dashboard",
+        "description": "Net worth, trends, and upcoming bills at a glance."
+      },
+      {
+        "title": "Records",
+        "description": "Fast entry, voice input, receipt photos, calendar view."
+      },
+      {
+        "title": "Accounts",
+        "description": "Checking, savings, cards, cash — in any currency."
+      },
+      {
+        "title": "Investments",
+        "description": "Live quotes, portfolio allocation, per-holding history."
+      },
+      {
+        "title": "Budgets",
+        "description": "Monthly budgets per category with pacing and transfers."
+      },
+      {
+        "title": "AI Advisor",
+        "description": "Use your own Anthropic or OpenAI key — requests go straight from your device to the provider."
+      }
     ]
+  },
+  "whatsNew": {
+    "eyebrow": "New in 1.8",
+    "title": "Small things that make it feel like yours.",
+    "subhead": "This release is about the everyday: saving toward something, logging faster, and seeing your numbers without opening the app.",
+    "items": [
+      {
+        "title": "Savings goals",
+        "description": "Set a target and a date. Track progress from linked account balances or a manual log, and see how much you need to put aside each month."
+      },
+      {
+        "title": "Dark mode",
+        "description": "A carefully tuned dark theme across every screen. Follow the system, or choose Light or Dark yourself."
+      },
+      {
+        "title": "Share to capture",
+        "description": "Share a receipt photo, a message, or a CSV/XLSX statement into MoneyWise from any app. It becomes a record — or opens the importer."
+      },
+      {
+        "title": "Home & Lock Screen widgets",
+        "description": "Today's spending and your budget at a glance, on the iPhone Home and Lock Screen and on Android home screens."
+      }
+    ]
+  },
+  "duo": {
+    "eyebrow": "Foldable iPhone",
+    "title_part1": "Unfold it. ",
+    "title_italic": "See twice as much.",
+    "subhead": "On a foldable iPhone, MoneyWise opens into a true two-pane layout — the list on one side, the details on the other, and nothing important on the crease.",
+    "bullets": [
+      {
+        "title": "Two panes in book pose",
+        "description": "Accounts and Activity show the list beside the detail, so you can scan and inspect without tapping back and forth."
+      },
+      {
+        "title": "Designed around the crease",
+        "description": "No controls sit on the fold. A slim tab rail moves into the status strip so your content gets the full width."
+      },
+      {
+        "title": "Half-open, too",
+        "description": "Prop it up in laptop pose and the tab bar stays put, with a comfortable reading width for long lists."
+      }
+    ],
+    "alt": "MoneyWise on a foldable iPhone: the accounts list beside an account's detail",
+    "alt_secondary": "MoneyWise on a foldable iPhone: the records list beside a transaction's detail"
+  },
+  "watch": {
+    "eyebrow": "Apple Watch",
+    "title_part1": "Your budget, ",
+    "title_italic": "on your wrist.",
+    "subhead": "Check what's left to spend and log an expense in seconds — without reaching for your phone.",
+    "bullets": [
+      {
+        "title": "Left to spend, at a glance",
+        "description": "Today's spending, how much of this month's budget is used, and your five most recent transactions."
+      },
+      {
+        "title": "Quick add",
+        "description": "Enter an amount with the keypad or the Digital Crown, pick a category and account, done. Entries made away from your iPhone sync when it's back in range."
+      },
+      {
+        "title": "Complications",
+        "description": "Put free-to-spend, today's spending, or a one-tap Add button right on your watch face."
+      }
+    ],
+    "alt_primary": "MoneyWise on Apple Watch showing what's left to spend this month",
+    "alt_secondary": "MoneyWise on Apple Watch showing the last five transactions",
+    "alt_tertiary": "MoneyWise on Apple Watch: quick add, entering an amount"
+  },
+  "faqTeaser": {
+    "eyebrow": "FAQ",
+    "title": "Questions, answered.",
+    "subhead": "Sync, family sharing, Pro, importing and exporting — the things people ask about most.",
+    "cta": "Read the full FAQ"
   },
   "screenshots": {
     "eyebrow": "See it in action",
     "title": "Designed to feel native on iPhone.",
     "captions": [
-      "Dashboard — net worth and daily pulse",
-      "Records — fast entry, grouped by day",
-      "Daily Brief — one-line summary each morning",
+      "Home — net worth, budget and recent activity",
+      "Accounts — multi-currency accounts and cards",
+      "Records — grouped by day, across currencies",
       "Budgets — pacing and category breakdown",
-      "Investments — portfolio and allocation",
-      "Security — biometric lock, local encryption",
-      "AI Advisor — BYOK insights",
-      "Family — shared workspaces for couples",
-      "Asset Report — annual summary across accounts"
+      "Investments — portfolio and returns",
+      "Savings goals — progress toward each target",
+      "AI Advisor — answers using your own key",
+      "Asset Report — net worth trend and composition",
+      "New record — amount, category and account"
     ]
   },
   "mac": {
@@ -69,7 +168,7 @@
     "title_part1": "The same ledger, on the Mac you ",
     "title_italic": "already trust",
     "title_part2": ".",
-    "subhead": "Sidebar shell, multi-pane views, ⌘-driven navigation. Records, investments and reports breathe at full desktop pace — same offline-first data, same end-to-end encrypted sync.",
+    "subhead": "Sidebar shell, multi-pane views, ⌘-driven navigation. Records, investments and reports breathe at full desktop pace — same offline-first data, same cloud sync.",
     "captions": [
       "Dashboard — net worth at a glance",
       "Records — landscape ledger, fast filters",
@@ -91,7 +190,7 @@
       },
       {
         "title": "Bring your own key",
-        "description": "Plug in Anthropic, OpenAI or other API keys for the in-app AI Advisor and Daily Brief. Keys live in the system keychain — never our servers."
+        "description": "Plug in your own Anthropic or OpenAI API key for the in-app AI Advisor and Daily Report. Keys stay in your device's secure storage — never on our servers."
       },
       {
         "title": "Tested with the assistants you use",
@@ -99,16 +198,29 @@
       }
     ],
     "clients_label": "Tested clients",
-    "clients": ["Claude Desktop", "Cursor", "Any MCP client"]
+    "clients": [
+      "Claude Desktop",
+      "Cursor",
+      "Any MCP client"
+    ]
   },
   "privacyFirst": {
     "eyebrow": "Privacy, not a feature",
     "title": "Your data stays on your phone.",
-    "subhead": "MoneyWise is built local-first. No ads, no trackers, no data sale — ever.",
+    "subhead": "MoneyWise is built local-first. No ads and no data sale — ever.",
     "pillars": [
-      { "title": "Offline-first", "description": "Every record is stored locally in an encrypted SQLite database. Works with airplane mode on." },
-      { "title": "Optional cloud sync", "description": "Sync across your own devices when you turn it on. Rows are encrypted at rest; we can't read them." },
-      { "title": "BYOK AI", "description": "Bring your own Anthropic or OpenAI key. Keys live in the iOS keychain and never transit our servers." }
+      {
+        "title": "Offline-first",
+        "description": "Every record is stored in a database on your device, so the app works fully offline — even in airplane mode."
+      },
+      {
+        "title": "Optional cloud sync",
+        "description": "Turn it on (Pro) to sync across your devices. Data travels over encrypted connections (TLS), and server access rules keep it separate from other accounts."
+      },
+      {
+        "title": "BYOK AI",
+        "description": "Bring your own Anthropic or OpenAI key. It stays in your device's secure storage (the Keychain on iPhone), and AI requests go directly to the provider — never through our servers."
+      }
     ],
     "learn_more": "Read the privacy policy →"
   },
@@ -119,19 +231,21 @@
     "free_name": "Free",
     "free_tagline": "Everything you need on a single device.",
     "free_features": [
-      "Unlimited records, accounts, and budgets",
-      "Investments and portfolio tracking",
-      "AI advisor (bring your own key)",
-      "Local encrypted storage"
+      "Unlimited records, accounts, budgets and bills",
+      "Import (CSV, XLSX) and CSV export",
+      "Widgets, Apple Watch and 1 savings goal",
+      "On-device coach insights",
+      "Works offline — your data stays on your device"
     ],
     "pro_name": "Pro",
-    "pro_tagline": "Sync, backup, and more across every device.",
+    "pro_tagline": "Sync, family sharing, investments and AI tools.",
     "pro_features": [
       "Everything in Free",
-      "Multi-device encrypted cloud sync",
-      "Automatic cloud backup",
-      "Receipt and attachment photos",
-      "Pooled AI credits (no API key needed)"
+      "Cloud sync across iPhone, Android and Mac",
+      "Family sharing with split and settle-up",
+      "Investments with live quotes",
+      "AI advisor, receipt scanning and daily reports (uses your own API key)",
+      "Unlimited goals and voice entries, plus MCP extensions"
     ],
     "per_month": "/mo",
     "per_year": "/yr",
@@ -150,7 +264,11 @@
     "copyright": "© 2026 Airing. All rights reserved.",
     "contact": "Contact",
     "compare": "Compare alternatives",
-    "account_deletion": "Delete account"
+    "account_deletion": "Delete account",
+    "product": "Product",
+    "support": "Support",
+    "legal": "Legal",
+    "terms": "Terms of Service"
   },
   "featuresPage": {
     "title": "Every feature, in plain English.",
@@ -207,11 +325,11 @@
       {
         "id": "advisor",
         "title": "AI Advisor",
-        "description": "Bring your own Anthropic or OpenAI key. The advisor reads your (local) data and answers questions — nothing leaves your device unless you ask.",
+        "description": "Bring your own Anthropic or OpenAI key. The advisor answers questions about your finances — requests go straight from your device to the provider you chose, and only when you ask.",
         "screenshot": "07-advisor.png",
         "bullets": [
           "Works with Anthropic Claude or OpenAI",
-          "Keys stored in iOS keychain",
+          "Keys kept in your device's secure storage",
           "Monthly spending analysis",
           "Portfolio rebalancing suggestions"
         ]
@@ -219,13 +337,13 @@
       {
         "id": "security",
         "title": "Security",
-        "description": "Face ID / Touch ID lock. All data encrypted at rest. Optional cloud sync uses end-to-end encrypted rows — we can't read them.",
+        "description": "Face ID / Touch ID or a 6-digit PIN, auto-lock, and hidden balances. Optional cloud sync travels over encrypted connections (TLS).",
         "screenshot": "06-security.png",
         "bullets": [
           "Biometric app lock",
-          "Local SQLite encryption",
-          "End-to-end encrypted cloud sync",
-          "No third-party analytics or ads"
+          "6-digit PIN and auto-lock",
+          "Hide balances; blur in the app switcher",
+          "No ads; usage analytics can be turned off"
         ]
       }
     ]

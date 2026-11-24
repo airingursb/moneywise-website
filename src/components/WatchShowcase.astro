@@ -1,0 +1,45 @@
+---
+import type { Locale } from '../config/site';
+import type { I18nData } from '../content.config';
+import SectionHeader from './SectionHeader.astro';
+import Device from './device/Device.astro';
+import Icon from './Icon.astro';
+
+interface Props {
+  locale: Locale;
+  t: I18nData;
+}
+const { locale, t } = Astro.props;
+const icons = ['watch', 'plus', 'target'];
+---
+
+<section id="watch" class="section bg-ink text-on-ink overflow-hidden relative">
+  <div aria-hidden="true" class="absolute inset-0 opacity-60 [background:radial-gradient(50%_60%_at_75%_50%,rgba(93,176,121,.22),transparent_70%)]"></div>
+  <div class="container-x relative grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-16 items-center">
+    <div class="order-2 lg:order-1 reveal flex justify-center items-center gap-[4%]">
+      <div class="w-[29%] max-w-[10.5rem] translate-y-[10%]">
+        <Device slot="watch.secondary" locale={locale} alt={t.watch.alt_secondary} sizes="(min-width: 1024px) 170px, 29vw" />
+      </div>
+      <div class="w-[35%] max-w-[13rem]">
+        <Device slot="watch.primary" locale={locale} alt={t.watch.alt_primary} sizes="(min-width: 1024px) 210px, 35vw" />
+      </div>
+      <div class="w-[29%] max-w-[10.5rem] translate-y-[10%]">
+        <Device slot="watch.tertiary" locale={locale} alt={t.watch.alt_tertiary} sizes="(min-width: 1024px) 170px, 29vw" />
+      </div>
+    </div>
+    <div class="order-1 lg:order-2">
+      <SectionHeader tone="ink" eyebrow={t.watch.eyebrow} title={t.watch.title_part1} titleEm={t.watch.title_italic} lead={t.watch.subhead} />
+      <ul class="mt-8 grid gap-4">
+        {t.watch.bullets.map((b, i) => (
+          <li class="reveal flex gap-4 rounded-2xl border border-line-on-ink bg-white/[0.03] p-5">
+            <span class="inline-flex w-10 h-10 shrink-0 items-center justify-center rounded-xl bg-white/[0.07] text-accent-on-ink"><Icon name={icons[i]} /></span>
+            <div>
+              <p class="font-semibold">{b.title}</p>
+              <p class="mt-1 text-[15px] leading-relaxed text-on-ink-2">{b.description}</p>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</section>

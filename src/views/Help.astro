@@ -1,0 +1,101 @@
+---
+import Ph from '../components/Ph.astro';
+import type { Locale } from '../config/site';
+import { SITE } from '../config/site';
+import { getI18n, pathFor } from '../lib/i18n';
+import { getFaq } from '../lib/faq';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import Icon from '../components/Icon.astro';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const [t, f] = await Promise.all([getI18n(locale), getFaq(locale)]);
+const h = f.help;
+const faqHref = pathFor(locale, 'faq');
+const links = [
+  { href: pathFor(locale, 'privacy'), label: h.link_privacy, icon: 'shield' },
+  { href: pathFor(locale, 'account-deletion'), label: h.link_delete, icon: 'trash' },
+  { href: `${pathFor(locale)}#download`, label: h.link_download, icon: 'download' },
+  { href: pathFor(locale, 'compare'), label: h.link_compare, icon: 'records' },
+];
+---
+
+<BaseLayout title={h.meta_title} description={h.meta_description} locale={locale} slug="help">
+  <Nav locale={locale} slug="help" t={t} />
+  <main id="main">
+    <header class="relative overflow-hidden">
+      <div aria-hidden="true" class="absolute -top-48 left-1/2 -translate-x-1/2 w-[64rem] h-[36rem] [background:var(--glow)] -z-10"></div>
+      <div class="container-x pt-14 pb-12 md:pt-20 md:pb-16 text-center">
+        <p class="t-eyebrow">{h.eyebrow}</p>
+        <h1 class="t-h1 mt-3"><Ph text={h.title} /></h1>
+        <p class="t-lead mt-5 max-w-[38rem] mx-auto">{h.subhead}</p>
+        <div class="mt-8 flex flex-wrap justify-center gap-3">
+          <a href={faqHref} class="btn btn-primary">{t.nav.faq}<Icon name="arrow" class="w-4 h-4" /></a>
+          <a href={`mailto:${SITE.contactEmail}`} class="btn btn-ghost" data-umami-event="help_email_click"><Icon name="mail" class="w-4 h-4" />{h.contact_email_cta}</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="container-x pb-16 md:pb-20">
+      <h2 class="text-[22px] md:text-[26px] font-semibold tracking-[-0.02em]"><Ph text={h.topics_title} /></h2>
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {f.sections.map((s) => (
+          <a href={`${faqHref}#${s.id}`} class="reveal card card-hover p-6 flex flex-col">
+            <span class="icon-tile"><Icon name={s.icon} /></span>
+            <h3 class="t-h3 mt-4 text-fg">{s.title}</h3>
+            <p class="t-body mt-1.5 flex-1">{s.summary}</p>
+            <ul class="mt-4 space-y-1.5 text-[13.5px] text-fg-2">
+              {s.items.slice(0, 2).map((it) => <li class="flex gap-2"><span class="text-fg-3">—</span><span>{it.q}</span></li>)}
+            </ul>
+            <span class="link-arrow mt-5 text-[14px]">{h.topic_cta}<Icon name="arrow" class="w-4 h-4" /></span>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section class="bg-bg-sunken section !py-16 md:!py-20">
+      <div class="container-x">
+        <h2 class="text-[22px] md:text-[26px] font-semibold tracking-[-0.02em]"><Ph text={h.start_title} /></h2>
+        <ol class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+          {h.start_steps.map((s, i) => (
+            <li class="reveal card p-6">
+              <span class="t-num inline-flex w-8 h-8 items-center justify-center rounded-full bg-accent text-accent-fg text-[14px] font-semibold">{i + 1}</span>
+              <h3 class="t-h3 mt-4 text-fg">{s.title}</h3>
+              <p class="t-body mt-1.5 !text-[14.5px]">{s.body}</p>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+
+    <section class="container-x py-16 md:py-20 grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-6">
+      <div class="card p-7 md:p-10 bg-ink !border-transparent text-on-ink relative overflow-hidden">
+        <div aria-hidden="true" class="absolute -top-20 -right-20 w-72 h-72 rounded-full [background:radial-gradient(circle,rgba(93,176,121,.3),transparent_70%)]"></div>
+        <div class="relative">
+          <span class="inline-flex w-10 h-10 items-center justify-center rounded-xl bg-white/[0.08] text-accent-on-ink"><Icon name="mail" /></span>
+          <h2 class="mt-5 text-[24px] md:text-[28px] font-semibold tracking-[-0.02em]"><Ph text={h.contact_title} /></h2>
+          <p class="mt-3 text-[15.5px] leading-relaxed text-on-ink-2 max-w-[34rem]">{h.contact_body}</p>
+          <a href={`mailto:${SITE.contactEmail}`} class="btn mt-7 !bg-[#F4F7F4] !text-[#0F1C14] hover:!bg-white break-all whitespace-normal" data-umami-event="help_email_click">{SITE.contactEmail}</a>
+          <p class="mt-5 text-[14px] text-on-ink-2">{h.contact_inapp}</p>
+        </div>
+      </div>
+      <div class="card p-7 md:p-8">
+        <h2 class="text-[18px] font-semibold"><Ph text={h.links_title} /></h2>
+        <ul class="mt-4">
+          {links.map((l) => (
+            <li class="border-b border-line last:border-0">
+              <a href={l.href} class="flex items-center gap-3 py-3.5 text-[15px] text-fg hover:text-accent-text transition">
+                <Icon name={l.icon} class="w-4 h-4 text-fg-3" /><span class="flex-1">{l.label}</span><Icon name="arrow" class="w-4 h-4 text-fg-3" />
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  </main>
+  <Footer locale={locale} slug="help" t={t} />
+</BaseLayout>

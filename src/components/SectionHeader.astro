@@ -1,0 +1,27 @@
+---
+import Ph from './Ph.astro';
+interface Props {
+  eyebrow?: string;
+  title?: string;
+  /** Optional emphasised tail of the title (serif italic in Latin scripts). */
+  titleEm?: string;
+  titleTail?: string;
+  lead?: string;
+  align?: 'left' | 'center';
+  tone?: 'default' | 'ink';
+  as?: 'h1' | 'h2';
+  class?: string;
+}
+const { eyebrow, title, titleEm, titleTail, lead, align = 'left', tone = 'default', as: Tag = 'h2', class: cls = '' } = Astro.props;
+const ink = tone === 'ink';
+---
+<div class={`reveal ${align === 'center' ? 'mx-auto text-center max-w-[44rem]' : 'max-w-[44rem]'} ${cls}`}>
+  {eyebrow && <p class={`t-eyebrow ${ink ? '!text-accent-on-ink' : ''}`}>{eyebrow}</p>}
+  {title && (
+    <Tag class={`${Tag === 'h1' ? 't-h1' : 't-h2'} mt-3 ${ink ? 'text-on-ink' : 'text-fg'}`}>
+      <Ph text={title} />{titleEm && <span class="whitespace-nowrap"><span class={`t-serif ${ink ? '!text-accent-on-ink' : ''}`}><Ph text={titleEm} /></span>{titleTail && titleTail.length <= 2 && titleTail}</span>}{titleTail && (!titleEm || titleTail.length > 2) && <Ph text={titleTail} />}
+    </Tag>
+  )}
+  {lead && <p class={`t-lead mt-5 ${ink ? '!text-on-ink-2' : ''}`}>{lead}</p>}
+  <slot />
+</div>
